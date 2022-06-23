@@ -9,7 +9,7 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Happy Smile" name="Author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
 
         <!-- third party css -->
         <link href="<?php echo base_url('frontend/assets')?>/css/vendor/fullcalendar.min.css" rel="stylesheet" type="text/css">
@@ -136,7 +136,7 @@
                                                         <div class="col-12">
                                                             <div class="mb-3">
                                                                 <label class="control-label form-label">Event Name</label>
-                                                                <input class="form-control" placeholder="Insert Event Name" type="text" name="title" id="event-title" required="">
+                                                                <input class="form-control" placeholder="Event Name" type="text" name="title" id="event-title" required="">
                                                                 <div class="invalid-feedback">Please provide a valid event name</div>
                                                             </div>
                                                         </div>

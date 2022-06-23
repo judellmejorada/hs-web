@@ -112,7 +112,7 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-            2012 - 2022 © HappySmile
+            2022 © HappySmile.com
         </footer>
 
         <!-- bundle -->

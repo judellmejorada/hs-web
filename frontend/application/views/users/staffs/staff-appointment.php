@@ -9,7 +9,7 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Happy Smile" name="Author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
 
         <!-- Quill css -->
         <link href="<?php echo base_url('frontend/assets')?>/css/vendor/quill.bubble.css" rel="stylesheet" type="text/css">
