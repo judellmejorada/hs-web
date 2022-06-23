@@ -1,20 +1,20 @@
+.DS_Store
+user_guide
 
-frontend/user_guide
+application/cache/*
+!application/cache/index.html
 
-frontend/application/cache/*
-!frontend/application/cache/index.html
+application/logs/*
+!application/logs/index.html
 
-frontend/application/logs/*
-!frontend/application/logs/index.html
-
-!frontend/application/*/.htaccess
+!application/*/.htaccess
 
 composer.lock
 
-frontend/user_guide_src/build/*
-frontend/user_guide_src/cilexer/build/*
-frontend/user_guide_src/cilexer/dist/*
-frontend/user_guide_src/cilexer/pycilexer.egg-info/*
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
 /vendor/
 
 # IDE Files
