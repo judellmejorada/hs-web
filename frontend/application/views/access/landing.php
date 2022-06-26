@@ -81,9 +81,10 @@
                             <P class="mb-4 font-22 text-white">
                                 WELCOME TO
                             </P>
-                            <h7 class="text-white fw-bold mb-4 mt-3 hero-title">
-                                HAPPY <br><br> SMILE <br><br>CLINIC
-                            </h7>
+                            <h8 class="text-white fw-bold mb-4 mt-3 hero-title">
+                                HAPPY SMILE <br><br>CLINIC
+                            </h8>
+
                             <p></p>
                             <p class="mb-4 font-16 text-white">HappySmile Dental Clinic was established in 2012.We are one of the most established 
                                 and respected brands of dental care in the country. We operate a chain of modern and state-of-the art dental clinics 
