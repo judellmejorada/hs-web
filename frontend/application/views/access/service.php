@@ -53,8 +53,7 @@
                   <!-- right menu -->
                   <ul class="navbar-nav ms-auto align-items-center">
                       <li class="nav-item me-0">
-                          <a href="frontend/application/views/access/login.php" target="_blank" class="nav-link d-lg-none">Log in</a>
-                          <a href="frontend/application/views/access/login.php" target="_blank" class="btn btn-sm btn-light btn-rounded d-none d-lg-inline-flex">
+                          <a href="login" target="" class="btn btn-sm btn-light btn-rounded d-none d-lg-inline-flex">
                               <i class="mdi mdi-account-edit me-2"></i>Log in
                           </a>
                       </li>
