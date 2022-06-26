@@ -454,27 +454,24 @@
                     </div>
 
                     <div class="col-lg-2 mt-3 mt-lg-0">
-                        <h5 class="text-light">Company</h5>
+                    <h5 class="text-light">Company</h5>
 
                         <ul class="list-unstyled ps-0 mb-0 mt-3">
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">About Us</a></li>
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Documentation</a></li>
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Blog</a></li>
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Affiliate Program</a></li>
+                            <li class="mt-2"><a href="aboutus.php" class="text-muted">About Us</a></li>
+                            <li class="mt-2"><a href="faaq.php" class="text-muted">FAQ</a></li>
+                            <li class="mt-2"><a href="aboutus.php" class="text-muted">Our Team</a></li>
                         </ul>
 
-                    </div>
+                        </div>
 
-                    <div class="col-lg-2 mt-3 mt-lg-0">
-                        <h5 class="text-light">Apps</h5>
+                        <div class="col-lg-2 mt-3 mt-lg-0">
+                        <h5 class="text-light">Discover</h5>
 
                         <ul class="list-unstyled ps-0 mb-0 mt-3">
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Ecommerce Pages</a></li>
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Email</a></li>
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Social Feed</a></li>
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Projects</a></li>
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Tasks Management</a></li>
+                            
+                            <li class="mt-2"><a href="service.php" class="text-muted">Our Services</a></li>
                         </ul>
+                        </div>
                     </div>
 
                     <div class="col-lg-2 mt-3 mt-lg-0">

@@ -59,8 +59,8 @@
                   <!-- right menu -->
                   <ul class="navbar-nav ms-auto align-items-center">
                       <li class="nav-item me-0">
-                          <a href="pages-login.php" target="_blank" class="nav-link d-lg-none">Log in</a>
-                          <a href="pages-login.php" target="_blank" class="btn btn-sm btn-light btn-rounded d-none d-lg-inline-flex">
+                          <a href="pages-login" target="_blank" class="nav-link d-lg-none">Log in</a>
+                          <a href="pages-login" target="_blank" class="btn btn-sm btn-light btn-rounded d-none d-lg-inline-flex">
                               <i class="mdi mdi-account-edit me-2"></i>Log in
                           </a>
                       </li>
@@ -292,7 +292,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                    <img src="../assets/images/logo-dark.png" alt="" class="logo-dark" height="50">
+                    <img src="<?php echo base_url('frontend/assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
                         <p class="text-muted mt-4">HappySmile brings you the best service and will give you satisfactory for your teeth.<br> Because your Smile is our Passion</p>
 
                         <ul class="social-list list-inline mt-3">
@@ -316,9 +316,9 @@
                         <h5 class="text-light">Company</h5>
 
                         <ul class="list-unstyled ps-0 mb-0 mt-3">
-                            <li class="mt-2"><a href="aboutus.php" class="text-muted">About Us</a></li>
-                            <li class="mt-2"><a href="faaq.php" class="text-muted">FAQ</a></li>
-                            <li class="mt-2"><a href="aboutus.php" class="text-muted">Our Team</a></li>
+                            <li class="mt-2"><a href="aboutus" class="text-muted">About Us</a></li>
+                            <li class="mt-2"><a href="faq" class="text-muted">FAQ</a></li>
+                            <li class="mt-2"><a href="aboutus" class="text-muted">Our Team</a></li>
                         </ul>
 
                     </div>
@@ -328,7 +328,7 @@
 
                         <ul class="list-unstyled ps-0 mb-0 mt-3">
                             
-                            <li class="mt-2"><a href="service.php" class="text-muted">Our Services</a></li>
+                            <li class="mt-2"><a href="service" class="text-muted">Our Services</a></li>
                         </ul>
                     </div>
                 </div>
