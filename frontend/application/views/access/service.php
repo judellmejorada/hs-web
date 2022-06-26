@@ -40,19 +40,19 @@
                     <!-- left menu -->
                     <ul class="navbar-nav me-auto align-items-center">
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link " href="landing.php">Home</a>
+                            <a class="nav-link " href="landing">Home</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link active" href="service.php">Service</a>
+                            <a class="nav-link active" href="service">Service</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link" href="aboutus.php">About Us</a>
+                            <a class="nav-link" href="aboutus">About Us</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link" href="faaq.php">FAQ</a>
+                            <a class="nav-link" href="faaq">FAQ</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link" href="pages-register.php">Register</a>
+                            <a class="nav-link" href="pages-register">Register</a>
                         </li>
                   </ul>
 
