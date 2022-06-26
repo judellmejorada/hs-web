@@ -3,17 +3,17 @@
 
     <head>
         <meta charset="utf-8">
-        <title>About Us| HappySmile</title>
+        <title>About Us | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Coderthemes" name="author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="../assets/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
 
         <!-- App css -->
-        <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
-        <link href="../assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">        
+        <link href="<?php echo base_url('frontend/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">        
 
     </head>
 
@@ -38,19 +38,19 @@
                     <!-- left menu -->
                     <ul class="navbar-nav me-auto align-items-center">
                          <li class="nav-item mx-lg-1">
-                            <a class="nav-link " href="landing.php">Home</a>
+                            <a class="nav-link " href="landing">Home</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link " href="service.php">Service</a>
+                            <a class="nav-link " href="service">Service</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link active" href="aboutus.php">About Us</a>
+                            <a class="nav-link active" href="about">About Us</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link " href="faaq.php">FAQ</a>
+                            <a class="nav-link " href="faq">FAQ</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link" href="pages-register.php">Register</a>
+                            <a class="nav-link" href="register">Register</a>
                         </li>
                     </ul>
 
@@ -342,8 +342,8 @@
         <!-- END FOOTER -->
 
         <!-- bundle -->
-        <script src="../assets/js/vendor.min.js"></script>
-        <script src="../assets/js/app.min.js"></script>
+        <script src="<?php echo base_url('frontend/assets')?>/js/vendor.min.js"></script>
+        <script src="<?php echo base_url('frontend/assets')?>/js/app.min.js"></script>
 
     </body>
 

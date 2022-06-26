@@ -47,13 +47,13 @@
                             <a class="nav-link" href="service">Service</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link" href="aboutus">About Us</a>
+                            <a class="nav-link" href="about">About Us</a>
                         </li>
                         <li class="nav-item mx-lg-1">
                             <a class="nav-link" href="faq">FAQ</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link" href="pages-register">Register</a>
+                            <a class="nav-link" href="register">Register</a>
                         </li>
                     </ul>
 

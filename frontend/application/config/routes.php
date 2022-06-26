@@ -55,8 +55,8 @@ $route['default_controller'] = 'landing';
 $route['login'] = 'Access/login';
 $route['register'] = 'Register/RegisterPage';
 $route['service'] = 'service/ServicePage';
-$route['aboutus']='aboutus';
-$route['faaq']='faaq';
+$route['about']='About/AboutPage';
+$route['faq']='Faq/FaqPage';
 
 //Admin Files
 $route['admin'] = 'Admin_SystemSetup/UI';
