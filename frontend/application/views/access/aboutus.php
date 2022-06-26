@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-md-5 offset-md-2">
                         <div class="text-md-end mt-3 mt-md-0">
-                            <img src="<?php echo base_url('frontend/assets')?>/images/tooth.png" alt="" class="img-fluid w-100">
+                            <img src="../assets/images/tooth.png" alt="" class="img-fluid w-100">
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="row mt-2 py-5 align-items-center">
                     <div class="col-lg-5">
-                        <img src="../assets/images/hs12.png" class="img-fluid" alt="">
+                        <img src="<?php echo base_url('frontend/assets')?>/images/hs12.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 offset-lg-1">
                         <h1 class="fw-normal">Our Mission</h1>
