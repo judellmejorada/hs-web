@@ -11,14 +11,14 @@
             <form class="needs-validation" novalidate="">
                     <div class="row g-3">
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom01">First Name</label>
+                            <label class="form-label" for="validationCustom00">First Name</label>
                             <input type="text" class="form-control" id="validationCustom00" placeholder="First Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a First Name.
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom02">Last Name</label>
+                            <label class="form-label" for="validationCustom01">Last Name</label>
                             <input type="text" class="form-control" id="validationCustom01" placeholder="Last Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a Last Name.
@@ -28,15 +28,15 @@
                     
                     <div class="row g-3">
                         <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom09">Image</label>
-                                <input type="file" id="validationCustom09" class="form-control" required>
+                                <label class="form-label" for="validationCustom02">Image</label>
+                                <input type="file" id="validationCustom02" class="form-control" required>
                                 <div class="invalid-feedback">
                                         Please provide an Image. 
                                 </div>
                             </div>
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom02">Dentistry Specialization</label>
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="Dentistry Specialization" required="">
+                            <label class="form-label" for="validationCustom03">Dentistry Specialization</label>
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="Dentistry Specialization" required="">
                             <div class="invalid-feedback">
                                 Please provide a Dentistry Specialization.
                             </div>
