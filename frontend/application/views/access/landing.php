@@ -41,13 +41,19 @@
                     <!-- left menu -->
                     <ul class="navbar-nav me-auto align-items-center">
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link active" href="landing">Home</a>
+                            <a class="nav-link active" href="landing.php">Home</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link" href="service">Service</a>
+                            <a class="nav-link" href="service.php">Service</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link" href="register">Register</a>
+                            <a class="nav-link" href="aboutus.php">About Us</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="faaq.php">FAQ</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="pages-register.php">Register</a>
                         </li>
                     </ul>
 
@@ -229,34 +235,46 @@
                                                 <div class="carousel-item active">
                                                     <img class="rounded mx-auto d-block img-fluid" src="<?php echo base_url('frontend/assets')?>/images/small/dentist3.jpg"  alt="First slide">
                                                     <div class="carousel-caption d-none d-md-block">
-                                                        <a href="#standard-modal"  data-bs-toggle="modal" data-bs-target="#standard-modal"><h2 class="text-white" >Jurgen Spangl</h2></a>
-                                                        <div id="standard-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="standard-modalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog">
-                                                                <div class="modal-content" text-align="left">
-                                                                    <div class="modal-header">
-                                                                        <h3 class="modal-title" id="standard-modalLabel">Jurgen Spangl</h4>
-                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                    </div>
-                                                                    <div class="modal-body" >
-                                                                        <h4>General Dentist </h4>
-                                                                        <p>January 2015–December 2018</p>
-                                                                        <p>Manhattan Dental Practice, New York, NY</p>
-                                                                        <hr>
-                                                                        <h6>Key Qualifications & Responsibilities</h6>
-                                                                        <p>- Skilled in running multiple operatories and utilizing time efficiently while also being on call for emergency operations.</p>
-                                                                        <p>- Strong working knowledge of dentistry, including orthodontics, oral and maxillofacial surgery, periodontics, prosthodontics, and endodontics.</p>
-                                                                        <p>- Instructed and delegated dental support staff on various procedures, including lab assistants, dental assistants, dental hygienists, and office manager.</p>
-                                                                        <hr>
-                                                                        <h6>Key Achievement</h6>
-                                                                        <p>- Introduced new method dubbed “five handed dentistry,” which improved dental operation times by 25%.</p>
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                                                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                                                    </div>
-                                                                </div><!-- /.modal-content -->
-                                                            </div><!-- /.modal-dialog -->
-                                                        </div><!-- /.modal -->
+                                                    <a href="#primary-header-modal"  data-bs-toggle="modal" data-bs-target="#primary-header-modal"><h2 class="text-white" >Jurgen Spangl</h2></a>
+                                                    <div id="primary-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="primary-header-modalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header modal-colored-header bg-primary">
+                                                                <h2 class="modal-title text-dark" id="primary-header-modalLabel">Jurgen Spangl</h2>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h4 class="mt-0">EDUCATION</h4>
+                                                                <p>Texas A&M University - Central Texas</p>
+                                                                <p>Master of Arts: DEntistry - Killeen, TX <br>Pre-Dentistry</p>
+                                                            <hr>
+                                                                <h4 class="mt-0">SKILLS</h4>
+                                                                <div style="float:left;width: 50%;">
+                                                                <ul>
+                                                                    <li>Patient engagement</li>
+                                                                    <li>Preventive Care</li>
+                                                                    <li>Orthodontics understanding</li>
+                                                                </ul>
+                                                                </div>
+                                                                <div style="float:right;width: 50%;">
+                                                                <ul>
+                                                                    <li>Extracting Teeth</li>
+                                                                    <li>Dental Surgeries</li>
+                                                                    <li>Endodontics</li>
+                                                                </ul>
+                                                                </div>
+                                                                <hr>
+                                                                <h4 class="mt-0">Work History</h4>
+                                                                <p>General Dentist | Happy Smile - Manila, PH      2019-current</p>
+                                                                <p>General Dentist | Dentist For You - San Francisco, TX      2015-2018</p>
+                                                                <p>General Dentist | Dentek Dental - San Francisco, TX      2012-2015</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div><!-- /.modal-content -->
+                                                    </div><!-- /.modal-dialog -->
+                                                </div><!-- /.modal -->
                     
                                                         <h3> CHIEF GENERAL DENTISTRY</h3>
                                                     </div>
@@ -264,14 +282,92 @@
                                                 <div class="carousel-item">
                                                     <img class="rounded mx-auto d-block img-fluid" src="<?php echo base_url('frontend/assets')?>/images/small/dentist2.jpg" alt="Second slide">
                                                     <div class="carousel-caption d-none d-md-block">
-                                                        <h2 class="text-white">James Beer</h2>
+                                                    <a href="#success-header-modal"  data-bs-toggle="modal" data-bs-target="#success-header-modal"><h2 class="text-white" >James Beer</h2></a>
+                                                    <div id="success-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-header-modalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header modal-colored-header bg-primary">
+                                                                <h2 class="modal-title text-dark" id="success-header-modalLabel">James Beer</h2>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h4 class="mt-0">EDUCATION</h4>
+                                                                <p>Tufts University -Medford, MA <br>Orthodontics Residency.</p>
+                                                                <p>Johns Hopkins University - Baltimore, MD <br>Doctor of Dental Surgery</p>
+                                                            <hr>
+                                                                <h4 class="mt-0">SKILLS</h4>
+                                                                <div style="float:left;width: 50%;">
+                                                                <ul>
+                                                                    <li>Oral Cavity Anomalies</li>
+                                                                    <li>Realigning Teeth</li>
+                                                                    <li>Client Rapport</li>
+                                                                </ul>
+                                                                </div>
+                                                                <div style="float:right;width: 50%;">
+                                                                <ul>
+                                                                    <li>Oral Cavity Anomalies</li>
+                                                                    <li>Realigning Teeth</li>
+                                                                    <li>Client Rapport</li>
+                                                                </ul>
+                                                                </div>
+                                                                <hr>
+                                                                <h4 class="mt-0">Work History</h4>
+                                                                <p>Orthodontist | Happy Smile - Manila, PH      2017-current</p>
+                                                                <p>Orthodontist | Affinity Dental - Bangor, ME      2014-2017</p>
+                                                                <p>Orthodontist | Perfect Smile - Augusta, ME      2010-2014</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div><!-- /.modal-content -->
+                                                    </div><!-- /.modal-dialog -->
+                                                </div><!-- /.modal -->
                                                         <h3> CHIEF ORTHODONTICS DENTISTRY</h3>
                                                     </div>
                                                 </div>
                                                 <div class="carousel-item">
                                                     <img class="rounded mx-auto d-block img-fluid" src="<?php echo base_url('frontend/assets')?>/images/small/dentist1.jpg" alt="Third slide">
                                                     <div class="carousel-caption d-none d-md-block">
-                                                        <h2 class="text-white">Erika Fisher</h2>
+                                                    <a href="#info-header-modal"  data-bs-toggle="modal" data-bs-target="#info-header-modal"><h2 class="text-white" >Erika Fisher</h2></a>
+                                                    <div id="info-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="info-header-modalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header modal-colored-header bg-primary">
+                                                                <h2 class="modal-title text-dark" id="info-header-modalLabel">Erika Fisher</h2>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h4 class="mt-0">EDUCATION</h4>
+                                                                <p>Doctorial Degree Advance Dentsitry -LA, CA <br>University of Southern California</p>
+                                                                <p>Master's Degree Biology - Santa Barbara, CA <br>University of California Santa Barbara</p>
+                                                            <hr>
+                                                                <h4 class="mt-0">SKILLS</h4>
+                                                                <div style="float:left;width: 50%;">
+                                                                <ul>
+                                                                    <li>Dentistry</li>
+                                                                    <li>DDS</li>
+                                                                    <li>Invisalign</li>
+                                                                </ul>
+                                                                </div>
+                                                                <div style="float:right;width: 50%;">
+                                                                <ul>
+                                                                    <li>Full Range</li>
+                                                                    <li>Infection Control</li>
+                                                                    <li>Diagnosis</li>
+                                                                </ul>
+                                                                </div>
+                                                                <hr>
+                                                                <h4 class="mt-0">Work History</h4>
+                                                                <p>Cosmetic Dentist | Happy Smile - Manila, PH      2020-current</p>
+                                                                <p>Cosmetic Dentist | American Dental Group - Douglasville, GA      2016-2019</p>
+                                                                <p>Cosmetic Dentist | Bright Now Dental - Invine, CA      2010-2016</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div><!-- /.modal-content -->
+                                                    </div><!-- /.modal-dialog -->
+                                                 </div><!-- /.modal -->
                                                         <h3> CHIEF COSMETIC DENTISTRY</h3>
                                                     </div>
                                                 </div>
@@ -348,10 +444,10 @@
 
                 <div class="row align-items-center mt-3">
                     <div class="col-md-4">
-                        <p class="text-muted"><span class="fw-bold">Customer Support:</span><br> <span class="d-block mt-1">+1 234 56 7894</span></p>
-                        <p class="text-muted mt-4"><span class="fw-bold">Email Address:</span><br> <span class="d-block mt-1">info@gmail.com</span></p>
-                        <p class="text-muted mt-4"><span class="fw-bold">Office Address:</span><br> <span class="d-block mt-1">4461 Cedar Street Moro, AR 72368</span></p>
-                        <p class="text-muted mt-4"><span class="fw-bold">Office Time:</span><br> <span class="d-block mt-1">9:00AM To 6:00PM</span></p>
+                    <p class="text-muted"><span class="fw-bold">Customer Support:</span><br> <span class="d-block mt-1">+63241055254</span></p>
+                        <p class="text-muted mt-4"><span class="fw-bold">Email Address:</span><br> <span class="d-block mt-1">happysmile@gmail.com</span></p>
+                        <p class="text-muted mt-4"><span class="fw-bold">Office Address:</span><br> <span class="d-block mt-1">Don Fabian St., Commonwealth,QC<br>Manila, Philippines</span></p>
+                        <p class="text-muted mt-4"><span class="fw-bold">Office Time:</span><br> <span class="d-block mt-1">9:00AM To 5:00PM</span></p>
                     </div>
 
                     <div class="col-md-8">
@@ -420,9 +516,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <img src="<?php echo base_url('frontend/assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="60">
-                        <p class="text-muted mt-4">Hyper makes it easier to build better websites with
-                            <br> great speed. Save hundreds of hours of design
-                            <br> and development by using it.</p>
+                        <p class="text-muted mt-4">HappySmile brings you the best service and satisfactory for your teeth.<br> Your Smile is our Passion</p>
 
                         <ul class="social-list list-inline mt-3">
                             <li class="list-inline-item text-center">
@@ -445,10 +539,9 @@
                         <h5 class="text-light">Company</h5>
 
                         <ul class="list-unstyled ps-0 mb-0 mt-3">
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">About Us</a></li>
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">FAQ</a></li>
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Blog</a></li>
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Affiliate Program</a></li>
+                            <li class="mt-2"><a href="aboutus.php" class="text-muted">About Us</a></li>
+                            <li class="mt-2"><a href="faaq.php" class="text-muted">FAQ</a></li>
+                            <li class="mt-2"><a href="aboutus.php" class="text-muted">Our Team</a></li>
                         </ul>
 
                     </div>
@@ -457,8 +550,8 @@
                         <h5 class="text-light">Discover</h5>
 
                         <ul class="list-unstyled ps-0 mb-0 mt-3">
-                            <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Help Center</a></li>
-                            <li class="mt-2"><a href="service.html" class="text-muted">Our Services</a></li>
+                            
+                            <li class="mt-2"><a href="service.php" class="text-muted">Our Services</a></li>
                         </ul>
                     </div>
                 </div>
@@ -466,7 +559,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="mt-5">
-                            <p class="text-muted mt-4 text-center mb-0">© 2022 HappySmile.com</p>
+                            <p class="text-muted mt-4 text-center mb-0">© 2012 - 2022 HappySmile</p>
                         </div>
                     </div>
                 </div>
