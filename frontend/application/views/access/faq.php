@@ -44,6 +44,7 @@
                             <a class="nav-link " href="service">Service</a>
                         </li>
                         <li class="nav-item mx-lg-1">
+<<<<<<< HEAD:frontend/application/views/access/faq.php
                             <a class="nav-link" href="about">About Us</a>
                         </li>
                         <li class="nav-item mx-lg-1">
@@ -51,6 +52,15 @@
                         </li>
                         <li class="nav-item mx-lg-1">
                             <a class="nav-link" href="register">Register</a>
+=======
+                            <a class="nav-link" href="aboutus">About Us</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link active" href="faaq">FAQ</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="pages-register">Register</a>
+>>>>>>> bbe8db7f1235102ac6aee6835c072b61cca02dd1:frontend/application/views/access/faaq.php
                         </li>
                     </ul>
 

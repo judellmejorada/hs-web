@@ -50,7 +50,7 @@
                             <a class="nav-link" href="about">About Us</a>
                         </li>
                         <li class="nav-item mx-lg-1">
-                            <a class="nav-link" href="faq">FAQ</a>
+                            <a class="nav-link" href="faaq">FAQ</a>
                         </li>
                         <li class="nav-item mx-lg-1">
                             <a class="nav-link" href="register">Register</a>
