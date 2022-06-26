@@ -119,8 +119,8 @@
                         <!-- Question/Answer -->
                         <div>
                             <div class="faq-question-q-box">Q.</div>
-                            <h4 class="faq-question text-body">How do I get help with the theme?</h4>
-                            <p class="faq-answer mb-4 pb-1 text-muted">Use our dedicated support email (support@coderthemes.com) to send your issues or feedback. We are here to help anytime.</p>
+                            <h4 class="faq-question text-body">Do you accept insurance plan?</h4>
+                            <p class="faq-answer mb-4 pb-1 text-muted">Yes,Our office accepts nearly all of the major insurance plans.</p>
                         </div>
 
                     </div>
@@ -130,17 +130,15 @@
                         <!-- Question/Answer -->
                         <div>
                             <div class="faq-question-q-box">Q.</div>
-                            <h4 class="faq-question text-body">Can this theme work with Wordpress?</h4>
-                            <p class="faq-answer mb-4 pb-1 text-muted">No. This is a HTML template. It won't directly with
-                                wordpress, though you can convert this into wordpress compatible theme.</p>
+                            <h4 class="faq-question text-body">How do I schedule my next checkup ?</h4>
+                            <p class="faq-answer mb-4 pb-1 text-muted">Simply call our office.Our front desk will be happy to help schedule your next appointment.</p>
                         </div>
 
                         <!-- Question/Answer -->
                         <div>
                             <div class="faq-question-q-box">Q.</div>
-                            <h4 class="faq-question text-body">Will you regularly give updates of Hyper?</h4>
-                            <p class="faq-answer mb-4 pb-1 text-muted">Yes, We will update the Hyper regularly. All the
-                                future updates would be available without any cost.</p>
+                            <h4 class="faq-question text-body">What do I do if I feel dizzy after dental treatment?</h4>
+                            <p class="faq-answer mb-4 pb-1 text-muted">Let the staff know you're feeling unsteady.Let them help you and recognise that it is temporary and you’ll recover soon.</p>
                         </div>
 
                     </div>
