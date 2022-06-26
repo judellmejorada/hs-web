@@ -25,7 +25,7 @@
 
                 <!-- logo -->
                 <a href="index.html" class="navbar-brand me-lg-5">
-                    <img src="../assets/images/logo-dark.png" alt="" class="logo-dark" height="50">
+                    <img src="<?php echo base_url('frontend/assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
