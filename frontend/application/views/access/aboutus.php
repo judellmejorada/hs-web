@@ -152,7 +152,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                         <div class="avatar-xxl m-auto">
-                             <img src="../assets/images/users/Steph.jpg" alt="" class="rounded-circle" width="70%" height="auto">    
+                             <img src="<?php echo base_url('frontend/assets')?>/images/users/Steph.jpg" alt="" class="rounded-circle" width="70%" height="auto">    
                             </div>
                             <h3 class="mt-3">Stephanie Mirabete</h3>
                             <p class="text-muted mt-2 mb-0">Back-end Developer</p>
@@ -162,7 +162,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                         <div class="avatar-xxl m-auto">
-                             <img src="../assets/images/users/Jm.jpg" alt="" class="rounded-circle" width="70%" height="auto">    
+                             <img src="<?php echo base_url('frontend/assets')?>/images/users/Jm.jpg" alt="" class="rounded-circle" width="70%" height="auto">    
                             </div>
                             <h3 class="mt-3">Jhay Mark Pineda</h3>
                             <p class="text-muted mt-2 mb-0">Back-end Developer</p>
@@ -174,7 +174,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                         <div class="avatar-xxl m-auto">
-                             <img src="../assets/images/users/jarret.jpg" alt="" class="rounded-circle" width="70%" height="auto">    
+                             <img src="<?php echo base_url('frontend/assets')?>/images/users/jarret.jpg" alt="" class="rounded-circle" width="70%" height="auto">    
                             </div>
                             <h3 class="mt-3">Jarret Dela Cruz</h3>
                             <p class="text-muted mt-2 mb-0">Front-end Developer</p>
@@ -184,7 +184,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                         <div class="avatar-xxl m-auto">
-                             <img src="../assets/images/users/Irish.jpg" alt="" class="rounded-circle" width="70%" height="auto">    
+                             <img src="<?php echo base_url('frontend/assets')?>/images/users/Irish.jpg" alt="" class="rounded-circle" width="70%" height="auto">    
                             </div>
                             <h3 class="mt-3">Irish Muyrong</h3>
                             <p class="text-muted mt-2 mb-0">Front-end Developer</p>
@@ -194,7 +194,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                         <div class="avatar-xxl m-auto">
-                             <img src="../assets/images/users/LC.jpg" alt="" class="rounded-circle" width="70%" height="auto">    
+                             <img src="<?php echo base_url('frontend/assets')?>/images/users/LC.jpg" alt="" class="rounded-circle" width="70%" height="auto">    
                             </div>
                             <h3 class="mt-3">Elsie Jaradal</h3>
                             <p class="text-muted mt-2 mb-0">Front-end Developer</p>
