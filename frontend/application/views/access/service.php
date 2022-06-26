@@ -39,15 +39,21 @@
 
                     <!-- left menu -->
                     <ul class="navbar-nav me-auto align-items-center">
-                      <li class="nav-item mx-lg-1">
-                          <a class="nav-link " href="landing">Home</a>
-                      </li>
-                      <li class="nav-item mx-lg-1">
-                          <a class="nav-link active" href="service">Service</a>
-                      </li>
-                      <li class="nav-item mx-lg-1">
-                          <a class="nav-link" href="register">Register</a>
-                      </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link " href="landing.php">Home</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link active" href="service.php">Service</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="aboutus.php">About Us</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="faaq.php">FAQ</a>
+                        </li>
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link" href="pages-register.php">Register</a>
+                        </li>
                   </ul>
 
                   <!-- right menu -->
@@ -100,32 +106,32 @@
                             <i class="card-pricing-icon dripicons-user text-primary"></i>
                             <ul class="card-pricing-features">
                                <tr>
-                                <td width="70%">Mild Case -</td>
-                                <td width="30%">PHP 135,000 per case</td><p></p>
+                                <td width="70%">Mild Case </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Severe Case	-</td>
-                                <td width="30%">PHP 200,000 per case                                 </td><p></p>
+                                <td width="70%">Severe Case	</td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Sapphire Braces -</td>
-                                <td width="30%">PHP 250,000 per case</td><p></p>
+                                <td width="70%">Sapphire Braces </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Retainer (Invisible) -</td>
-                                <td width="30%">PHP 40,000 U & L</td><p></p>
+                                <td width="70%">Retainer (Invisible) </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Complete Ortho Package -</td>
-                                <td width="30%">PHP 4,500 complete set</td><p></p>
+                                <td width="70%">Complete Ortho Package </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Brackets Removal/Debonding -</td>
-                                <td width="30%">PHP 8,000</td><p></p>
+                                <td width="70%">Brackets Removal/Debonding </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Replacement of rubber elastics -</td>
-                                <td width="30%">PHP 4,000</td><p></p>
+                                <td width="70%">Replacement of rubber elastics </td>
+                                <p></p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -139,32 +145,32 @@
                             <i class="card-pricing-icon dripicons-store text-primary"></i>
                             <ul class="card-pricing-features">
                               <tr>
-                                <td width="70%">All Porcelain Crown (Emax) -</td>
-                                <td width="30%">PHP 31,000 per unit</td><p></p>
+                                <td width="70%">All Porcelain Crown (Emax) </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Porcelain Veneers (Emax) -</td>
-                                <td width="30%">PHP 31,000 per unit</td><p></p>
+                                <td width="70%">Porcelain Veneers (Emax) </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Direct Composite Veneers -</td>
-                                <td width="30%">PHP 13,500 per unit</td><p></p>
+                                <td width="70%">Direct Composite Veneers </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Prefabricated Veneers-</td>
-                                <td width="30%">PHP 22,000 per unit</td><p></p>
+                                <td width="70%">Prefabricated Veneers</td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Laser Bleaching/Whitening -</td>
-                                <td width="30%">PHP 22,000</td><p></p>
+                                <td width="70%">Laser Bleaching/Whitening </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Zirconia Crown or Bridge -</td>
-                                <td width="30%">PHP 42,000 per unit</td><p></p>
+                                <td width="70%">Zirconia Crown or Bridge </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Cosmetic Gum Surgery -</td>
-                                <td width="30%">PHP 55,000</td><p></p>
+                                <td width="70%">Cosmetic Gum Surgery </td>
+                                <p></p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -179,32 +185,32 @@
                             <i class="card-pricing-icon dripicons-store text-primary"></i>
                             <ul class="card-pricing-features">
                                 <tr>
-                                    <td width="70%">Apicoectomy -</td>
-                                    <td width="30%">PHP 25,000 per tooth</td><p></p>
+                                    <td width="70%">Apicoectomy </td>
+                                    <p></p>
                                   </tr>
                                   <tr>
-                                    <td width="70%">Impacted 3rd Molar Removal -</td>
-                                    <td width="30%">PHP 25,000 per tooth</td><p></p>
+                                    <td width="70%">Impacted 3rd Molar Removal </td>
+                                    <p></p>
                                   </tr>
                                   <tr>
-                                    <td width="70%">Simple Extraction -</td>
-                                    <td width="30%">PHP 3,500 per removal</td><p></p>
+                                    <td width="70%">Simple Extraction </td>
+                                    <p></p>
                                   </tr>
                                   <tr>
-                                    <td width="70%">Ankylosed Tooth	-</td>
-                                    <td width="30%">PHP 10,000 per removal</td><p></p>
+                                    <td width="70%">Ankylosed Tooth	</td>
+                                    <p></p>
                                   </tr>
                                   <tr>
-                                    <td width="70%">Bone Augmentation Procedure -</td>
-                                    <td width="30%">PHP 80,000 per area</td><p></p>
+                                    <td width="70%">Bone Augmentation Procedure </td>
+                                    <p></p>
                                   </tr>
                                   <tr>
-                                    <td width="70%">Socket Preservation After Extraction -</td>
-                                    <td width="30%">PHP 50,000</td><p></p>
+                                    <td width="70%">Socket Preservation After Extraction </td>
+                                    <p></p>
                                   </tr>
                                   <tr>
-                                    <td width="70%">Gingivoplasty -</td>
-                                    <td width="30%">PHP 7,500 per area</td><p></p>
+                                    <td width="70%">Gingivoplasty </td>
+                                    <p></p>
                                   </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -218,32 +224,32 @@
                             <i class="card-pricing-icon dripicons-store text-primary"></i>
                             <ul class="card-pricing-features">
                               <tr>
-                                <td width="70%">Consultation -</td>
-                                <td width="30%">PHP 2,800</td><p></p>
+                                <td width="70%">Consultation </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/ Fluoride application -</td>
-                                <td width="30%">PHP 5,000</td><p></p>
+                                <td width="70%">Oral Prophylaxis w/ Fluoride application </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Fluoride Application -</td>
-                                <td width="30%">PHP 7,500 U & L</td><p></p>
+                                <td width="70%">Fluoride Application </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Simple Extraction-</td>
-                                <td width="30%">PHP 4,000</td><p></p>
+                                <td width="70%">Simple Extraction</td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Any kind of Surgery -</td>
-                                <td width="30%">PHP 25,000</td><p></p>
+                                <td width="70%">Any kind of Surgery </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Space Maintainer -</td>
-                                <td width="30%">PHP 10,000 U or L</td><p></p>
+                                <td width="70%">Space Maintainer </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Pulpotomy & Pulpectomy -</td>
-                                <td width="30%">PHP 6,000</td><p></p>
+                                <td width="70%">Pulpotomy & Pulpectomy </td>
+                                <p></p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -257,32 +263,32 @@
                             <i class="card-pricing-icon dripicons-store text-primary"></i>
                             <ul class="card-pricing-features">
                               <tr>
-                                <td width="70%">Consultation -</td>
-                                <td width="30%">PHP 2,800</td><p></p>
+                                <td width="70%">Consultation </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Periodontal Surgery -</td>
-                                <td width="30%">PHP 20,000 per quadrant</td><p></p>
+                                <td width="70%">Periodontal Surgery </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Deep Scaling -</td>
-                                <td width="30%">PHP 3,500 per quadrant</td><p></p>
+                                <td width="70%">Deep Scaling </td>
+                                </td><p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Root Planing and Scaling-</td>
-                                <td width="30%">PHP 10,000 per quadrant</td><p></p>
+                                <td width="70%">Root Planing and Scaling</td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Gum Grafting -</td>
-                                <td width="30%">PHP 50,000</td><p></p>
+                                <td width="70%">Gum Grafting </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Gum Bleaching -</td>
-                                <td width="30%">PHP 50,000</td><p></p>
+                                <td width="70%">Gum Bleaching </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Crown Lengthening -</td>
-                                <td width="30%">PHP 25,000 per area</td><p></p>
+                                <td width="70%">Crown Lengthening </td>
+                                <p></p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -296,32 +302,32 @@
                             <i class="card-pricing-icon dripicons-store text-primary"></i>
                             <ul class="card-pricing-features">
                               <tr>
-                                <td width="70%">Consultation -</td>
-                                <td width="30%">PHP 1,500 case to case basis</td><p></p>
+                                <td width="70%">Consultation </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/ Tongue Scrapping -</td>
-                                <td width="30%">PHP 4,000 minimum</td><p></p>
+                                <td width="70%">Oral Prophylaxis w/ Tongue Scrapping </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/o Tongue Scrapping (Light) -</td>
-                                <td width="30%">PHP 3,500</td><p></p>
+                                <td width="70%">Oral Prophylaxis w/o Tongue Scrapping (Light) </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/o Tongue Scrapping (Medium) -</td>
-                                <td width="30%">PHP 4,000</td><p></p>
+                                <td width="70%">Oral Prophylaxis w/o Tongue Scrapping (Medium) </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/o Tongue Scrapping (Severe) -</td>
-                                <td width="30%">PHP 5,000</td><p></p>
+                                <td width="70%">Oral Prophylaxis w/o Tongue Scrapping (Severe) </td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/ Air -Powder Polishing -</td>
-                                <td width="30%">PHP 6,000</td><p></p>
+                                <td width="70%">Oral Prophylaxis w/ Air -Powder Polishing </td>
+                                ]<p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Deep Scaling -</td>
-                                <td width="30%">PHP 3,500 per quadrant</td><p></p>
+                                <td width="70%">Deep Scaling </td>
+                                <p></p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
