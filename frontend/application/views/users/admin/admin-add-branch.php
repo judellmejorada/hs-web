@@ -11,14 +11,14 @@
             <form class="needs-validation" novalidate="">
                     <div class="row g-3">
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom01">Branch</label>
+                            <label class="form-label" for="validationCustom00">Branch</label>
                             <input type="text" class="form-control" id="validationCustom00" placeholder="Branch" required="">
                             <div class="invalid-feedback">
                                 Please provide a Branch.
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom02">Contact Person</label>
+                            <label class="form-label" for="validationCustom01">Contact Person</label>
                             <input type="text" class="form-control" id="validationCustom01" placeholder="Contact Person" required="">
                             <div class="invalid-feedback">
                                 Please provide a Contact Person.
@@ -28,15 +28,15 @@
                         
                     <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom06">Phone Number</label>
-                                <input type="text" class="form-control" id="validationCustom06" placeholder="Phone Number" required="">
+                                <label class="form-label" for="validationCustom02">Phone Number</label>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="Phone Number" required="">
                                     <div class="invalid-feedback">
                                         Please provide a Phone Number.  
                                     </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom07">Email</label>
-                                <input type="text" class="form-control" id="validationCustom07" placeholder="Email" required="">
+                                <label class="form-label" for="validationCustom03">Email</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Email" required="">
                                     <div class="invalid-feedback">
                                         Please provide a Email. 
                                     </div>
@@ -45,16 +45,16 @@
                         
                         <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom08">Street Number</label>
-                                <input type="text" class="form-control" id="validationCustom08" placeholder="Street Number" required="">
+                                <label class="form-label" for="validationCustom04">Street Number</label>
+                                <input type="text" class="form-control" id="validationCustom04" placeholder="Street Number" required="">
                                     <div class="invalid-feedback">
                                         Please provide a Street Number.  
                                     </div>
                             </div>
 
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom08">Street</label>
-                                <input type="text" class="form-control" id="validationCustom08" placeholder="Street" required="">
+                                <label class="form-label" for="validationCustom05">Street</label>
+                                <input type="text" class="form-control" id="validationCustom05" placeholder="Street" required="">
                                     <div class="invalid-feedback">
                                         Please provide a Street.  
                                     </div>
@@ -63,15 +63,15 @@
                         
                         <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label for="validationCustom10" class="form-label">Barangay</label>
-                                <input type="text" class="form-control" id="validationCustom10" placeholder="Barangay" required="">
+                                <label for="validationCustom06" class="form-label">Barangay</label>
+                                <input type="text" class="form-control" id="validationCustom06" placeholder="Barangay" required="">
                                     <div class="invalid-feedback">
                                         Please provide your Barangay.  
                                     </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                                <label for="validationCustom10" class="form-label">City</label>
-                                <input type="text" class="form-control" id="validationCustom10" placeholder="City" required="">
+                                <label for="validationCustom07" class="form-label">City</label>
+                                <input type="text" class="form-control" id="validationCustom07" placeholder="City" required="">
                                     <div class="invalid-feedback">
                                         Please provide your City.  
                                     </div>

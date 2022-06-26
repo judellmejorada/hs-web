@@ -28,7 +28,7 @@
                         <li class="side-nav-item">
                             <a href="<?php echo base_url('staff')?>" class="side-nav-link">
                                 <i class="uil-home-alt"></i>
-                                <span> Dashboards </span>
+                                <span> Dashboard </span>
                             </a>
                         </li>
 
@@ -38,7 +38,7 @@
                         <li class="side-nav-item">
                             <a data-bs-toggle="" href="<?php echo base_url('staff/appointment')?>" class="side-nav-link">
                                 <i class="uil-briefcase-alt"></i>
-                                <span> Appointment </span>
+                                <span> Appointments </span>
                             </a>
 
                             <a data-bs-toggle="" href="<?php echo base_url('staff/calendar')?>" class="side-nav-link">

@@ -55,8 +55,8 @@
                         
                     <div class="row g-2">
                     <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom05">Civil Status</label>
-                            <select class="form-select" id="validationCustom05" required="">
+                            <label class="form-label" for="validationCustom06">Civil Status</label>
+                            <select class="form-select" id="validationCustom06" required="">
                                 <option></option>
                                 <option>Single</option>
                                 <option>Married</option>
@@ -96,8 +96,8 @@
                         
                         <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom05">User Type</label>
-                                <select class="form-select" id="validationCustom05" required="">
+                                <label class="form-label" for="validationCustom10">User Type</label>
+                                <select class="form-select" id="validationCustom10" required="">
                                     <option></option>
                                     <option>Admin</option>
                                     <option>Staff</option>
