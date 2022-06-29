@@ -20,6 +20,7 @@ class Access extends CI_Controller {
 	 */
 	public function login()
 	{
+		$this->session->sess_destroy();
 		$this->load->view('access/pages-login');
 	}
 }

@@ -17,6 +17,75 @@
         <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
         <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
+        <?php include 'frontend/system/database/DB_connect.php';
+        
+
+        if(isset($_POST['submit']))
+        {
+            
+            $lname = $_POST['fname'];
+            $fname = $_POST['mname'];
+            $mname = $_POST['lname'];
+            $bdate = $_POST['bdate'];
+            $phone = $_POST['phone'];
+            $cstatus = $_POST['cstatus'];
+            $gender = $_POST['gender'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $Rpassword = $_POST['Rpassword'];
+            $sql2 = "SELECT * FROM user WHERE email = '$email' LIMIT 1";
+            $result2 = mysqli_query($con,$sql2);
+            $check2 = mysqli_num_rows($result2);
+            if ($check2 > 0)
+            {
+                echo "<script>alert('The email you typed is already taken');
+                window.location='pages-register.php';
+                </script>";
+            }
+            else
+            {
+                $sql1 = "SELECT * FROM user WHERE lastname = '$lname' AND firstname = '$fname' AND middlename = '$mname' AND birthdate = '$bdate' LIMIT 1";
+                $result = mysqli_query($con,$sql1);
+                $check = mysqli_num_rows($result);
+                if ($check > 0)
+                {
+                echo "<script>alert('There is someone with the same name and birthdate');
+                window.location='pages-register.php';
+                </script>";
+                }
+                else
+                {
+                    if ($password == $Rpassword)
+                    {
+                    $sql = "INSERT INTO user (`firstname`, `middlename`, `lastname`, `birthdate`, `phone`, `civilstatus`, `gender`, `email`, `password`) VALUES ('$fname', '$mname', '$lname', '$bdate', '$phone', '$cstatus', '$gender', '$email', '$password')";
+
+                    $rs = mysqli_query($con, $sql);
+
+                    if($rs)
+                    {
+                        echo "<script>alert('Successfully Recorded');
+                        window.location='pages-login.php';
+                        </script>";
+                    }
+                    else
+                    {
+                        echo "<script>alert('Failed');
+                        window.location='pages-register.php';
+                        </script>";
+                    }
+                    }
+                else
+                {
+                    echo "<script>alert('Wrong Password');
+                    window.location='pages-register.php';
+                    </script>";
+                }
+                }
+                
+            }
+        }
+        ?>
+
     </head>
 
     <body class="loading authentication-bg" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -44,20 +113,20 @@
 
                                     <div class="mb-3">
                                         <label for="fname" class="form-label">First Name</label>
-                                        <input class="form-control" type="text" id="fname" placeholder="Enter your First name" required>
+                                        <input class="form-control" type="text" id="fname" name="fname" placeholder="Enter your First name" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="mname" class="form-label">Middle Name</label>
-                                        <input class="form-control" type="text" id="mname" placeholder="Enter your Middle name" required>
+                                        <input class="form-control" type="text" id="mname" name="mname" placeholder="Enter your Middle name" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="lname" class="form-label">Last Name</label>
-                                        <input class="form-control" type="text" id="lname" placeholder="Enter your Last name" required>
+                                        <input class="form-control" type="text" id="lname" name="lname" placeholder="Enter your Last name" required>
                                     </div>
                                     
-                                    <div class="mb-3 col-md-6">
+                                    <div class="mb-3">
                                         <label for="example-date" class="form-label">Birth Date</label>
-                                        <input class="form-control" id="example-date" type="date" name="date" required="">
+                                        <input class="form-control" id="bdate" type="date" name="bdate" required="">
                                             <div class="invalid-feedback">
                                                 Please provide a Birth Date.
                                             </div>
@@ -65,7 +134,7 @@
 
                                         <div class="mb-3">
                                             <label class="form-label" for="validationCustom05">Phone Number</label>
-                                            <input type="text" class="form-control" id="validationCustom05" placeholder="Phone Number" required="">
+                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your Phone Number" required="">
                                                 <div class="invalid-feedback">
                                                     Please provide a Phone Number. 
                                                 </div>
@@ -73,7 +142,8 @@
                                         <div class="mb-3">
                                             <div class="mb-3">
                                                 <label class="form-label" for="validationCustom04">Civil Status</label>
-                                                <select class="form-control select2" data-toggle="select2" required="">
+                                                <select class="form-control select2" data-toggle="select2" name="civil_status" required="">
+                                                    <option value=""></option>
                                                     <option value="Single">Single</option>
                                                     <option value="Married">Married</option> 
                                                     <option value="Widowed">Widowed</option>
@@ -89,27 +159,28 @@
                                         <label class="form-label" for="validationCustom01" >Gender</label>
                                         <br>
                                     <div class="mb-3">
-                                                <select class="form-control select2" data-toggle="select2" required="">
+                                                <select class="form-control select2" data-toggle="select2" name="gender" required="">
+                                                    <option value=""></option>
                                                     <option value="Single">Male</option>
                                                     <option value="Married">Female</option> 
                                                     <option value="Widowed">Others</option>
                                                     <option value="Divorced">Prefer not to say</option> 
                                                 </select>
                                                     <div class="invalid-feedback">
-                                                        Please provide a Civil Status.  
+                                                        Please provide a Gender.  
                                                     </div>
                                    
                                 </div>
                             </div>        
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="emailaddress" required placeholder="Enter your email">
+                                        <input class="form-control" type="email" id="email" name="email" required placeholder="Enter your email">
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="password" required=""class="form-control" placeholder="Enter your password">
+                                            <input type="password" id="pass1" name="pass1" required=""class="form-control" placeholder="Enter your password">
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>
@@ -118,7 +189,7 @@
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Re-type Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="password" required=""class="form-control" placeholder="Enter your password">
+                                            <input type="password" id="pass2" name="pass2" required=""class="form-control" placeholder="Enter your password">
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>
@@ -128,12 +199,12 @@
                                     <div class="mb-3">
                                         <div class="form-check">
                                             <input type="checkbox" class="form-check-input" required="" id="checkbox-signup">
-                                            <label class="form-check-label" for="checkbox-signup" >I accept <a href="#" class="text-muted">Terms and Conditions</a></label>
+                                            <label class="form-check-label" for="checkbox-signup" > <a href="#" class="text-muted">I accept Terms and Conditions</a></label>
                                         </div>
                                     </div>
 
                                     <div class="mb-3 text-center">
-                                        <button class="btn btn-primary" type="submit"> Sign Up </button>
+                                        <button class="btn btn-primary" type="submit" name="submit"> Sign Up </button>
                                     </div>
 
                                 </form>
