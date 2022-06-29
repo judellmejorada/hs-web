@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<php?>
 
     <html lang="en">
 
     <head>
+
         <meta charset="utf-8" />
         <title>Log In | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +43,7 @@
 
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="users_email" name="email" required="" placeholder="Enter your email">
+                                        <input class="form-control" type="email" id="email" name="email" required="" placeholder="Enter your email">
                                         <div class="invalid-feedback">
                                         Please provide an Email Address.
                                         </div>
@@ -54,7 +54,7 @@
                                         <a href="pages-recoverpw.html" class="text-muted float-end"><small>Forgot your password?</small></a>
                                         <label for="password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="users_password" name="password" class="form-control" required="" placeholder="Enter your password">
+                                            <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password">
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>

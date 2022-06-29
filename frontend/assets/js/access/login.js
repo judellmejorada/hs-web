@@ -17,8 +17,8 @@ $(function () {
             url : baseURL + "login",
             type: "POST", // post, put, delete, get
             data: {
-                email : $('#users_email').val(),
-                password: $('#users_password').val(),
+                users_email : $('#email').val(),
+                users_password: $('#password').val(),
             },
             dataType: "json",
             success: function (data) {

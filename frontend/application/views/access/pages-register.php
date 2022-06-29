@@ -17,75 +17,6 @@
         <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
         <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
-        <?php include 'frontend/system/database/DB_connect.php';
-        
-
-        if(isset($_POST['submit']))
-        {
-            
-            $lname = $_POST['fname'];
-            $fname = $_POST['mname'];
-            $mname = $_POST['lname'];
-            $bdate = $_POST['bdate'];
-            $phone = $_POST['phone'];
-            $cstatus = $_POST['cstatus'];
-            $gender = $_POST['gender'];
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-            $Rpassword = $_POST['Rpassword'];
-            $sql2 = "SELECT * FROM user WHERE email = '$email' LIMIT 1";
-            $result2 = mysqli_query($con,$sql2);
-            $check2 = mysqli_num_rows($result2);
-            if ($check2 > 0)
-            {
-                echo "<script>alert('The email you typed is already taken');
-                window.location='pages-register.php';
-                </script>";
-            }
-            else
-            {
-                $sql1 = "SELECT * FROM user WHERE lastname = '$lname' AND firstname = '$fname' AND middlename = '$mname' AND birthdate = '$bdate' LIMIT 1";
-                $result = mysqli_query($con,$sql1);
-                $check = mysqli_num_rows($result);
-                if ($check > 0)
-                {
-                echo "<script>alert('There is someone with the same name and birthdate');
-                window.location='pages-register.php';
-                </script>";
-                }
-                else
-                {
-                    if ($password == $Rpassword)
-                    {
-                    $sql = "INSERT INTO user (`firstname`, `middlename`, `lastname`, `birthdate`, `phone`, `civilstatus`, `gender`, `email`, `password`) VALUES ('$fname', '$mname', '$lname', '$bdate', '$phone', '$cstatus', '$gender', '$email', '$password')";
-
-                    $rs = mysqli_query($con, $sql);
-
-                    if($rs)
-                    {
-                        echo "<script>alert('Successfully Recorded');
-                        window.location='pages-login.php';
-                        </script>";
-                    }
-                    else
-                    {
-                        echo "<script>alert('Failed');
-                        window.location='pages-register.php';
-                        </script>";
-                    }
-                    }
-                else
-                {
-                    echo "<script>alert('Wrong Password');
-                    window.location='pages-register.php';
-                    </script>";
-                }
-                }
-                
-            }
-        }
-        ?>
-
     </head>
 
     <body class="loading authentication-bg" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -175,6 +106,9 @@
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
                                         <input class="form-control" type="email" id="email" name="email" required placeholder="Enter your email">
+                                        <div class="invalid-feedback">
+                                                Please provide an Email Address.
+                                        </div>
                                     </div>
 
                                     <div class="mb-3">
@@ -184,6 +118,9 @@
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>
+                                            <div class="invalid-feedback">
+                                                Please provide a Password.
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="mb-3">
@@ -192,6 +129,9 @@
                                             <input type="password" id="pass2" name="pass2" required=""class="form-control" placeholder="Enter your password">
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Please Re-type your Password.
                                             </div>
                                         </div>
                                     </div>
