@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<php?>
 
     <html lang="en">
 
     <head>
+
         <meta charset="utf-8" />
         <title>Log In | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
         <!-- App css -->
         <link href="<?php echo base_url('frontend/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
-        <link href="<?php echo base_url('frontend/assets')?>app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
     </head>
 
@@ -39,11 +39,14 @@
                                     <h4 class="text-dark-50 text-center pb-0 fw-bold">Sign In</h4>
                                 </div>
 
-                                <form action="#" class="needs-validation" novalidate="">
+                                <form action="#" class="needs-validation" id="form_id" novalidate="">
 
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                        <input class="form-control" type="email" id="email" name="email" required="" placeholder="Enter your email">
+                                        <div class="invalid-feedback">
+                                        Please provide an Email Address.
+                                        </div>
                                         
                                     </div>
 
@@ -51,16 +54,19 @@
                                         <a href="pages-recoverpw.html" class="text-muted float-end"><small>Forgot your password?</small></a>
                                         <label for="password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="password" class="form-control" required="" placeholder="Enter your password">
+                                            <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password">
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            Please provide a Password.
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="mb-3 mb-3">
                                         <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="checkbox-signin" checked >
+                                            <input type="checkbox" class="form-check-input" id="checkbox-signin" name="checkbox-signin" checked >
                                             <label class="form-check-label" for="checkbox-signin">Remember me</label>
                                         </div>
                                     </div>
@@ -84,7 +90,7 @@
                             </div>
 
                                     <div class="mb-3 mb-0 text-center">
-                                        <button class="btn btn-primary" type="submit"> Log In </button>
+                                        <button class="btn btn-primary" type="submit" id="submit" name="submit"> Log In </button>
                                     </div>
 
                                 </form>
@@ -118,6 +124,12 @@
         <!-- bundle -->
         <script src="<?php echo base_url('frontend/assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('frontend/assets')?>/js/app.min.js"></script>
+
+        <!-- custom common.js -->
+        <script src="<?php echo base_url('frontend/assets')?>/js/access/common.js"></script>
+
+        <!-- custom login.js -->
+        <script src="<?php echo base_url('frontend/assets')?>/js/access/login.js"></script>
         
     </body>
 </html>
