@@ -65,7 +65,7 @@
                                         <!-- end row -->        
                                         <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <table class="table table-bordered table-hover" id="invoiceItem">
+                                        <table class="table table-bordered table-hover" style="margin-left:1rem"id="invoiceItem">
                                         <tr>
                                         <th width="2%"><input id="checkAll" class="formcontrol" type="checkbox"></th>`
                                         <th width="38%">Service</th>
@@ -84,62 +84,12 @@
                                         </div>
                                         </div>
                                         <div class="row">
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="col-sm-6 offset-sm-1">
                                         <button class="btn btn-danger delete" id="removeRows" type="button">- Delete</button>
                                         <button class="btn btn-success" id="addRows" type="button">+ Add More</button>
                                         </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="table-responsive">
-                                                    <table class="table mt-4">
-                                                        <thead>
-                                                        <tr><th>#</th>
-                                                            <th>Item</th>
-                                                            <th>Quantity</th>
-                                                            <th>Unit Cost</th>
-                                                            <th class="text-end">Total</th>
-                                                        </tr></thead>
-                                                        <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>
-                                                                <b>Laptop</b> <br>
-                                                                Brand Model VGN-TXN27N/B
-                                                                11.1" Notebook PC
-                                                            </td>
-                                                            <td>1</td>
-                                                            <td>$1799.00</td>
-                                                            <td class="text-end">$1799.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>
-                                                                <b>Warranty</b> <br>
-                                                                Two Year Extended Warranty -
-                                                                Parts and Labor
-                                                            </td>
-                                                            <td>3</td>
-                                                            <td>$499.00</td>
-                                                            <td class="text-end">$1497.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>
-                                                                <b>LED</b> <br>
-                                                                80cm (32) HD Ready LED TV
-                                                            </td>
-                                                            <td>2</td>
-                                                            <td>$412.00</td>
-                                                            <td class="text-end">$824.00</td>
-                                                        </tr>
-    
-                                                        </tbody>
-                                                    </table>
-                                                </div> <!-- end table-responsive-->
-                                            </div> <!-- end col -->
-                                        </div>
-                                        <!-- end row -->
+                                        
                                        
                                         <div class="row">
                                             <div class="col-sm-6 offset-sm-1">
@@ -167,7 +117,7 @@
                                         <!-- end row-->
     
                                         <div class="d-print-none mt-4">
-                                            <div class="col-sm-4">
+                                            <div class="col-sm-4 offset-7">
                                             <div class="text-end">
                                                 <a href="javascript:window.print()" class="btn btn-primary"><i class="mdi mdi-printer"></i> Print</a>
                                                 <a href="javascript: void(0);" class="btn btn-info">Submit</a>
