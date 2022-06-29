@@ -84,6 +84,11 @@
                                         </div>
                                         </div>
                                         <div class="row">
+                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <button class="btn btn-danger delete" id="removeRows" type="button">- Delete</button>
+                                        <button class="btn btn-success" id="addRows" type="button">+ Add More</button>
+                                        </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="table-responsive">
