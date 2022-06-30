@@ -73,6 +73,8 @@
                                         <th width="15%">Price</th>
                                         <th width="15%">Total</th>
                                         </tr>
+                                       
+                                        <tbody id=table_see>
                                         <tr>
                                         <td><input class="itemRow" type="checkbox"></td>
                                         <td><input type="text" name="productName[]" id="productName_1" class="form-control" autocomplete="off"></td>
@@ -80,13 +82,14 @@
                                         <td><input type="number" name="price[]" id="price_1" class="form-control price" autocomplete="off"></td>
                                         <td><input type="number" name="total[]" id="total_1" class="form-control total" autocomplete="off"></td>
                                         </tr>
+                                        </tbody>
                                         </table>
                                         </div>
                                         </div>
                                         <div class="row">
                                         <div class="col-sm-6 offset-sm-1">
                                         <button class="btn btn-danger delete" id="removeRows" type="button">- Delete</button>
-                                        <button class="btn btn-success" id="addRows" type="button">+ Add More</button>
+                                        <button class="btn btn-success" id="addRows" type="button" onclick="create_tr(table_see)">+ Add More</button>
                                         </div>
                                         </div>
                                         
