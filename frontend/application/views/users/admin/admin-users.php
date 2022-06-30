@@ -9,7 +9,7 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Happy Smile" name="Author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
 
         <!-- third party css -->
         <link href="<?php echo base_url('frontend/assets')?>/css/vendor/dataTables.bootstrap5.css" rel="stylesheet" type="text/css">
@@ -63,7 +63,8 @@
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <a href="add-patient" class="btn btn-danger mb-2"><i class="mdi mdi-plus-circle me-2"></i> Add Patient</a>
+                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop0"><i class="mdi mdi-plus-circle me-2"></i> Add User</a>
+                                                <?php include('admin-add-patient.php')?>
                                             </div><!-- end col-->
                                         </div>
                 
@@ -77,11 +78,11 @@
                                                                 <label class="form-check-label" for="customCheck1">&nbsp;</label>
                                                             </div>
                                                         </th>
-                                                        <th>Patient Name</th>
-                                                        <th>Branch Name</th>
-                                                        <th>Dental Problem</th>
-                                                        <th>Wallet Balance</th>
-                                                        <th>Create Date</th>
+                                                        <th>Name</th>
+                                                        <th>Date of Birth</th>
+                                                        <th>Gender</th>
+                                                        <th>Phone</th>
+                                                        <th>Email</th>
                                                         <th>Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>
@@ -95,54 +96,20 @@
                                                             </div>
                                                         </td>
                                                         <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-4.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Paul J. Friend</a>
-                                                        </td>
-                                                        <td>
-                                                            Homovee
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">128</span>
-                                                        </td>
-                                                        <td>
-                                                            $128,250
-                                                        </td>
-                                                        <td>
-                                                            07/07/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck3">
-                                                                <label class="form-check-label" for="customCheck3">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
                                                             <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-3.jpg" alt="table-user" class="me-2 rounded-circle">
                                                             <a href="javascript:void(0);" class="text-body fw-semibold">Bryan J. Luellen</a>
                                                         </td>
                                                         <td>
-                                                            Execucy
+                                                            08/08/22
                                                         </td>
                                                         <td>
-                                                            <span class="fw-semibold">09</span>
+                                                            <span class="fw-semibold">Male</span>
                                                         </td>
                                                         <td>
-                                                            $78,410
+                                                            08/08/22
                                                         </td>
                                                         <td>
-                                                            09/12/2018
+                                                            Bryan@yahoo.com
                                                         </td>
                                                         <td>
                                                             <span class="badge badge-danger-lighten">Inactive</span>
@@ -150,43 +117,13 @@
                     
                                                         <td>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
+                                                            <?php include ('admin-view-user.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <?php include ('admin-modify-user.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
+                                                            <?php include ('admin-delete-user.php');?>
                                                         </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck4">
-                                                                <label class="form-check-label" for="customCheck4">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-3.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Kathryn S. Collier</a>
-                                                        </td>
-                                                        <td>
-                                                            Epiloo
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">78</span>
-                                                        </td>
-                                                        <td>
-                                                            $89,458
-                                                        </td>
-                                                        <td>
-                                                            06/30/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
+                                                    
                                                     <tr>
                                                         <td>
                                                             <div class="form-check">
@@ -199,115 +136,16 @@
                                                             <a href="javascript:void(0);" class="text-body fw-semibold">Timothy Kauper</a>
                                                         </td>
                                                         <td>
-                                                            Uberer
+                                                            08/20/01
                                                         </td>
                                                         <td>
-                                                            <span class="fw-semibold">847</span>
+                                                            <span class="fw-semibold">Male</span>
                                                         </td>
                                                         <td>
-                                                            $258,125
+                                                            012938431
                                                         </td>
                                                         <td>
-                                                            09/08/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck6">
-                                                                <label class="form-check-label" for="customCheck6">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-5.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Zara Raws</a>
-                                                        </td>
-                                                        <td>
-                                                            Symic
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">235</span>
-                                                        </td>
-                                                        <td>
-                                                            $56,210
-                                                        </td>
-                                                        <td>
-                                                            07/15/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-danger-lighten">Inactive</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck7">
-                                                                <label class="form-check-label" for="customCheck7">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-6.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Annette P. Kelsch</a>
-                                                        </td>
-                                                        <td>
-                                                            Insulore
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">485</span>
-                                                        </td>
-                                                        <td>
-                                                            $330,251
-                                                        </td>
-                                                        <td>
-                                                            09/05/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-danger-lighten">Inactive</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck8">
-                                                                <label class="form-check-label" for="customCheck8">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-7.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Jenny C. Gero</a>
-                                                        </td>
-                                                        <td>
-                                                            Susadmin
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">38</span>
-                                                        </td>
-                                                        <td>
-                                                            $12,000
-                                                        </td>
-                                                        <td>
-                                                            08/02/2018
+                                                            Timothy@yahoo.com
                                                         </td>
                                                         <td>
                                                             <span class="badge badge-success-lighten">Active</span>
@@ -315,173 +153,11 @@
                     
                                                         <td>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
+                                                            <?php include ('admin-view-user.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <?php include ('admin-modify-user.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck9">
-                                                                <label class="form-check-label" for="customCheck9">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-8.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Edward Roseby</a>
-                                                        </td>
-                                                        <td>
-                                                            Hyperill
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">77</span>
-                                                        </td>
-                                                        <td>
-                                                            $45,216
-                                                        </td>
-                                                        <td>
-                                                            08/23/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck10">
-                                                                <label class="form-check-label" for="customCheck10">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-9.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Anna Ciantar</a>
-                                                        </td>
-                                                        <td>
-                                                            Vicedel
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">347</span>
-                                                        </td>
-                                                        <td>
-                                                            $7,815
-                                                        </td>
-                                                        <td>
-                                                            05/06/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck11">
-                                                                <label class="form-check-label" for="customCheck11">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-10.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Dean Smithies</a>
-                                                        </td>
-                                                        <td>
-                                                            Circumous
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">506</span>
-                                                        </td>
-                                                        <td>
-                                                            $68,143
-                                                        </td>
-                                                        <td>
-                                                            04/09/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck12">
-                                                                <label class="form-check-label" for="customCheck12">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-1.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Labeeb Ghali</a>
-                                                        </td>
-                                                        <td>
-                                                            Laudent
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">121</span>
-                                                        </td>
-                                                        <td>
-                                                            $17,514
-                                                        </td>
-                                                        <td>
-                                                            06/19/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck13">
-                                                                <label class="form-check-label" for="customCheck13">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-2.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Rory Seekamp</a>
-                                                        </td>
-                                                        <td>
-                                                            Centinte
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">89</span>
-                                                        </td>
-                                                        <td>
-                                                            $14,384
-                                                        </td>
-                                                        <td>
-                                                            03/24/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
+                                                            <?php include ('admin-delete-user.php');?>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -514,7 +190,7 @@
 
         <!-- third party js -->
         <script src="<?php echo base_url('frontend/assets')?>/js/vendor/jquery.dataTables.min.js"></script>
-        <script src="<?php echo base_url('frontend/assets')?>/js/vendor/dataTables.bootstrap5.js"></script>
+        <script src="<?php echo base_url('frontend/assets')?>/js/vendor/dataTablesUsers.bootstrap5.js"></script>
         <script src="<?php echo base_url('frontend/assets')?>/js/vendor/dataTables.responsive.min.js"></script>
         <script src="<?php echo base_url('frontend/assets')?>/js/vendor/responsive.bootstrap5.min.js"></script>
         <script src="<?php echo base_url('frontend/assets')?>/js/vendor/dataTables.checkboxes.min.js"></script>

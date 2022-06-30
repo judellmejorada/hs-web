@@ -18,7 +18,14 @@ class Admin_SystemSetup extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function UI()
+
+	function __construct()
+	{
+		parent::__construct();
+		($this->session->userdata('TOKEN')) ? null : redirect('login');
+	}
+	
+	 public function UI()
 	{
 		
 		$this->load->view('users/admin/admin-dashboard');

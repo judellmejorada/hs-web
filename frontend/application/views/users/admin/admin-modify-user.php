@@ -114,18 +114,17 @@
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="invalidCheck" required="">
                                 <label class="form-check-label form-label" for="invalidCheck">I confirm that the details that I have 
-                                provided in this Personal Information are correct, and that I have not deliberately withheld any relevant information. </label>
+                                provided in this Personal Information are correct, <br> and that I have not deliberately withheld any relevant information. </label>
                                 <div class="invalid-feedback">
                                     You must agree before submitting.
                                 </div>
                             </div>
                         </div>
+                        <div class="modal-footer">
                     <button class="btn btn-primary" type="submit">Submit form</button>
                 </form>
+                        </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary" type="submit">Confirm</button>
             </div> <!-- end modal footer -->
         </div> <!-- end modal content-->
     </div> <!-- end modal dialog-->

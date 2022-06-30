@@ -28,38 +28,39 @@
                         <li class="side-nav-item">
                             <a href="<?php echo base_url('admin')?>" class="side-nav-link">
                                 <i class="uil-home-alt"></i>
-                                <span> Dashboards </span>
+                                <span> Dashboard </span>
                             </a>
                         </li>
 
-                        <li class="side-nav-title side-nav-item">Tables</li>
+                        <li class="side-nav-title side-nav-item">ADMIN</li>
 
 
                         <li class="side-nav-item">
-                            <a data-bs-toggle="collapse" href="#sidebarEcommerce" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">
-                                <i class="uil-store"></i>
-                                <span> Admin </span>
-                                <span class="menu-arrow"></span>
+                            <a data-bs-toggle="" href="<?php echo base_url('admin/users')?>" class="side-nav-link">
+                                <i class=" uil-user-circle"></i>
+                                <span> Users </span>
                             </a>
-                            <div class="collapse" id="sidebarEcommerce">
-                                <ul class="side-nav-second-level">
-                                    <li>
-                                        <a href="<?php echo base_url('admin/users')?>">Users</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo base_url('admin/services')?>">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo base_url('admin/calendar')?>">Calendar</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo base_url('admin/dentists')?>">Dentists</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo base_url('admin/branches')?>">Branches </a>
-                                    </li> 
-                                </ul>
-                            </div>
+
+                            <a data-bs-toggle="" href="<?php echo base_url('admin/services')?>" class="side-nav-link">
+                                <i class="uil-ambulance"></i>
+                                <span> Services </span>
+                            </a>
+
+                            <a data-bs-toggle="" href="<?php echo base_url('admin/calendar')?>"  class="side-nav-link">
+                                <i class=" uil-calendar-alt"></i>
+                                <span> Calendar </span>
+                            </a>
+
+                            <a data-bs-toggle="" href="<?php echo base_url('admin/dentists')?>" class="side-nav-link">
+                                <i class="uil-syringe"></i>
+                                <span> Dentists </span>
+                            </a>
+
+                            <a data-bs-toggle="" href="<?php echo base_url('admin/branches')?>" class="side-nav-link">
+                                <i class="uil-store"></i>
+                                <span> Branches </span>
+                            </a>
+                            
                         </li> 
 
                     <!-- End Sidebar -->

@@ -1,16 +1,20 @@
 ﻿<!DOCTYPE html>
 
     <html lang="en">
-        
-    <head>
 
+    <head>
         <meta charset="utf-8">
         <title>Dentists | HappySmile Dental Clinic</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Happy Smile" name="Author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
+
+        <!-- third party css -->
+        <link href="<?php echo base_url('frontend/assets')?>/css/vendor/dataTables.bootstrap5.css" rel="stylesheet" type="text/css">
+        <link href="<?php echo base_url('frontend/assets')?>/css/vendor/responsive.bootstrap5.css" rel="stylesheet" type="text/css">
+        <!-- third party css end -->
 
         <!-- App css -->
         <link href="<?php echo base_url('frontend/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +36,7 @@
             <div class="content-page">
                 <div class="content">
 
-                    
+
                     <!-- Start Content-->
                     <div class="container-fluid">
                         
@@ -47,7 +51,7 @@
                                             <li class="breadcrumb-item active">Dentists</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">DENTISTS</h4>
+                                    <h4 class="page-title">DENTIST</h4>
                                 </div>
                             </div>
                         </div>     
@@ -59,13 +63,14 @@
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <a href="add-dentist" class="btn btn-danger mb-2"><i class="mdi mdi-plus-circle me-2"></i> Add Dentist</a>
+                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop0"><i class="mdi mdi-plus-circle me-2"></i> Add Dentist</a>
+                                                <?php include('admin-add-dentist.php')?>
                                             </div><!-- end col-->
                                         </div>
                 
                                         <div class="table-responsive">
-                                            <table class="table table-centered table-striped dt-responsive nowrap w-100" id="products-datatable">
-                                                <thead>
+                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="products-datatable">
+                                                <thead class="table-light">
                                                     <tr>
                                                         <th style="width: 20px;">
                                                             <div class="form-check">
@@ -73,11 +78,11 @@
                                                                 <label class="form-check-label" for="customCheck1">&nbsp;</label>
                                                             </div>
                                                         </th>
-                                                        <th>Dentist</th>
-                                                        <th>Phone</th>
+                                                        <th>First Name</th>
+                                                        <th>Last Name</th>
+                                                        <th>Description</th>
+                                                        <th>Dentistry Specialization</th>
                                                         <th>Email</th>
-                                                        <th>Branch</th>
-                                                        <th>Appointment Date</th>
                                                         <th>Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>
@@ -91,87 +96,20 @@
                                                             </div>
                                                         </td>
                                                         <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-4.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Paul J. Friend</a>
-                                                        </td>
-                                                        <td>
-                                                            937-330-1634
-                                                        </td>
-                                                        <td>
-                                                            pauljfrnd@jourrapide.com
-                                                        </td>
-                                                        <td>
-                                                            New York
-                                                        </td>
-                                                        <td>
-                                                            07/07/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck3">
-                                                                <label class="form-check-label" for="customCheck3">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
                                                             <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-3.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Bryan J. Luellen</a>
+                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Bryan</a>
                                                         </td>
                                                         <td>
-                                                            215-302-3376
+                                                        Luellen
                                                         </td>
                                                         <td>
-                                                            bryuellen@dayrep.com
+                                                            <span class="fw-semibold"></span>
                                                         </td>
                                                         <td>
-                                                            New York
+                                                            08/08/22
                                                         </td>
                                                         <td>
-                                                            09/12/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck4">
-                                                                <label class="form-check-label" for="customCheck4">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-3.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Kathryn S. Collier</a>
-                                                        </td>
-                                                        <td>
-                                                            828-216-2190
-                                                        </td>
-                                                        <td>
-                                                            collier@jourrapide.com
-                                                        </td>
-                                                        <td>
-                                                            Canada
-                                                        </td>
-                                                        <td>
-                                                            06/30/2018
+                                                            Bryan@yahoo.com
                                                         </td>
                                                         <td>
                                                             <span class="badge badge-danger-lighten">Inactive</span>
@@ -179,10 +117,13 @@
                     
                                                         <td>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
+                                                            <?php include ('admin-view-user.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <?php include ('admin-modify-user.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
+                                                            <?php include ('admin-delete-user.php');?>
                                                         </td>
-                                                    </tr>
+                                                    
                                                     <tr>
                                                         <td>
                                                             <div class="form-check">
@@ -195,49 +136,16 @@
                                                             <a href="javascript:void(0);" class="text-body fw-semibold">Timothy Kauper</a>
                                                         </td>
                                                         <td>
-                                                            (216) 75 612 706
+                                                            08/20/01
                                                         </td>
                                                         <td>
-                                                            thykauper@rhyta.com
+                                                            <span class="fw-semibold">Male</span>
                                                         </td>
                                                         <td>
-                                                            Denmark
+                                                            012938431
                                                         </td>
                                                         <td>
-                                                            09/08/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-danger-lighten">Inactive</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck6">
-                                                                <label class="form-check-label" for="customCheck6">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-5.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Zara Raws</a>
-                                                        </td>
-                                                        <td>
-                                                            (02) 75 150 655
-                                                        </td>
-                                                        <td>
-                                                            austin@dayrep.com
-                                                        </td>
-                                                        <td>
-                                                            Germany
-                                                        </td>
-                                                        <td>
-                                                            07/15/2018
+                                                            Timothy@yahoo.com
                                                         </td>
                                                         <td>
                                                             <span class="badge badge-success-lighten">Active</span>
@@ -245,238 +153,11 @@
                     
                                                         <td>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
+                                                            <?php include ('admin-view-user.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <?php include ('admin-modify-user.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck7">
-                                                                <label class="form-check-label" for="customCheck7">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-6.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Annette P. Kelsch</a>
-                                                        </td>
-                                                        <td>
-                                                            (+15) 73 483 758
-                                                        </td>
-                                                        <td>
-                                                            annette@email.net
-                                                        </td>
-                                                        <td>
-                                                            India
-                                                        </td>
-                                                        <td>
-                                                            09/05/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck8">
-                                                                <label class="form-check-label" for="customCheck8">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-7.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Jenny C. Gero</a>
-                                                        </td>
-                                                        <td>
-                                                            078 7173 9261
-                                                        </td>
-                                                        <td>
-                                                            jennygero@teleworm.us
-                                                        </td>
-                                                        <td>
-                                                            Lesotho
-                                                        </td>
-                                                        <td>
-                                                            08/02/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-danger-lighten">Inactive</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck9">
-                                                                <label class="form-check-label" for="customCheck9">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-8.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Edward Roseby</a>
-                                                        </td>
-                                                        <td>
-                                                            078 6013 3854
-                                                        </td>
-                                                        <td>
-                                                            edwardR@armyspy.com
-                                                        </td>
-                                                        <td>
-                                                            Monaco
-                                                        </td>
-                                                        <td>
-                                                            08/23/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck10">
-                                                                <label class="form-check-label" for="customCheck10">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-9.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Anna Ciantar</a>
-                                                        </td>
-                                                        <td>
-                                                            (216) 76 298 896
-                                                        </td>
-                                                        <td>
-                                                            annac@hotmai.us
-                                                        </td>
-                                                        <td>
-                                                            Philippines
-                                                        </td>
-                                                        <td>
-                                                            05/06/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck11">
-                                                                <label class="form-check-label" for="customCheck11">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-10.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Dean Smithies</a>
-                                                        </td>
-                                                        <td>
-                                                            077 6157 4248
-                                                        </td>
-                                                        <td>
-                                                            deanes@dayrep.com
-                                                        </td>
-                                                        <td>
-                                                            Singapore
-                                                        </td>
-                                                        <td>
-                                                            04/09/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck12">
-                                                                <label class="form-check-label" for="customCheck12">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-1.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Labeeb Ghali</a>
-                                                        </td>
-                                                        <td>
-                                                            050 414 8778
-                                                        </td>
-                                                        <td>
-                                                            labebswad@teleworm.us
-                                                        </td>
-                                                        <td>
-                                                            United Kingdom
-                                                        </td>
-                                                        <td>
-                                                            06/19/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck13">
-                                                                <label class="form-check-label" for="customCheck13">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-2.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Rory Seekamp</a>
-                                                        </td>
-                                                        <td>
-                                                            078 5054 8877
-                                                        </td>
-                                                        <td>
-                                                            roryamp@dayrep.com
-                                                        </td>
-                                                        <td>
-                                                            United States
-                                                        </td>
-                                                        <td>
-                                                            03/24/2018
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-danger-lighten">Inactive</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
+                                                            <?php include ('admin-delete-user.php');?>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -492,6 +173,9 @@
 
                 </div> <!-- content -->
 
+                
+
+            </div>
             <!-- ============================================================== -->
             <!-- End Page content -->
             <!-- ============================================================== -->
@@ -503,6 +187,18 @@
         <!-- bundle -->
         <script src="<?php echo base_url('frontend/assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('frontend/assets')?>/js/app.min.js"></script>
-        
+
+        <!-- third party js -->
+        <script src="<?php echo base_url('frontend/assets')?>/js/vendor/jquery.dataTables.min.js"></script>
+        <script src="<?php echo base_url('frontend/assets')?>/js/vendor/dataTablesDentists.bootstrap5.js"></script>
+        <script src="<?php echo base_url('frontend/assets')?>/js/vendor/dataTables.responsive.min.js"></script>
+        <script src="<?php echo base_url('frontend/assets')?>/js/vendor/responsive.bootstrap5.min.js"></script>
+        <script src="<?php echo base_url('frontend/assets')?>/js/vendor/dataTables.checkboxes.min.js"></script>
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="<?php echo base_url('frontend/assets')?>/js/pages/demo.dentists.js"></script>
+        <!-- end demo js-->
+
     </body>
 </html>

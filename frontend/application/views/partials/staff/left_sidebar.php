@@ -28,33 +28,28 @@
                         <li class="side-nav-item">
                             <a href="<?php echo base_url('staff')?>" class="side-nav-link">
                                 <i class="uil-home-alt"></i>
-                                <span> Dashboards </span>
+                                <span> Dashboard </span>
                             </a>
                         </li>
 
-                        <li class="side-nav-title side-nav-item">Tables</li>
+                        <li class="side-nav-title side-nav-item">STAFF</li>
 
 
                         <li class="side-nav-item">
-                            <a data-bs-toggle="collapse" href="#sidebarEcommerce" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">
-                                <i class="uil-store"></i>
-                                <span> Staff </span>
-                                <span class="menu-arrow"></span>
+                            <a data-bs-toggle="" href="<?php echo base_url('staff/appointment')?>" class="side-nav-link">
+                                <i class="uil-briefcase-alt"></i>
+                                <span> Appointments </span>
                             </a>
-                            <div class="collapse" id="sidebarEcommerce">
-                                <ul class="side-nav-second-level">
-                                    <li>
-                                        <a href="<?php echo base_url('staff/appointment')?>">Appointments</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo base_url('staff/calendar')?>">Calendar</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo base_url('staff/invoices')?>">Invoices</a>
-                                    </li> 
-                                </ul>
-                            </div>
-                        </li> 
+
+                            <a data-bs-toggle="" href="<?php echo base_url('staff/calendar')?>" class="side-nav-link">
+                                <i class="uil-calendar-alt"></i>
+                                <span> Calendar </span>
+                            </a>
+
+                            <a data-bs-toggle="" href="<?php echo base_url('staff/invoices')?>"  class="side-nav-link">
+                                <i class="uil-bill"></i>
+                                <span> Invoices </span>
+                            </a>
 
                     <!-- End Sidebar -->
 
