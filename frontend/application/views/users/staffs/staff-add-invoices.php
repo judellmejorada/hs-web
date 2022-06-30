@@ -74,7 +74,7 @@
                                         <th width="15%">Total</th>
                                         </tr>
                                        
-                                        <tbody id=table_see>
+                                        <tbody id=table_body>
                                         <tr>
                                         <td><input class="itemRow" type="checkbox"></td>
                                         <td><input type="text" name="productName[]" id="productName_1" class="form-control" autocomplete="off"></td>
@@ -89,7 +89,7 @@
                                         <div class="row">
                                         <div class="col-sm-6 offset-sm-1">
                                         <button class="btn btn-danger delete" id="removeRows" type="button">- Delete</button>
-                                        <button class="btn btn-success" id="addRows" type="button" onclick="create_tr(table_see)">+ Add More</button>
+                                        <button class="btn btn-success" onclick="create_tr(table_body)" id="addRows" type="button" >+ Add More</button>
                                         </div>
                                         </div>
                                         
