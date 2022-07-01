@@ -96,27 +96,27 @@
                                                             </div>
                                                         </td>
                                                         <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-3.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Bryan J. Luellen</a>
+                                                            
+                                                            <a href="javascript:void(0);" class="text-body fw-semibold">#123456</a>
                                                         </td>
                                                         <td>
-                                                            08/08/22
+                                                        Bryan J. Luellen
                                                         </td>
                                                         <td>
-                                                            <span class="fw-semibold">Male</span>
+                                                            <span class="fw-semibold">Orthopedic</span>
                                                         </td>
                                                         <td>
-                                                            08/08/22
+                                                            1,500
                                                         </td>
                                                         <td>
-                                                            Bryan@yahoo.com
+                                                            3,000
                                                         </td>
                                                         <td>
-                                                            <span class="badge badge-danger-lighten">Inactive</span>
+                                                            <span class="badge badge-danger-lighten">Unpaid</span>
                                                         </td>
                     
                                                         <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-eye" ></i></a>
                                                             <?php include ('staff-view-user.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
                                                             <?php include ('staff-modify-user.php');?>
@@ -132,27 +132,27 @@
                                                             </div>
                                                         </td>
                                                         <td class="table-user">
-                                                            <img src="<?php echo base_url('frontend/assets')?>/images/users/avatar-1.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Timothy Kauper</a>
+                                                          
+                                                            <a href="javascript:void(0);" class="text-body fw-semibold">#234567</a>
                                                         </td>
                                                         <td>
-                                                            08/20/01
+                                                            Timothy Kupper
                                                         </td>
                                                         <td>
-                                                            <span class="fw-semibold">Male</span>
+                                                            <span class="fw-semibold">Cosmetic Dentistry</span>
                                                         </td>
                                                         <td>
-                                                            012938431
+                                                            1,000
                                                         </td>
                                                         <td>
-                                                            Timothy@yahoo.com
+                                                            4,000
                                                         </td>
                                                         <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
+                                                            <span class="badge badge-danger-lighten">Unpaid</span>
                                                         </td>
                     
                                                         <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-eye" ></i></a>
                                                             <?php include ('staff-view-user.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
                                                             <?php include ('staff-modify-user.php');?>

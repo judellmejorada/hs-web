@@ -29,12 +29,21 @@
             
                                             </div><!-- end col -->
                                             <div class="col-sm-4 offset-sm-2">
-                                            <h4>To,</h4>
+                                            <h4>
+
+                                            
+                                            </h4>
                                                 <div class="form-group">
-                                                <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Company Name" autocomplete="off">
+                                                <label for="Branch" class="form-label">Clinic Branch</label>
+                                                                <select class="form-select" id="Branch">
+                                                                    <option>Select Branch</option>
+                                                                    <option>Fairview Branch</option>
+                                                                    <option>SM North Branch</option>
+                                                                    <option>Makati Branch</option>
+                                                                </select>
                                                 </div>
                                                 <div class="form-group">
-                                                <textarea class="form-control" rows="3" name="address" id="address" placeholder="Your Address"></textarea>
+                                                <textarea class="form-control" readonly="" rows="2" name="address" id="address" placeholder="Branch Address"></textarea>
                                                 </div>
                                                 </div>
                                             </div><!-- end col -->
@@ -48,7 +57,7 @@
                                                 <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Name" autocomplete="off">
                                                 </div>
                                                 <div class="form-group ">
-                                                <textarea class="form-control" rows="3" name="address" id="address" placeholder="Address"></textarea>
+                                                <textarea class="form-control" rows="2" name="address" id="address" placeholder="Address"></textarea>
                                                 </div>                
                                             </div> <!-- end col-->
             
@@ -69,27 +78,22 @@
                                         <tr>
                                         <th width="2%"><input id="checkAll" class="formcontrol" type="checkbox"></th>`
                                         <th width="38%">Service</th>
-                                        <th width="15%">Quantity</th>
                                         <th width="15%">Price</th>
                                         <th width="15%">Total</th>
                                         </tr>
-                                       
-                                        <tbody id=table_body>
                                         <tr>
                                         <td><input class="itemRow" type="checkbox"></td>
                                         <td><input type="text" name="productName[]" id="productName_1" class="form-control" autocomplete="off"></td>
-                                        <td><input type="number" name="quantity[]" id="quantity_1" class="form-control quantity" autocomplete="off"></td>
                                         <td><input type="number" name="price[]" id="price_1" class="form-control price" autocomplete="off"></td>
                                         <td><input type="number" name="total[]" id="total_1" class="form-control total" autocomplete="off"></td>
                                         </tr>
-                                        </tbody>
                                         </table>
                                         </div>
                                         </div>
                                         <div class="row">
                                         <div class="col-sm-6 offset-sm-1">
                                         <button class="btn btn-danger delete" id="removeRows" type="button">- Delete</button>
-                                        <button class="btn btn-success" onclick="create_tr(table_body)" id="addRows" type="button" >+ Add More</button>
+                                        <button class="btn btn-success"  id="addRows" type="button" >+ Add More</button>
                                         </div>
                                         </div>
                                         
@@ -109,10 +113,35 @@
                                             </div> <!-- end col -->
                                             <div class="col-sm-4">
                                                 <div class="float-end mt-3 mt-sm-0">
-                                                    <p></p>
-                                                    <p><b>Sub-total:</b> <span class="float-end">$4120.00</span></p>
-                                                    <p><b>VAT (12.5):</b> <span class="float-end">$515.00</span></p>
-                                                    <h3>$4635.00 USD</h3>
+                                               
+                                                        <span class="form-inline">
+                                                        <div class="form-group">
+                                                        <label for="Subtotal" class="form-label">Subtotal:  </label>
+                                                        <div class="input-group">
+                                                        <input type="number" readonly="" class="form-control" id="Subtotal" value="">
+                                                    
+                                                        </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        <label>Tax Rate:  </label>
+                                                        <div class="input-group">
+                                                        <input type="number" readonly="" class="form-control" id="Taxrate" value="12%">
+                                                        
+                                                        </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        <label>Discount:  </label>
+                                                        <div class="input-group">
+                                                        <input value="" type="number" class="form-control" name="discount" id="discount" placeholder="Discount">
+                                                        </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        <label>Total:  </label>
+                                                        <div class="input-group">
+                                                        <input type="number" readonly="" class="form-control" id="GrandTotal" value="">
+
+                                                        </div>
+                                                        </div>
                                                 </div>
                                                 <div class="clearfix"></div>
                                             </div> <!-- end col -->
