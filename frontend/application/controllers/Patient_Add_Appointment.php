@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Staff_Add_Appointment extends CI_Controller {
+class Patient_Add_Appointment extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,7 +18,7 @@ class Staff_Add_Appointment extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function AddAppointment()
+	public function AddUserAppointment()
 	{
 		$this->load->view('users/patients/patient-add-appointment');
 	}

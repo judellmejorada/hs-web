@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Staff_Calendar extends CI_Controller {
+class Patient_Calendar extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
