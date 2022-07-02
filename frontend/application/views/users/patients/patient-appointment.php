@@ -117,7 +117,7 @@
                     
                                                         <td>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <?php include ('patient-view-user.php');?>
+                                                            <?php include ('patient-view-appointment.php');?>
                                                             
                                                         </td>
                                                     
@@ -150,7 +150,7 @@
                     
                                                         <td>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <?php include ('patient-view-user.php');?>
+                                                            <?php include ('patient-view-appointment.php');?>
                                                             
                                                         </td>
                                                     </tr>
