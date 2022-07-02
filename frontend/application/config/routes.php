@@ -79,10 +79,10 @@ $route['staff/invoices'] = 'Staff_Invoices/InvoicePage';
 
 //Patient Files
 $route['patient'] = 'Patient_SystemSetup/UI';
-$route['patient/appointment'] = 'Patient_Appointment/AppointmentPage';
+$route['patient/appointment'] = 'Patient_Appointment/AppointmentUserpage';
 $route['patient/add-appointment'] = 'Patient_Add_Appointment/AddAppointment';
-$route['patient/calendar'] = 'Patient_Calendar/CalendarPage';
-$route['patient/invoices'] = 'Patient_Invoices/InvoicePage';
+$route['patient/calendar'] = 'Patient_Calendar/PatientCalendarPage';
+$route['patient/invoices'] = 'Patient_Invoices/PatientInvoicePage';
 
 
 //Reserved Routes

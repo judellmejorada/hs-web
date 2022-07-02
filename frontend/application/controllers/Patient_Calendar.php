@@ -18,7 +18,7 @@ class Staff_Calendar extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function CalendarPage()
+	public function PatientCalendarPage()
 	{
 		$this->load->view('users/patients/patient-calendar');
 		$this->load->view('partials/patient/top_bar');

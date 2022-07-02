@@ -18,7 +18,7 @@ class Staff_Appointment extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function AppointmentPage()
+	public function AppointmentUserpage()
 	{
 		
 		$this->load->view('users/patients/patient-appointment');
