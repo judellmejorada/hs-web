@@ -77,7 +77,7 @@ $route['staff/add-appointment'] = 'Staff_Add_Appointment/AddAppointment';
 $route['staff/calendar'] = 'Staff_Calendar/CalendarPage';
 $route['staff/invoices'] = 'Staff_Invoices/InvoicePage';
 
-//Staff Files
+//Patient Files
 $route['patient'] = 'Patient_SystemSetup/UI';
 $route['patient/appointment'] = 'Patient_Appointment/AppointmentPage';
 $route['patient/add-appointment'] = 'Patient_Add_Appointment/AddAppointment';
