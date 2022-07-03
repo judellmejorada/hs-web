@@ -77,6 +77,14 @@ $route['staff/add-appointment'] = 'Staff_Add_Appointment/AddAppointment';
 $route['staff/calendar'] = 'Staff_Calendar/CalendarPage';
 $route['staff/invoices'] = 'Staff_Invoices/InvoicePage';
 
+//Patient Files
+$route['patient'] = 'Patient_SystemSetup/UI';
+$route['patient/appointment'] = 'Patient_Appointment/AppointmentUserpage';
+$route['patient/add-appointment'] = 'Patient_Add_Appointment/AddUserAppointment';
+$route['patient/calendar'] = 'Patient_Calendar/PatientCalendarPage';
+$route['patient/invoices'] = 'Patient_Invoices/PatientInvoicePage';
+
+
 //Reserved Routes
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
