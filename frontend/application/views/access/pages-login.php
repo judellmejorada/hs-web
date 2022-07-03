@@ -17,6 +17,8 @@
         <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
         <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
+
+
     </head>
 
     <body class="loading authentication-bg" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -39,7 +41,7 @@
                                     <h4 class="text-dark-50 text-center pb-0 fw-bold">Sign In</h4>
                                 </div>
 
-                                <form action="#" class="needs-validation" id="form_id" novalidate="">
+                                <form action="#" class="needs-validation" id="form_id">
 
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
@@ -71,27 +73,27 @@
                                         </div>
                                     </div>
                                      <!-- social-->
-                            <div class="text-center mt-4">
-                                <p class="text-muted font-16">Sign in with</p>
-                                <ul class="social-list list-inline mt-3">
-                                    <li class="list-inline-item">
-                                        <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-facebook"></i></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a href="javascript: void(0);" class="social-list-item border-secondary text-secondary"><i class="mdi mdi-github"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                                    <div class="mb-3 mb-0 text-center">
-                                        <button class="btn btn-primary" type="submit" id="submit" name="submit"> Log In </button>
+                                    <div class="text-center mt-4">
+                                        <p class="text-muted font-16">Sign in with</p>
+                                        <ul class="social-list list-inline mt-3">
+                                            <li class="list-inline-item">
+                                                <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-facebook"></i></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="javascript: void(0);" class="social-list-item border-secondary text-secondary"><i class="mdi mdi-github"></i></a>
+                                            </li>
+                                        </ul>
                                     </div>
+
+                                            <div class="mb-3 mb-0 text-center">
+                                                <button class="btn btn-primary" type="submit" id="submit" name="submit"> Log In </button>
+                                            </div>
 
                                 </form>
                             </div> <!-- end card-body -->
@@ -125,11 +127,13 @@
         <script src="<?php echo base_url('frontend/assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('frontend/assets')?>/js/app.min.js"></script>
 
+         <!-- custom login.js -->
+         <script src="<?php echo base_url('frontend/assets')?>/js/access/login.js"></script>
+
         <!-- custom common.js -->
         <script src="<?php echo base_url('frontend/assets')?>/js/access/common.js"></script>
 
-        <!-- custom login.js -->
-        <script src="<?php echo base_url('frontend/assets')?>/js/access/login.js"></script>
+       
         
     </body>
 </html>

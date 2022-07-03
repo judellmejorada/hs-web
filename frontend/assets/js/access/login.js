@@ -7,11 +7,11 @@ $(function () {
    // $("input[name=email]").val(); // access value using name
 
    $("#form_id").on ("submit", function (e) {
-    //alert ("form is submitted");    
+    //alert ("form is submitted");  
 
         e.preventDefault(); // prevent page refresh
 
-        if ($("#form_id").needs-validation().validate()) {
+        if ($("#form_id")) {
         //no validation error
         $.ajax({
             url : baseURL + "login",
