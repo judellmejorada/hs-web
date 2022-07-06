@@ -71,7 +71,8 @@
 
                                         <div>
                                         </div>    
-                                        <!-- end row -->        
+                                        <!-- end row -->    
+                                         <form action="#">   
                                         <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <table class="table table-bordered table-hover" style="margin-left:1rem"id="invoiceItem">
@@ -146,6 +147,7 @@
                                                 <div class="clearfix"></div>
                                             </div> <!-- end col -->
                                         </div>
+                                        </form>
                                         <!-- end row-->
     
                                         <div class="d-print-none mt-4">
