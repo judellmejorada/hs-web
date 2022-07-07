@@ -1,4 +1,3 @@
-.DS_Store
 user_guide
 
 frontend/application/cache/*
@@ -9,7 +8,6 @@ frontend/application/logs/*
 
 !application/*/.htaccess
 
-composer.lock
 
 frontend/user_guide_src/build/*
 frontend/user_guide_src/cilexer/build/*
