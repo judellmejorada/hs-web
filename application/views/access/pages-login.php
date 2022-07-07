@@ -8,9 +8,9 @@
         <title>Log In | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
-        <meta content="Coderthemes" name="author" />
+        <meta content="Coderthemes" name="author"/>
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
         
         <!-- App css -->
         <link href="<?php echo base_url('frontend/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -41,7 +41,11 @@
                                     <h4 class="text-dark-50 text-center pb-0 fw-bold">Sign In</h4>
                                 </div>
 
+<<<<<<< HEAD
+                                <form action="#" class="needs-validation" id="form_id" name="form_id" method="POST" novalidate="">
+=======
                                 <form action="#" class="needs-validation" id="form_id">
+>>>>>>> 2dd4596c5ef0f8687af6360012e98e2ffa8a1edf
 
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
@@ -132,6 +136,7 @@
 
         <!-- custom common.js -->
         <script src="<?php echo base_url('frontend/assets')?>/js/access/common.js"></script>
+        
 
        
         
