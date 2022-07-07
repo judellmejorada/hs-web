@@ -1,0 +1,26 @@
+{
+  "name": "happysmile-web",
+  "version": "1.0.0",
+  "description": "project for adet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eurus-eastwind/hs-web.git"
+  },
+  "keywords": [
+    "adet",
+    "dcms"
+  ],
+  "author": "Group 4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eurus-eastwind/hs-web/issues"
+  },
+  "homepage": "https://github.com/eurus-eastwind/hs-web#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
