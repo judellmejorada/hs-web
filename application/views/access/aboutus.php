@@ -12,9 +12,9 @@
         <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
 
         <!-- App css -->
-        <link href="<?php echo base_url('frontend/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
-        <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
-        <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">        
+        <link href="<?php echo base_url('/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="<?php echo base_url('/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="<?php echo base_url('/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">        
 
     </head>
 
@@ -26,7 +26,7 @@
 
                 <!-- logo -->
                 <a href="index.html" class="navbar-brand me-lg-5">
-                    <img src="<?php echo base_url('frontend/assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
+                    <img src="<?php echo base_url('/assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,7 +108,7 @@
                 </div>
                 <div class="row mt-2 py-5 align-items-center">
                     <div class="col-lg-5">
-                        <img src="<?php echo base_url('frontend/assets')?>/images/hs12.png" class="img-fluid" alt="">
+                        <img src="<?php echo base_url('/assets')?>/images/hs12.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 offset-lg-1">
                         <h1 class="fw-normal">Our Mission</h1>
@@ -142,7 +142,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                             <div class="avatar-xxl m-auto">
-                             <img src="<?php echo base_url('frontend/assets')?>/images/users/judell.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
+                             <img src="<?php echo base_url('/assets')?>/images/users/judell.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
 
                             </div>
                             <h3 class="mt-3">Judell Mejorada</h3>
@@ -153,7 +153,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                         <div class="avatar-xxl m-auto">
-                             <img src="<?php echo base_url('frontend/assets')?>/images/users/Steph.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
+                             <img src="<?php echo base_url('/assets')?>/images/users/Steph.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
                             </div>
                             <h3 class="mt-3">Stephanie Mirabete</h3>
                             <p class="text-muted mt-2 mb-0">Back-end Developer</p>
@@ -163,7 +163,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                         <div class="avatar-xxl m-auto">
-                             <img src="<?php echo base_url('frontend/assets')?>/images/users/Jm.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
+                             <img src="<?php echo base_url('/assets')?>/images/users/Jm.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
                             </div>
                             <h3 class="mt-3">Jhay Mark Pineda</h3>
                             <p class="text-muted mt-2 mb-0">Back-end Developer</p>
@@ -175,7 +175,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                         <div class="avatar-xxl m-auto">
-                             <img src="<?php echo base_url('frontend/assets')?>/images/users/jarret.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
+                             <img src="<?php echo base_url('/assets')?>/images/users/jarret.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
                             </div>
                             <h3 class="mt-3">Jarret Dela Cruz</h3>
                             <p class="text-muted mt-2 mb-0">Front-end Developer</p>
@@ -185,7 +185,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                         <div class="avatar-xxl m-auto">
-                             <img src="<?php echo base_url('frontend/assets')?>/images/users/Irish.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
+                             <img src="<?php echo base_url('/assets')?>/images/users/Irish.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
                             </div>
                             <h3 class="mt-3">Irish Muyrong</h3>
                             <p class="text-muted mt-2 mb-0">Front-end Developer</p>
@@ -195,7 +195,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                         <div class="avatar-xxl m-auto">
-                             <img src="<?php echo base_url('frontend/assets')?>/images/users/LC.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
+                             <img src="<?php echo base_url('/assets')?>/images/users/LC.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
                             </div>
                             <h3 class="mt-3">Elsie Jaradal</h3>
                             <p class="text-muted mt-2 mb-0">Front-end Developer</p>
@@ -293,7 +293,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                    <img src="<?php echo base_url('frontend/assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
+                    <img src="<?php echo base_url('/assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
                         <p class="text-muted mt-4">HappySmile brings you the best service and will give you satisfactory for your teeth.<br> Because your Smile is our Passion</p>
 
                         <ul class="social-list list-inline mt-3">
@@ -346,8 +346,8 @@
         <!-- END FOOTER -->
 
         <!-- bundle -->
-        <script src="<?php echo base_url('frontend/assets')?>/js/vendor.min.js"></script>
-        <script src="<?php echo base_url('frontend/assets')?>/js/app.min.js"></script>
+        <script src="<?php echo base_url('/assets')?>/js/vendor.min.js"></script>
+        <script src="<?php echo base_url('/assets')?>/js/app.min.js"></script>
 
     </body>
 
