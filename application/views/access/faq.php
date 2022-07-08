@@ -9,12 +9,12 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Coderthemes" name="author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/HappySmile.ico">
 
         <!-- App css -->
-        <link href="<?php echo base_url('frontend/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
-        <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
-        <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">        
+        <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">        
 
     </head>
 
@@ -26,7 +26,7 @@
 
                 <!-- logo -->
                 <a href="index.html" class="navbar-brand me-lg-5">
-                    <img src="../assets/images/logo-dark.png" alt="" class="logo-dark" height="50">
+                    <img src="..assets/images/logo-dark.png" alt="" class="logo-dark" height="50">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,7 +85,7 @@
                     </div>
                     <div class="col-md-5 offset-md-2">
                         <div class="text-md-end mt-3 mt-md-0">
-                            <img src="../assets/images/tooth.png" alt="" class="img-fluid w-100">
+                            <img src="..assets/images/tooth.png" alt="" class="img-fluid w-100">
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                    <img src="<?php echo base_url('frontend/assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
+                    <img src="<?php echo base_url('assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
                         <p class="text-muted mt-4">HappySmile brings you the best service and will give you satisfactory for your teeth.<br> Because your Smile is our Passion</p>
 
                         <ul class="social-list list-inline mt-3">
@@ -209,8 +209,8 @@
         <!-- END FOOTER -->
 
         <!-- bundle -->
-        <script src="<?php echo base_url('frontend/assets')?>/js/vendor.min.js"></script>
-        <script src="<?php echo base_url('frontend/assets')?>/js/app.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
 
     </body>
 

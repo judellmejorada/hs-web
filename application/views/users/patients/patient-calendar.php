@@ -9,16 +9,16 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Happy Smile" name="Author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/HappySmile.ico">
 
         <!-- third party css -->
-        <link href="<?php echo base_url('frontend/assets')?>/css/vendor/fullcalendar.min.css" rel="stylesheet" type="text/css">
+        <link href="<?php echo base_url('assets')?>/css/vendor/fullcalendar.min.css" rel="stylesheet" type="text/css">
         <!-- third party css end -->
 
         <!-- App css -->
-        <link href="<?php echo base_url('frontend/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
-        <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
-        <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
+        <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
 
     </head>
 
@@ -188,15 +188,15 @@
         <!-- END wrapper -->
 
         <!-- bundle -->
-        <script src="<?php echo base_url('frontend/assets')?>/js/vendor.min.js"></script>
-        <script src="<?php echo base_url('frontend/assets')?>/js/app.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
 
         <!-- third party js -->
-        <script src="<?php echo base_url('frontend/assets')?>/js/vendor/fullcalendar.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/vendor/fullcalendar.min.js"></script>
         <!-- third party js ends -->
 
         <!-- demo app -->
-        <script src="<?php echo base_url('frontend/assets')?>/js/pages/demo.calendar.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.calendar.js"></script>
         <!-- end demo js-->
 
     </body>

@@ -10,12 +10,12 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/HappySmile.ico">
 
         <!-- App css -->
-        <link href="<?php echo base_url('frontend/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
-        <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
     </head>
 
@@ -29,7 +29,7 @@
                             <!-- Logo-->
                             <div class="card-header pt-4 pb-4 text-center bg-primary">
                                 <a href="index.php">
-                                    <span><img src="<?php echo base_url('frontend/assets')?>/images/logo.png" alt="" height="60"></span>
+                                    <span><img src="<?php echo base_url('assets')?>/images/logo.png" alt="" height="60"></span>
                                 </a>
                             </div>
 
@@ -172,8 +172,8 @@
         </footer>
 
         <!-- bundle -->
-        <script src="<?php echo base_url('frontend/assets')?>/js/vendor.min.js"></script>
-        <script src="<?php echo base_url('frontend/assets')?>/js/app.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
         
     </body>
 </html>

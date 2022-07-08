@@ -10,12 +10,12 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author"/>
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/HappySmile.ico">
         
         <!-- App css -->
-        <link href="<?php echo base_url('frontend/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
-        <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
 
 
@@ -31,7 +31,7 @@
                             <!-- Logo -->
                             <div class="card-header pt-4 pb-4 text-center bg-primary">
                                 <a href="index.php">
-                                    <span><img src="<?php echo base_url('frontend/assets')?>/images/logo.png" alt="" height="60"></span>
+                                    <span><img src="<?php echo base_url('assets')?>/images/logo.png" alt="" height="60"></span>
                                 </a>
                             </div>
 
@@ -41,11 +41,7 @@
                                     <h4 class="text-dark-50 text-center pb-0 fw-bold">Sign In</h4>
                                 </div>
 
-<<<<<<< HEAD
-                                <form action="#" class="needs-validation" id="form_id" name="form_id" method="POST" novalidate="">
-=======
-                                <form action="#" class="needs-validation" id="form_id">
->>>>>>> 2dd4596c5ef0f8687af6360012e98e2ffa8a1edf
+                                <form action="#" class="needs-validation" id="form_id" novalidate="">
 
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
@@ -128,14 +124,14 @@
         </footer>
 
         <!-- bundle -->
-        <script src="<?php echo base_url('frontend/assets')?>/js/vendor.min.js"></script>
-        <script src="<?php echo base_url('frontend/assets')?>/js/app.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
 
          <!-- custom login.js -->
-         <script src="<?php echo base_url('frontend/assets')?>/js/access/login.js"></script>
+         <script src="<?php echo base_url('assets')?>/js/access/login.js"></script>
 
         <!-- custom common.js -->
-        <script src="<?php echo base_url('frontend/assets')?>/js/access/common.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         
 
        

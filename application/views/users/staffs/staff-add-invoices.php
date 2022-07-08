@@ -11,7 +11,7 @@
             <form class="needs-validation" novalidate="">
             <div class="clearfix">
                                             <div class="float-start mb-3">
-                                                <img src="<?php echo base_url('frontend/assets')?>/images/HSBW.png" alt="" height="100">
+                                                <img src="<?php echo base_url('assets')?>/images/HSBW.png" alt="" height="100">
                                             </div>
                                             <div class="float-end">
                                                 <h4 class="m-0 d-print-none">Invoices</h4>
@@ -63,7 +63,7 @@
             
                                             <div class="col-sm-5">
                                                 <div class="col-sm-13">
-                                                    <img src="<?php echo base_url('frontend/assets')?>/images/barcode.png" style="float:right" alt="barcode-image"  class="img-fluid me-2 ">
+                                                    <img src="<?php echo base_url('assets')?>/images/barcode.png" style="float:right" alt="barcode-image"  class="img-fluid me-2 ">
                                                 </div>
                                             </div> <!-- end col-->
                                                          

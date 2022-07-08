@@ -13,9 +13,9 @@
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
         <!-- App css -->
-        <link href="<?php echo base_url('frontend/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
-        <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
     </head>
 
@@ -111,8 +111,8 @@
         <!-- end auth-fluid-->
 
         <!-- bundle -->
-        <script src="<?php echo base_url('frontend/assets')?>assets/js/vendor.min.js"></script>
-        <script src="<?php echo base_url('frontend/assets')?>assets/js/app.min.js"></script>
+        <script src="<?php echo base_url('assets')?>assets/js/vendor.min.js"></script>
+        <script src="<?php echo base_url('assets')?>assets/js/app.min.js"></script>
 
     </body>
 

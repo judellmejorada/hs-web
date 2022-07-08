@@ -10,12 +10,12 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Coderthemes" name="author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('frontend/assets')?>/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/HappySmile.ico">
 
         <!-- App css -->
-        <link href="<?php echo base_url('frontend/assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
-        <link href="<?php echo base_url('frontend/assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
-        <link href="<?php echo base_url('frontend/assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">        
+        <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">        
 
     </head>
 
@@ -28,7 +28,7 @@
 
                 <!-- logo -->
                 <a href="landing" class="navbar-brand me-lg-5">
-                    <img src="<?php echo base_url('frontend/assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
+                    <img src="<?php echo base_url('assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,7 +101,7 @@
                     </div>
                     <div class="col-md-5 offset-md-2">
                         <div class="text-md-end mt-3 mt-md-0">
-                            <img src="<?php echo base_url('frontend/assets')?>/images/teeth1.png" alt="" class="img-fluid w-100">
+                            <img src="<?php echo base_url('assets')?>/images/teeth1.png" alt="" class="img-fluid w-100">
                         </div>
                     </div>
                 </div>
@@ -234,7 +234,7 @@
                                             </ol>
                                             <div class="carousel-inner" role="listbox">
                                                 <div class="carousel-item active">
-                                                    <img class="rounded mx-auto d-block img-fluid" src="<?php echo base_url('frontend/assets')?>/images/small/dentist3.jpg"  alt="First slide">
+                                                    <img class="rounded mx-auto d-block img-fluid" src="<?php echo base_url('assets')?>/images/small/dentist3.jpg"  alt="First slide">
                                                     <div class="carousel-caption d-none d-md-block">
                                                     <a href="#primary-header-modal"  data-bs-toggle="modal" data-bs-target="#primary-header-modal"><h2 class="text-white" >Jurgen Spangl</h2></a>
                                                     <div id="primary-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="primary-header-modalLabel" aria-hidden="true">
@@ -281,7 +281,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img class="rounded mx-auto d-block img-fluid" src="<?php echo base_url('frontend/assets')?>/images/small/dentist2.jpg" alt="Second slide">
+                                                    <img class="rounded mx-auto d-block img-fluid" src="<?php echo base_url('assets')?>/images/small/dentist2.jpg" alt="Second slide">
                                                     <div class="carousel-caption d-none d-md-block">
                                                     <a href="#success-header-modal"  data-bs-toggle="modal" data-bs-target="#success-header-modal"><h2 class="text-white" >James Beer</h2></a>
                                                     <div id="success-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-header-modalLabel" aria-hidden="true">
@@ -327,7 +327,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img class="rounded mx-auto d-block img-fluid" src="<?php echo base_url('frontend/assets')?>/images/small/dentist1.jpg" alt="Third slide">
+                                                    <img class="rounded mx-auto d-block img-fluid" src="<?php echo base_url('assets')?>/images/small/dentist1.jpg" alt="Third slide">
                                                     <div class="carousel-caption d-none d-md-block">
                                                     <a href="#info-header-modal"  data-bs-toggle="modal" data-bs-target="#info-header-modal"><h2 class="text-white" >Erika Fisher</h2></a>
                                                     <div id="info-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="info-header-modalLabel" aria-hidden="true">
@@ -395,13 +395,13 @@
                                                     &lt;/ol&gt;
                                                     &lt;div class=&quot;carousel-inner&quot; role=&quot;listbox&quot;&gt;
                                                         &lt;div class=&quot;carousel-item active&quot;&gt;
-                                                            &lt;img class=&quot;d-block img-fluid&quot; src=&quot;<?php echo base_url('frontend/assets')?>/images/small/small-3.jpg&quot; alt=&quot;First slide&quot;&gt;
+                                                            &lt;img class=&quot;d-block img-fluid&quot; src=&quot;<?php echo base_url('assets')?>/images/small/small-3.jpg&quot; alt=&quot;First slide&quot;&gt;
                                                         &lt;/div&gt;
                                                         &lt;div class=&quot;carousel-item&quot;&gt;
-                                                            &lt;img class=&quot;d-block img-fluid&quot; src=&quot;<?php echo base_url('frontend/assets')?>/images/small/small-2.jpg&quot; alt=&quot;Second slide&quot;&gt;
+                                                            &lt;img class=&quot;d-block img-fluid&quot; src=&quot;<?php echo base_url('assets')?>/images/small/small-2.jpg&quot; alt=&quot;Second slide&quot;&gt;
                                                         &lt;/div&gt;
                                                         &lt;div class=&quot;carousel-item&quot;&gt;
-                                                            &lt;img class=&quot;d-block img-fluid&quot; src=&quot;<?php echo base_url('frontend/assets')?>/images/small/small-1.jpg&quot; alt=&quot;Third slide&quot;&gt;
+                                                            &lt;img class=&quot;d-block img-fluid&quot; src=&quot;<?php echo base_url('assets')?>/images/small/small-1.jpg&quot; alt=&quot;Third slide&quot;&gt;
                                                         &lt;/div&gt;
                                                     &lt;/div&gt;
                                                     &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#carouselExampleIndicators&quot; role=&quot;button&quot; data-bs-slide=&quot;prev&quot;&gt;
@@ -516,7 +516,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="<?php echo base_url('frontend/assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="60">
+                        <img src="<?php echo base_url('assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="60">
                         <p class="text-muted mt-4">HappySmile brings you the best service and satisfactory for your teeth.<br> Your Smile is our Passion</p>
 
                         <ul class="social-list list-inline mt-3">
@@ -569,8 +569,8 @@
         <!-- END FOOTER -->
 
         <!-- bundle -->
-        <script src="<?php echo base_url('frontend/assets')?>/js/vendor.min.js"></script>
-        <script src="<?php echo base_url('frontend/assets')?>/js/app.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
 
     </body>
 
