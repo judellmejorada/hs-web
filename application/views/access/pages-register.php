@@ -101,8 +101,12 @@
                                                         Please provide a Gender.  
                                                     </div>
                                    
-                                </div>
-                            </div>        
+                                    </div>
+                                    </div>  
+                                    <div class="mb-3">
+                                        <label class="form-label">Profile Image</label>
+                                        <input class="form-control" type="file" id="inputGroupFile04">
+                                    </div>      
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
                                         <input class="form-control" type="email" id="email" name="email" required placeholder="Enter your email">
@@ -110,6 +114,7 @@
                                                 Please provide an Email Address.
                                         </div>
                                     </div>
+                                  
 
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
