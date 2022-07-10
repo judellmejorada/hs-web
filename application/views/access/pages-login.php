@@ -7,8 +7,7 @@
         <meta charset="utf-8" />
         <title>Log In | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
-        <meta content="Coderthemes" name="author"/>
+        <meta content="HappySmile-DCMS" name="GROUP 4" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/HappySmile.ico">
         
@@ -46,22 +45,20 @@
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
                                         <input class="form-control" type="email" id="email" name="email" required="" placeholder="Enter your email">
-                                        <div class="invalid-feedback">
-                                        Please provide an Email Address.
+                                        <div class="invalid-feedback" data-parsley-required = "true" data-parsley-type = "email">
                                         </div>
                                         
                                     </div>
 
                                     <div class="mb-3">
-                                        <a href="pages-recoverpw.html" class="text-muted float-end"><small>Forgot your password?</small></a>
+                                        <a href="pages-recoverpw.php" class="text-muted float-end"><small>Forgot your password?</small></a>
                                         <label for="password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
                                             <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password">
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>
-                                            <div class="invalid-feedback">
-                                            Please provide a Password.
+                                            <div class="invalid-feedback" data-parsley-required = "true" >
                                             </div>
                                         </div>
                                     </div>
@@ -126,6 +123,9 @@
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
+
+        <!-- parsley -->
+        <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
          <!-- custom login.js -->
          <script src="<?php echo base_url('assets')?>/js/access/login.js"></script>
