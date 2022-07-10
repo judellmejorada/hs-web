@@ -58,9 +58,9 @@
                                         <label for="password" class="form-label">Password</label>
                         
                                             <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password" >
-                                            <div class="input-group-text" data-password="false">
+                                            <!-- <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
-                                            </div>
+                                            </div> -->
                                             <!-- tinry mo na sa loob at labas -->
                                              <div class="invalid-feedback" data-parsley-required = "true"></div>
                                     
