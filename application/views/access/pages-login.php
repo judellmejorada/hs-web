@@ -57,12 +57,11 @@
                                         <a href="pages-recoverpw.php" class="text-muted float-end"><small>Forgot your password?</small></a>
                                         <label for="password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password" >
+                                            <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" >
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>
-                                            <div class="invalid-feedback">
-                                                Please Provide you password correctly
+                                            <div class="invalid-feedback"  data-parsley-required = "true">
                                             </div>
                                         </div>
                                         </div>
