@@ -44,19 +44,21 @@
 
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="email" name="email" required="" placeholder="Enter your email"
-                                        data-parsley-required = "true" data-parsley-type = "email">
-                                    
+                                        <input class="form-control" type="email" id="email" name="email" required="" placeholder="Enter your email">
+                                        <div class="invalid-feedback" data-parsley-required = "true" data-parsley-type = "email">
+                                        </div>
+                                        
                                     </div>
 
                                     <div class="mb-3">
                                         <a href="pages-recoverpw.php" class="text-muted float-end"><small>Forgot your password?</small></a>
                                         <label for="password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password"
-                                                data-parsley-required = "true" >
+                                            <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password">
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
+                                            </div>
+                                            <div class="invalid-feedback" data-parsley-required = "true" >
                                             </div>
                                         </div>
                                     </div>

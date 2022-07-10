@@ -11,7 +11,7 @@ $(function () {
 
         e.preventDefault(); // prevent page refresh
 
-        if ($("#form_id")) {
+        if ($("#form_id").parsley().validate()) {
         //no validation error
         $.ajax({
             url : baseURL + "login",
