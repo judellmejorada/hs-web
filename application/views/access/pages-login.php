@@ -62,8 +62,9 @@
                                                 <span class="password-eye"></span>
                                             </div>
                                         </div>
-                                        <div class="invalid-feedback" data-parsley-required = "true"></div>
                                     </div>
+                                    <!-- tinry mo na sa loob at labas -->
+                                    <div class="invalid-feedback" data-parsley-required = "true"></div>
 
                                     <div class="mb-3 mb-3">
                                         <div class="form-check">
