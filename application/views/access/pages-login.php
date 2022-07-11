@@ -56,16 +56,14 @@
                                     <div class="mb-3">
                                         <a href="pages-recoverpw.php" class="text-muted float-end"><small>Forgot your password?</small></a>
                                         <label for="password" class="form-label">Password</label>
-                        
+                                        <div class="input-group input-group-merge">
                                             <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password" >
-                                            <!-- <div class="input-group-text" data-password="false">
+                                            <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
-                                            </div> -->
-                                            <!-- tinry mo na sa loob at labas -->
-                                             <div class="invalid-feedback" data-parsley-required = "true"></div>
-                                    
+                                            </div>
+                                        </div>
                                     </div>
-                                    
+                                    <!-- tinry mo na sa loob at labas -->
 
                                     <div class="mb-3 mb-3">
                                         <div class="form-check">
