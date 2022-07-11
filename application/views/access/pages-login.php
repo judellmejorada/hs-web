@@ -54,7 +54,7 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <a href="pages-recoverpw" class="text-muted float-end"><small>Forgot your password?</small></a>
+                                        <a href="recover" class="text-muted float-end"><small>Forgot your password?</small></a>
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password" >
                                         <!-- <div class="input-group-text" data-password="false">

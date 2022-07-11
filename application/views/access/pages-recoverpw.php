@@ -5,7 +5,7 @@
         <title>Recover Password | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
-        <meta content="Coderthemes" name="author" />
+        <meta content="HappySmile" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/favicon.ico">
 
@@ -53,7 +53,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12 text-center">
-                                <p class="text-muted">Back to <a href="pages-login.html" class="text-muted ms-1"><b>Log In</b></a></p>
+                                <p class="text-muted">Back to <a href="login" class="text-muted ms-1"><b>Log In</b></a></p>
                             </div> <!-- end col -->
                         </div>
                         <!-- end row -->
@@ -71,8 +71,8 @@
         </footer>
 
         <!-- bundle -->
-        <script src="assets/js/vendor.min.js"></script>
-        <script src="assets/js/app.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
         
     </body>
 </html>

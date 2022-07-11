@@ -59,7 +59,7 @@
                                     <div class="mb-3">
                                         <label for="lname" class="form-label">Last Name</label>
                                         <input class="form-control" type="text" id="lname" name="lname" placeholder="Enter your Last name" required="">
-                                        <div class="invalid-feedback">
+                                        <div class="invalid-feedback">  
                                             Please provide a Last Name.
                                         </div>
                                     </div>
