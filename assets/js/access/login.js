@@ -28,11 +28,11 @@ $(function () {
 
                 let session_data = "";
 
-                session_data += 'token' + data.token;
-                session_data += 'users_type' + data.data.users_type;
-                session_data += 'users_full_name' + data.data.users_full_name;
-                session_data += 'users_profile_pic' + data.data.users_profile_pic;
-                session_data += 'users_email' + data.data.users_email;
+                session_data += "token=" + data.token;
+                session_data += "&users_type" + data.data.users_type;
+                session_data += "&users_full_name" + data.data.users_full_name;
+                session_data += "&users_profile_pic" + data.data.users_profile_pic;
+                session_data += "&users_email" + data.data.users_email;
 
                 window.location.replace("./Access/oAuth?" + session_data);
             },
