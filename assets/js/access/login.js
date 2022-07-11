@@ -27,7 +27,7 @@ $(function () {
                 localStorage.setItem('TOKEN', data.token);
             },
             error: function ({responseJSON}){
-                console.log(responseJSON);
+                console.log({responseJSON});
             },
 
             });
