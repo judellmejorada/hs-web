@@ -209,29 +209,6 @@
                                                 <a href="javascript:void(0);" class="dropdown-item">Last Month</a>
                                             </div>
                                         </div>
-                                        
-                                        <h4 class="header-title mb-3">Revenue</h4>
-
-                                        <div class="chart-content-bg">
-                                            <div class="row text-center">
-                                                <div class="col-md-6">
-                                                    <p class="text-muted mb-0 mt-3">Current Month</p>
-                                                    <h2 class="fw-normal mb-3">
-                                                        <span>$42,025</span>
-                                                    </h2>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p class="text-muted mb-0 mt-3">Previous Month</p>
-                                                    <h2 class="fw-normal mb-3">
-                                                        <span>$74,651</span>
-                                                    </h2>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div dir="ltr">
-                                            <div id="dash-revenue-chart" class="apex-charts" data-colors="#0acf97,#fa5c7c"></div>
-                                        </div>
 
                                     </div>
                                     <!-- end card body-->
@@ -417,49 +394,7 @@
                                 <!-- end card-->
                             </div>
                             <!-- end col -->  
-                            
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="card cta-box bg-primary text-white">
-                                    <div class="card-body">
-                                        <div class="d-flex align-items-start align-items-center">
-                                            <div class="w-100 overflow-hidden">
-                                                <h2 class="mt-0"><i class="mdi mdi-bullhorn-outline"></i>&nbsp;</h2>
-                                                <h3 class="m-0 fw-normal cta-box-title">Enhance your <b>Campaign</b> for better outreach <i class="mdi mdi-arrow-right"></i></h3>
-                                            </div>
-                                            <img class="ms-3" src="<?php echo base_url('assets')?>/images/logos/email-campaign.svg" width="120" alt="Generic placeholder image">
-                                        </div>
-                                    </div>
-                                    <!-- end card-body -->
-                                </div>
-                                <!-- end card-->
 
-                                <!-- Todo-->
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="dropdown float-end">
-                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="mdi mdi-dots-vertical"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-end">
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Settings</a>
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                                            </div>
-                                        </div>
-                                        <h4 class="header-title mb-2">Todo</h4>
-
-                                        <div class="todoapp">
-                                            <div data-simplebar="" style="max-height: 224px">
-                                                <ul class="list-group list-group-flush todo-list" id="todo-list"></ul>
-                                            </div>
-                                        </div> <!-- end .todoapp-->
-
-                                    </div> <!-- end card-body -->
-                                </div> <!-- end card-->
-
-                            </div>
-                            <!-- end col -->  
                         </div>
                         <!-- end row-->
                         

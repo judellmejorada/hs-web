@@ -97,15 +97,13 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row align-items-center">
-                                            <div class="col-6">
-                                                <div class="card-body">
-                                                <i class='uil uil-users-alt float-end'></i>
-                                                <h6 class="text-uppercase mt-0">Patients this Month</h6>
-                                                <h2 class="my-2" id="active-users-count">121</h2>
+                                        <div class="col-6">
+                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Campaign Sent">Patients this Month</h5>
+                                                <h3 class="my-2 py-1">9,184</h3>
                                                 <p class="mb-0 text-muted">
-                                                    <span class="text-success me-2"><span class="mdi mdi-arrow-up-bold"></span> 5.27%</span>
+                                                    <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 3.27%</span>
                                                 </p>
-                                            </div> <!-- end card-body-->
+                                            </div><!-- end card-body-->
                                                 
                                             </div>
                                             <div class="col-6">
@@ -140,91 +138,6 @@
                             </div> <!-- end col -->
                         </div>
                         <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="dropdown float-end">
-                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="mdi mdi-dots-vertical"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-end">
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Today</a>
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Yesterday</a>
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Last Week</a>
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Last Month</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <!-- end card body-->
-                                </div>
-                                <!-- end card -->
-                            </div>
-                            <!-- end col-->
-    
-                            <div class="col-lg-7">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="dropdown float-end">
-                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="mdi mdi-dots-vertical"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-end">
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Today</a>
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Yesterday</a>
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Last Week</a>
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Last Month</a>
-                                            </div>
-                                        </div>
-
-                                        <div dir="ltr">
-                                            <div id="dash-revenue-chart" class="apex-charts" data-colors="#0acf97,#fa5c7c"></div>
-                                        </div>
-
-                                    </div>
-                                    <!-- end card body-->
-                                </div>
-                                <!-- end card -->
-                            </div>
-                            <!-- end col-->
-                        </div>
-                        <!-- end row-->
-
-
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="dropdown float-end">
-                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="mdi mdi-dots-vertical"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-end">
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Settings</a>
-                                                <!-- item-->
-                                                <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                                            </div>
-                                        </div>
-                                        
-
-                                    </div> <!-- end card-body-->
-                                </div> <!-- end card-->
-                            </div>
-                            <!-- end col-->
-                           
-                        </div>
-                        <!-- end row-->
                         
                     </div> <!-- container -->
 

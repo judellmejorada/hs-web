@@ -54,9 +54,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'landing';
 $route['login'] = 'Access/login';
 $route['register'] = 'Register/RegisterPage';
+$route['recover']='Recover/RecoverPage';
 $route['service'] = 'service/ServicePage';
 $route['about']='About/AboutPage';
 $route['faq']='Faq/FaqPage';
+
 
 //Admin Files
 $route['admin'] = 'Admin_SystemSetup/UI';

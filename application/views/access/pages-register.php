@@ -39,29 +39,30 @@
                                     <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
                                 </div>
 
-                                <form action="# "class="needs-validation" novalidate="">
+                                <form action="#" class="needs-validation" novalidate="">
 
                                     <div class="mb-3">
                                         <label for="fname" class="form-label">First Name</label>
                                         <input class="form-control" type="text" id="fname" name="fname" placeholder="Enter your First name" required="">
+                                        <div class="invalid-feedback">
+                                            Please provide a First Name.
+                                        </div>
                                     </div>
-                                    <div class="invalid-feedback">
-                                                Please provide a First Name.
-                                            </div>
+                                    
                                     <div class="mb-3">
                                         <label for="mname" class="form-label">Middle Name</label>
                                         <input class="form-control" type="text" id="mname" name="mname" placeholder="Enter your Middle name">
+                                        <div class="invalid-feedback">
+                                            Please provide a Middle Name.
+                                        </div>
                                     </div>
-                                    <div class="invalid-feedback">
-                                                Please provide a Middle Name.
-                                            </div>
                                     <div class="mb-3">
                                         <label for="lname" class="form-label">Last Name</label>
                                         <input class="form-control" type="text" id="lname" name="lname" placeholder="Enter your Last name" required="">
+                                        <div class="invalid-feedback">
+                                            Please provide a Last Name.
+                                        </div>
                                     </div>
-                                    <div class="invalid-feedback">
-                                                Please provide a First Name.
-                                            </div>
                                     
                                     <div class="mb-3">
                                         <label for="example-date" class="form-label">Birth Date</label>

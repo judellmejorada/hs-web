@@ -9,7 +9,7 @@
             <div class="leftside-menu">
     
                 <!-- LOGO -->
-                <a href="<?php echo base_url('landing')?>" class="logo text-center logo-light">
+                <a href="<?php echo base_url('admin')?>" class="logo text-center logo-light">
                     <span class="logo-lg">
                         <img src="<?php echo base_url('assets')?>/images/logos/123.png" alt="" height="60" width="160">
                     </span>
