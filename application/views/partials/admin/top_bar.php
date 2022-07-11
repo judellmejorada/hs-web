@@ -177,8 +177,8 @@
                                         <img src="<?php echo base_url('assets')?>/images/logos/Happy Smile (2).png" alt="user-image" class="rounded-circle">
                                     </span>
                                     <span>
-                                        <span class="account-user-name">Happy Smile</span>
-                                        <span class="account-position">Admin</span>
+                                        <span class="account-user-name"><?php echo $this->session->userdata('FIRSTNAME')?></span>
+                                        <span class="account-position"><?php echo $this->session->userdata('USERS_TYPE')?></span>
                                     </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
@@ -206,7 +206,7 @@
                                     </a>
 
                                     <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <a href="../access/login" class="dropdown-item notify-item">
                                         <i class="mdi mdi-logout me-1"></i>
                                         <span>Logout</span>
                                     </a>

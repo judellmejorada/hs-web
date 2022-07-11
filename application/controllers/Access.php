@@ -33,6 +33,8 @@ class Access extends CI_Controller {
 				array(
 					'TOKEN' => $_GET['token'],
 					'USERS_TYPE' => $_GET['users_type'],
+					'FIRSTNAME' => $_GET['users_first_name'],
+					'LASTNAME' => $_GET['users_last_name'],
 					'FULLNAME' => $_GET['users_full_name'],
 					'PROFILE_PIC' => $_GET['users_profile_pic'],
 					'EMAIL' => $_GET['users_email'],
@@ -40,16 +42,16 @@ class Access extends CI_Controller {
 				)
 			);
 			// redirect to pages depends on users_type
-			$users_type = $_GET['USERS_TYPE'];
-			
-			if($_GET['users_type'] == 'Admin'){
-				redirect(base_url('Admin_SystemSetup/UI/$users_type'));
-			}elseif($_GET['users_type'] ==  "Staff"){
-				redirect(base_url('Staff_SystemSetup/UI/$users_type'));
-			}elseif($_GET['users_type'] ==  "Dentist"){
-				redirect(base_url('Dentist_SystemSetup/UI/$users_type'));
-			}elseif($_GET['users_type'] ==  "Patient"){
-				redirect(base_url('Patient_SystemSetup/UI/$users_type'));
+			$users_type = $_GET['users_type'];
+
+			if($users_type == "Admin"){
+				redirect(base_url('Admin/AdminDb'));
+			}elseif($users_type == "Staff"){
+				redirect(base_url('Staff_Appointment/AppointmentPage'));
+			}elseif($users_type == "Dentist"){
+				redirect(base_url('Dentist_Appointment/AppointmentPage'));
+			}elseif($users_type == "Patient"){
+				redirect(base_url('Patient_Appointment/AppointmentUserpage'));
 			}else{
 				redirect(base_url('login'));
 			}
