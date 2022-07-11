@@ -62,6 +62,7 @@ $route['faq']='Faq/FaqPage';
 
 //Admin Files
 $route['admin'] = 'Admin_SystemSetup/UI';
+$route['admin/dashboard'] = 'Admin/Dashboard';
 $route['admin/users'] = 'Admin_Users/UserPage';
 $route['admin/add-patient'] = 'Admin_Add_Patient/AddPatient';
 $route['admin/services'] = 'Admin_Services/ServicePage';

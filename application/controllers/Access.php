@@ -46,7 +46,7 @@ class Access extends CI_Controller {
 			$users_type = $_GET['users_type'];
 
 			if($users_type == "Admin"){
-				redirect(base_url('Admin/AdminDb'));
+				redirect(base_url('Admin/Dashboard'));
 			}elseif($users_type == "Staff"){
 				redirect(base_url('Staff_Appointment/AppointmentPage'));
 			}elseif($users_type == "Dentist"){
