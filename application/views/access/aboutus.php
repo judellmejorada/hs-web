@@ -141,7 +141,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                             <div class="avatar-xxl m-auto">
-                             <img src="<?php echo base_url('assets')?>/images/users/judell.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
+                             <img src="<?php echo base_url('assets')?>/images/users/Judell.JPG" alt="" class="rounded-circle" width="100%" height="auto">    
 
                             </div>
                             <h3 class="mt-3">Judell Mejorada</h3>
@@ -194,7 +194,7 @@
                     <div class="col-lg-4">
                         <div class="text-center p-3">
                         <div class="avatar-xxl m-auto">
-                             <img src="<?php echo base_url('assets')?>/images/users/LC.jpg" alt="" class="rounded-circle" width="100%" height="auto">    
+                             <img src="<?php echo base_url('assets')?>/images/users/LC.JPG" alt="" class="rounded-circle" width="100%" height="auto">    
                             </div>
                             <h3 class="mt-3">Elsie Jaradal</h3>
                             <p class="text-muted mt-2 mb-0">Front-end Developer</p>

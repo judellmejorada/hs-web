@@ -17,7 +17,7 @@
         <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">        
 
-    </head>
+    </head> 
 
     <body class="loading" data-layout-config='{"darkMode":false}'>
   
