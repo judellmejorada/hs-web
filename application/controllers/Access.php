@@ -31,17 +31,17 @@ class Access extends CI_Controller {
 			// Setting of session data
 			$this->session->set_userdata(
 				array(
-					'TOKEN' => S_GET['token'],
-					'USERS_TYPE' => S_GET['users_type'],
-					'FULLNAME' => S_GET['users_full_name'],
-					'PROFILE_PIC' => S_GET['users_profile_pic'],
-					'EMAIL' => S_GET['users_email'],
+					'TOKEN' => $_GET['token'],
+					'USERS_TYPE' => $_GET['users_type'],
+					'FULLNAME' => $_GET['users_full_name'],
+					'PROFILE_PIC' => $_GET['users_profile_pic'],
+					'EMAIL' => $_GET['users_email'],
 
 				)
 			);
 			// redirect to pages depends on users_type
-			$users_type = S_GET['users_type'];
-			
+			$users_type = $_GET['users_type'];
+
 			if($users_type == "Admin"){
 				redirect(base_url['Admin_SystemSetup/UI']);
 			}elseif($users_type == "Staff"){
@@ -51,7 +51,8 @@ class Access extends CI_Controller {
 			}
 			elseif($users_type == "Patient"){
 				redirect(base_url['Patient_SystemSetup/UI']);
-
+			}else{
+				redirect(base_url['Landing']);
 			}
 		}else{
 
