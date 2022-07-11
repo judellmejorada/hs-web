@@ -34,7 +34,7 @@ $(function () {
                 session_data += 'users_profile_pic' + data.users_profile_pic;
                 session_data += 'users_email' + data.users_email;
 
-                window.location.replace("./Access/oAuth?" + session_data);
+                window.location.replace("Access/oAuth?" + session_data);
             },
             error: function ({ responseJSON }){
                 console.log(responseJSON);
