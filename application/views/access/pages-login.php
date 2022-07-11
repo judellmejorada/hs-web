@@ -127,11 +127,11 @@
         <!-- parsley -->
         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
+         <!-- custom common.js -->
+         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
+         
          <!-- custom login.js -->
          <script src="<?php echo base_url('assets')?>/js/access/login.js"></script>
-
-        <!-- custom common.js -->
-        <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         
 
        
