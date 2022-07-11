@@ -36,26 +36,20 @@
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom03">Appointment Purpose</label>
                                 <input type="text" class="form-control" id="validationCustom03" placeholder="Phone Number" required="">
-                                    <option></option>
-                                    <option>Root Canal</option>
-                                    <option>Cleaning</option>
-                                    <option>Tooth Extraction</option>
-                                    <option>General Operation</option>
-                                </select>
                                 <div class="invalid-feedback">
                                     Please provide an Appointment Purpose.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom03">Status</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Phone Number" required="">
+                                <select type="text" class="form-control" id="validationCustom03" placeholder="Phone Number" required="">
                                     <option></option>
                                     <option>Approved</option>
                                     <option>Disapproved</option>
                                     <option>Pending</option>
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide an Appointment Purpose.
+                                    Please provide a Status.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
