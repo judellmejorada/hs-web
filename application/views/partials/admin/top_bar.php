@@ -3,7 +3,7 @@
     
 
     <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
-        
+        <?php print_r($this->session->all_userdata());?>
         <!-- Begin page -->
         
         <div class="wrapper">
@@ -174,11 +174,11 @@
                             <li class="dropdown notification-list">
                                 <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                                     <span class="account-user-avatar"> 
-                                        <img src="<?php echo $this->session->userdata('PROFILE_PIC')?>" alt="user-image" class="rounded-circle">
+                                        <img src="<?php echo base_url('assets')?>/images/logos/Happy Smile (2).png" alt="user-image" class="rounded-circle">
                                     </span>
                                     <span>
-                                        <span class="account-user-name">hasdkoas<?php echo $this->session->userdata('FIRSTNAME')?></span>
-                                        <span class="account-position">admin</span>
+                                        <span class="account-user-name"><?php echo $this->session->userdata('FIRSTNAME')?></span>
+                                        <span class="account-position"><?php echo $this->session->userdata('USERS_TYPE')?></span>
                                     </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
@@ -206,7 +206,7 @@
                                     </a>
 
                                     <!-- item-->
-                                    <a href="../access/login" class="dropdown-item notify-item">
+                                    <a href="<?php echo base_url('login')?>" class="dropdown-item notify-item">
                                         <i class="mdi mdi-logout me-1"></i>
                                         <span>Logout</span>
                                     </a>
