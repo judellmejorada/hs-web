@@ -23,6 +23,5 @@ class Patient_Calendar extends CI_Controller {
 		$this->load->view('users/patients/patient-calendar');
 		$this->load->view('partials/patient/top_bar');
 		$this->load->view('partials/patient/left_sidebar');
-		$this->load->view('partials/patient/right_sidebar');
 	}
 }

@@ -23,6 +23,5 @@ class Staff_Invoices extends CI_Controller {
 		$this->load->view('users/staffs/staff-invoices');
 		$this->load->view('partials/staff/top_bar');
 		$this->load->view('partials/staff/left_sidebar');
-		$this->load->view('partials/staff/right_sidebar');
 	}
 }

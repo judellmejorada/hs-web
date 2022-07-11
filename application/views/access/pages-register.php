@@ -43,16 +43,25 @@
 
                                     <div class="mb-3">
                                         <label for="fname" class="form-label">First Name</label>
-                                        <input class="form-control" type="text" id="fname" name="fname" placeholder="Enter your First name" required>
+                                        <input class="form-control" type="text" id="fname" name="fname" placeholder="Enter your First name" required="">
                                     </div>
+                                    <div class="invalid-feedback">
+                                                Please provide a First Name.
+                                            </div>
                                     <div class="mb-3">
                                         <label for="mname" class="form-label">Middle Name</label>
-                                        <input class="form-control" type="text" id="mname" name="mname" placeholder="Enter your Middle name" required>
+                                        <input class="form-control" type="text" id="mname" name="mname" placeholder="Enter your Middle name">
                                     </div>
+                                    <div class="invalid-feedback">
+                                                Please provide a Middle Name.
+                                            </div>
                                     <div class="mb-3">
                                         <label for="lname" class="form-label">Last Name</label>
-                                        <input class="form-control" type="text" id="lname" name="lname" placeholder="Enter your Last name" required>
+                                        <input class="form-control" type="text" id="lname" name="lname" placeholder="Enter your Last name" required="">
                                     </div>
+                                    <div class="invalid-feedback">
+                                                Please provide a First Name.
+                                            </div>
                                     
                                     <div class="mb-3">
                                         <label for="example-date" class="form-label">Birth Date</label>
@@ -104,8 +113,11 @@
                                     </div>  
                                     <div class="mb-3">
                                         <label class="form-label">Profile Image</label>
-                                        <input class="form-control" type="file" id="inputGroupFile04">
-                                    </div>      
+                                        <input class="form-control" type="file" id="inputGroupFile04" required="">
+                                    </div> 
+                                    <div class="invalid-feedback">
+                                                Please provide an Image.
+                                        </div>     
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
                                         <input class="form-control" type="email" id="email" name="email" required placeholder="Enter your email">

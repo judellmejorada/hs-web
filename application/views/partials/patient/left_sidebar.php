@@ -11,10 +11,10 @@
                 <!-- LOGO -->
                 <a href="<?php echo base_url('landing')?>" class="logo text-center logo-light">
                     <span class="logo-lg">
-                        <img src="<?php echo base_url('assets')?>/images/logos/123.PNG" alt="" height="60" width="160">
+                        <img src="<?php echo base_url('assets')?>/images/logos/123.png" alt="" height="60" width="160">
                     </span>
                     <span class="logo-sm">
-                        <img src="<?php echo base_url('assets')?>/images/logos/2.PNG" alt="" height="30" width="30">
+                        <img src="<?php echo base_url('assets')?>/images/logos/2.png" alt="" height="30" width="30">
                     </span>
                 </a>
     

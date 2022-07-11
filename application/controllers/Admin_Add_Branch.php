@@ -23,6 +23,5 @@ class Admin_Add_Branch extends CI_Controller {
 		$this->load->view('users/admin/admin-add-branch');
 		$this->load->view('partials/admin/top_bar');
 		$this->load->view('partials/admin/left_sidebar');
-		$this->load->view('partials/admin/right_sidebar');
 	}
 }

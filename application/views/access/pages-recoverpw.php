@@ -2,17 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Recover Password | Hyper - Responsive Bootstrap 5 Admin Dashboard</title>
+        <title>Recover Password | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/logos/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/favicon.ico">
 
         <!-- App css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
-        <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
     </head>
 
@@ -67,7 +67,7 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-            2018 - 2021 © Hyper - Coderthemes.com
+            2022 © HappySmile.com
         </footer>
 
         <!-- bundle -->

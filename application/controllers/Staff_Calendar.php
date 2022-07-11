@@ -23,6 +23,5 @@ class Staff_Calendar extends CI_Controller {
 		$this->load->view('users/staffs/staff-calendar');
 		$this->load->view('partials/staff/top_bar');
 		$this->load->view('partials/staff/left_sidebar');
-		$this->load->view('partials/staff/right_sidebar');
 	}
 }

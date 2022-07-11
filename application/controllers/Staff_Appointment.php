@@ -25,7 +25,6 @@ class Staff_Appointment extends CI_Controller {
 		//$this->load->view('partials/admin/header');
 		$this->load->view('partials/staff/top_bar');
 		$this->load->view('partials/staff/left_sidebar');
-		$this->load->view('partials/staff/right_sidebar');
 		$this->load->view('partials/staff/footer');
 	}
 }

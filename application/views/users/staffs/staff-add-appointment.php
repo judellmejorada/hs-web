@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel0">Add Branch Information</h5>
+                <h5 class="modal-title" id="staticBackdropLabel0">Add Appointment Information</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div> <!-- end modal header -->
             <div class="modal-body">
@@ -11,11 +11,11 @@
             <form class="needs-validation" novalidate="">
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom00">Dentist</label>
+                                <label class="form-label" for="validationCustom00">Branch</label>
                                 <select class="form-select" id="validationCustom00" required="">
                                     <option></option>
-                                    <option>Kendall</option>
-                                    <option>Nadine</option>
+                                    <option>Commonwealth</option>
+                                    <option>Quezon City</option>
                                     <option>Barbie</option>
                                     <option>Kylie</option>
                                 </select>
@@ -24,7 +24,7 @@
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom01">Appointment Date</label>
+                            <label class="form-label" for="validationCustom01">Appointment Schedule</label>
                             <input class="form-control" id="validationCustom01" type="date" name="date" required="">
                             <div class="invalid-feedback">
                                 Please provide a Appointment Date.
@@ -35,12 +35,24 @@
                     <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom03">Appointment Purpose</label>
-                                <select class="form-select" id="validationCustom03" required="">
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Phone Number" required="">
                                     <option></option>
                                     <option>Root Canal</option>
                                     <option>Cleaning</option>
                                     <option>Tooth Extraction</option>
                                     <option>General Operation</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide an Appointment Purpose.
+                                </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label class="form-label" for="validationCustom03">Status</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Phone Number" required="">
+                                    <option></option>
+                                    <option>Approved</option>
+                                    <option>Disapproved</option>
+                                    <option>Pending</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide an Appointment Purpose.

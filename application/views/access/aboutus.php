@@ -24,7 +24,7 @@
             <div class="container">
 
                 <!-- logo -->
-                <a href="index.html" class="navbar-brand me-lg-5">
+                <a href="landing" class="navbar-brand me-lg-5">
                     <img src="<?php echo base_url('assets')?>/images/logos/logo-dark.png" alt="" class="logo-dark" height="50">
                 </a>
 

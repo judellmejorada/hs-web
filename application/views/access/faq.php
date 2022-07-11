@@ -24,8 +24,8 @@
             <div class="container">
 
                 <!-- logo -->
-                <a href="index.html" class="navbar-brand me-lg-5">
-                    <img src="..assets/images/logos/logo-dark.png" alt="" class="logo-dark" height="50">
+                <a href="landing" class="navbar-brand me-lg-5">
+                    <img src="<?php echo base_url('assets')?>/images/logos/logo-dark.png" alt="" class="logo-dark" height="50">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,8 +58,8 @@
                   <!-- right menu -->
                   <ul class="navbar-nav ms-auto align-items-center">
                       <li class="nav-item me-0">
-                          <a href="pages-login" target="_blank" class="nav-link d-lg-none">Log in</a>
-                          <a href="pages-login" target="_blank" class="btn btn-sm btn-light btn-rounded d-none d-lg-inline-flex">
+                          <a href="login" target="" class="nav-link d-lg-none">Log in</a>
+                          <a href="login" target="" class="btn btn-sm btn-light btn-rounded d-none d-lg-inline-flex">
                               <i class="mdi mdi-account-edit me-2"></i>Log in
                           </a>
                       </li>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="col-md-5 offset-md-2">
                         <div class="text-md-end mt-3 mt-md-0">
-                            <img src="..assets/images/logos/tooth.png" alt="" class="img-fluid w-100">
+                            <img src="<?php echo base_url('assets')?>/images/logos/tooth.png" alt="" class="img-fluid w-100">
                         </div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="mt-5">
-                            <p class="text-muted mt-4 text-center mb-0">© 2012 - 2022 HappySmile</p>
+                            <p class="text-muted mt-4 text-center mb-0">2022 © HappySmile</p>
                         </div>
                     </div>
                 </div>

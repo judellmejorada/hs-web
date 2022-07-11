@@ -25,7 +25,6 @@ class Dentist_Appointment extends CI_Controller {
 		//$this->load->view('partials/admin/header');
 		$this->load->view('partials/patient/top_bar');
 		$this->load->view('partials/patient/left_sidebar');
-		$this->load->view('partials/patient/right_sidebar');
 		$this->load->view('partials/patient/footer');
 	}
 }

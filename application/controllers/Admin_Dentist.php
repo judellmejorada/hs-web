@@ -23,7 +23,6 @@ class Admin_Dentist extends CI_Controller {
 		$this->load->view('users/admin/admin-dentists');
 		$this->load->view('partials/admin/top_bar');
 		$this->load->view('partials/admin/left_sidebar');
-		$this->load->view('partials/admin/right_sidebar');
 		//$this->load->view('partials/admin/admin-view-user');
 		//$this->load->view('partials/admin/admin-modify-user');
 		//$this->load->view('partials/admin/admin-delete-user');

@@ -23,6 +23,5 @@ class Dentist_Schedule extends CI_Controller {
 		$this->load->view('users/dentists/dentist-schedule');
 		$this->load->view('partials/staff/top_bar');
 		$this->load->view('partials/staff/left_sidebar');
-		$this->load->view('partials/staff/right_sidebar');
 	}
 }
