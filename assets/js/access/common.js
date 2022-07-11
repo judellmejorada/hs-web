@@ -1,2 +1,2 @@
-const baseURL = 'http://localhost:3600/happysmile/v1/';
+const baseURL = 'https://happysmile-dcms.herokuapp.com/happysmile/v1';
 
