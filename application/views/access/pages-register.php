@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="HappySmile-DCMS" name="GROUP 4" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/HappySmile.ico">
 
         <!-- App css -->
         <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
                             <!-- Logo-->
                             <div class="card-header pt-4 pb-4 text-center bg-primary">
                                 <a href="index.php">
-                                    <span><img src="<?php echo base_url('assets')?>/images/logo.png" alt="" height="60"></span>
+                                    <span><img src="<?php echo base_url('assets')?>/images/logos/logo.png" alt="" height="60"></span>
                                 </a>
                             </div>
 

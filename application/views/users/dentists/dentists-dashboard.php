@@ -9,7 +9,7 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Happy Smile" name="Author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/HappySmile.ico">
 
         <!-- App css -->
         <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
@@ -426,7 +426,7 @@
                                                 <h2 class="mt-0"><i class="mdi mdi-bullhorn-outline"></i>&nbsp;</h2>
                                                 <h3 class="m-0 fw-normal cta-box-title">Enhance your <b>Campaign</b> for better outreach <i class="mdi mdi-arrow-right"></i></h3>
                                             </div>
-                                            <img class="ms-3" src="<?php echo base_url('assets')?>/images/email-campaign.svg" width="120" alt="Generic placeholder image">
+                                            <img class="ms-3" src="<?php echo base_url('assets')?>/images/logos/email-campaign.svg" width="120" alt="Generic placeholder image">
                                         </div>
                                     </div>
                                     <!-- end card-body -->

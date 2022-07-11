@@ -10,7 +10,7 @@
         <meta content="HappySmile-DCMS" name="description">
         <meta content="Coderthemes" name="author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/HappySmile.ico">
 
         <!-- App css -->
         <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
@@ -28,7 +28,7 @@
 
                 <!-- logo -->
                 <a href="landing" class="navbar-brand me-lg-5">
-                    <img src="<?php echo base_url('assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
+                    <img src="<?php echo base_url('assets')?>/images/logos/logo-dark.png" alt="" class="logo-dark" height="50">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,7 +101,7 @@
                     </div>
                     <div class="col-md-5 offset-md-2">
                         <div class="text-md-end mt-3 mt-md-0">
-                            <img src="<?php echo base_url('assets')?>/images/teeth1.png" alt="" class="img-fluid w-100">
+                            <img src="<?php echo base_url('assets')?>/images/logos/teeth1.png" alt="" class="img-fluid w-100">
                         </div>
                     </div>
                 </div>
@@ -516,7 +516,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="<?php echo base_url('assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="60">
+                        <img src="<?php echo base_url('assets')?>/images/logos/logo-dark.png" alt="" class="logo-dark" height="60">
                         <p class="text-muted mt-4">HappySmile brings you the best service and satisfactory for your teeth.<br> Your Smile is our Passion</p>
 
                         <ul class="social-list list-inline mt-3">

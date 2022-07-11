@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="HappySmile-DCMS" name="GROUP 4" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/HappySmile.ico">
 
         <!-- App css -->
         <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
@@ -25,7 +25,7 @@
 
                 <!-- logo -->
                 <a href="index.html" class="navbar-brand me-lg-5">
-                    <img src="<?php echo base_url('assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
+                    <img src="<?php echo base_url('assets')?>/images/logos/logo-dark.png" alt="" class="logo-dark" height="50">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-md-5 offset-md-2">
                         <div class="text-md-end mt-3 mt-md-0">
-                            <img src="..assets/images/tooth.png" alt="" class="img-fluid w-100">
+                            <img src="..assets/images/logos/tooth.png" alt="" class="img-fluid w-100">
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="row mt-2 py-5 align-items-center">
                     <div class="col-lg-5">
-                        <img src="<?php echo base_url('assets')?>/images/hs12.png" class="img-fluid" alt="">
+                        <img src="<?php echo base_url('assets')?>/images/logos/hs12.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 offset-lg-1">
                         <h1 class="fw-normal">Our Mission</h1>
@@ -292,7 +292,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                    <img src="<?php echo base_url('assets')?>/images/logo-dark.png" alt="" class="logo-dark" height="50">
+                    <img src="<?php echo base_url('assets')?>/images/logos/logo-dark.png" alt="" class="logo-dark" height="50">
                         <p class="text-muted mt-4">HappySmile brings you the best service and will give you satisfactory for your teeth.<br> Because your Smile is our Passion</p>
 
                         <ul class="social-list list-inline mt-3">
