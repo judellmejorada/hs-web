@@ -58,9 +58,9 @@
                                         <label for="password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
                                             <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password" >
-                                            <div class="input-group-text" data-password="false">
+                                            <!-- <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <!-- tinry mo na sa loob at labas -->
