@@ -77,6 +77,13 @@ $route['staff/add-appointment'] = 'Staff_Add_Appointment/AddAppointment';
 $route['staff/calendar'] = 'Staff_Calendar/CalendarPage';
 $route['staff/invoices'] = 'Staff_Invoices/InvoicePage';
 
+//Dentist Files
+$route['dentist'] = 'Dentist_SystemSetup/UI';
+$route['dentist/appointment'] = 'Dentist_Appointment/AppointmentPage';
+$route['dentist/add-appointment'] = 'Dentist_Add_Appointment/AddAppointment';
+$route['dentist/calendar'] = 'Dentist_Calendar/CalendarPage';
+$route['dentist/schedule'] = 'Dentist_Calendar/SchedulePage';
+
 //Patient Files
 $route['patient'] = 'Patient_SystemSetup/UI';
 $route['patient/appointment'] = 'Patient_Appointment/AppointmentUserpage';

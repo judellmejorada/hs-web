@@ -39,7 +39,7 @@ $config['base_url'] = "https://happysmile-web.herokuapp.com/";
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'views/access/landing.php';
+$config['index_page'] = 'views/access/landing';
 
 /*
 |--------------------------------------------------------------------------
