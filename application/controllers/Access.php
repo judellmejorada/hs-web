@@ -33,8 +33,9 @@ class Access extends CI_Controller {
 				array(
 					'TOKEN' => $_GET['token'],
 					'USERS_TYPE' => $_GET['users_type'],
-					'FIRSTNAME' => $_GET['users_first_name'],
-					'LASTNAME' => $_GET['users_last_name'],
+					'FIRSTNAME' => $_GET['users_fname'],
+					'MIDDLENAME' => $_GET['users_mname'],
+					'LASTNAME' => $_GET['users_lname'],
 					'FULLNAME' => $_GET['users_full_name'],
 					'PROFILE_PIC' => $_GET['users_profile_pic'],
 					'EMAIL' => $_GET['users_email'],

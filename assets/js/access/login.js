@@ -30,8 +30,9 @@ $(function () {
 
                 session_data += "token=" + data.token;
                 session_data += "&users_type=" + data.data.users_type;
-                session_data += "&users_first=" + data.data.users_first_name;
-                session_data += "&users_last=" + data.data.users_last_name;
+                session_data += "&users_fname=" + data.data.users_fname;
+                session_data += "&users_mname=" + data.data.users_mname;
+                session_data += "&users_lname=" + data.data.users_lname;
                 session_data += "&users_full_name=" + data.data.users_full_name;
                 session_data += "&users_profile_pic=" + data.data.users_profile_pic;
                 session_data += "&users_email=" + data.data.users_email;
