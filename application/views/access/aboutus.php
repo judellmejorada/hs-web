@@ -59,8 +59,8 @@
                   <!-- right menu -->
                   <ul class="navbar-nav ms-auto align-items-center">
                       <li class="nav-item me-0">
-                          <a href="login" target="_blank" class="nav-link d-lg-none">Log in</a>
-                          <a href="login" target="_blank" class="btn btn-sm btn-light btn-rounded d-none d-lg-inline-flex">
+                          <a href="login" target="" class="nav-link d-lg-none">Log in</a>
+                          <a href="login" target="" class="btn btn-sm btn-light btn-rounded d-none d-lg-inline-flex">
                               <i class="mdi mdi-account-edit me-2"></i>Log in
                           </a>
                       </li>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-md-5 offset-md-2">
                         <div class="text-md-end mt-3 mt-md-0">
-                            <img src="..assets/images/logos/tooth.png" alt="" class="img-fluid w-100">
+                            <img src="<?php echo base_url('assets')?>/images/logos/tooth.png" alt="" class="img-fluid w-100">
                         </div>
                     </div>
                 </div>
