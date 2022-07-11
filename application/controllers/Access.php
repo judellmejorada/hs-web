@@ -22,5 +22,37 @@ class Access extends CI_Controller {
 	{
 		$this->session->sess_destroy();
 		$this->load->view('access/pages-login');
+
+	}
+
+
+	public function oAuth(){
+		if ($_GET['token'] != null){
+			// Setting of session data
+			$this->session->set_userdata(
+				array(
+					'TOKEN' => S_GET['token'],
+					'USERS_TYPE' => S_GET['users_type'],
+					'FULLNAME' => S_GET['users_full_name'],
+					'PROFILE_PIC' => S_GET['users_profile_pic'],
+					'EMAIL' => S_GET['users_email'],
+
+				)
+			);
+			// redirect to pages depends on users_type
+			if(USERS_TYPE == 'Admin'){
+				redirect(base_url['Admin_SystemSetup/UI']);
+			}elseif(USERS_TYPE == 'Staff'){
+				redirect(base_url['Staff_SystemSetup/UI']);
+			}elseif(USERS_TYPE == 'Dentist'){
+
+			}
+			elseif(USERS_TYPE == 'Patient'){
+				redirect(base_url['Patient_SystemSetup/UI']);
+
+			}
+		}else{
+
+		}
 	}
 }
