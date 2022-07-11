@@ -40,14 +40,16 @@ class Access extends CI_Controller {
 				)
 			);
 			// redirect to pages depends on users_type
-			if('USERS_TYPE' == Admin){
+			$users_type = S_GET['users_type'];
+			
+			if($users_type == "Admin"){
 				redirect(base_url['Admin_SystemSetup/UI']);
-			}elseif('USERS_TYPE' == Staff){
+			}elseif($users_type == "Staff"){
 				redirect(base_url['Staff_SystemSetup/UI']);
-			}elseif('USERS_TYPE' == Dentist){
+			}elseif($users_type == "Dentist"){
 
 			}
-			elseif('USERS_TYPE' == Patient){
+			elseif($users_type == "Patient"){
 				redirect(base_url['Patient_SystemSetup/UI']);
 
 			}
