@@ -26,11 +26,11 @@
             <!-- ============================================================== -->
             <!-- Start Page Content here -->
             <!-- ============================================================== -->
+            
+            <div class="content-page">
+                <div class="content">
+                    
 
-                <div class="content-page">
-                    <div class="content">
-                    
-                    
                     <!-- Start Content-->
                     <div class="container-fluid">
                         
@@ -97,14 +97,12 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row align-items-center">
-                                        <div class="col-6">
-                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Campaign Sent">Patients this Month</h5>
-                                                <h3 class="my-2 py-1">9,184</h3>
+                                            <div class="col-6">
+                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Deals">Patients this Month</h5>
+                                                <h3 class="my-2 py-1">861</h3>
                                                 <p class="mb-0 text-muted">
-                                                    <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 3.27%</span>
+                                                    <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 4.87%</span>
                                                 </p>
-                                            </div><!-- end card-body-->
-                                                
                                             </div>
                                             <div class="col-6">
                                                 <div class="text-end">
@@ -142,10 +140,6 @@
                     </div> <!-- container -->
 
                 </div> <!-- content -->
-            </div>
-            <!-- ============================================================== -->
-            <!-- End Page content -->
-            <!-- ============================================================== -->
         </div>
         <!-- END wrapper -->
         

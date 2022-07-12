@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Admin_Add_Appointment extends CI_Controller {
+class Admin_AddInvoices extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,13 +18,12 @@ class Admin_Add_Appointment extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function AppointmentPage()
+	public function AddInvoice()
 	{
 		
-		$this->load->view('users/staffs/staff-appointment');
-		//$this->load->view('partials/admin/header');
-		$this->load->view('partials/staff/top_bar');
-		$this->load->view('partials/staff/left_sidebar');
-		$this->load->view('partials/staff/footer');
+		$this->load->view('users/admin/admin-add-invoices');
+		$this->load->view('partials/admin/top_bar');
+		$this->load->view('partials/admin/left_sidebar');
+		$this->load->view('partials/admin/footer');
 	}
 }

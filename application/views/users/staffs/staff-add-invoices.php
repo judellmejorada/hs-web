@@ -23,7 +23,7 @@
                                             <div class="col-sm-6">
                                                 <div class="float-end mt-3">
                                                     <p><b>Good Day, Happy Smile Customer!</b></p>
-                                                    <p class="text-muted font-13">Please find below a cost-breakdown for the recent work completed. Please make payment at your earliest convenience, and do not hesitate to contact me with any questions.</p>
+                                                    <p class="text-muted font-13">Please find below a cost-breakdown for the recent work completed. Please make payment at your earliest convenience, and do not hesitate to contact us with any questions.</p>
                                                    
                                                 </div>
             
@@ -55,20 +55,10 @@
                                             <h6>Billing Address</h6>
                                                 <div class="form-group  ">
                                                 <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Name" autocomplete="off">
-                                                </div>
-                                                <div class="form-group ">
-                                                <textarea class="form-control" rows="2" name="address" id="address" placeholder="Address"></textarea>
-                                                </div>                
+                                                </div>      
                                             </div> <!-- end col-->
-            
-                                            <div class="col-sm-5">
-                                                <div class="col-sm-13">
-                                                    <img src="<?php echo base_url('assets')?>/images/logos/barcode.png" style="float:right" alt="barcode-image"  class="img-fluid me-2 ">
-                                                </div>
-                                            </div> <!-- end col-->
-                                                         
-                                            
 
+                                            
                                         <div>
                                         </div>    
                                         <!-- end row -->    
@@ -78,9 +68,8 @@
                                         <table class="table table-bordered table-hover" style="margin-left:1rem"id="invoiceItem">
                                         <tr>
                                         <th width="2%"><input id="checkAll" class="formcontrol" type="checkbox"></th>`
-                                        <th width="38%">Service</th>
-                                        <th width="15%">Price</th>
-                                        <th width="15%">Total</th>
+                                        <th width="78%">Service</th>
+                                        <th width="20%">Price</th>
                                         </tr>
                                         <tr>
                                         <td><input class="itemRow" type="checkbox"></td>
@@ -120,13 +109,6 @@
                                                         <label for="Subtotal" class="form-label">Subtotal:  </label>
                                                         <div class="input-group">
                                                         <input type="number" readonly="" class="form-control" id="Subtotal" value="">
-                                                    
-                                                        </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                        <label>Tax Rate:  </label>
-                                                        <div class="input-group">
-                                                        <input type="number" readonly="" class="form-control" id="Taxrate" value="12%">
                                                         
                                                         </div>
                                                         </div>

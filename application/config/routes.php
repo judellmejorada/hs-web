@@ -64,7 +64,7 @@ $route['faq']='Faq/FaqPage';
 $route['admin'] = 'Admin_SystemSetup/UI';
 $route['admin/dashboard'] = 'Admin/Dashboard';
 $route['admin/users'] = 'Admin_Users/UserPage';
-$route['admin/add-patient'] = 'Admin_Add_Patient/AddPatient';
+$route['admin/add-user'] = 'Admin_Add_User/AddUser';
 $route['admin/services'] = 'Admin_Services/ServicePage';
 $route['admin/add-service'] = 'Admin_Add_Service/AddService';
 $route['admin/calendar'] = 'Admin_Calendar/CalendarPage';
@@ -72,7 +72,7 @@ $route['admin/dentists'] = 'Admin_Dentist/DentistPage';
 $route['admin/add-dentist'] = 'Admin_Add_Dentist/AddDentist';
 $route['admin/branches'] = 'Admin_Branch/BranchPage';
 $route['admin/add-branch'] = 'Admin_Add_Branch/AddBranch';
-$route['admin/invoices'] = 'Admin_Invoices/InvoicesPage';
+$route['admin/invoices'] = 'Admin_Invoices/InvoicePage';
 $route['admin/add-invoices'] = 'Admin_Add_Invoice/InvoicePage';
 
 //Staff Files

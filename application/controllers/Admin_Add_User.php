@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Admin_Add_Patient extends CI_Controller {
+class Admin_Add_User extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,7 +18,7 @@ class Admin_Add_Patient extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function AddPatient()
+	public function AddUser()
 	{
 		$this->load->view('users/admin/admin-add-patient');
 		$this->load->view('partials/admin/top_bar');

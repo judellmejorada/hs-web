@@ -62,7 +62,7 @@
                             </a>
 
                             <a data-bs-toggle="" href="<?php echo base_url('admin/invoices')?>" class="side-nav-link">
-                                <i class="uil-store"></i>
+                                <i class="uil-bill"></i>
                                 <span> Invoices </span>
                             </a>
                             
