@@ -42,9 +42,6 @@
                                                                     <option>Makati Branch</option>
                                                                 </select>
                                                 </div>
-                                                <div class="form-group">
-                                                <textarea class="form-control" readonly="" rows="2" name="address" id="address" placeholder="Branch Address"></textarea>
-                                                </div>
                                                 </div>
                                             </div><!-- end col -->
                                         </div>
@@ -75,7 +72,6 @@
                                         <td><input class="itemRow" type="checkbox"></td>
                                         <td><input type="text" name="productName[]" id="productName_1" class="form-control" autocomplete="off"></td>
                                         <td><input type="number" name="price[]" id="price_1" class="form-control price" autocomplete="off"></td>
-                                        <td><input type="number" name="total[]" id="total_1" class="form-control total" autocomplete="off"></td>
                                         </tr>
                                         </table>
                                         </div>
@@ -112,12 +108,14 @@
                                                         
                                                         </div>
                                                         </div>
+                                                        <br>
                                                         <div class="form-group">
                                                         <label>Discount:  </label>
                                                         <div class="input-group">
                                                         <input value="" type="number" class="form-control" name="discount" id="discount" placeholder="Discount">
                                                         </div>
                                                         </div>
+                                                        <br>
                                                         <div class="form-group">
                                                         <label>Total:  </label>
                                                         <div class="input-group">

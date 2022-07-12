@@ -47,11 +47,11 @@
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">HappySmile</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Admin</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Staff</a></li>
                                             <li class="breadcrumb-item active">Appointment</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">APPOINTMENT</h4>
+                                    <h4 class="page-title">APPOINTMENTS</h4>
                                 </div>
                             </div>
                         </div>     
