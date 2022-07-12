@@ -86,9 +86,9 @@
                             </h8>
 
                             <p></p>
-                            <p class="mb-4 font-16 text-white">HappySmile Dental Clinic was established in 2012.We are one of the most established 
+                            <p class="mb-4 font-16 text-white">HappySmile Dental Clinic was established in 2022.We are one of the most established 
                                 and respected brands of dental care in the country. We operate a chain of modern and state-of-the art dental clinics 
-                                that provide multi-specialty services to patients. Please feel free to go through our site to know more about us , 
+                                that provide multi-specialty services to patients. Please feel free to go through our site to know more about us, 
                                 our dentists, our clinics and the services we provide. Enjoy!</p>
                                 <div>
                                     <span class="badge bg-danger rounded-pill">New</span>

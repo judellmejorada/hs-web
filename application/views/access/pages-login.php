@@ -23,7 +23,7 @@
 
     </head>
 
-    <body class="loading authentication-bg" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+    <body class="loading authentication-bg" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": false}'>
         <div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5">
             <div class="container">
                 <div class="row justify-content-center">
@@ -32,7 +32,7 @@
 
                             <!-- Logo -->
                             <div class="card-header pt-4 pb-4 text-center bg-primary">
-                                <a href="index.php">
+                                <a href="landing">
                                     <span><img src="<?php echo base_url('assets')?>/images/logos/logo.png" alt="" height="60"></span>
                                 </a>
                             </div>
@@ -56,7 +56,7 @@
                                     <div class="mb-3">
                                         <a href="recover" class="text-muted float-end"><small>Forgot your password?</small></a>
                                         <label for="password" class="form-label">Password</label>
-                                        <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password" >
+                                        <input type="password" id="password" name="password" class="form-control" required="" placeholder="Enter your password">
                                         <!-- <div class="input-group-text" data-password="false">
                                             <span class="password-eye"></span>
                                         </div> -->
