@@ -48,7 +48,7 @@
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
                                         <input class="form-control" type="email" id="email" name="email" required="" placeholder="Enter your email">
-                                        <div class="invalid-feedback" data-parsley-required = "true" data-parsley-type = "email">
+                                        <div class="invalid-feedback" data-parsley-required= "true" data-parsley-type = "email">
                                         </div>
                                         
                                     </div>

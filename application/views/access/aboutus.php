@@ -336,7 +336,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="mt-5">
-                            <p class="text-muted mt-4 text-center mb-0">© 2012 - 2022 HappySmile</p>
+                            <p class="text-muted mt-4 text-center mb-0">2022 © HappySmile</p>
                         </div>
                     </div>
                 </div>
