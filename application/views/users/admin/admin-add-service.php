@@ -27,11 +27,25 @@
                     </div>
                     
                     <div class="row g-2">
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Description" id="floatingTextarea" required="" style="height: 100px;"></textarea>
-                            <label for="floatingTextarea">Description</label>
+                        <div id="snow-editor" style="height: 300px;">
+                        <h3><span class="ql-size-large">Hello World!</span></h3>
+                        <p><br></p>
+                        <h3>This is an simple editable area.</h3>
+                        <p><br></p>
+                        <ul>
+                            <li>
+                                Select a text to reveal the toolbar.
+                            </li>
+                            <li>
+                                Edit rich document on-the-fly, so elastic!
+                            </li>
+                        </ul>
+                        <p><br></p>
+                        <p>
+                            End of simple area
+                        </p>
                             <div class="invalid-feedback">
-                                        Please provide a brief Description.  
+                                    Please provide a brief Description.  
                             </div>
                         </div>
                     </div>
