@@ -12,7 +12,7 @@
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom00">Branch</label>
-                                <select class="form-select" id="validationCustom00" required="">
+                                <select class="form-select" id="validationCustom00" placeholder="Branch" required="">
                                     <option></option>
                                     <option>Commonwealth</option>
                                     <option>Quezon City</option>
@@ -32,17 +32,17 @@
                         </div>
                         </div>            
                         
-                    <div class="row g-2">
+                        <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom03">Appointment Purpose</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Phone Number" required="">
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Appointment Purpose" required="">
                                 <div class="invalid-feedback">
                                     Please provide an Appointment Purpose.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom03">Status</label>
-                                <select type="text" class="form-control" id="validationCustom03" placeholder="Phone Number" required="">
+                                <select type="text" class="form-select" id="validationCustom03" placeholder="Status" required="">
                                     <option></option>
                                     <option>Approved</option>
                                     <option>Disapproved</option>
@@ -52,7 +52,9 @@
                                     Please provide a Status.
                                 </div>
                             </div>
-                            <div class="mb-3 col-md-6">
+                        </div>  
+
+                        <div class="row g-2">
                                 <label class="form-label" for="validationCustom04">Success</label>
                                 <select class="form-select" id="validationCustom04" required="">
                                     <option></option>
@@ -62,19 +64,18 @@
                                 <div class="invalid-feedback">
                                     Please choose an option.
                                 </div>
-                            </div>
-                        </div>  
+                        </div>
 
                         <div class="row g-2">
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Description" id="floatingTextarea" required="" style="height: 100px;"></textarea>
-                            <label for="floatingTextarea">Comment</label>
+                            <label class="form-label" for="validationCustom03">Comment</label>
+                            <div id="snow-editor" style="height: 300px;" required="" ></div>
                             <div class="invalid-feedback">
-                                        Please provide a Comment.  
+                                    Please provide a Comment.  
                             </div>
                         </div>
-                        </div>
+
                         <br>
+
                         <div class="mb-3">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="invalidCheck" required="">

@@ -72,6 +72,8 @@ $route['admin/dentists'] = 'Admin_Dentist/DentistPage';
 $route['admin/add-dentist'] = 'Admin_Add_Dentist/AddDentist';
 $route['admin/branches'] = 'Admin_Branch/BranchPage';
 $route['admin/add-branch'] = 'Admin_Add_Branch/AddBranch';
+$route['admin/invoices'] = 'Admin_Invoices/InvoicesPage';
+$route['admin/add-invoices'] = 'Admin_Add_Invoice/InvoicePage';
 
 //Staff Files
 $route['staff'] = 'Staff_SystemSetup/UI';

@@ -79,15 +79,15 @@
                         </div>
 
                         <div class="row g-2">
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Description" id="floatingTextarea" required="" style="height: 100px;"></textarea>
-                            <label for="floatingTextarea">Description</label>
+                            <label class="form-label" for="validationCustom03">Description</label>
+                            <div id="snow-editor" style="height: 300px;" required="" ></div>
                             <div class="invalid-feedback">
-                                        Please provide a brief Description.  
+                                    Please provide a brief Description.  
                             </div>
                         </div>
-                        </div>
+
                         <br>
+                        
                         <div class="mb-3">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="invalidCheck" required="">
