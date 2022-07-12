@@ -202,6 +202,10 @@
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.services.js"></script>
         <!-- end demo js-->
+        <!-- quill js -->
+        <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>
+        <!-- quill Init js-->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.quilljs.js"></script>
 
     </body>
 </html>
