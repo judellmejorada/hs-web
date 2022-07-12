@@ -4,15 +4,15 @@
         <meta charset="utf-8" />
         <title>Recover Password | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
-        <meta content="HappySmile" name="author" />
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"/>
+        <meta content="HappySmile" name="author"/>
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/HappySmile.ico">
 
         <!-- App css -->
-        <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
-        <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style"/>
+        <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style"/>
 
     </head>
 
@@ -25,8 +25,8 @@
                         <div class="card">
                             <!-- Logo -->
                             <div class="card-header pt-4 pb-4 text-center bg-primary">
-                                <a href="index.html">
-                                    <span><img src="assets/images/logos/logo.png" alt="" height="22"></span>
+                                <a href="landing">
+                                    <span><img src="<?php echo base_url('assets')?>/images/logos/logo.png" alt="" height="28"></span>
                                 </a>
                             </div>
                             
@@ -40,7 +40,7 @@
                                 <form action="#">
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your Email">
                                     </div>
 
                                     <div class="mb-0 text-center">
