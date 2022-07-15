@@ -1,4 +1,4 @@
-const baseURL = "https://happysmile-dcms.herokuapp.com/happysmile/v1/";
+const baseURL = "https://happysmile-dcms.herokuapp.com/v1";
 const getLocalData = () => JSON.parse(localStorage.getItem("userData"));
 const setLocalData = (userData) =>
 	localStorage.setItem("userData", JSON.stringify(userData));
