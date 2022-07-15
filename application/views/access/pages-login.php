@@ -72,11 +72,11 @@
                                     </div>
                                      <!-- social-->
                                     <div class="text-center mt-4">
-                                        <p class="text-muted font-16">Sign in with</p>
+                                        <p class="text-muted font-16">or</p>
                                         <ul class="social-list list-inline mt-3">
 
                                             <li class="list-inline-item">
-                                                <i class="g-signin2" data-width="300" data-height="25" data-longtitle="true"></i></a>
+                                                <i class="g-signin2" data-width="150" data-height="30" data-longtitle="false"></i></a>
                                             </li>
                                             
                                         </ul>
