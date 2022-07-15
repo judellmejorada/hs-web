@@ -80,7 +80,7 @@
                                             <li class="list-inline-item">
                                                 <a href="#" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
                                             </li>
-                                            <div class="g-signin2" data-width="300" data-height="200" data-longtitle="false">
+                                            <div class="g-signin2" data-width="30" data-height="30" data-longtitle="false">
                                             <li class="list-inline-item">
                                                 <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
                                             </li>
