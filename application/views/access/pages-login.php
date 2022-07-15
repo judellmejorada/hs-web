@@ -78,9 +78,9 @@
                                                 <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-facebook"></i></a>
                                             </li>
                                             <li class="list-inline-item">
-                                                <a href="javascript: void(0);" class="social-list-item border-danger text-danger" data-onsuccess="onSignIn"><i class="mdi mdi-google"></i></a>
+                                                <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="g-signin"></i></a>
                                             </li>
-                                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                                            
                                             <li class="list-inline-item">
                                                 <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
                                             </li>
