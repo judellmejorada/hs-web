@@ -78,7 +78,7 @@
                                                 <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-facebook"></i></a>
                                             </li>
                                             <li class="list-inline-item">
-                                                <a href="#" class="social-list-item border-danger text-danger"><i class="g-signin2" data-width="30" data-height="30" data-longtitle="false"></i></a>
+                                                <i class="g-signin2" data-width="30" data-height="30" data-longtitle="false"></i></a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="javascript: void(0);" id="nobackground" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
