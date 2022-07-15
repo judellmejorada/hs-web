@@ -20,9 +20,9 @@ class Staff extends CI_Controller {
 	 */
 	public function Dashboard()
 	{
-		$this->load->view('users/admin/staff-dashboard');
-		$this->load->view('partials/admin/top_bar');
-		$this->load->view('partials/admin/left_sidebar');
-		$this->load->view('partials/admin/footer');
+		$this->load->view('users/staff/staff-dashboard');
+		$this->load->view('partials/staff/top_bar');
+		$this->load->view('partials/staff/left_sidebar');
+		$this->load->view('partials/staff/footer');
 	}
 }
