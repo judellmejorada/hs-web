@@ -7,8 +7,8 @@ function onSignIn(googleUser) {
     $("#users_profile_pic").attr('src', getUsers_profile_picUrl());
 
     // The ID token you need to pass to your backend:
-    var id_token = googleUser.getAuthResponse().id_token;
-    console.log("ID Token: " + id_token);
+    var token = googleUser.getAuthResponse().token;
+    console.log("TOKEN" + token);
 
   }
 
