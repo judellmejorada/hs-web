@@ -115,6 +115,9 @@
         <footer class="footer footer-alt">
             2022 © HappySmile.com
         </footer>
+        
+        <!-- google cdn jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
@@ -132,8 +135,6 @@
          <!-- google library -->
          <script src="https://apis.google.com/js/platform.js" async defer></script>
 
-         <!-- google cdn jquery -->
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 
          <script src="<?php echo base_url('assets')?>/js/google.js"></script>
 
