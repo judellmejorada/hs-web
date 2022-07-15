@@ -76,8 +76,10 @@
                                         <ul class="social-list list-inline mt-3">
 
                                             <li class="list-inline-item">
-                                                <i class="g-signin2" data-width="150" data-height="30" data-longtitle="false"></i></a>
+                                                <i class="g-signin2" data-width="210" data-height="30" data-longtitle="false"></i></a>
                                             </li>
+
+                                        <p class="text-muted font-12">By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>
                                             
                                         </ul>
                                     </div>

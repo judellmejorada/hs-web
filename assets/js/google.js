@@ -8,7 +8,7 @@ function onSignIn(googleUser) {
 
     // The ID token you need to pass to your backend:
     var token = googleUser.getAuthResponse().token;
-    console.log("TOKEN" + token);
+    console.log("TOKEN" + data.token);
 
   }
 
