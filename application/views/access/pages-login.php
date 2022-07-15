@@ -79,7 +79,7 @@
                                                 <i class="g-signin2" data-width="210" data-height="30" data-longtitle="false"></i></a>
                                             </li>
 
-                                        <p class="text-muted font-12">By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>
+                                        <p class="text-muted font-12" text-align:left;>By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>
                                             
                                         </ul>
                                     </div>
