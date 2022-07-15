@@ -1,18 +1,21 @@
 function onSignIn(googleUser) {
+
+    // Useful data for your client-side scripts: 
     var profile = googleUser.getBasicProfile();
     $("#users_fname").text(profile.getUsers_fname());
     $("#users_email").text(profile.getUsers_email());
     $("#users_profile_pic").attr('src', getUsers_profile_picUrl());
 
+    // The ID token you need to pass to your backend:
+    var id_token = googleUser.getAuthResponse().id_token;
+    console.log("ID Token: " + id_token);
+
   }
 
 function signOut() {
   var auth2 = gapi.auth2.getAuthInstance();
-  auth2.signOut().then(function(){
-    alert("You have been signed out successfully");
-    $(".g-signin2").css('display', 'block');
-    $(".data").css('display', 'none');
-
+  auth2.signOut().then(function (){
+    alert("You have been signed out successfully.");
   });
 
 }

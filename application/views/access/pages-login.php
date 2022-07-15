@@ -78,9 +78,9 @@
                                                 <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-facebook"></i></a>
                                             </li>
                                             <li class="list-inline-item">
-                                                <a class="g-signin2" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
+                                                <a href="#" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
                                             </li>
-                                            
+                                            <div class="g-signin2" data-width="300" data-height="200" data-longtitle="false">
                                             <li class="list-inline-item">
                                                 <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
                                             </li>
@@ -141,7 +141,7 @@
          <!-- google cdn jquery -->
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 
-         <script src="<?php echo base_url('assets')?>/index.js"></script>
+         <script src="<?php echo base_url('assets')?>/google.js"></script>
 
        
         

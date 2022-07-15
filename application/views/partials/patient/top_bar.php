@@ -32,7 +32,7 @@
                                     </a>
 
                                     <!-- item-->
-                                    <a href="<?php echo base_url('login')?>" class="dropdown-item notify-item">
+                                    <a href="#" class="dropdown-item notify-item" onclick="signOut();">
                                         <i class="mdi mdi-logout me-1"></i>
                                         <span>Logout</span>
                                     </a>
@@ -47,6 +47,8 @@
                     </div>
 
                     <!-- end Topbar -->
+
+            <script src="<?php echo base_url('assets')?>/google.js"></script>
 
     </body>
 </html>
