@@ -78,12 +78,11 @@
                                                 <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-facebook"></i></a>
                                             </li>
                                             <li class="list-inline-item">
-                                                <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="mdi mdi-google" data-onsuccess="onSignIn"></i></a>
+                                                <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
                                             </li>
                                             <li class="list-inline-item">
-                                                <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
+                                                <a href="javascript: void(0);" class="social-list-item border-info text-info" data-onsuccess="onSignIn"><i class="mdi mdi-twitter"></i></a>
                                             </li>
-                                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
                                             <li class="list-inline-item">
                                                 <a href="javascript: void(0);" class="social-list-item border-secondary text-secondary"><i class="mdi mdi-github"></i></a>
                                             </li>
