@@ -76,7 +76,7 @@
                                         <ul class="social-list list-inline mt-3">
 
                                             <li class="list-inline-item">
-                                                <i class="g-signin2" data-width="100" data-height="50" data-longtitle="true"></i></a>
+                                                <i class="g-signin2" data-width="300" data-height="25" data-longtitle="true"></i></a>
                                             </li>
                                             
                                         </ul>
