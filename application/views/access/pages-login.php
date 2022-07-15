@@ -135,7 +135,7 @@
          <!-- google cdn jquery -->
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 
-         <script src="<?php echo base_url('assets')?>js/google.js"></script>
+         <script src="<?php echo base_url('assets')?>/js/google.js"></script>
 
        
         
