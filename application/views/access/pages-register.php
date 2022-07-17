@@ -82,7 +82,7 @@
                                         <div class="mb-3">
                                             <div class="mb-3">
                                                 <label class="form-label" for="validationCustom04">Civil Status</label>
-                                                <select class="form-control select2" data-toggle="select2" name="civil_status" required="">
+                                                <select class="form-control select2" data-toggle="select2" id="civil_status" name="civil_status" required="">
                                                     <option value=""></option>
                                                     <option value="Single">Single</option>
                                                     <option value="Married">Married</option> 
@@ -99,7 +99,7 @@
                                         <label class="form-label" for="validationCustom01" >Gender</label>
                                         <br>
                                     <div class="mb-3">
-                                                <select class="form-control select2" data-toggle="select2" name="gender" required="">
+                                                <select class="form-control select2" data-toggle="select2" id="gender" name="gender" required="">
                                                     <option value=""></option>
                                                     <option value="Single">Male</option>
                                                     <option value="Married">Female</option> 
@@ -114,7 +114,7 @@
                                     </div>  
                                     <div class="mb-3">
                                         <label class="form-label">Profile Image</label>
-                                        <input class="form-control" type="file" id="inputGroupFile04" required="">
+                                        <input class="form-control" type="file" name="profile_pic" id="profile_pic" required="">
                                     </div> 
                                     <div class="invalid-feedback">
                                                 Please provide an Image.
@@ -191,6 +191,15 @@
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
+        <!-- parsley -->
+        <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
+
+         <!-- custom common.js -->
+         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
+         
+         <!-- custom login.js -->
+         <script src="<?php echo base_url('assets')?>/js/access/register.js"></script>
         
+
     </body>
 </html>
