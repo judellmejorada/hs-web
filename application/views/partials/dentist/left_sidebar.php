@@ -26,9 +26,9 @@
                         <li class="side-nav-title side-nav-item">Navigation</li>
 
                         <li class="side-nav-item">
-                            <a href="<?php echo base_url('dentist')?>" class="side-nav-link">
-                                <i class="uil-home-alt"></i>
-                                <span> Dashboard </span>
+                            <a data-bs-toggle="" href="<?php echo base_url('dentist/calendar')?>" class="side-nav-link">
+                                <i class="uil-calendar-alt"></i>
+                                <span> Calendar </span>
                             </a>
                         </li>
 
@@ -41,10 +41,7 @@
                                 <span> Appointments </span>
                             </a>
 
-                            <a data-bs-toggle="" href="<?php echo base_url('dentist/calendar')?>" class="side-nav-link">
-                                <i class="uil-calendar-alt"></i>
-                                <span> Calendar </span>
-                            </a>
+                           
 
                             <a data-bs-toggle="" href="<?php echo base_url('dentist/schedule')?>"  class="side-nav-link">
                                 <i class="uil-bill"></i>
