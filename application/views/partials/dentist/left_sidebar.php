@@ -37,7 +37,7 @@
                                 <i class="uil-briefcase-alt"></i>
                                 <span> Schedules </span>
                             </a>
-
+</li>
                     <!-- End Sidebar -->
 
                     <div class="clearfix"></div>
