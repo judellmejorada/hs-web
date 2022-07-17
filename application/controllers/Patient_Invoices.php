@@ -18,7 +18,7 @@ class Patient_Invoices extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function PatientCalendarPage()
+	public function PatientInvoicePage()
 	{
 		$this->load->view('users/patients/patient-invoices');
 		$this->load->view('partials/patient/top_bar');
