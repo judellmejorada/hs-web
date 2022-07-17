@@ -26,7 +26,7 @@
                         <li class="side-nav-title side-nav-item">Navigation</li>
 
                         <li class="side-nav-item">
-                            <a data-bs-toggle="" href="<?php echo base_url('dentist/calendar')?>" class="side-nav-link">
+                            <a data-bs-toggle="" href="<?php echo base_url('dentist')?>" class="side-nav-link">
                                 <i class="uil-calendar-alt"></i>
                                 <span> Calendar </span>
                             </a>
