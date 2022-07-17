@@ -86,8 +86,6 @@ $route['staff/invoices'] = 'Staff_Invoices/InvoicePage';
 //Dentist Files
 $route['dentist'] = 'Dentist_SystemSetup/UI';
 $route['dentist/dashboard'] = 'Dentist/Dashboard';
-$route['dentist/appointment'] = 'Dentist_Appointment/AppointmentPage';
-$route['dentist/add-appointment'] = 'Dentist_Add_Appointment/AddAppointment';
 $route['dentist/calendar'] = 'Dentist_Calendar/CalendarPage';
 $route['dentist/schedule'] = 'Dentist_Schedule/SchedulePage';
 
