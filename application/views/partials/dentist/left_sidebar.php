@@ -33,10 +33,11 @@
                         </li>
 
                         <li class="side-nav-title side-nav-item">DENTIST</li>
+                        
                         <li class="side-nav-item">
-                        <a data-bs-toggle="" href="<?php echo base_url('dentist/schedule')?>"  class="side-nav-link">
+                            <a data-bs-toggle="" href="<?php echo base_url('dentist/schedule')?>" class="side-nav-link">
                                 <i class="uil-briefcase-alt"></i>
-                                <span> Schedules </span>
+                                <span> Appointments </span>
                             </a>
              
                     <!-- End Sidebar -->
