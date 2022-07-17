@@ -89,7 +89,7 @@ $route['dentist/dashboard'] = 'Dentist/Dashboard';
 $route['dentist/appointment'] = 'Dentist_Appointment/AppointmentPage';
 $route['dentist/add-appointment'] = 'Dentist_Add_Appointment/AddAppointment';
 $route['dentist/calendar'] = 'Dentist_Calendar/CalendarPage';
-$route['dentist/schedule'] = 'Dentist_Calendar/SchedulePage';
+$route['dentist/schedule'] = 'Dentist_Schedule/SchedulePage';
 
 //Patient Files
 $route['patient'] = 'Patient_SystemSetup/UI';
@@ -97,7 +97,7 @@ $route['patient/dashboard'] = 'Patient/Dashboard';
 $route['patient/appointment'] = 'Patient_Appointment/AppointmentUserpage';
 $route['patient/add-appointment'] = 'Patient_Add_Appointment/AddUserAppointment';
 $route['patient/calendar'] = 'Patient_Calendar/PatientCalendarPage';
-$route['patient/invoices'] = 'Patient_Invoices/InvoicePage';
+$route['patient/invoices'] = 'Patient_Invoices/PatientInvoicePage';
 
 
 //Reserved Routes
