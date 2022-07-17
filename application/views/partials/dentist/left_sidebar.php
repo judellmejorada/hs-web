@@ -33,8 +33,7 @@
                         </li>
 
                         <li class="side-nav-title side-nav-item">DENTIST</li>
-                                                 
-                            <a data-bs-toggle="" href="<?php echo base_url('dentist/schedule')?>"  class="side-nav-link">
+                           <a data-bs-toggle="" href="<?php echo base_url('dentist/schedule')?>"  class="side-nav-link">
                                 <i class="uil-briefcase-alt"></i>
                                 <span> Schedules </span>
                             </a>
