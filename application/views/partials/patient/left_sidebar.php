@@ -23,15 +23,6 @@
                     <!--- Sidemenu -->
                     <ul class="side-nav">
 
-                        <li class="side-nav-title side-nav-item">Navigation</li>
-
-                        <li class="side-nav-item">
-                            <a href="<?php echo base_url('patient')?>" class="side-nav-link">
-                                <i class="uil-home-alt"></i>
-                                <span> Dashboard </span>
-                            </a>
-                        </li>
-
                         <li class="side-nav-title side-nav-item">USER</li>
 
 
