@@ -20,7 +20,7 @@ class Dentist_Calendar extends CI_Controller {
 	 */
 	public function CalendarPage()
 	{
-		$this->load->view('users/dentists/dentist-calendar');
+		$this->load->view('users/dentists/dentists-calendar');
 		$this->load->view('partials/staff/top_bar');
 		$this->load->view('partials/staff/left_sidebar');
 	}
