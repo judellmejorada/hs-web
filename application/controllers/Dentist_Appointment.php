@@ -21,10 +21,10 @@ class Dentist_Appointment extends CI_Controller {
 	public function AppointmentPage()
 	{
 		
-		$this->load->view('users/patients/dentist-appointment');
+		$this->load->view('users/dentists/dentist-appointment');
 		//$this->load->view('partials/admin/header');
-		$this->load->view('partials/patient/top_bar');
-		$this->load->view('partials/patient/left_sidebar');
-		$this->load->view('partials/patient/footer');
+		$this->load->view('partials/dentist/top_bar');
+		$this->load->view('partials/dentist/left_sidebar');
+		$this->load->view('partials/dentist/footer');
 	}
 }

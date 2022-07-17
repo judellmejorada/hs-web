@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dentist_Schedule extends CI_Controller {
+class Dentist extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,10 +18,11 @@ class Dentist_Schedule extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function SchedulePage()
+	public function Dashboard()
 	{
-		$this->load->view('users/dentists/dentists-schedule');
-		$this->load->view('partials/dentist/top_bar');
-		$this->load->view('partials/dentist/left_sidebar');
+		$this->load->view('users/dentists/dentists-dashboard');
+		$this->load->view('partials/admin/top_bar');
+		$this->load->view('partials/admin/left_sidebar');
+		$this->load->view('partials/admin/footer');
 	}
 }
