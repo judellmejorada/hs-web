@@ -38,12 +38,16 @@
                                 <i class="uil-calendar-alt"></i>
                                 <span> Calendar </span>
                             </a>
+                        </li>
 
-                            <a data-bs-toggle="" href="<?php echo base_url('dentist/schedule')?>"  class="side-nav-link">
-                                <i class="uil-bill"></i>
-                                <span> Schedules </span>
+                        <li class="side-nav-title side-nav-item">DENTIST</li>
+                        
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="" href="<?php echo base_url('dentist/schedule')?>" class="side-nav-link">
+                                <i class="uil-briefcase-alt"></i>
+                                <span> Appointments </span>
                             </a>
-
+             
                     <!-- End Sidebar -->
 
                     <div class="clearfix"></div>
