@@ -20,7 +20,7 @@ class Dentist extends CI_Controller {
 	 */
 	public function Dashboard()
 	{
-		$this->load->view('users/admin/dentists-dashboard');
+		$this->load->view('users/dentists/dentists-dashboard');
 		$this->load->view('partials/admin/top_bar');
 		$this->load->view('partials/admin/left_sidebar');
 		$this->load->view('partials/admin/footer');
