@@ -20,7 +20,7 @@ $(function () {
                 users_fname : $('#fname').val(),
                 users_mname: $('#mname').val(),
                 users_lname: $('#lname').val(),
-                users_bdate: $('#bdate').val(),
+                users_birthdate: $('#birthdate').val(),
                 users_phone : $('#phone').val(),
                 users_civil_status: $('#civil_status').val(),
                 users_gender : $('#gender').val(),
@@ -41,7 +41,7 @@ $(function () {
                 session_data += "&users_fname=" + data.data.users_fname;
                 session_data += "&users_mname=" + data.data.users_mname;
                 session_data += "&users_lname=" + data.data.users_lname;
-                session_data += "&users_bdate=" + data.data.users_bdate;
+                session_data += "&users_birthdate=" + data.data.users_birthdate;
                 session_data += "&users_phone=" + data.data.users_phone;
                 session_data += "&users_civil_status=" + data.data.users_civil_status;
                 session_data += "&users_gender=" + data.data.users_gender;
