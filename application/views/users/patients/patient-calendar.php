@@ -178,6 +178,8 @@
         <script src="<?php echo base_url('assets')?>/js/pages/demo.calendar.js"></script>
         <!-- end demo js-->
 
+        <script src="<?php echo base_url('assets')?>/js/google.js"></script>
+
     </body>
 
 </html>

@@ -32,8 +32,8 @@
                                     </a>
 
                                     <!-- item-->
-                                    <a href="<?php echo base_url('login')?>" class="dropdown-item notify-item">
-                                        <i class="mdi mdi-logout me-1"></i>
+                                    <a href="" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-logout me-1" onclick="signOut();"></i>
                                         <span>Logout</span>
                                     </a>
                                 </div>

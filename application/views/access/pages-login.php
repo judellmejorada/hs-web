@@ -117,7 +117,7 @@
         </footer>
         
         <!-- google cdn jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
