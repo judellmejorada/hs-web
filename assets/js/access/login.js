@@ -13,7 +13,7 @@ $(function () {
 		if ($("#form_id").parsley().validate()) {
 			//no validation error
 			$.ajax({
-				url: baseURL + "/login",
+				url: apiURL + "/login",
 				type: "POST", // post, put, delete, get
 				data: {
 					users_email: $("#email").val(),
@@ -36,10 +36,11 @@ $(function () {
 					session_data += "&users_email=" + data.data.users_email;
 
 					window.location.replace(
-						window.location.href + "./Access/oAuth?" + session_data);
+						baseURL + "./Access/oAuth?" + session_data);
 				},
 				error: function ({ responseJSON }) {
 					console.log(responseJSON);
+					notification('error', '', responseJSON.message.join());
 				},
 			});
 		}

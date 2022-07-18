@@ -1,6 +1,14 @@
-const baseURL = "https://happysmile-dcms.herokuapp.com/v1";
-const baseURLUserProfile =
-	"https://happysmile-dcms.herokuapp.com/users-profile-pic/";
+const apiURL = "https://happysmile-dcms.herokuapp.com/v1";
+const baseURL = "https://happysmile-dcms.herokuapp.com/";
+const baseURLUserProfile = "https://happysmile-dcms.herokuapp.com/users-profile-pic/";
+
+// type = error, warning, success, info
+// title = string
+// message = string
+
+const notification = (type, title, message) => {
+	return toastr[type] (message, title); };
+
 const getLocalData = () => JSON.parse(localStorage.getItem("userData"));
 const setLocalData = (userData) =>
 	localStorage.setItem("userData", JSON.stringify(userData));

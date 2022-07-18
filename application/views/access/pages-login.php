@@ -143,6 +143,9 @@
 
          <script src="<?php echo base_url('assets')?>/js/google.js"></script>
 
+         <!-- demo js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+
        
         
     </body>
