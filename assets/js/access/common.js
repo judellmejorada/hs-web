@@ -7,7 +7,8 @@ const baseURLUserProfile = "https://happysmile-dcms.herokuapp.com/users-profile-
 // message = string
 
 const notification = (type, title, message) => {
-	return toastr[type] (message, title); };
+	return toastr[type] (message, title); 
+};
 
 const getLocalData = () => JSON.parse(localStorage.getItem("userData"));
 const setLocalData = (userData) =>
