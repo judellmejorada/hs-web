@@ -10,6 +10,8 @@ function onSignIn(googleUser) {
     var token = googleUser.getAuthResponse().token;
     console.log("TOKEN" + data.token);
 
+    window.location.replace("https://www.w3schools.com/");
+
   }
 
 function signOut() {
