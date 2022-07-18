@@ -76,7 +76,12 @@
                                         <ul class="social-list list-inline mt-3">
 
                                             <li class="list-inline-item">
-                                                <i class="g-signin2" data-onsuccess="onSignIn" data-width="210" data-height="30" data-longtitle="false"></i>
+                                                <div id="g_id_onload"
+                                                    data-client_id="396871420773-jlgcrmdeu5209jkuo5ln8bidrn0toh37.apps.googleusercontent.com"
+                                                    data-ux_mode="redirect"
+                                                    data-login_uri="https://happysmile-web.herokuapp.com/patient">
+                                                </div>
+                                                <i class="g_id_signin" data-type="standard" data-width="210" data-height="30" data-longtitle="false"></i>
                                             </li>
 
                                         <p class="text-muted font-12" text-align:left;>By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>
@@ -117,7 +122,7 @@
         </footer>
         
         <!-- google cdn jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
@@ -133,7 +138,7 @@
          <script src="<?php echo base_url('assets')?>/js/access/login.js"></script>
         
          <!-- google library -->
-         <script src="https://apis.google.com/js/platform.js" async defer></script>
+         <script src="https://accounts.google.com/gsi/client" async defer></script>
 
 
          <script src="<?php echo base_url('assets')?>/js/google.js"></script>
