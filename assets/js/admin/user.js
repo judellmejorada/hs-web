@@ -51,4 +51,20 @@ $(function () {
 			],
 		})
 	);
+
+	$(document).on("submit", "#add-user-form", async function (event) {
+		event.preventDefault();
+		let formData = new FormData(this);
+		await $.ajax(
+			getAjaxConfig("/admin/user/add-users", {
+				type: "POST",
+				data: formData,
+				contentType: false,
+				processData: false,
+			})
+		);
+		$("#staticBackdrop0").modal("toggle");
+		dataTable.ajax.reload();
+		return false;
+	});
 });
