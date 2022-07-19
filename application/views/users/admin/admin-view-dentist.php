@@ -58,7 +58,7 @@
                     
                     <div class="row g-2">
                             <label class="form-label" for="dentists_description">Description</label>
-                            <div id="snow-editor" name="dentists_description" style="height: 300px;" readonly="" value=""></div>
+                            <div id="snow-editor" name="dentists_description" style="height: 300px;" readonly="" disabled="true"></div>
                             <div class="invalid-feedback">
                                     Please provide a brief Description.  
                             </div>

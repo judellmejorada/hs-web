@@ -125,6 +125,7 @@
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop11"> <i class="mdi mdi-delete"></i></a>
                                                             <?php include ('admin-delete-dentist.php');?>
                                                         </td>
+                                                    </tr>
                                                     
                                                     <tr>
                                                         <td>
@@ -155,11 +156,11 @@
                     
                                                         <td>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <?php include ('admin-view-user.php');?>
+                                                            <?php include ('admin-view-dentist.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <?php include ('admin-modify-user.php');?>
+                                                            <?php include ('admin-modify-dentist.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                            <?php include ('admin-delete-user.php');?>
+                                                            <?php include ('admin-delete-dentist.php');?>
                                                         </td>
                                                     </tr>
                                                 </tbody>
