@@ -63,7 +63,7 @@
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop0"><i class="mdi mdi-plus-circle me-2"></i> Add Invoice</a>
+                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"><i class="mdi mdi-plus-circle me-2"></i> Add Invoice</a>
                                                 <?php include('staff-add-invoices.php')?>
                                             </div><!-- end col-->
                                         </div>
@@ -116,12 +116,12 @@
                                                         </td>
                     
                                                         <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-eye" ></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop5"> <i class="mdi mdi-eye" ></i></a>
                                                             <?php include ('staff-view-invoice.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop6"> <i class="mdi mdi-square-edit-outline"></i></a>
                                                             <?php include ('staff-modify-invoice.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                            <?php include ('staff-delete-user.php');?>
+                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop7"> <i class="mdi mdi-delete"></i></a>
+                                                            <?php include ('staff-delete-invoice.php');?>
                                                         </td>
                                                     
                                                     <tr>
