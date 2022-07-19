@@ -9,22 +9,25 @@
             <div class="modal-body">
 
             <form id="add-user-form" class="needs-validation" novalidate="">
-                    <div class="row g-3">
-                        <div class="col-sm-4">
+                    <div class="row g-2">
+                        <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_fname">First Name</label>
                             <input type="text" class="form-control" id="users_fname" name="users_fname" placeholder="First Name" name="users_fname" required="">
                             <div class="invalid-feedback">
                                 Please provide a First Name.
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_mname">Middle Name</label>
                             <input type="text" class="form-control" id="users_mname" name="users_mname" placeholder="Middle Name" name="users_mname" required="">
                             <div class="invalid-feedback">
                                 Please provide a Middle Name.
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                    </div>   
+                    
+                    <div class="row g-2">
+                        <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_lname">Last name</label>
                             <input type="text" class="form-control" id="users_lname" name="users_lname" placeholder="Last Name" required="">
                             <div class="invalid-feedback">
@@ -38,6 +41,9 @@
                                 Please provide a Birth Date.
                             </div>
                         </div>
+                    </div>
+                    
+                    <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_gender">Gender</label>
                             <select class="form-select" id="users_gender" name="users_gender" required="">
@@ -51,10 +57,7 @@
                                 Please provide a Gender.
                             </div>
                         </div>
-                    </div>            
-                        
-                    <div class="row g-2">
-                    <div class="mb-3 col-md-6">
+                        <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_civil_status">Civil Status</label>
                             <select class="form-select" id="users_civil_status" name="users_civil_status" required="">
                                 <option></option>
@@ -67,47 +70,50 @@
                                 Please provide a Civil Status.
                             </div>
                         </div>
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="users_phone_number">Phone Number</label>
-                                <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
-                                    <div class="invalid-feedback">
-                                        Please provide a Phone Number. 
-                                    </div>
-                            </div>
-                        </div>  
-
-                        <div class="row g-2">
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="users_email">Email</label>
-                                <input type="text" class="form-control" id="users_email" name="users_email" placeholder="Email" required="">
-                                    <div class="invalid-feedback">
-                                        Please provide a Email.  
-                                    </div>
-                            </div>
-
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="users_profile_pic">Image</label>
-                                <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic" required="">
+                    </div>
+                                                       
+                    <div class="row g-2">
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label" for="users_phone_number">Phone Number</label>
+                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
                                 <div class="invalid-feedback">
-                                        Please provide an Image. 
+                                    Please provide a Phone Number. 
                                 </div>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label" for="users_email">Email</label>
+                            <input type="text" class="form-control" id="users_email" name="users_email" placeholder="Email" required="">
+                                <div class="invalid-feedback">
+                                    Please provide a Email.  
+                                </div>
+                        </div>
+                    </div>  
+
+                    <div class="row g-2">
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label" for="users_profile_pic">Image</label>
+                            <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic" required="">
+                            <div class="invalid-feedback">
+                                    Please provide an Image. 
                             </div>
                         </div>
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label" for="users_type">User Type</label>
+                            <select class="form-select" id="users_type" name="users_type" required="">
+                                <option></option>
+                                <option>Admin</option>
+                                <option>Staff</option>
+                                <option>Dentist</option>
+                                <option>Patient</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a User Type.
+                            </div>
+                        </div>
+
+                    </div>
                         
                         <div class="row g-2">
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="users_type">User Type</label>
-                                <select class="form-select" id="users_type" name="users_type" required="">
-                                    <option></option>
-                                    <option>Admin</option>
-                                    <option>Staff</option>
-                                    <option>Dentist</option>
-                                    <option>Patient</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please provide a User Type.
-                                </div>
-                            </div>
                             <div class="mb-3 col-md-6">
                                 <label for="users_password" class="form-label">Password</label>
                                 <div class="input-group input-group-merge">
@@ -120,9 +126,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row g-2">
+                            <div class="mb-3 col-md-6">
                                 <label class="form-label" for="users_status">Status</label>
                                 <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" required="">
                                     <option></option>
@@ -133,6 +137,7 @@
                                 <div class="invalid-feedback">
                                     Please provide a Status.
                                 </div>
+                            </div>
                         </div>
                         
                         <div class="mb-3">
