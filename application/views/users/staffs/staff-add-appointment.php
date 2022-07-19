@@ -11,8 +11,8 @@
             <form class="needs-validation" novalidate="">
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom00">Branch</label>
-                                <select class="form-select" id="validationCustom00" placeholder="Branch" required="">
+                                <label class="form-label" for="branches_name">Branch</label>
+                                <select class="form-select" id="branches_name" name="branches_name" placeholder="Branch" required="">
                                     <option></option>
                                     <option>Commonwealth</option>
                                     <option>Quezon City</option>
@@ -20,7 +20,7 @@
                                     <option>Kylie</option>
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please choose a Dentist.
+                                    Please choose a Branch.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">

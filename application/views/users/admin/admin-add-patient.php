@@ -12,14 +12,14 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_fname">First Name</label>
-                            <input type="text" class="form-control" id="users_fname" name="users_fname" placeholder="First Name" name="users_fname" required="">
+                            <input type="text" class="form-control" id="users_fname" name="users_fname" placeholder="First Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a First Name.
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_mname">Middle Name</label>
-                            <input type="text" class="form-control" id="users_mname" name="users_mname" placeholder="Middle Name" name="users_mname" required="">
+                            <input type="text" class="form-control" id="users_mname" name="users_mname" placeholder="Middle Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a Middle Name.
                             </div>
@@ -74,17 +74,17 @@
                                                        
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="users_phone_number">Phone Number</label>
-                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
-                                <div class="invalid-feedback">
-                                    Please provide a Phone Number. 
-                                </div>
-                        </div>
-                        <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_email">Email</label>
                             <input type="text" class="form-control" id="users_email" name="users_email" placeholder="Email" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Email.  
+                                </div>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label" for="users_phone_number">Phone Number</label>
+                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
+                                <div class="invalid-feedback">
+                                    Please provide a Phone Number. 
                                 </div>
                         </div>
                     </div>  

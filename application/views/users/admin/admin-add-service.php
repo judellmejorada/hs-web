@@ -39,6 +39,8 @@
                             </div>
                         </div>
                         
+                        <br>
+                        
                         <div class="row g-2">
                             <label class="form-label" for="validationCustom03">Description</label>
                             <div id="snow-editor" style="height: 300px;" required="" ></div>
