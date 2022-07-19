@@ -23,6 +23,11 @@
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.core.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.snow.css" rel="stylesheet" type="text/css" />
 
+        <!-- quill js -->
+        <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>
+        <!-- quill Init js-->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.quilljs.js"></script>
+
     </head>
 
     <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
