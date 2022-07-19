@@ -1,5 +1,4 @@
-const apiURL = "https://happysmile-dcms.herokuapp.com/v1";
-const baseURL = "https://happysmile-dcms.herokuapp.com/";
+const baseURL = "https://happysmile-dcms.herokuapp.com/v1";
 const baseURLUserProfile = "https://happysmile-dcms.herokuapp.com/users-profile-pic/";
 
 // type = error, warning, success, info

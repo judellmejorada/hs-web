@@ -13,7 +13,7 @@ $(function () {
 		if ($("#form_id").parsley().validate()) {
 			//no validation error
 			$.ajax({
-				url: apiURL + "/login",
+				url: baseURL + "/login",
 				type: "POST", // post, put, delete, get
 				data: {
 					users_email: $("#email").val(),
