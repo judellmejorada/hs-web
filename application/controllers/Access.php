@@ -50,9 +50,9 @@ class Access extends CI_Controller {
 			}elseif($users_type == "Staff"){
 				redirect(base_url('staff/dashboard'));
 			}elseif($users_type == "Dentist"){
-				redirect(base_url('dentists/dashboard'));
+				redirect(base_url('dentists'));
 			}elseif($users_type == "Patient"){
-				redirect(base_url('patient/dashboard'));
+				redirect(base_url('patient'));
 			}else{
 				redirect(base_url('login'));
 			}
