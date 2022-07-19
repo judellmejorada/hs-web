@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel1">Add User Information</h5>
+                <h5 class="modal-title" id="staticBackdropLabel1">View User Information</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div> <!-- end modal header -->
             <div class="modal-body">
@@ -46,7 +46,7 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_gender">Gender</label>
-                            <select class="form-select" id="users_gender" name="users_gender" readonly="" value="">
+                            <select class="form-select" id="users_gender" name="users_gender" readonly="readonly" value="">
                                 <option></option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -59,7 +59,7 @@
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_civil_status">Civil Status</label>
-                            <select class="form-select" id="users_civil_status" name="users_civil_status" readonly="" value="">
+                            <select class="form-select" id="users_civil_status" name="users_civil_status" readonly="readonly" value="">
                                 <option></option>
                                 <option>Single</option>
                                 <option>Married</option>
@@ -92,14 +92,14 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_profile_pic">Image</label>
-                            <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic" readonly="" value="Phone Number">
+                            <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic" readonly="" value="Image">
                             <div class="invalid-feedback">
                                     Please provide an Image. 
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_type">User Type</label>
-                            <select class="form-select" id="users_type" name="users_type" readonly="" value="">
+                            <select class="form-select" id="users_type" name="users_type" readonly="readonly" value="">
                                 <option></option>
                                 <option>Admin</option>
                                 <option>Staff</option>
@@ -128,7 +128,7 @@
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="users_status">Status</label>
-                                <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" readonly="" value="">
+                                <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" readonly="readonly" value="">
                                     <option></option>
                                     <option>Approved</option>
                                     <option>Disapproved</option>
