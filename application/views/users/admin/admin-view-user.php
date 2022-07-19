@@ -46,7 +46,7 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_gender">Gender</label>
-                            <select class="form-select" id="users_gender" name="users_gender" readonly="readonly" value="">
+                            <select class="form-select" id="users_gender" name="users_gender" disabled="true" readonly="" value="">
                                 <option></option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -59,7 +59,7 @@
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_civil_status">Civil Status</label>
-                            <select class="form-select" id="users_civil_status" name="users_civil_status" readonly="readonly" value="">
+                            <select class="form-select" id="users_civil_status" name="users_civil_status" disabled="true" readonly="" value="">
                                 <option></option>
                                 <option>Single</option>
                                 <option>Married</option>
@@ -82,7 +82,7 @@
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_phone_number">Phone Number</label>
-                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" readonly="" value="Phone Number" required="">
+                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" disabled="true"readonly="" value="Phone Number" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Phone Number. 
                                 </div>
@@ -99,7 +99,7 @@
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_type">User Type</label>
-                            <select class="form-select" id="users_type" name="users_type" readonly="readonly" value="">
+                            <select class="form-select" id="users_type" name="users_type" disabled="true" readonly="" value="">
                                 <option></option>
                                 <option>Admin</option>
                                 <option>Staff</option>
@@ -128,7 +128,7 @@
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="users_status">Status</label>
-                                <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" readonly="readonly" value="">
+                                <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" disabled="true" readonly="" value="">
                                     <option></option>
                                     <option>Approved</option>
                                     <option>Disapproved</option>
