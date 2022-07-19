@@ -120,11 +120,11 @@
                     
                                                         <td>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop5"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <?php include('admin-view-user.php')?>
+                                                            <?php include('admin-view-service.php')?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop6"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <?php include('admin-modify-user.php')?>
+                                                            <?php include('admin-modify-service.php')?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop7"> <i class="mdi mdi-delete"></i></a>     
-                                                            <?php include('admin-delete-user.php')?>                                                
+                                                            <?php include('admin-delete-service.php')?>                                                
                                                         </td>
                                                     
                                                     <tr>

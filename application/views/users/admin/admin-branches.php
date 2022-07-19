@@ -119,11 +119,11 @@
                     
                                                         <td>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop13"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <?php include ('admin-view-user.php');?>
+                                                            <?php include ('admin-view-branch.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop14"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <?php include ('admin-modify-user.php');?>
+                                                            <?php include ('admin-modify-branch.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop15"> <i class="mdi mdi-delete"></i></a>
-                                                            <?php include ('admin-delete-user.php');?>
+                                                            <?php include ('admin-delete-branch.php');?>
                                                         </td>
                                                     
                                                     <tr>
