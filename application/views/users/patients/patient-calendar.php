@@ -45,7 +45,7 @@
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">HappySmile</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Admin</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Patient</a></li>
                                             <li class="breadcrumb-item active">Calendar</li>
                                         </ol>
                                     </div>
@@ -177,6 +177,8 @@
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.calendar.js"></script>
         <!-- end demo js-->
+
+        <script src="<?php echo base_url('assets')?>/js/google.js"></script>
 
     </body>
 

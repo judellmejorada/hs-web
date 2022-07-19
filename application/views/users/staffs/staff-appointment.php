@@ -119,11 +119,11 @@
                     
                                                         <td>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <?php include ('staff-view-user.php');?>
+                                                            <?php include ('staff-view-appointment.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <?php include ('staff-modify-user.php');?>
+                                                            <?php include ('staff-modify-appointment.php');?>
                                                             <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                            <?php include ('staff-delete-user.php');?>
+                                                            <?php include ('staff-delete-appointment.php');?>
                                                         </td>
                                                     
                                                     <tr>

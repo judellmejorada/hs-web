@@ -1,9 +1,9 @@
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop0" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+﻿<!-- Modal -->
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel0">Add Appointment Information</h5>
+                <h5 class="modal-title" id="staticBackdropLabel1">View Appointment Information</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div> <!-- end modal header -->
             <div class="modal-body">
@@ -12,7 +12,7 @@
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="branches_name">Branch</label>
-                                <select class="form-select" id="branches_name" name="branches_name" placeholder="Branch" required="">
+                                <select class="form-select" id="branches_name" name="branches_name" placeholder="Branch" readonly="" disabled="">
                                     <option></option>
                                     <option>Commonwealth</option>
                                     <option>Quezon City</option>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="mb-3 col-md-6">
                             <label class="form-label" for="validationCustom01">Appointment Schedule</label>
-                            <input class="form-control" id="validationCustom01" type="date" name="date" required="">
+                            <input class="form-control" type="date" id="validationCustom01" name="validationCustom01" readonly="">
                             <div class="invalid-feedback">
                                 Please provide a Appointment Date.
                             </div>
@@ -35,14 +35,14 @@
                         <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom03">Appointment Purpose</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Appointment Purpose" required="">
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Appointment Purpose" readonly="">
                                 <div class="invalid-feedback">
                                     Please provide an Appointment Purpose.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom03">Status</label>
-                                <select type="text" class="form-select" id="validationCustom03" placeholder="Status" required="">
+                                <select type="text" class="form-select" id="validationCustom03" placeholder="Status" readonly="" disabled="">
                                     <option></option>
                                     <option>Approved</option>
                                     <option>Disapproved</option>
@@ -56,7 +56,7 @@
 
                         <div class="row g-2">
                                 <label class="form-label" for="validationCustom04">Success</label>
-                                <select class="form-select" id="validationCustom04" required="">
+                                <select class="form-select" id="validationCustom04" readonly="">
                                     <option></option>
                                     <option>Yes</option>
                                     <option>No</option>
@@ -68,26 +68,16 @@
 
                         <div class="row g-2">
                             <label class="form-label" for="validationCustom03">Comment</label>
-                            <div id="snow-editor" style="height: 300px;" required="" ></div>
+                            <div id="snow-editor" style="height: 300px;" readonly="" ></div>
                             <div class="invalid-feedback">
                                     Please provide a Comment.  
                             </div>
                         </div>
 
                         <br>
-
-                        <div class="mb-3">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="invalidCheck" required="">
-                                <label class="form-check-label form-label" for="invalidCheck">I confirm that the details that I have 
-                                provided in this Personal Information are correct, <br> and that I have not deliberately withheld any relevant information. </label>
-                                <div class="invalid-feedback">
-                                    You must agree before submitting.
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="modal-footer">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    <button class="btn btn-primary" type="submit">Done</button>
                 </form>
                         </div>
             </div>

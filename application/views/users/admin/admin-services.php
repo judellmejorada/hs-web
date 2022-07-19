@@ -65,7 +65,7 @@
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop00"> <i class="mdi mdi-plus-circle me-2"></i>Add Service</a>
+                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"> <i class="mdi mdi-plus-circle me-2"></i>Add Service</a>
                                                 <?php include ('admin-add-service.php');?>
                                             </div><!-- end col-->
                                         </div>
