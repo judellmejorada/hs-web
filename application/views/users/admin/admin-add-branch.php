@@ -11,15 +11,15 @@
             <form class="needs-validation" novalidate="">
                     <div class="row g-3">
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom00">Branch</label>
-                            <input type="text" class="form-control" id="validationCustom00" placeholder="Branch" required="">
+                            <label class="form-label" for="branches_name">Branch</label>
+                            <input type="text" class="form-control" id="branches_name" name="branches_name" placeholder="Branch" required="">
                             <div class="invalid-feedback">
                                 Please provide a Branch.
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom01">Contact Person</label>
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="Contact Person" required="">
+                            <label class="form-label" for="branches_contact_person">Contact Person</label>
+                            <input type="text" class="form-control" id="branches_contact_person" name="branches_contact_person" placeholder="Contact Person" required="">
                             <div class="invalid-feedback">
                                 Please provide a Contact Person.
                             </div>
@@ -28,59 +28,24 @@
                         
                     <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom02">Phone Number</label>
-                                <input type="text" class="form-control" id="validationCustom02" placeholder="Phone Number" required="">
+                                <label class="form-label" for="branches_phone_number">Phone Number</label>
+                                <input type="text" class="form-control" id="branches_phone_number" name="branches_phone_number" placeholder="Phone Number" required="">
                                     <div class="invalid-feedback">
                                         Please provide a Phone Number.  
                                     </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom03">Email</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Email" required="">
+                                <label class="form-label" for="branches_google_map">Location</label>
+                                <input type="text" class="form-control" id="branches_google_map" name="branches_google_map" placeholder="Location" required="">
                                     <div class="invalid-feedback">
-                                        Please provide a Email. 
+                                        Please provide a link of your Location through Google Map. 
                                     </div>
                             </div>
                         </div>  
-                        
-                        <div class="row g-2">
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom04">Street Number</label>
-                                <input type="text" class="form-control" id="validationCustom04" placeholder="Street Number" required="">
-                                    <div class="invalid-feedback">
-                                        Please provide a Street Number.  
-                                    </div>
-                            </div>
-
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom05">Street</label>
-                                <input type="text" class="form-control" id="validationCustom05" placeholder="Street" required="">
-                                    <div class="invalid-feedback">
-                                        Please provide a Street.  
-                                    </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row g-2">
-                            <div class="mb-3 col-md-6">
-                                <label for="validationCustom06" class="form-label">Barangay</label>
-                                <input type="text" class="form-control" id="validationCustom06" placeholder="Barangay" required="">
-                                    <div class="invalid-feedback">
-                                        Please provide your Barangay.  
-                                    </div>
-                            </div>
-                            <div class="mb-3 col-md-6">
-                                <label for="validationCustom07" class="form-label">City</label>
-                                <input type="text" class="form-control" id="validationCustom07" placeholder="City" required="">
-                                    <div class="invalid-feedback">
-                                        Please provide your City.  
-                                    </div>
-                            </div>
-                        </div>
 
                         <div class="row g-2">
-                            <label class="form-label" for="validationCustom03">Description</label>
-                            <div id="snow-editor" style="height: 300px;" required="" ></div>
+                            <label class="form-label" for="branches_description">Description</label>
+                            <div id="snow-editor" name="branches_description" style="height: 300px;" required="" ></div>
                             <div class="invalid-feedback">
                                     Please provide a brief Description.  
                             </div>

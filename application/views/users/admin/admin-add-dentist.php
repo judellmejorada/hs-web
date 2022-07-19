@@ -11,15 +11,15 @@
             <form class="needs-validation" novalidate="">
                     <div class="row g-3">
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom00">First Name</label>
-                            <input type="text" class="form-control" id="validationCustom00" placeholder="First Name" required="">
+                            <label class="form-label" for="users_fname">First Name</label>
+                            <input type="text" class="form-control" id="users_fname" name="users_fname" placeholder="First Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a First Name.
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom01">Last Name</label>
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="Last Name" required="">
+                            <label class="form-label" for="users_lname">Last Name</label>
+                            <input type="text" class="form-control" id="users_lname" name="users_lname" placeholder="Last Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a Last Name.
                             </div>
@@ -28,15 +28,15 @@
                     
                     <div class="row g-3">
                         <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom02">Image</label>
-                                <input type="file" id="validationCustom02" class="form-control" required>
+                                <label class="form-label" for="users_profile_pic">Image</label>
+                                <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic" required="">
                                 <div class="invalid-feedback">
                                         Please provide an Image. 
                                 </div>
                             </div>
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom03">Dentistry Specialization</label>
-                            <input type="text" class="form-control" id="validationCustom03" placeholder="Dentistry Specialization" required="">
+                            <label class="form-label" for="dentists_specialty">Dentistry Specialization</label>
+                            <input type="text" class="form-control" id="dentists_specialty" name="dentists_specialty" placeholder="Dentistry Specialization" required="">
                             <div class="invalid-feedback">
                                 Please provide a Dentistry Specialization.
                             </div>
@@ -44,8 +44,21 @@
                     </div>
 
                     <div class="row g-2">
-                            <label class="form-label" for="validationCustom03">Description</label>
-                            <div id="snow-editor" style="height: 300px;" required="" ></div>
+                                <label class="form-label" for="users_status">Status</label>
+                                <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" required="">
+                                    <option></option>
+                                    <option>Approved</option>
+                                    <option>Disapproved</option>
+                                    <option>Pending</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a Status.
+                                </div>
+                    </div>
+
+                    <div class="row g-2">
+                            <label class="form-label" for="dentists_description">Description</label>
+                            <div id="snow-editor" name="dentists_description" style="height: 300px;" required="" ></div>
                             <div class="invalid-feedback">
                                     Please provide a brief Description.  
                             </div>

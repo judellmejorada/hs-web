@@ -11,36 +11,36 @@
             <form id="add-user-form" class="needs-validation" novalidate="">
                     <div class="row g-3">
                         <div class="col-sm-4">
-                            <label class="form-label" for="validationCustom01">First Name</label>
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="First Name" name="users_fname" required="">
+                            <label class="form-label" for="users_fname">First Name</label>
+                            <input type="text" class="form-control" id="users_fname" name="users_fname" placeholder="First Name" name="users_fname" required="">
                             <div class="invalid-feedback">
                                 Please provide a First Name.
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <label class="form-label" for="validationCustom02">Middle Name</label>
-                            <input type="text" class="form-control" id="validationCustom02" placeholder="Middle Name" name="users_mname" required="">
+                            <label class="form-label" for="users_mname">Middle Name</label>
+                            <input type="text" class="form-control" id="users_mname" name="users_mname" placeholder="Middle Name" name="users_mname" required="">
                             <div class="invalid-feedback">
                                 Please provide a Middle Name.
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <label class="form-label" for="validationCustom03">Last name</label>
-                            <input type="text" class="form-control" id="validationCustom03" name="users_lname" placeholder="Last Name" required="">
+                            <label class="form-label" for="users_lname">Last name</label>
+                            <input type="text" class="form-control" id="users_lname" name="users_lname" placeholder="Last Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a Last Name.
                             </div>
                         </div> 
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom04">Birth Date</label>
-                            <input class="form-control" id="validationCustom04" type="date" name="users_birthdate" required="">
+                            <label class="form-label" for="users_birthdate">Birth Date</label>
+                            <input class="form-control" id="users_birthdate" type="users_birthdate" name="users_birthdate" required="">
                             <div class="invalid-feedback">
                                 Please provide a Birth Date.
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom05">Gender</label>
-                            <select class="form-select" id="validationCustom05" name="users_gender" required="">
+                            <label class="form-label" for="users_gender">Gender</label>
+                            <select class="form-select" id="users_gender" name="users_gender" required="">
                                 <option></option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -55,8 +55,8 @@
                         
                     <div class="row g-2">
                     <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom06">Civil Status</label>
-                            <select class="form-select" id="validationCustom06" name="users_civil_status" required="">
+                            <label class="form-label" for="users_civil_status">Civil Status</label>
+                            <select class="form-select" id="users_civil_status" name="users_civil_status" required="">
                                 <option></option>
                                 <option>Single</option>
                                 <option>Married</option>
@@ -68,26 +68,26 @@
                             </div>
                         </div>
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom07">Phone Number</label>
-                                <input type="text" class="form-control" id="validationCustom07" placeholder="Phone Number" name="users_phone_number" required="">
+                                <label class="form-label" for="users_phone_number">Phone Number</label>
+                                <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
                                     <div class="invalid-feedback">
                                         Please provide a Phone Number. 
                                     </div>
                             </div>
                         </div>  
-                        
+
                         <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom08">Email</label>
-                                <input type="text" class="form-control" id="validationCustom08" name="users_email" placeholder="Email" required="">
+                                <label class="form-label" for="users_email">Email</label>
+                                <input type="text" class="form-control" id="users_email" name="users_email" placeholder="Email" required="">
                                     <div class="invalid-feedback">
                                         Please provide a Email.  
                                     </div>
                             </div>
 
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom09">Image</label>
-                                <input type="file" id="validationCustom09" class="form-control" name="users_profile_pic" required>
+                                <label class="form-label" for="users_profile_pic">Image</label>
+                                <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic" required="">
                                 <div class="invalid-feedback">
                                         Please provide an Image. 
                                 </div>
@@ -96,8 +96,8 @@
                         
                         <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom10">User Type</label>
-                                <select class="form-select" id="validationCustom10" name="users_type" required="">
+                                <label class="form-label" for="users_type">User Type</label>
+                                <select class="form-select" id="users_type" name="users_type" required="">
                                     <option></option>
                                     <option>Admin</option>
                                     <option>Staff</option>
@@ -109,9 +109,9 @@
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                                <label for="validationCustom11" class="form-label">Password</label>
+                                <label for="users_password" class="form-label">Password</label>
                                 <div class="input-group input-group-merge">
-                                    <input type="password" id="validationCustom11" class="form-control" placeholder="Password" name="users_password" required="">
+                                    <input type="password" class="form-control" placeholder="Password" id="users_password" name="users_password" required="">
                                     <div class="input-group-text" data-password="false">
                                         <span class="password-eye"></span>
                                     </div>
@@ -120,6 +120,19 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="row g-2">
+                                <label class="form-label" for="users_status">Status</label>
+                                <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" required="">
+                                    <option></option>
+                                    <option>Approved</option>
+                                    <option>Disapproved</option>
+                                    <option>Pending</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a Status.
+                                </div>
                         </div>
                         
                         <div class="mb-3">
