@@ -65,7 +65,7 @@
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop0"><i class="mdi mdi-plus-circle me-2"></i> Add Dentist</a>
+                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop8"><i class="mdi mdi-plus-circle me-2"></i> Add Dentist</a>
                                                 <?php include('admin-add-dentist.php')?>
                                             </div><!-- end col-->
                                         </div>
@@ -118,11 +118,11 @@
                                                         </td>
                     
                                                         <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop9"> <i class="mdi mdi-account-outline" ></i></a>
                                                             <?php include ('admin-view-user.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop10"> <i class="mdi mdi-square-edit-outline"></i></a>
                                                             <?php include ('admin-modify-user.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop11"> <i class="mdi mdi-delete"></i></a>
                                                             <?php include ('admin-delete-user.php');?>
                                                         </td>
                                                     
