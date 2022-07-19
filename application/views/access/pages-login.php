@@ -20,6 +20,9 @@
         <!-- Parsley css -->
         <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
 
+        <!-- Toastr css -->
+        <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
+
 
 
     </head>
@@ -131,20 +134,23 @@
         <!-- parsley -->
         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
-         <!-- custom common.js -->
+        <!-- custom common.js -->
          <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
          
-         <!-- custom login.js -->
+        <!-- custom login.js -->
          <script src="<?php echo base_url('assets')?>/js/access/login.js"></script>
         
-         <!-- google library -->
+        <!-- google library -->
          <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-
+        <!-- google.js -->
          <script src="<?php echo base_url('assets')?>/js/google.js"></script>
 
-         <!-- demo js -->
+        <!-- demo js -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+
+        <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
 
        
         
