@@ -9,19 +9,32 @@
             <div class="modal-body">
 
             <form class="needs-validation" novalidate="">
+                
                         <div class="row g-3">
-                            <div class="mb-3 col-md-6">
+                            <div class="col-sm-4">
                                 <label class="form-label" for="services_name">Service Name</label>
                                 <input type="text" class="form-control" id="services_name" name="services_name" placeholder="Service Name" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Service Name.
                                 </div>
                             </div>
-                            <div class="mb-3 col-md-6">
+                            <div class="col-sm-4">
                                 <label class="form-label" for="services_image">Service Image</label>
-                                <input type="file" id="services_image" name="services_image" class="form-control" required="">
+                                <input type="file" class="form-control" id="services_image" name="services_image"  required="">
                                 <div class="invalid-feedback">
                                     Please provide an Service Image. 
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="form-label" for="users_status">Status</label>
+                                <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" required="">
+                                    <option></option>
+                                    <option>Approved</option>
+                                    <option>Disapproved</option>
+                                    <option>Pending</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a Status.
                                 </div>
                             </div>
                         </div>

@@ -27,23 +27,21 @@
                     </div>
                     
                     <div class="row g-3">
-                        <div class="mb-3 col-md-6">
+                        <div class="col-sm-4">
                                 <label class="form-label" for="users_profile_pic">Image</label>
                                 <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic" required="">
                                 <div class="invalid-feedback">
                                         Please provide an Image. 
                                 </div>
                             </div>
-                        <div class="mb-3 col-md-6">
+                        <div class="col-sm-4">
                             <label class="form-label" for="dentists_specialty">Dentistry Specialization</label>
                             <input type="text" class="form-control" id="dentists_specialty" name="dentists_specialty" placeholder="Dentistry Specialization" required="">
                             <div class="invalid-feedback">
                                 Please provide a Dentistry Specialization.
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row g-2">
+                        <div class="col-sm-4">
                                 <label class="form-label" for="users_status">Status</label>
                                 <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" required="">
                                     <option></option>
@@ -54,8 +52,10 @@
                                 <div class="invalid-feedback">
                                     Please provide a Status.
                                 </div>
+                        </div>
                     </div>
-
+                    <br>
+                    
                     <div class="row g-2">
                             <label class="form-label" for="dentists_description">Description</label>
                             <div id="snow-editor" name="dentists_description" style="height: 300px;" required="" ></div>

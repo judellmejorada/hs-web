@@ -36,7 +36,7 @@
                         </div> 
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_birthdate">Birth Date</label>
-                            <input class="form-control" id="users_birthdate" type="users_birthdate" name="users_birthdate" required="">
+                            <input class="form-control" type="date" id="users_birthdate" name="users_birthdate" required="">
                             <div class="invalid-feedback">
                                 Please provide a Birth Date.
                             </div>
