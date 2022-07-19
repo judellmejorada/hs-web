@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="HappySmile-DCMS" name="GROUP 4" />
         <meta name="google-signin-client_id" content="396871420773-jlgcrmdeu5209jkuo5ln8bidrn0toh37.apps.googleusercontent.com">
+        
         <!-- App favicon -->
         <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/HappySmile.ico">
         
@@ -19,6 +20,9 @@
 
         <!-- Parsley css -->
         <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Toastr css -->
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
 
 
@@ -144,6 +148,8 @@
          <script src="<?php echo base_url('assets')?>/js/google.js"></script>
 
          <!-- demo js -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
 
        
