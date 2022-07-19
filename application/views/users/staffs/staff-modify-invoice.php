@@ -1,9 +1,9 @@
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel5">Modify Invoice Information</h5>
+                <h5 class="modal-title" id="staticBackdropLabel6">Modify Invoice Information</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div> <!-- end modal header -->
             <div class="modal-body">
@@ -11,7 +11,7 @@
             <form class="needs-validation" novalidate="">
             <div class="clearfix">
                                             <div class="float-start mb-3">
-                                                <img src="<?php echo base_url('assets')?>/images/logos/HSBW.png" alt="" height="100">
+                                                <img src="<?php echo base_url('assets')?>/images/logos/HSBW.PNG" alt="" height="100">
                                             </div>
                                             <div class="float-end">
                                                 <h4 class="m-0 d-print-none">Invoices</h4>
