@@ -39,7 +39,7 @@
                                     <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
                                 </div>
 
-                                <form action="#" class="needs-validation" novalidate="">
+                                <form action="#" id="registerform"class="needs-validation" novalidate="">
 
                                     <div class="mb-3">
                                         <label for="fname" class="form-label">First Name</label>
@@ -131,7 +131,14 @@
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="pass1" name="pass1" required=""class="form-control" placeholder="Enter your password">
+                                            <input 
+                                                type="password" 
+                                                id="pass1" 
+                                                name="pass1" 
+                                                required=""
+                                                class="form-control" 
+                                                placeholder="Enter your password"
+                                                >
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>
