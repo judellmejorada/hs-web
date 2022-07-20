@@ -20,6 +20,9 @@
         <!-- Parsley css -->
         <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
 
+        <!-- Toastr css -->
+        <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
+
 
 
     </head>
@@ -76,7 +79,12 @@
                                         <ul class="social-list list-inline mt-3">
 
                                             <li class="list-inline-item">
-                                                <i class="g-signin2" data-width="210" data-height="30" data-longtitle="false"></i></a>
+                                                <div id="g_id_onload"
+                                                    data-client_id="396871420773-jlgcrmdeu5209jkuo5ln8bidrn0toh37.apps.googleusercontent.com"
+                                                    data-ux_mode="redirect"
+                                                    data-login_uri="https://happysmile-web.herokuapp.com/patient">
+                                                </div>
+                                                <i class="g_id_signin" data-type="standard" data-width="210" data-height="30" data-longtitle="false"></i>
                                             </li>
 
                                         <p class="text-muted font-12" text-align:left;>By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>
@@ -126,17 +134,23 @@
         <!-- parsley -->
         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
-         <!-- custom common.js -->
+        <!-- custom common.js -->
          <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
          
-         <!-- custom login.js -->
+        <!-- custom login.js -->
          <script src="<?php echo base_url('assets')?>/js/access/login.js"></script>
         
-         <!-- google library -->
-         <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <!-- google library -->
+         <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-
+        <!-- google.js -->
          <script src="<?php echo base_url('assets')?>/js/google.js"></script>
+
+        <!-- demo js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+
+        <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
 
        
         

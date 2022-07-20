@@ -18,9 +18,9 @@ class Patient extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function Dashboard()
+	public function CalendarPage()
 	{
-		$this->load->view('users/patients/patient-dashboard');
+		$this->load->view('users/patients/patient-calendar');
 		$this->load->view('partials/patient/top_bar');
 		$this->load->view('partials/patient/left_sidebar');
 		$this->load->view('partials/patient/footer');

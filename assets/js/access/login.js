@@ -35,10 +35,11 @@ $(function () {
 					session_data += "&users_profile_pic=" + data.data.users_profile_pic;
 					session_data += "&users_email=" + data.data.users_email;
 
-					window.location.replace("./Access/oAuth?" + session_data);
+					window.location.replace("/Access/oAuth?" + session_data);
 				},
 				error: function ({ responseJSON }) {
 					console.log(responseJSON);
+					notification("error", "", responseJSON.message.join());
 				},
 			});
 		}

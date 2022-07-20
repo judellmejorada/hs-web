@@ -20,8 +20,8 @@ class Dentist_Schedule extends CI_Controller {
 	 */
 	public function SchedulePage()
 	{
-		$this->load->view('users/dentists/dentist-schedule');
-		$this->load->view('partials/staff/top_bar');
-		$this->load->view('partials/staff/left_sidebar');
+		$this->load->view('users/dentists/dentists-schedule');
+		$this->load->view('partials/dentist/top_bar');
+		$this->load->view('partials/dentist/left_sidebar');
 	}
 }

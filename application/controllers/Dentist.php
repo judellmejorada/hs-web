@@ -18,11 +18,11 @@ class Dentist extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function Dashboard()
+	public function CalendarPage()
 	{
-		$this->load->view('users/admin/dentists-dashboard');
-		$this->load->view('partials/admin/top_bar');
-		$this->load->view('partials/admin/left_sidebar');
-		$this->load->view('partials/admin/footer');
+		$this->load->view('users/dentists/dentists-calendar');
+		$this->load->view('partials/dentist/top_bar');
+		$this->load->view('partials/dentist/left_sidebar');
+		$this->load->view('partials/dentist/footer');
 	}
 }

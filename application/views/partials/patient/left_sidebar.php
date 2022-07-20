@@ -9,7 +9,7 @@
             <div class="leftside-menu">
     
                 <!-- LOGO -->
-                <a href="<?php echo base_url('landing')?>" class="logo text-center logo-light">
+                <a href="<?php echo base_url('patient')?>" class="logo text-center logo-light">
                     <span class="logo-lg">
                         <img src="<?php echo base_url('assets')?>/images/logos/123.png" alt="" height="60" width="160">
                     </span>
@@ -22,15 +22,6 @@
 
                     <!--- Sidemenu -->
                     <ul class="side-nav">
-
-                        <li class="side-nav-title side-nav-item">Navigation</li>
-
-                        <li class="side-nav-item">
-                            <a href="<?php echo base_url('patient')?>" class="side-nav-link">
-                                <i class="uil-home-alt"></i>
-                                <span> Dashboard </span>
-                            </a>
-                        </li>
 
                         <li class="side-nav-title side-nav-item">USER</li>
 
