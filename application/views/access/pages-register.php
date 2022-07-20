@@ -16,6 +16,12 @@
         <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
+        <!-- Parsley css -->
+        <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Toastr css -->
+        <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
+
     </head>
 
     <body class="loading authentication-bg" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -39,8 +45,7 @@
                                     <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
                                 </div>
 
-                                <form action="#" class="needs-validation" novalidate="">
-
+                                <form action="" class="needs-validation" novalidate="" enctype="multipart/form-data">
                                     <div class="mb-3">
                                         <label for="fname" class="form-label">First Name</label>
                                         <input class="form-control" type="text" id="fname" name="fname" placeholder="Enter your First name" required="">
@@ -185,7 +190,9 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-            2022 © HappySmile.com
+            <p> Copyright &copy; 2022-<script>document.write(new Date().getFullYear())
+                </script> HappySmile.com
+            </p>
         </footer>
 
         <!-- bundle -->
@@ -199,7 +206,12 @@
          
          <!-- custom login.js -->
          <script src="<?php echo base_url('assets')?>/js/access/register.js"></script>
-        
 
+         <!-- demo js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+
+        <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
+        
     </body>
 </html>
