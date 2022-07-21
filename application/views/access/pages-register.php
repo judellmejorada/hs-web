@@ -109,10 +109,10 @@
                                     <div class="mb-3">
                                                 <select class="form-control select2" data-toggle="select2" id="users_gender" name="users_gender" required="">
                                                     <option value=""></option>
-                                                    <option value="Single">Male</option>
-                                                    <option value="Married">Female</option> 
-                                                    <option value="Widowed">Others</option>
-                                                    <option value="Divorced">Prefer not to say</option> 
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option> 
+                                                    <option value="Other">Other</option>
+                                                    <option value="Prefer not to say">Prefer not to say</option> 
                                                 </select>
                                                     <div class="invalid-feedback">
                                                         Please provide a Gender.  
