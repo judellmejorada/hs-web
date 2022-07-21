@@ -20,7 +20,7 @@ class Register extends CI_Controller {
 	 */
 	public function RegisterPage()
 	{
-		if (ISSET ($_POST['register'])){
+		if (ISSET ($_POST['submit'])){
 			$this->form_validation->set_rules('users_fname', 'Users_fname', 'required');
 			$this->form_validation->set_rules('users_mname', 'Users_mname', '');
 			$this->form_validation->set_rules('users_lname', 'users_lname', 'required');

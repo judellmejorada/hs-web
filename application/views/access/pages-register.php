@@ -123,7 +123,7 @@
                                     </div>  
                                     <div class="mb-3">
                                         <label class="form-label">Profile Image</label>
-                                        <input class="form-control" type="file" name="users_profile_pic" id="users_profile_pic">
+                                        <input class="form-control" type="file" name="users_profile_pic" id="users_profile_pic" required="">
                                     </div> 
                                     <div class="invalid-feedback">
                                                 Please provide an Image.
