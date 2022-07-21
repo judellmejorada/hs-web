@@ -45,9 +45,9 @@
                                     <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
                                 </div>  
                                 
-                                <?php if (isset($_SESSION['success']));?>
-                                <div class ="alert alert-success"> <?php echo $_SESSION ['success'];?></div>
-                                <?php echo validation_errors('<div class="alert alert-danger">', '</div>');?>
+                                <?php if (ISSET($_SESSION['success']));?>
+                                <div class ="badge badge-success-lighten"> <?php echo $_SESSION ['success'];?></div>
+                                <?php echo validation_errors('<div class="badge badge-success-lighten">', '</div>');?>
                                 <form action="#" method="POST" class="needs-validation" id="form_id" novalidate="" enctype="multipart/form-data">
 
                                     <div class="mb-3">
