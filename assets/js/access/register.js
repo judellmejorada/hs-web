@@ -35,10 +35,9 @@ $(function () {
                 console.log(responseJSON);
             },
 
-            });
+            }).fail(() => console.error('There was an error while registering your account.'));
         
 
-   })
-   .fail(() => console.error('There was an error while registering your account.'));
+   });
 
 });
