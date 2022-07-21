@@ -18,6 +18,11 @@ class Register extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct() {
+		parent::__construct();
+		$this->load->database();
+
+	}
 	public function RegisterPage()
 	{
 		if (ISSET ($_POST['submit'])){
@@ -36,10 +41,9 @@ class Register extends CI_Controller {
 			//If form validation is true
 			if($this->form_validation->run() == TRUE) {
 				echo 'form validated';
-
 				//add user to database
 				
-				$data = array (
+				$data = array(
 					'users_fname'=>$_POST['users_fname'],
 					'users_mname'=>$_POST['users_mname'],
 					'users_lname'=>$_POST['users_lname'],
@@ -54,7 +58,7 @@ class Register extends CI_Controller {
 
 				$this->db->insert('Users', $data);
 
-				$this->session->set_flashdata ("success", "Your Account has been registered. You can login now!");
+				$this->session->set_flashdata("success", "Your Account has been registered. You can login now!");
 				redirect("Register/RegisterPage", "refresh");
 
 			}
