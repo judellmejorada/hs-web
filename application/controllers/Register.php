@@ -49,8 +49,7 @@ class Register extends CI_Controller {
 					'users_civil_status'=>$_POST['users_civil_status'],
 					'users_gender'=>$_POST['users_gender'],
 					'users_profile_pic'=>$_POST['users_profile_pic'],
-					'users_password'=>$_POST['users_password'],
-					'users_fname'=>$_POST['users_fname'],
+					'users_password'=> md5($_POST['users_password']),
 				);
 
 				$this->db->insert('users', $data);

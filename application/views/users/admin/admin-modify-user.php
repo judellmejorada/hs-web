@@ -130,9 +130,8 @@
                                 <label class="form-label" for="users_status">Status</label>
                                 <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" required="">
                                     <option></option>
-                                    <option>Approved</option>
-                                    <option>Disapproved</option>
-                                    <option>Pending</option>
+                                    <option>Active</option>
+                                    <option>Deactivated</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.

@@ -8,7 +8,7 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form id="add-user-form" class="needs-validation" novalidate="">
+            <form id="add-user-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_fname">First Name</label>
@@ -130,9 +130,8 @@
                                 <label class="form-label" for="users_status">Status</label>
                                 <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" required="">
                                     <option></option>
-                                    <option>Approved</option>
-                                    <option>Disapproved</option>
-                                    <option>Pending</option>
+                                    <option>Active</option>
+                                    <option>Deactivated</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.
@@ -152,7 +151,7 @@
                         </div>
                         <div class="modal-footer">
                     <button class="btn btn-primary" type="submit">Submit form</button>
-                </form>
+            </form>
                         </div>
             </div>
             </div> <!-- end modal footer -->

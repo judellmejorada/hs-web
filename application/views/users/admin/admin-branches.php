@@ -71,7 +71,7 @@
                                         </div>
                 
                                         <div class="table-responsive">
-                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="products-datatable">
+                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="branch-datatable">
                                                 <thead class="table-light">
                                                     <tr>
                                                         <th style="width: 20px;">
@@ -90,78 +90,6 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck2">
-                                                                <label class="form-check-label" for="customCheck2">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('assets')?>/images/users/avatar-3.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Bryan J. Luellen</a>
-                                                        </td>
-                                                        <td>
-                                                            08/08/22
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">Male</span>
-                                                        </td>
-                                                        <td>
-                                                            08/08/22
-                                                        </td>
-                                                        <td>
-                                                            Bryan@yahoo.com
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-danger-lighten">Inactive</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop13"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <?php include ('admin-view-branch.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop14"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <?php include ('admin-modify-branch.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop15"> <i class="mdi mdi-delete"></i></a>
-                                                            <?php include ('admin-delete-branch.php');?>
-                                                        </td>
-                                                    
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck5">
-                                                                <label class="form-check-label" for="customCheck5">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('assets')?>/images/users/avatar-1.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Timothy Kauper</a>
-                                                        </td>
-                                                        <td>
-                                                            08/20/01
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">Male</span>
-                                                        </td>
-                                                        <td>
-                                                            012938431
-                                                        </td>
-                                                        <td>
-                                                            Timothy@yahoo.com
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <?php include ('admin-view-user.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <?php include ('admin-modify-user.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                            <?php include ('admin-delete-user.php');?>
-                                                        </td>
-                                                    </tr>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -187,6 +115,7 @@
         <!-- END wrapper -->
 
         <!-- bundle -->
+        <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
 
@@ -199,7 +128,7 @@
         <!-- third party js ends -->
 
         <!-- demo app -->
-        <script src="<?php echo base_url('assets')?>/js/pages/demo.branches.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/branch.js"></script>
         <!-- end demo js-->
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>

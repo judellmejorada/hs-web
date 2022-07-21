@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Staff extends CI_Controller {
+class Admin_Add_Patient extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,11 +18,11 @@ class Staff extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function Dashboard()
+	public function AddPatient()
 	{
-		$this->load->view('users/staffs/staff-dashboard');
-		$this->load->view('partials/staff/top_bar');
-		$this->load->view('partials/staff/left_sidebar');
-		$this->load->view('partials/staff/footer');
+		$this->load->view('users/admin/admin-add-patient');
+		$this->load->view('partials/admin/top_bar');
+		$this->load->view('partials/admin/left_sidebar');
+		$this->load->view('partials/admin/right_sidebar');
 	}
 }
