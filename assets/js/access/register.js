@@ -1,17 +1,9 @@
 $(function () {
-    
-    //function that will be called once the file is loaded.
-    // alert('Page is now loaded.');
-
-   // $("#email").val(); // access value using id
-   // $("input[name=email]").val(); // access value using name
 
    $("#form_id").on ("submit", function (e) {
-    //alert ("form is submitted");  
 
         e.preventDefault(); // prevent page refresh
-
-        if ($("#form_id").parsley().validate()) {
+        
         //no validation error
         $.ajax({
             url : baseURL + "/register",
@@ -44,7 +36,7 @@ $(function () {
             },
 
             });
-        }
+        
 
    })
    .fail(() => console.error('There was an error while registering your account.'));
