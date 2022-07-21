@@ -207,11 +207,8 @@
          <!-- custom common.js -->
          <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
          
-<<<<<<< HEAD
          <!-- custom register.js -->
          <script src="<?php echo base_url('assets')?>/js/access/register.js"></script>
-=======
->>>>>>> 847ad13bf6d02b82252f85c045f49320ff7b04a8
 
          <!-- demo js -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
