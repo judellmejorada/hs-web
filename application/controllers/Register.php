@@ -36,7 +36,7 @@ class Register extends CI_Controller {
 			$this->form_validation->set_rules('users_profile_pic', 'Profile Image', '');
 			$this->form_validation->set_rules('users_email', 'Email', 'required');
 			$this->form_validation->set_rules('users_password', 'Password', 'required|min_length[5]');
-			$this->form_validation->set_rules('users_password', 'Confirm Password', 'required|min_length[5]|matches[users_password]');
+			$this->form_validation->set_rules('users_password1', 'Confirm Password', 'required|min_length[5]|matches[users_password]');
 			
 			//If form validation is true
 			if($this->form_validation->run() == TRUE) {

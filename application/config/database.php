@@ -74,8 +74,8 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> 'mysql:hostname="db4free.net"; dbname=happysmile_dcms',
-	'hostname' => 'localhost',
+	'dsn'	=> '',
+	'hostname' => 'db4free.net',
 	'username' => 'happysmile143',
 	'password' => 'c57be642',
 	'database' => 'happysmile_dcms',
