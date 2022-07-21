@@ -31,7 +31,7 @@ class Register extends CI_Controller {
 			$this->form_validation->set_rules('users_profile_pic', 'Users_profile_pic', 'required');
 			$this->form_validation->set_rules('users_email', 'Users_email', 'required');
 			$this->form_validation->set_rules('users_password', 'Users_password', 'required|min_length[5]');
-			$this->form_validation->set_rules('users_password', 'Confirm Password', 'required|min_length[5]|matches[password]');
+			$this->form_validation->set_rules('users_password', 'Confirm Password', 'required|min_length[5]|matches[users_password]');
 			
 			//If form validation is true
 			if($this->form_validation->run() == TRUE) {
@@ -52,7 +52,7 @@ class Register extends CI_Controller {
 					'users_password'=> md5($_POST['users_password']),
 				);
 
-				$this->db->insert('users', $data);
+				$this->db->insert('Users', $data);
 
 				$this->session->set_flashdata ("success", "Your Account has been registered. You can login now!");
 				redirect("Register/RegisterPage", "refresh");

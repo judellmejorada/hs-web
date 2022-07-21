@@ -52,7 +52,7 @@
 
                                     <div class="mb-3">
                                         <label for="users_fname" class="form-label">First Name</label>
-                                        <input class="form-control" type="text" id="users_fname" name="users_fname" placeholder="Enter your First name" required="">
+                                        <input class="form-control" type="text" id="users_fname" name="users_fname" placeholder="Enter your First name">
                                         <div class="invalid-feedback">
                                             Please provide a First Name.
                                         </div>
@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="users_lname" class="form-label">Last Name</label>
-                                        <input class="form-control" type="text" id="users_lname" name="users_lname" placeholder="Enter your Last name" required="">
+                                        <input class="form-control" type="text" id="users_lname" name="users_lname" placeholder="Enter your Last name">
                                         <div class="invalid-feedback">  
                                             Please provide a Last Name.
                                         </div>
@@ -75,7 +75,7 @@
                                     
                                     <div class="mb-3">
                                         <label for="users_birthdate" class="form-label">Birth Date</label>
-                                        <input class="form-control" type="date" id="users_birthdate" name="users_birthdate" required="">
+                                        <input class="form-control" type="date" id="users_birthdate" name="users_birthdate">
                                             <div class="invalid-feedback">
                                                 Please provide a Birth Date.
                                             </div>
@@ -83,7 +83,7 @@
 
                                         <div class="mb-3">
                                             <label class="form-label" for="users_phone_number">Phone Number</label>
-                                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Enter your Phone Number" required="">
+                                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Enter your Phone Number">
                                                 <div class="invalid-feedback">
                                                     Please provide a Phone Number. 
                                                 </div>
@@ -91,7 +91,7 @@
                                         <div class="mb-3">
                                             <div class="mb-3">
                                                 <label class="form-label" for="users_civil_status">Civil Status</label>
-                                                <select class="form-control select2" data-toggle="select2" id="users_civil_status" name="users_civil_status" required="">
+                                                <select class="form-control select2" data-toggle="select2" id="users_civil_status" name="users_civil_status">
                                                     <option value=""></option>
                                                     <option value="Single">Single</option>
                                                     <option value="Married">Married</option> 
@@ -108,7 +108,7 @@
                                         <label class="form-label" for="users_gender" >Gender</label>
                                         <br>
                                     <div class="mb-3">
-                                                <select class="form-control select2" data-toggle="select2" id="users_gender" name="users_gender" required="">
+                                                <select class="form-control select2" data-toggle="select2" id="users_gender" name="users_gender" >
                                                     <option value=""></option>
                                                     <option value="Single">Male</option>
                                                     <option value="Married">Female</option> 
@@ -123,14 +123,14 @@
                                     </div>  
                                     <div class="mb-3">
                                         <label class="form-label">Profile Image</label>
-                                        <input class="form-control" type="file" name="users_profile_pic" id="users_profile_pic" required="">
+                                        <input class="form-control" type="file" name="users_profile_pic" id="users_profile_pic">
                                     </div> 
                                     <div class="invalid-feedback">
                                                 Please provide an Image.
                                         </div>     
                                     <div class="mb-3">
                                         <label for="users_email" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="users_email" name="users_email" required placeholder="Enter your email">
+                                        <input class="form-control" type="email" id="users_email" name="users_email" placeholder="Enter your email">
                                         <div class="invalid-feedback">
                                                 Please provide an Email Address.
                                         </div>
@@ -140,7 +140,7 @@
                                     <div class="mb-3">
                                         <label for="users_password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="users_password" name="users_password" required=""class="form-control" placeholder="Enter your password">
+                                            <input type="password" id="users_password" name="users_password" class="form-control" placeholder="Enter your password">
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>
@@ -152,10 +152,10 @@
                                     <div class="mb-3">
                                         <label for="users_password1" class="form-label">Re-type Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="users_password1" name="users_password1" required=""class="form-control" placeholder="Enter your password">
-                                            <div class="input-group-text" data-password="false">
+                                            <input type="password" id="users_password1" name="users_password1" class="form-control" placeholder="Enter your password">
+                                            <!--<div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
-                                            </div>
+                                            </div> -->
                                             <div class="invalid-feedback">
                                                 Please Re-type your Password.
                                             </div>
