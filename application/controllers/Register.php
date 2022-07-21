@@ -28,7 +28,7 @@ class Register extends CI_Controller {
 			$this->form_validation->set_rules('users_phone_number', 'Users_phone_number', 'required|min_length[5]');
 			$this->form_validation->set_rules('users_civil_status', 'Users_civil_status', 'required');
 			$this->form_validation->set_rules('users_gender', 'Users_gender', 'required');
-			$this->form_validation->set_rules('users_profile_pic', 'Users_profile_pic', 'required');
+			$this->form_validation->set_rules('users_profile_pic', 'Users_profile_pic', '');
 			$this->form_validation->set_rules('users_email', 'Users_email', 'required');
 			$this->form_validation->set_rules('users_password', 'Users_password', 'required|min_length[5]');
 			$this->form_validation->set_rules('users_password', 'Confirm Password', 'required|min_length[5]|matches[users_password]');

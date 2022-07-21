@@ -48,7 +48,7 @@
                                 <?php if (ISSET($_SESSION['success']));?>
                                 <div class ="badge badge-success-lighten"> <?php echo $_SESSION ['success'];?></div>
                                 <?php echo validation_errors('<div class="badge badge-success-lighten">', '</div>');?>
-                                <form action="#" method="POST" class="needs-validation" id="form_id" novalidate="" enctype="multipart/form-data">
+                                <form action="" method="POST" class="needs-validation" id="form_id" novalidate="" enctype="multipart/form-data">
 
                                     <div class="mb-3">
                                         <label for="users_fname" class="form-label">First Name</label>
@@ -123,7 +123,7 @@
                                     </div>  
                                     <div class="mb-3">
                                         <label class="form-label">Profile Image</label>
-                                        <input class="form-control" type="file" name="users_profile_pic" id="users_profile_pic" required="">
+                                        <input class="form-control" type="file" name="users_profile_pic" id="users_profile_pic">
                                     </div> 
                                     <div class="invalid-feedback">
                                                 Please provide an Image.
