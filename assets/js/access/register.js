@@ -4,6 +4,7 @@ $(function () {
 
         e.preventDefault(); // prevent page refresh
         
+        if ($("#form_id").parsley().validate()) {
         //no validation error
         $.ajax({
             url : baseURL + "/register",
@@ -36,7 +37,7 @@ $(function () {
             },
 
             }).fail(() => console.error('There was an error while registering your account.'));
-        
+        }
 
    });
 
