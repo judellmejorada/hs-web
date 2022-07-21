@@ -26,7 +26,7 @@
 
     <body class="loading authentication-bg" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
 
-        <div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5">
+        <div id= "register" class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xxl-4 col-lg-5">
@@ -45,7 +45,7 @@
                                     <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
                                 </div>
 
-                                <form action="" class="needs-validation" novalidate="" enctype="multipart/form-data">
+                                <form id="form_register" class="needs-validation" novalidate="" enctype="multipart/form-data">
                                     <div class="mb-3">
                                         <label for="fname" class="form-label">First Name</label>
                                         <input class="form-control" type="text" id="fname" name="fname" placeholder="Enter your First name" required="">
@@ -211,7 +211,7 @@
          <!-- custom common.js -->
          <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
          
-         <!-- custom login.js -->
+         <!-- custom register.js -->
          <script src="<?php echo base_url('assets')?>/js/access/register.js"></script>
 
          <!-- demo js -->
