@@ -48,12 +48,7 @@
                                 <?php if (ISSET($_SESSION['success']));?>
                                 <div class ="badge badge-success-lighten"> <?php echo $_SESSION ['success'];?></div>
                                 <?php echo validation_errors('<div class="badge badge-danger-lighten">', '</div>');?>
-                                <form action="" method="POST" class="needs-validation" id="form_id" novalidate="" enctype="multipart/form-data">
-
-<<<<<<< HEAD
-                                <form id="form_register" class="needs-validation" novalidate="" enctype="multipart/form-data">
-=======
->>>>>>> 847ad13bf6d02b82252f85c045f49320ff7b04a8
+                                <form action="" method="POST" class="needs-validation" id="form_register" novalidate="" enctype="multipart/form-data">
                                     <div class="mb-3">
                                         <label for="users_fname" class="form-label">First Name</label>
                                         <input class="form-control" type="text" id="users_fname" name="users_fname" placeholder="Enter your First name" required="">
