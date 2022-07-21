@@ -208,8 +208,6 @@
          <!-- custom common.js -->
          <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
          
-         <!-- custom login.js -->
-         <script src="<?php echo base_url('assets')?>/js/access/register.js"></script>
 
          <!-- demo js -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
