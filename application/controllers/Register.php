@@ -21,8 +21,8 @@ class Register extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 		$this->load->database();
-
 	}
+
 	public function RegisterPage()
 	{
 		if (ISSET ($_POST['submit'])){
@@ -59,11 +59,10 @@ class Register extends CI_Controller {
 				$this->db->insert('Users', $data);
 
 				$this->session->set_flashdata("success", "Your Account has been registered. You can login now!");
-				redirect("register", "refresh");
+				redirect("Register/RegisterPage", "refresh");
 
 			}
 		}
-		$this->session->sess_destroy();
 		$this->load->view('access/pages-register');
 	}
 }
