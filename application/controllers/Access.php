@@ -25,6 +25,11 @@ class Access extends CI_Controller {
 
 	}
 
+	public function logout()
+	{
+		$this->session->sess_destroy();
+		$this->load->view('access/pages-login');
+	}
 
 	public function oAuth(){
 		if ($_GET['token'] != null){

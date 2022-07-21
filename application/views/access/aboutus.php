@@ -316,9 +316,9 @@
                         <h5 class="text-light">Company</h5>
 
                         <ul class="list-unstyled ps-0 mb-0 mt-3">
-                            <li class="mt-2"><a href="aboutus" class="text-muted">About Us</a></li>
+                            <li class="mt-2"><a href="about" class="text-muted">About Us</a></li>
                             <li class="mt-2"><a href="faq" class="text-muted">FAQ</a></li>
-                            <li class="mt-2"><a href="aboutus" class="text-muted">Our Team</a></li>
+                            <li class="mt-2"><a href="about" class="text-muted">Our Team</a></li>
                         </ul>
 
                     </div>
