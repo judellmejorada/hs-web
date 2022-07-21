@@ -31,7 +31,6 @@ class Access extends CI_Controller {
 		$this->load->view('access/pages-login');
 	}
 
-
 	public function oAuth(){
 		if ($_GET['token'] != null){
 			// Setting of session data
