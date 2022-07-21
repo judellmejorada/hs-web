@@ -170,7 +170,7 @@
                                     </div>
 
                                     <div class="mb-3 text-center">
-                                        <button class="btn btn-primary" type="submit" name="submit"> Sign Up </button>
+                                        <button class="btn btn-primary" type="submit" id="submit" name="submit"> Sign Up </button>
                                     </div>
 
                                 </form>
