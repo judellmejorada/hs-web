@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'db4free.net',
-	'username' => 'happysmile143',
-	'password' => 'c57be642',
+	'hostname' => 'localhost',
+	'username' => '',
+	'password' => '',
 	'database' => 'happysmile_dcms',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
