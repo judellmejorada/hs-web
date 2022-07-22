@@ -1,6 +1,9 @@
 $(function () {
    $(document).on("submit", "#form_register", async function (event) {
     event.preventDefault();
+
+    if ($("#form_register").parsley().validate()) {
+
     let formData = new FormData(this);
     await $.ajax(
         getAjaxConfig("/register", {
@@ -12,15 +15,16 @@ $(function () {
             // If registration is successful
             success: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification("success", "", responseJSON.message);
+                notification("success", "", responseJSON.message.join());
             },
             error: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification("error", "", responseJSON.message);
+                notification("error", "", responseJSON.message.join());
             },
         })
     );
     $("#form_register")[0].reset();
+    }
 });
 
 });
