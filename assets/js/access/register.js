@@ -16,10 +16,14 @@ $(function () {
             success: function ({ responseJSON }) {
                 console.log(responseJSON);
                 notification("success", "", responseJSON.message);
+
+                window.location.replace("/login");
             },
             error: function ({ responseJSON }) {
                 console.log(responseJSON);
                 notification("error", "", responseJSON.message);
+
+                window.location.replace("/register");
             },
         })
     );
