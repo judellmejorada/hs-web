@@ -13,18 +13,21 @@ $(function () {
             processData: false,
 
             // If registration is successful
-            success: function (responseJSON) {
-                $('#form_register').notification('success', 'Your Account has been registered. You can login now!', responseJSON.message);;
+            success: function ({ responseJSON }) {
                 console.log(responseJSON);
+                notification("success", "Your Account has been registered. You can login now!", responseJSON.message);
 
-                window.location.replace("/login");
+                window.location.replace("/register");
             },
             error: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification('error', 'Please provide Appropriate Information.', responseJSON.message);
+                notification("error", "Please provide Appropriate Information.", responseJSON.message);
+
+                window.location.replace("/register");
             },
         })
     );
+    $("#form_register")[10].reset();
 });
 
 });
