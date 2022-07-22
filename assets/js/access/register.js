@@ -6,6 +6,7 @@ $(function () {
 
     await $.ajax(
         getAjaxConfig("/register", {
+            async: true,
             type: "POST",
             data: formData,
             contentType: false,
@@ -15,11 +16,11 @@ $(function () {
             success: function ({ responseJSON }) {
                 console.log(responseJSON);
                 window.location.replace("/login");
+                notification("success", "Your Account has been registered. You can login now!", responseJSON.message);
             },
             error: function ({ responseJSON }) {
                 console.log(responseJSON);
                 notification("error", "Please provide Appropriate Information.", responseJSON.message);
-
                 window.location.replace("/register");
             },
         })
