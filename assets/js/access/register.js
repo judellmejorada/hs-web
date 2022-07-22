@@ -12,11 +12,11 @@ $(function () {
             // If registration is successful
             success: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification("success", "", responseJSON.message.join());
+                notification("success", "", responseJSON.message);
             },
             error: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification("error", "", responseJSON.message.join());
+                notification("error", "", responseJSON.message);
             },
         })
     );
