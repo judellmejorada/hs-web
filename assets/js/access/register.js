@@ -6,7 +6,6 @@ $(function () {
 
     await $.ajax(
         getAjaxConfig("/register", {
-            async: true,
             type: "POST",
             data: formData,
             contentType: false,
