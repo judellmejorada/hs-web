@@ -2,31 +2,29 @@ $(function () {
    $(document).on("submit", "#form_register", async function (event) {
     event.preventDefault();
     let formData = new FormData(this);
-    await $.ajax(
-        getAjaxConfig("/register", {
-            async: true,
-            type: "POST",
-            data: formData,
-            contentType: false,
-            processData: false,
+    
+    if ($("#form_register").parsley().validate()) {
+    
+        await $.ajax(
+            getAjaxConfig("/register", {
+                type: "POST",
+                data: formData,
+                contentType: false,
+                processData: false,
 
-            // If registration is successful
-            success: function ({ responseJSON }) {
-                if (response.success === true) {
+                // If registration is successful
+                success: function ({ responseJSON }) {
                     console.log(responseJSON);
-                    toastr.success(response.message, 'Success Alert', {timeOut: 300});
-                }else {
+                    notification("success", "", responseJSON.message.join());
+                },
+                error: function ({ responseJSON }) {
                     console.log(responseJSON);
-                    toastr.info(response.message, 'Information Alert', {timeOut: 300});
-                }
-            },
-            error: function ({ responseJSON }) {
-                console.log(responseJSON);
-                toastr.error('There is some problem', 'Error Alert', {timeOut: 300});
-            },
-        })
-    );
-    $("#form_register")[0].reset();
+                    notification("error", "", responseJSON.message.join());
+                },
+            })
+        );
+        $("#form_register")[0].reset();
+    };
 });
 
 });
