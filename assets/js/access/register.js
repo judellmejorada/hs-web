@@ -16,18 +16,19 @@ $(function () {
             success: function ({ responseJSON }) {
                 console.log(responseJSON);
                 notification("success", "", responseJSON.message);
+                
 
                 window.location.replace("/login");
             },
             error: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification("error", "", responseJSON.message);
+                notification("error", "Please provide appropriate Information.", responseJSON.message);
 
                 window.location.replace("/register");
             },
         })
     );
-    $("#form_register")[0].reset();
+    $("#form_register")[0].refresh();
 });
 
 });
