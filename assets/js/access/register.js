@@ -27,7 +27,7 @@ $(function () {
             },
         })
     );
-    $("#form_register")[10].reset();
+    
 });
 
 });
