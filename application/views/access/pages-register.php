@@ -51,7 +51,7 @@
                                 <form action="" method="POST" class="needs-validation" id="form_register" novalidate="" enctype="multipart/form-data">
                                     <div class="mb-3">
                                         <label for="users_fname" class="form-label">First Name</label>
-                                        <input class="form-control" type="text" id="users_fname" name="users_fname" placeholder="Enter your First name" data-parsley-required="true" data-parsley-type ="string">
+                                        <input class="form-control" type="text" id="users_fname" name="users_fname" placeholder="Enter your First name" required="">
                                         <div class="invalid-feedback">
                                             Please provide a First Name.
                                         </div>
@@ -66,7 +66,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="users_lname" class="form-label">Last Name</label>
-                                        <input class="form-control" type="text" id="users_lname" name="users_lname" placeholder="Enter your Last name" data-parsley-required="true" data-parsley-type="string">
+                                        <input class="form-control" type="text" id="users_lname" name="users_lname" placeholder="Enter your Last name" required="">
                                         <div class="invalid-feedback">  
                                             Please provide a Last Name.
                                         </div>
@@ -74,7 +74,7 @@
                                     
                                     <div class="mb-3">
                                         <label for="users_birthdate" class="form-label">Birth Date</label>
-                                        <input class="form-control" type="date" id="users_birthdate" name="users_birthdate" data-parsley-required="true">
+                                        <input class="form-control" type="date" id="users_birthdate" name="users_birthdate" required="">
                                             <div class="invalid-feedback">
                                                 Please provide a Birth Date.
                                             </div>
@@ -82,7 +82,7 @@
 
                                         <div class="mb-3">
                                             <label class="form-label" for="users_phone_number">Phone Number</label>
-                                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Enter your Phone Number" data-parsley-required="true" data-parsley-type="integer">
+                                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Enter your Phone Number" required="">
                                                 <div class="invalid-feedback">
                                                     Please provide a Phone Number. 
                                                 </div>
@@ -90,7 +90,7 @@
                                         <div class="mb-3">
                                             <div class="mb-3">
                                                 <label class="form-label" for="users_civil_status">Civil Status</label>
-                                                <select class="form-control select2" data-toggle="select2" id="users_civil_status" name="users_civil_status" data-parsley-required="true">
+                                                <select class="form-control select2" data-toggle="select2" id="users_civil_status" name="users_civil_status" required="">
                                                     <option value=""></option>
                                                     <option value="Single">Single</option>
                                                     <option value="Married">Married</option> 
@@ -107,7 +107,7 @@
                                         <label class="form-label" for="users_gender" >Gender</label>
                                         <br>
                                     <div class="mb-3">
-                                                <select class="form-control select2" data-toggle="select2" id="users_gender" name="users_gender" data-parsley-required="true">
+                                                <select class="form-control select2" data-toggle="select2" id="users_gender" name="users_gender" required="">
                                                     <option value=""></option>
                                                     <option value="Male">Male</option>
                                                     <option value="Female">Female</option> 
@@ -122,14 +122,14 @@
                                     </div>  
                                     <div class="mb-3">
                                         <label class="form-label">Profile Image</label>
-                                        <input class="form-control" type="file" name="users_profile_pic" id="users_profile_pic" data-parsley-required="true">
+                                        <input class="form-control" type="file" name="users_profile_pic" id="users_profile_pic" required="">
                                     </div> 
                                     <div class="invalid-feedback">
                                                 Please provide an Image.
                                         </div>     
                                     <div class="mb-3">
                                         <label for="users_email" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="users_email" name="users_email" placeholder="Enter your email" data-parsley-required="true" data-parsley-type="email">
+                                        <input class="form-control" type="email" id="users_email" name="users_email" placeholder="Enter your email" required="">
                                         <div class="invalid-feedback">
                                                 Please provide an Email Address.
                                         </div>
@@ -139,7 +139,7 @@
                                     <div class="mb-3">
                                         <label for="users_password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="users_password" name="users_password" class="form-control" placeholder="Enter your password" data-parsley-required="true">
+                                            <input type="password" id="users_password" name="users_password" class="form-control" placeholder="Enter your password" required="">
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>
@@ -151,7 +151,7 @@
                                     <div class="mb-3">
                                         <label for="users_password1" class="form-label">Re-type Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="users_password1" name="users_password1" class="form-control" placeholder="Enter your password" data-parsley-required="true">
+                                            <input type="password" id="users_password1" name="users_password1" class="form-control" placeholder="Enter your password" required="">
                                             <!--<div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div> -->
