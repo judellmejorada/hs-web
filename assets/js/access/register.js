@@ -15,9 +15,7 @@ $(function () {
             // If registration is successful
             success: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification("success", "Your Account has been registered. You can login now!", responseJSON.message);
-
-                window.location.replace("/register");
+                window.location.replace("/login");
             },
             error: function ({ responseJSON }) {
                 console.log(responseJSON);
