@@ -21,7 +21,6 @@ $(function () {
             error: function ({ responseJSON }) {
                 console.log(responseJSON);
                 notification("error", "Please provide Appropriate Information.", responseJSON.message);
-                window.location.replace("/register");
             },
         })
     );
