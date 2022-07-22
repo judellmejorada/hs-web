@@ -15,13 +15,13 @@ $(function () {
             // If registration is successful
             success: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification('error', 'Your Account has been registered. You can login now!', responseJSON.message);
+                notification('success', 'Your Account has been registered. You can login now!', responseJSON.message);
 
                 window.location.replace("/login");
             },
             error: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification('error', 'Please provide Appropriate Information.', responseJSON.message);
+                notification('success', 'Please provide Appropriate Information.', responseJSON.message);
             },
         })
     );
