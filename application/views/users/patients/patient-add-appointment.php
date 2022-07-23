@@ -11,7 +11,7 @@
             <form class="needs-validation" novalidate="">
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom00">Dentist</label>
+                                <label class="form-label" for="validationCustom00">Branch</label>
                                 <select class="form-select" id="validationCustom00" required="">
                                     <option></option>
                                     <option>Kendall</option>
@@ -24,10 +24,17 @@
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom01">Appointment Date</label>
-                            <input class="form-control" id="validationCustom01" type="date" name="date" required="">
-                            <div class="invalid-feedback">
-                                Please provide a Appointment Date.
+                                <!-- This is from schedule available -->
+                                <label class="form-label" for="validationCustom00">Available Schedule</label>
+                                <select class="form-select" id="validationCustom00" required="">
+                                    <option></option>
+                                    <option>Anne Hathaway - July 28, 2022 8AM</option>
+                                    <option>Anne Hathaway - July 28, 2022 9AM</option>
+                                    <option>Lora Joy - July 28, 2022 11AM</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please choose a Schedule.
+                                </div>
                             </div>
                         </div>
                         </div>            
@@ -47,23 +54,16 @@
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                                <label for="validationCustom04" class="form-label">Time</label>
-                                <input class="form-control" id="validationCustom04" type="time" name="time">
-                                <div class="invalid-feedback">
-                                    Please choose an option.
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Description" id="floatingTextarea" required="" style="height: 100px;"></textarea>
+                                    <label for="floatingTextarea">Comment</label>
+                                    <div class="invalid-feedback">
+                                                Please provide a Comment.  
+                                    </div>
                                 </div>
                             </div>
                         </div>  
 
-                        <div class="row g-2">
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Description" id="floatingTextarea" required="" style="height: 100px;"></textarea>
-                            <label for="floatingTextarea">Comment</label>
-                            <div class="invalid-feedback">
-                                        Please provide a Comment.  
-                            </div>
-                        </div>
-                        </div>
                         <br>
                         <div class="mb-3">
                             <div class="form-check">
