@@ -10,60 +10,45 @@
 
             <form class="needs-validation" novalidate="">
             <div class="row g-2">
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom00">Branch</label>
-                                <select class="form-select" id="validationCustom00" required="">
-                                    <option></option>
-                                    <option>Kendall</option>
-                                    <option>Nadine</option>
-                                    <option>Barbie</option>
-                                    <option>Kylie</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please choose a Dentist.
-                                </div>
-                            </div>
-                            <div class="mb-3 col-md-6">
-                                <!-- This is from schedule available -->
-                                <label class="form-label" for="validationCustom00">Available Schedule</label>
-                                <select class="form-select" id="validationCustom00" required="">
-                                    <option></option>
-                                    <option>Anne Hathaway - July 28, 2022 8AM</option>
-                                    <option>Anne Hathaway - July 28, 2022 9AM</option>
-                                    <option>Lora Joy - July 28, 2022 11AM</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please choose a Schedule.
-                                </div>
-                            </div>
+                    <div class="mb-3 col-md-6">
+                        <label class="form-label" for="validationCustom00">Branch</label>
+                        <select class="form-select" id="validationCustom00" required="">
+                            <option></option>
+                            <option>Kendall</option>
+                            <option>Nadine</option>
+                            <option>Barbie</option>
+                            <option>Kylie</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please choose a Dentist.
                         </div>
-                        </div>            
-                        
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <!-- This is from schedule available -->
+                        <label class="form-label" for="validationCustom00">Available Schedule</label>
+                        <select class="form-select" id="validationCustom00" required="">
+                            <option></option>
+                            <option>Anne Hathaway - July 28, 2022 8AM</option>
+                            <option>Anne Hathaway - July 28, 2022 9AM</option>
+                            <option>Lora Joy - July 28, 2022 11AM</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please choose a Schedule.
+                        </div>
+                    </div>
+                </div>
+                </div>                
                     <div class="row g-2">
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom03">Appointment Purpose</label>
-                                <select class="form-select" id="validationCustom03" required="">
-                                    <option></option>
-                                    <option>Root Canal</option>
-                                    <option>Cleaning</option>
-                                    <option>Tooth Extraction</option>
-                                    <option>General Operation</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please provide an Appointment Purpose.
-                                </div>
-                            </div>
                             <div class="mb-3 col-md-6">
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Description" id="floatingTextarea" required="" style="height: 100px;"></textarea>
-                                    <label for="floatingTextarea">Comment</label>
+                                    <label for="floatingTextarea">Purpose</label>
                                     <div class="invalid-feedback">
-                                                Please provide a Comment.  
+                                        Please provide a purpose.  
                                     </div>
                                 </div>
                             </div>
                         </div>  
-
                         <br>
                         <div class="mb-3">
                             <div class="form-check">
