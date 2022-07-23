@@ -1,43 +1,27 @@
 $(function () {
-	const dataTable = $("#dentist-datatable").DataTable(
+	const dataTable = $("#invoice-datatable").DataTable(
 		getDataTableConfig({
-			ajax: getAjaxConfig("/admin/dentist/retrieved-featured-dentist", {
+			ajax: getAjaxConfig("/admin/invoices/get-invoice", {
 				type: "GET",
 			}),
 			columns: [
 				{
-					data: null,
-					render: function (data, type, row, meta) {
-						return `<img src="${baseURLUserProfile}/${data.dentists_image}" alt="table-user" class="me-2 rounded-circle"><a href="javascript:void(0);" class="text-body fw-semibold">${data.dentists_fname} </a>`;
-					},
-					className: "table-user",
+					data: "invoices_number",
 				},
 				{
-					// birth day not available
-					data: "dentists_lname",
-					// render: function (data, type, row, meta) {
-					// 	return "N/A";
-					// },
+					data: "invoices_issued_to",
 				},
 				{
-					data: "dentists_description",
-					render: function (data, type, row, meta) {
-						return `<span class="text-break">${
-							data.substring(0, 50) + "..."
-						}</span>`;
-					},
+					data: "invoices_description",
 				},
 				{
-					data: "dentists_specialty",
+					data: "invoices_discount",
 				},
 				{
-					data: null,
-					render: function (data, type, row, meta) {
-						return "N/A";
-					},
+					data: "grand_total",
 				},
 				{
-					data: "dentists_status",
+					data: "invoices_status",
 					render: function (data, type, row, meta) {
 						return `<span class="badge badge-danger-lighten">${data}</span>`;
 					},
@@ -57,18 +41,18 @@ $(function () {
 		})
 	);
 
-	$(document).on("submit", "#add-dentist-form", async function (event) {
+	$(document).on("submit", "#add-invoices-form", async function (event) {
 		event.preventDefault();
 		let formData = new FormData(this);
 		await $.ajax(
-			getAjaxConfig("/admin/dentist/add-featured-dentist", {
+			getAjaxConfig("/admin/invoices/add-invoice", {
 				type: "POST",
 				data: formData,
 				contentType: false,
 				processData: false,
 			})
 		);
-		$("#staticBackdrop8").modal("toggle");
+		$("#staticBackdrop0").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
 	});

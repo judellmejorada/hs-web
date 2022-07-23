@@ -1,9 +1,12 @@
 $(function () {
    $(document).on("submit", "#form_register", async function (event) {
+
     event.preventDefault();
     let formData = new FormData(this);
+
     await $.ajax(
         getAjaxConfig("/register", {
+            async: true,
             type: "POST",
             data: formData,
             contentType: false,
@@ -12,15 +15,16 @@ $(function () {
             // If registration is successful
             success: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification("success", "", responseJSON.message.join());
+                window.location.replace("/login");
+                notification("success", "Your Account has been registered. You can login now!", responseJSON.message);
             },
             error: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification("error", "", responseJSON.message.join());
+                notification("error", "Please provide Appropriate Information.", responseJSON.message);
             },
         })
     );
-    $("#form_register")[0].reset();
+    
 });
 
 });
