@@ -55,18 +55,18 @@ $(function () {
 		})
 	);
 
-	$(document).on("submit", "#add-user-form", async function (event) {
+	$(document).on("submit", "#add-service-form", async function (event) {
 		event.preventDefault();
 		let formData = new FormData(this);
 		await $.ajax(
-			getAjaxConfig("/admin/user/add-users", {
+			getAjaxConfig("/admin/service/add-service", {
 				type: "POST",
 				data: formData,
 				contentType: false,
 				processData: false,
 			})
 		);
-		$("#staticBackdrop0").modal("toggle");
+		$("#staticBackdrop4").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
 	});

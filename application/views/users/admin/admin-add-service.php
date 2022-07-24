@@ -8,8 +8,7 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form class="needs-validation" novalidate="">
-                
+            <form id="add-service-form" class="needs-validation" novalidate="">
                         <div class="row g-3">
                             <div class="col-sm-4">
                                 <label class="form-label" for="services_name">Service Name</label>
@@ -27,7 +26,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <label class="form-label" for="users_status">Status</label>
-                                <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" required="">
+                                <select type="text" class="form-select" id="users_status" name="services_status" placeholder="Status" required="">
                                     <option></option>
                                     <option>Approved</option>
                                     <option>Disapproved</option>
