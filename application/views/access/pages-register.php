@@ -16,11 +16,17 @@
         <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
+        <!-- Parsley css -->
+        <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Toastr css -->
+        <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
+
     </head>
 
     <body class="loading authentication-bg" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
 
-        <div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5">
+        <div id= "register" class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xxl-4 col-lg-5">
@@ -37,52 +43,54 @@
                                 <div class="text-center w-75 m-auto">
                                     <h4 class="text-dark-50 text-center mt-0 fw-bold">Free Sign Up</h4>
                                     <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
-                                </div>
-
-                                <form action="#" class="needs-validation" novalidate="">
-
+                                </div>  
+                                
+                                <?php if (ISSET($_SESSION['success']));?>
+                                <div class ="badge badge-success-lighten"> <?php echo $_SESSION ['success'];?></div>
+                                <?php echo validation_errors('<div class="badge badge-danger-lighten">', '</div>');?>
+                                <form action="" method="POST" class="needs-validation" id="form_register" novalidate="" enctype="multipart/form-data">
                                     <div class="mb-3">
-                                        <label for="fname" class="form-label">First Name</label>
-                                        <input class="form-control" type="text" id="fname" name="fname" placeholder="Enter your First name" required="">
+                                        <label for="users_fname" class="form-label">First Name</label>
+                                        <input class="form-control" type="text" id="users_fname" name="users_fname" placeholder="Enter your First name" required="">
                                         <div class="invalid-feedback">
                                             Please provide a First Name.
                                         </div>
                                     </div>
                                     
                                     <div class="mb-3">
-                                        <label for="mname" class="form-label">Middle Name</label>
-                                        <input class="form-control" type="text" id="mname" name="mname" placeholder="Enter your Middle name">
+                                        <label for="users_mname" class="form-label">Middle Name</label>
+                                        <input class="form-control" type="text" id="users_mname" name="users_mname" placeholder="Enter your Middle name">
                                         <div class="invalid-feedback">
                                             Please provide a Middle Name.
                                         </div>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="lname" class="form-label">Last Name</label>
-                                        <input class="form-control" type="text" id="lname" name="lname" placeholder="Enter your Last name" required="">
+                                        <label for="users_lname" class="form-label">Last Name</label>
+                                        <input class="form-control" type="text" id="users_lname" name="users_lname" placeholder="Enter your Last name" required="">
                                         <div class="invalid-feedback">  
                                             Please provide a Last Name.
                                         </div>
                                     </div>
                                     
                                     <div class="mb-3">
-                                        <label for="example-date" class="form-label">Birth Date</label>
-                                        <input class="form-control" id="bdate" type="date" name="bdate" required="">
+                                        <label for="users_birthdate" class="form-label">Birth Date</label>
+                                        <input class="form-control" type="date" id="users_birthdate" name="users_birthdate" required="">
                                             <div class="invalid-feedback">
                                                 Please provide a Birth Date.
                                             </div>
                                         </div>
 
                                         <div class="mb-3">
-                                            <label class="form-label" for="validationCustom05">Phone Number</label>
-                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your Phone Number" required="">
+                                            <label class="form-label" for="users_phone_number">Phone Number</label>
+                                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Enter your Phone Number" required="">
                                                 <div class="invalid-feedback">
                                                     Please provide a Phone Number. 
                                                 </div>
                                         </div>
                                         <div class="mb-3">
                                             <div class="mb-3">
-                                                <label class="form-label" for="validationCustom04">Civil Status</label>
-                                                <select class="form-control select2" data-toggle="select2" id="civil_status" name="civil_status" required="">
+                                                <label class="form-label" for="users_civil_status">Civil Status</label>
+                                                <select class="form-control select2" data-toggle="select2" id="users_civil_status" name="users_civil_status" required="">
                                                     <option value=""></option>
                                                     <option value="Single">Single</option>
                                                     <option value="Married">Married</option> 
@@ -96,15 +104,15 @@
                                             </div>
                                    
                                     <div class="mb-3">
-                                        <label class="form-label" for="validationCustom01" >Gender</label>
+                                        <label class="form-label" for="users_gender" >Gender</label>
                                         <br>
                                     <div class="mb-3">
-                                                <select class="form-control select2" data-toggle="select2" id="gender" name="gender" required="">
+                                                <select class="form-control select2" data-toggle="select2" id="users_gender" name="users_gender" required="">
                                                     <option value=""></option>
-                                                    <option value="Single">Male</option>
-                                                    <option value="Married">Female</option> 
-                                                    <option value="Widowed">Others</option>
-                                                    <option value="Divorced">Prefer not to say</option> 
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option> 
+                                                    <option value="Other">Other</option>
+                                                    <option value="Prefer not to say">Prefer not to say</option> 
                                                 </select>
                                                     <div class="invalid-feedback">
                                                         Please provide a Gender.  
@@ -114,14 +122,14 @@
                                     </div>  
                                     <div class="mb-3">
                                         <label class="form-label">Profile Image</label>
-                                        <input class="form-control" type="file" name="profile_pic" id="profile_pic" required="">
+                                        <input class="form-control" type="file" name="users_profile_pic" id="users_profile_pic" required="">
                                     </div> 
                                     <div class="invalid-feedback">
                                                 Please provide an Image.
                                         </div>     
                                     <div class="mb-3">
-                                        <label for="emailaddress" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="email" name="email" required placeholder="Enter your email">
+                                        <label for="users_email" class="form-label">Email address</label>
+                                        <input class="form-control" type="email" id="users_email" name="users_email" placeholder="Enter your email" required="">
                                         <div class="invalid-feedback">
                                                 Please provide an Email Address.
                                         </div>
@@ -129,9 +137,9 @@
                                   
 
                                     <div class="mb-3">
-                                        <label for="password" class="form-label">Password</label>
+                                        <label for="users_password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="pass1" name="pass1" required=""class="form-control" placeholder="Enter your password">
+                                            <input type="password" id="users_password" name="users_password" class="form-control" placeholder="Enter your password" required="">
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>
@@ -141,12 +149,12 @@
                                         </div>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="password" class="form-label">Re-type Password</label>
+                                        <label for="users_password1" class="form-label">Re-type Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="pass2" name="pass2" required=""class="form-control" placeholder="Enter your password">
-                                            <div class="input-group-text" data-password="false">
+                                            <input type="password" id="users_password1" name="users_password1" class="form-control" placeholder="Enter your password" required="">
+                                            <!--<div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
-                                            </div>
+                                            </div> -->
                                             <div class="invalid-feedback">
                                                 Please Re-type your Password.
                                             </div>
@@ -161,7 +169,7 @@
                                     </div>
 
                                     <div class="mb-3 text-center">
-                                        <button class="btn btn-primary" type="submit" name="submit"> Sign Up </button>
+                                        <button class="btn btn-primary" type="submit" id="submit" name="submit"> Sign Up </button>
                                     </div>
 
                                 </form>
@@ -185,7 +193,9 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-            2022 © HappySmile.com
+            <p> Copyright &copy; 2022-<script>document.write(new Date().getFullYear())
+                </script> HappySmile.com
+            </p>
         </footer>
 
         <!-- bundle -->
@@ -197,9 +207,14 @@
          <!-- custom common.js -->
          <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
          
-         <!-- custom login.js -->
+         <!-- custom register.js -->
          <script src="<?php echo base_url('assets')?>/js/access/register.js"></script>
-        
 
+         <!-- demo js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+
+        <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
+        
     </body>
 </html>

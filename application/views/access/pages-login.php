@@ -23,8 +23,6 @@
         <!-- Toastr css -->
         <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
 
-
-
     </head>
 
     <body class="loading authentication-bg" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": false}'>
@@ -121,7 +119,9 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-            2022 © HappySmile.com
+            <p> Copyright &copy; 2022-<script>document.write(new Date().getFullYear())
+                </script> HappySmile.com
+            </p>
         </footer>
         
         <!-- google cdn jquery -->
