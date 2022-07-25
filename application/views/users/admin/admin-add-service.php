@@ -28,9 +28,9 @@
                                 <label class="form-label" for="users_status">Status</label>
                                 <select type="text" class="form-select" id="users_status" name="services_status" placeholder="Status" required="">
                                     <option></option>
-                                    <option>Approved</option>
-                                    <option>Disapproved</option>
-                                    <option>Pending</option>
+                                    <option value="Approved">Approved</option>
+                                    <option value="Disapproved">Disapproved</option>
+                                    <option value="Pending">Pending</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.

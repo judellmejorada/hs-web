@@ -8,7 +8,7 @@ $(function () {
 				{
 					data: null,
 					render: function (data, type, row, meta) {
-						return `<img src="${baseURLUserProfile}/${data.services_image}" alt="table-user" class="me-2 rounded-circle"><a href="javascript:void(0);" class="text-body fw-semibold">${data.services_name}</a>`;
+						return `<img src="${baseUrlServicePic}/${data.services_image}" alt="table-user" class="me-2 rounded-circle"><a href="javascript:void(0);" class="text-body fw-semibold">${data.services_name}</a>`;
 					},
 					className: "table-user",
 				},
@@ -58,6 +58,7 @@ $(function () {
 	$(document).on("submit", "#add-service-form", async function (event) {
 		event.preventDefault();
 		let formData = new FormData(this);
+		formData.append("services_description", quill.getText());
 		await $.ajax(
 			getAjaxConfig("/admin/service/add-service", {
 				type: "POST",
