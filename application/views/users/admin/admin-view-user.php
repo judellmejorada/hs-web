@@ -12,14 +12,14 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_fname">First Name</label>
-                            <input type="text" class="form-control" id="users_fname" name="users_fname" readonly="" value="First Name">
+                            <input type="text" class="form-control" id="view_users_fname" name="users_fname" readonly="" value="First Name">
                             <div class="invalid-feedback">
                                 Please provide a First Name.
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_mname">Middle Name</label>
-                            <input type="text" class="form-control" id="users_mname" name="users_mname" readonly="" value="Middle Name">
+                            <input type="text" class="form-control" id="view_users_mname" name="users_mname" readonly="" value="Middle Name">
                             <div class="invalid-feedback">
                                 Please provide a Middle Name.
                             </div>
@@ -29,14 +29,14 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_lname">Last name</label>
-                            <input type="text" class="form-control" id="users_lname" name="users_lname" readonly="" value="Last Name">
+                            <input type="text" class="form-control" id="view_users_lname" name="users_lname" readonly="" value="Last Name">
                             <div class="invalid-feedback">
                                 Please provide a Last Name.
                             </div>
                         </div> 
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_birthdate">Birth Date</label>
-                            <input class="form-control" type="date" id="users_birthdate" name="users_birthdate" readonly="" value="Birth Date">
+                            <input class="form-control" type="date" id="view_users_birthdate" name="users_birthdate" readonly="" value="Birth Date">
                             <div class="invalid-feedback">
                                 Please provide a Birth Date.
                             </div>
@@ -46,7 +46,7 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_gender">Gender</label>
-                            <select class="form-select" id="users_gender" name="users_gender" disabled="true" readonly="" value="">
+                            <select class="form-select" id="view_users_gender" name="users_gender" disabled="true" readonly="" value="">
                                 <option></option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -59,12 +59,12 @@
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_civil_status">Civil Status</label>
-                            <select class="form-select" id="users_civil_status" name="users_civil_status" disabled="true" readonly="" value="">
+                            <select class="form-select" id="view_users_civil_status" name="users_civil_status" disabled="true" readonly="" value="">
                                 <option></option>
-                                <option>Single</option>
-                                <option>Married</option>
-                                <option>Divorced</option>
-                                <option>Others</option>
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Divorced">Divorced</option>
+                                <option value="Others">Others</option>
                             </select>
                             <div class="invalid-feedback">
                                 Please provide a Civil Status.
@@ -75,14 +75,14 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_email">Email</label>
-                            <input type="text" class="form-control" id="users_email" name="users_email" readonly="" value="Email">
+                            <input type="text" class="form-control" id="view_users_email" name="users_email" readonly="" value="Email">
                                 <div class="invalid-feedback">
                                     Please provide a Email.  
                                 </div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_phone_number">Phone Number</label>
-                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" disabled="true"readonly="" value="Phone Number" required="">
+                            <input type="text" class="form-control" id="view_users_phone_number" name="users_phone_number" disabled="true"readonly="" value="Phone Number" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Phone Number. 
                                 </div>
@@ -99,12 +99,12 @@
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_type">User Type</label>
-                            <select class="form-select" id="users_type" name="users_type" disabled="true" readonly="" value="">
+                            <select class="form-select" id="view_users_type" name="users_type" disabled="true" readonly="" value="">
                                 <option></option>
-                                <option>Admin</option>
-                                <option>Staff</option>
-                                <option>Dentist</option>
-                                <option>Patient</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Staff">Staff</option>
+                                <option value="Dentist">Dentist</option>
+                                <option value="Patient">Patient</option>
                             </select>
                             <div class="invalid-feedback">
                                 Please provide a User Type.
@@ -117,7 +117,7 @@
                             <div class="mb-3 col-md-6">
                                 <label for="users_password" class="form-label">Password</label>
                                 <div class="input-group input-group-merge">
-                                    <input type="password" class="form-control" placeholder="Password" id="users_password" name="users_password" readonly="" value="">
+                                    <input type="password" class="form-control" placeholder="Password" id="view_users_password" name="users_password" readonly="" value="">
                                     <div class="input-group-text" data-password="false">
                                         <span class="password-eye"></span>
                                     </div>
@@ -128,10 +128,10 @@
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="users_status">Status</label>
-                                <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" disabled="true" readonly="" value="">
+                                <select type="text" class="form-select" id="view_users_status" name="users_status" placeholder="Status" disabled="true" readonly="" value="">
                                     <option></option>
-                                    <option>Approved</option>
-                                    <option>Disapproved</option>
+                                    <option value="Active">Approved</option>
+                                    <option value="Inactive">Disapproved</option>
                                     <option>Pending</option>
                                 </select>
                                 <div class="invalid-feedback">

@@ -1,3 +1,19 @@
+var excludeField = {
+	edit: ["users_profile_pic"],
+};
+
+var setValues = (userDetails, prefix) => {
+	Object.keys(userDetails).forEach((key) => {
+		if (!(excludeField[key] && excludeField.includes(key))) {
+			$(`#${prefix}_${key}`).val(userDetails[key]);
+		}
+	});
+};
+
+var onDelete = (uuid) => {
+	$("#delete-confirm").data("id", uuid);
+};
+
 $(function () {
 	const dataTable = $("#products-datatable").DataTable(
 		getDataTableConfig({
@@ -40,11 +56,15 @@ $(function () {
 				{
 					orderable: !1,
 					data: null,
-					render: function () {
+					render: function (data, type, row, meta) {
 						return (
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>` +
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>` +
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>`
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" onclick='setValues(${JSON.stringify(
+								data
+							)}, "view")'> <i class="mdi mdi-account-outline" ></i></a>` +
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" onclick='setValues(${JSON.stringify(
+								data
+							)}, "edit")'> <i class="mdi mdi-square-edit-outline"></i></a>` +
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" onclick='onDelete("${data.users_id}")'> <i class="mdi mdi-delete"></i></a>`
 						);
 					},
 				},
@@ -66,5 +86,45 @@ $(function () {
 		$("#staticBackdrop0").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
+	});
+
+	$(document).on("submit", "#edit-user-form", async function (event) {
+		event.preventDefault();
+		let formData = new FormData(this);
+		const userId = formData.get("users_id");
+		formData.delete("users_id");
+		for (const [key, value] of formData.entries()) {
+			if (typeof value == "object") {
+				if (!value || value.size == 0) {
+					formData.delete(key);
+				}
+			} else {
+				if (!value) {
+					formData.delete(key);
+				}
+			}
+		}
+		await $.ajax(
+			getAjaxConfig(`/admin/user/${userId}`, {
+				type: "PUT",
+				data: formData,
+				contentType: false,
+				processData: false,
+			})
+		);
+		$("#staticBackdrop2").modal("toggle");
+		dataTable.ajax.reload();
+		return false;
+	});
+
+	$(document).on("click", "#delete-confirm", async function (event) {
+		const id = $(this).data("id");
+		await $.ajax(
+			getAjaxConfig(`/admin/user/${id}`, {
+				type: "DELETE",
+			})
+		);
+		$("#staticBackdrop3").modal("toggle");
+		dataTable.ajax.reload();
 	});
 });
