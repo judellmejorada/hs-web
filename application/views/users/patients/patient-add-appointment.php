@@ -8,7 +8,7 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-                <form class="needs-validation" novalidate="">
+                <form id="add-appointment-form" class="needs-validation" novalidate="">
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="validationCustom00">Branch</label>

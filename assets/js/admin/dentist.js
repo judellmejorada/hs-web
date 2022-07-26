@@ -8,7 +8,7 @@ $(function () {
 				{
 					data: null,
 					render: function (data, type, row, meta) {
-						return `<img src="${baseURLUserProfile}/${data.dentists_image}" alt="table-user" class="me-2 rounded-circle"><a href="javascript:void(0);" class="text-body fw-semibold">${data.dentists_fname} </a>`;
+						return `<img src="${baseUrlDentistPic}/${data.dentists_image}" alt="table-user" class="me-2 rounded-circle"><a href="javascript:void(0);" class="text-body fw-semibold">${data.dentists_fname} </a>`;
 					},
 					className: "table-user",
 				},
@@ -60,6 +60,7 @@ $(function () {
 	$(document).on("submit", "#add-dentist-form", async function (event) {
 		event.preventDefault();
 		let formData = new FormData(this);
+		formData.append("dentists_description", quill.getText());
 		await $.ajax(
 			getAjaxConfig("/admin/dentist/add-featured-dentist", {
 				type: "POST",

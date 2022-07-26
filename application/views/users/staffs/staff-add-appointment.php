@@ -8,11 +8,11 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form class="needs-validation" novalidate="">
+            <form id="add-appointment-form" class="needs-validation" novalidate="">
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="branches_name">Branch</label>
-                                <select class="form-select" id="branches_name" name="branches_name" placeholder="Branch" required="">
+                                <select class="form-select" id="branches_name" name="appointments_branch" placeholder="Branch" required="">
                                     <option></option>
                                     <option>Commonwealth</option>
                                     <option>Quezon City</option>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="mb-3 col-md-6">
                             <label class="form-label" for="validationCustom01">Appointment Schedule</label>
-                            <input class="form-control" id="validationCustom01" type="date" name="date" required="">
+                            <input class="form-control" id="validationCustom01" type="date" name="appointments_sched" required="">
                             <div class="invalid-feedback">
                                 Please provide a Appointment Date.
                             </div>
@@ -35,14 +35,14 @@
                         <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom03">Appointment Purpose</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Appointment Purpose" required="">
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Appointment Purpose" name="appointments_purpose"required="">
                                 <div class="invalid-feedback">
                                     Please provide an Appointment Purpose.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom03">Status</label>
-                                <select type="text" class="form-select" id="validationCustom03" placeholder="Status" required="">
+                                <select type="text" class="form-select" id="validationCustom03" name="appointments_status" placeholder="Status" required="">
                                     <option></option>
                                     <option>Approved</option>
                                     <option>Disapproved</option>
@@ -56,7 +56,7 @@
 
                         <div class="row g-2">
                                 <label class="form-label" for="validationCustom04">Success</label>
-                                <select class="form-select" id="validationCustom04" required="">
+                                <select class="form-select" id="validationCustom04" name="appointments_success" required="">
                                     <option></option>
                                     <option>Yes</option>
                                     <option>No</option>
@@ -68,7 +68,7 @@
 
                         <div class="row g-2">
                             <label class="form-label" for="validationCustom03">Comment</label>
-                            <div id="snow-editor" style="height: 300px;" required="" ></div>
+                            <div id="snow-editor" style="height: 300px;" name="appointments_comment" required="" ></div>
                             <div class="invalid-feedback">
                                     Please provide a Comment.  
                             </div>

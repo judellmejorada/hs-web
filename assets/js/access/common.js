@@ -2,6 +2,8 @@ const baseURL = "https://happysmile-dcms.herokuapp.com/v1";
 const baseURLUserProfile =
 	"https://happysmile-dcms.herokuapp.com/users-profile-pic";
 const baseUrlServicePic = "https://happysmile-dcms.herokuapp.com/services";
+const baseUrlDentistPic =
+	"https://happysmile-dcms.herokuapp.com/featured_dentist";
 
 // type = error, warning, success, info
 // title = string

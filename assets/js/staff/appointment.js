@@ -1,31 +1,27 @@
 $(function () {
-	const dataTable = $("#branch-datatable").DataTable(
+	const dataTable = $("#appointment-datatable").DataTable(
 		getDataTableConfig({
-			ajax: getAjaxConfig("/admin/branch/get-all-branches", {
+			ajax: getAjaxConfig("/staff/appointment", {
 				type: "GET",
 			}),
 			columns: [
 				{
-					data: "branches_name",
-					// render: function (data, type, row, meta) {
-					// 	return `<img src="${baseURLUserProfile}/${data.users_profile_pic}" alt="table-user" class="me-2 rounded-circle"><a href="javascript:void(0);" class="text-body fw-semibold">${branches_name} </a>`;
-					// },
-					// className: "table-user",
+					data: "appointments_branch",
 				},
 				{
-					data: "branches_contact_person",
+					data: "appointments_sched",
 				},
 				{
-					data: "branches_phone_number",
+					data: "appointments_purpose",
 				},
 				{
-					data: "branches_google_map",
+					data: "appointments_comment",
 				},
 				{
-					data: "branches_description",
+					data: "appointments_success",
 				},
 				{
-					data: "branches_status",
+					data: "appointments_status",
 					render: function (data, type, row, meta) {
 						return `<span class="badge badge-danger-lighten">${data}</span>`;
 					},
@@ -45,19 +41,19 @@ $(function () {
 		})
 	);
 
-	$(document).on("submit", "#add-branch-form", async function (event) {
+	$(document).on("submit", "#add-appointment-form", async function (event) {
 		event.preventDefault();
 		let formData = new FormData(this);
-		formData.append("branches_description", quill.getText());
+		formData.append("appointments_comment", quill.getText());
 		await $.ajax(
-			getAjaxConfig("/admin/branch/add-branch", {
+			getAjaxConfig("/staff/appointment", {
 				type: "POST",
 				data: formData,
 				contentType: false,
 				processData: false,
 			})
 		);
-		$("#staticBackdrop12").modal("toggle");
+		$("#staticBackdrop0").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
 	});
