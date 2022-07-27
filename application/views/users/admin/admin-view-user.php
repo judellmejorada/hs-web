@@ -141,7 +141,7 @@
                         </div>
                         
                         <div class="modal-footer">
-                    <button class="btn btn-primary" type="submit">Done</button>
+                    <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Done</button>
                 </form>
                         </div>
             </div>

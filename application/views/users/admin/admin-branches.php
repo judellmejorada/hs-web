@@ -113,6 +113,9 @@
 
         </div>
         <!-- END wrapper -->
+        <?php include ('admin-view-branch.php');?>
+        <?php include ('admin-modify-branch.php');?>
+        <?php include ('admin-delete-branch.php');?>
 
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>

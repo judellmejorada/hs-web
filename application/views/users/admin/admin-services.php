@@ -114,6 +114,10 @@
         </div>
         <!-- END wrapper -->
 
+        <?php include ('admin-view-service.php');?>
+        <?php include ('admin-modify-service .php');?>
+        <?php include ('admin-delete-service.php');?>
+
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>

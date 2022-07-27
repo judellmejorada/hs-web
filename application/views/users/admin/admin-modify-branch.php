@@ -8,18 +8,19 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form class="needs-validation" novalidate="">
+            <form id="edit-branch-form" class="needs-validation" novalidate="">
+                <input type="hidden" id="edit_branches_id" name="branches_id">
                     <div class="row g-3">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="branches_name">Branch</label>
-                            <input type="text" class="form-control" id="branches_name" name="branches_name" placeholder="Branch" required="">
+                            <input type="text" class="form-control" id="edit_branches_name" name="branches_name" placeholder="Branch" required="">
                             <div class="invalid-feedback">
                                 Please provide a Branch.
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="branches_contact_person">Contact Person</label>
-                            <input type="text" class="form-control" id="branches_contact_person" name="branches_contact_person" placeholder="Contact Person" required="">
+                            <input type="text" class="form-control" id="edit_branches_contact_person" name="branches_contact_person" placeholder="Contact Person" required="">
                             <div class="invalid-feedback">
                                 Please provide a Contact Person.
                             </div>
@@ -29,14 +30,14 @@
                     <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="branches_phone_number">Phone Number</label>
-                                <input type="text" class="form-control" id="branches_phone_number" name="branches_phone_number" placeholder="Phone Number" required="">
+                                <input type="text" class="form-control" id="edit_branches_phone_number" name="branches_phone_number" placeholder="Phone Number" required="">
                                     <div class="invalid-feedback">
                                         Please provide a Phone Number.  
                                     </div>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="branches_google_map">Location</label>
-                                <input type="text" class="form-control" id="branches_google_map" name="branches_google_map" placeholder="Location" required="">
+                                <input type="text" class="form-control" id="edit_branches_google_map" name="branches_google_map" placeholder="Location" required="">
                                     <div class="invalid-feedback">
                                         Please provide a link of your Location through Google Map. 
                                     </div>
@@ -45,7 +46,7 @@
 
                         <div class="row g-2">
                             <label class="form-label" for="branches_description">Description</label>
-                            <div id="snow-editor" name="branches_description" style="height: 300px;" required="" ></div>
+                            <div id="snow-editor-modify" name="branches_description" style="height: 300px;" required="" ></div>
                             <div class="invalid-feedback">
                                     Please provide a brief Description.  
                             </div>

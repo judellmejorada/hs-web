@@ -8,30 +8,30 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form class="needs-validation" novalidate="">
-                
+            <form id="edit_service_form" class="needs-validation" novalidate="">
+            <input type="hidden" id="edit_services_id" name="services_id"/>
                         <div class="row g-3">
                             <div class="col-sm-4">
                                 <label class="form-label" for="services_name">Service Name</label>
-                                <input type="text" class="form-control" id="services_name" name="services_name" placeholder="Service Name" required="">
+                                <input type="text" class="form-control" id="edit_services_name" name="services_name" placeholder="Service Name" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Service Name.
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <label class="form-label" for="services_image">Service Image</label>
-                                <input type="file" class="form-control" id="services_image" name="services_image"  required="">
+                                <input type="file" class="form-control" id="edit_services_image" name="services_image">
                                 <div class="invalid-feedback">
                                     Please provide an Service Image. 
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                                <label class="form-label" for="users_status">Status</label>
-                                <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" required="">
-                                    <option></option>
-                                    <option>Approved</option>
-                                    <option>Disapproved</option>
-                                    <option>Pending</option>
+                                <label class="form-label" for="services_status">Status</label>
+                                <select type="text" class="form-select" id="edit_services_status" name="services_status" placeholder="Status" required="">
+                                    <option value=""></option>
+                                    <option value="Active">Approved</option>
+                                    <option value="Disapproved">Disapproved</option>
+                                    <option value="Pending">Pending</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.
@@ -43,7 +43,7 @@
                         
                         <div class="row g-2">
                             <label class="form-label" for="services_description">Description</label>
-                            <div id="snow-editor" name="services_description" style="height: 300px;" required="" ></div>
+                            <div id="snow-editor-modify" name="services_description" style="height: 300px;" required=""></div>
                             <div class="invalid-feedback">
                                     Please provide a brief Description.  
                             </div>

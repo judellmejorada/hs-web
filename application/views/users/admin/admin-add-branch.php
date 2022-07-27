@@ -45,7 +45,7 @@
 
                         <div class="row g-2">
                             <label class="form-label" for="branches_description">Description</label>
-                            <div id="snow-editor" name="branches_description" style="height: 300px;" required="" ></div>
+                            <div id="snow-editor-add" name="branches_description" style="height: 300px;" required="" ></div>
                             <div class="invalid-feedback">
                                     Please provide a brief Description.  
                             </div>

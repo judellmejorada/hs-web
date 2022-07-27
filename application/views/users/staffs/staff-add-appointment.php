@@ -25,7 +25,13 @@
                             </div>
                             <div class="mb-3 col-md-6">
                             <label class="form-label" for="validationCustom01">Appointment Schedule</label>
-                            <input class="form-control" id="validationCustom01" type="date" name="appointments_sched" required="">
+                            <select class="form-select" id="validationCustom00" required="">
+                                <option></option>
+                                <option>Anne Hathaway - July 28, 2022 8AM</option>
+                                <option>Anne Hathaway - July 28, 2022 9AM</option>
+                                <option>Lora Joy - July 28, 2022 11AM</option>
+                            </select>
+                            <!-- <input class="form-control" id="validationCustom01" type="date" name="appointments_sched" required=""> -->
                             <div class="invalid-feedback">
                                 Please provide a Appointment Date.
                             </div>
@@ -68,7 +74,7 @@
 
                         <div class="row g-2">
                             <label class="form-label" for="validationCustom03">Comment</label>
-                            <div id="snow-editor" style="height: 300px;" name="appointments_comment" required="" ></div>
+                            <div id="snow-editor-add" style="height: 300px;" name="appointments_comment" required="" ></div>
                             <div class="invalid-feedback">
                                     Please provide a Comment.  
                             </div>

@@ -12,7 +12,7 @@
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="branches_name">Branch</label>
-                                <select class="form-select" id="branches_name" name="branches_name" placeholder="Branch" readonly="" disabled="">
+                                <select class="form-select" id="view_appointments_branch" name="appointments_branch" placeholder="Branch" readonly="" disabled="">
                                     <option></option>
                                     <option>Commonwealth</option>
                                     <option>Quezon City</option>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="mb-3 col-md-6">
                             <label class="form-label" for="validationCustom01">Appointment Schedule</label>
-                            <input class="form-control" type="date" id="validationCustom01" name="validationCustom01" readonly="">
+                            <input class="form-control" type="date" id="view_appointments_sched" name="appointments_sched" readonly="">
                             <div class="invalid-feedback">
                                 Please provide a Appointment Date.
                             </div>
@@ -35,14 +35,14 @@
                         <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom03">Appointment Purpose</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Appointment Purpose" readonly="">
+                                <input type="text" class="form-control" id="view_appointments_purpose" name="appointments_purpose" placeholder="Appointment Purpose" readonly="">
                                 <div class="invalid-feedback">
                                     Please provide an Appointment Purpose.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="validationCustom03">Status</label>
-                                <select type="text" class="form-select" id="validationCustom03" placeholder="Status" readonly="" disabled="">
+                                <select type="text" class="form-select" id="view_appointments_status" name="appointments_status" placeholder="Status" readonly="" disabled="">
                                     <option></option>
                                     <option>Approved</option>
                                     <option>Disapproved</option>
@@ -56,7 +56,7 @@
 
                         <div class="row g-2">
                                 <label class="form-label" for="validationCustom04">Success</label>
-                                <select class="form-select" id="validationCustom04" readonly="">
+                                <select class="form-select" id="view_appointments_success" name="appointments_success" readonly="">
                                     <option></option>
                                     <option>Yes</option>
                                     <option>No</option>
@@ -68,7 +68,7 @@
 
                         <div class="row g-2">
                             <label class="form-label" for="validationCustom03">Comment</label>
-                            <div id="snow-editor" style="height: 300px;" readonly="" ></div>
+                            <div id="snow-editor-view" style="height: 300px;" readonly="" name="appointments_comment" ></div>
                             <div class="invalid-feedback">
                                     Please provide a Comment.  
                             </div>

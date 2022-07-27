@@ -113,7 +113,9 @@
 
         </div>
         <!-- END wrapper -->
-        
+        <?php include ('admin-view-dentist.php');?>
+        <?php include ('admin-modify-dentist.php');?>
+        <?php include ('admin-delete-dentist.php');?>
 
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
