@@ -35,7 +35,7 @@
                                             </h4>
                                                 <div class="form-group">
                                                 <label for="Branch" class="form-label">Clinic Branch</label>
-                                                                <select class="form-select" id="Branch">
+                                                                <select class="form-select" id="Branch" name="Branch">
                                                                     <option>Select Branch</option>
                                                                     <option>Fairview Branch</option>
                                                                     <option>SM North Branch</option>
@@ -48,10 +48,10 @@
                                         <!-- end row -->
             
                                         <div class="row mt-4">
-                                            <div class="col-sm-5 offset-sm-1">
-                                            <h6>Billing Address</h6>
+                                            <div class="col-sm-5 offset-sm-1">  
+                                            <h6>Issued To</h6>
                                                 <div class="form-group  ">
-                                                <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Name" autocomplete="off">
+                                                <input type="text" class="form-control" name="invoices_issued_to" id="invoices_issued_to" placeholder="Name" autocomplete="off">
                                                 </div>      
                                             </div> <!-- end col-->
 
@@ -70,8 +70,8 @@
                                         </tr>
                                         <tr>
                                         <td><input class="itemRow" type="checkbox"></td>
-                                        <td><input type="text" name="productName[]" id="productName_1" class="form-control" autocomplete="off"></td>
-                                        <td><input type="number" name="price[]" id="price_1" class="form-control price" autocomplete="off"></td>
+                                        <td><input type="text" name="inser_service_name" id="inser_service_name" class="form-control" autocomplete="off"></td>
+                                        <td><input type="number" name="inser_service_price" id="inser_service_price" class="form-control price" autocomplete="off"></td>
                                         </tr>
                                         </table>
                                         </div>
@@ -82,10 +82,16 @@
                                         <button class="btn btn-success"  id="addRows" type="button" >+ Add More</button>
                                         </div>
                                         </div>
-                                        
                                        
                                         <div class="row">
                                             <div class="col-sm-6 offset-sm-1">
+
+                                            <label class="form-label" for="appointments_comment">Description</label>
+                                            <div id="snow-editor-add" style="height: 300px;"  name="invoices_description" required="" ></div>
+                                            <div class="invalid-feedback">
+                                                    Please provide a Description.  
+                                            </div>
+
                                                 <div class="clearfix pt-3">
                                                     <h6 class="text-muted">Notes:</h6>
                                                     <p>
@@ -104,7 +110,7 @@
                                                         <div class="form-group">
                                                         <label for="Subtotal" class="form-label">Subtotal:  </label>
                                                         <div class="input-group">
-                                                        <input type="number" readonly="" class="form-control" id="Subtotal" value="">
+                                                        <input type="number" readonly="" class="form-control" id="grand_total" name="grand_total" value="">
                                                         
                                                         </div>
                                                         </div>
@@ -112,14 +118,14 @@
                                                         <div class="form-group">
                                                         <label>Discount:  </label>
                                                         <div class="input-group">
-                                                        <input value="" type="number" class="form-control" name="discount" id="discount" placeholder="Discount">
+                                                        <input value="" type="number" class="form-control" id="invoices_discount" name="invoices_discount" placeholder="Discount">
                                                         </div>
                                                         </div>
                                                         <br>
                                                         <div class="form-group">
                                                         <label>Total:  </label>
                                                         <div class="input-group">
-                                                        <input type="number" readonly="" class="form-control" id="GrandTotal" value="">
+                                                        <input type="number" readonly="" class="form-control" id="total_after_discount" name="total_after_discount" value="">
 
                                                         </div>
                                                         </div>

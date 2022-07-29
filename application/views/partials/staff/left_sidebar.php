@@ -51,6 +51,12 @@
                                 <span> Invoices </span>
                             </a>
 
+                            <a data-bs-toggle="" href="<?php echo base_url('staff/schedule')?>"  class="side-nav-link">
+                                <i class=" uil-stopwatch"></i>
+                                <span> Schedule </span>
+                            </a>
+
+
                     <!-- End Sidebar -->
 
                     <div class="clearfix"></div>

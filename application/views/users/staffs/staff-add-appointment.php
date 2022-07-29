@@ -11,21 +11,21 @@
             <form id="add-appointment-form" class="needs-validation" novalidate="">
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="branches_name">Branch</label>
-                                <select class="form-select" id="branches_name" name="appointments_branch" placeholder="Branch" required="">
+                                <label class="form-label" for="appointments_branch">Branch</label>
+                                <select class="form-select" id="appointments_branch" name="appointments_branch" placeholder="Branch" required="">
                                     <option></option>
                                     <option>Commonwealth</option>
                                     <option>Quezon City</option>
-                                    <option>Barbie</option>
-                                    <option>Kylie</option>
+                                    <option>Novaliches</option>
+                                    <option>Zabarte</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please choose a Branch.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom01">Appointment Schedule</label>
-                            <select class="form-select" id="validationCustom00" required="">
+                            <label class="form-label" for="appointments_sched">Appointment Schedule</label>
+                            <select class="form-select" id="appointments_sched" name="appointments_sched" required="">
                                 <option></option>
                                 <option>Anne Hathaway - July 28, 2022 8AM</option>
                                 <option>Anne Hathaway - July 28, 2022 9AM</option>
@@ -40,15 +40,15 @@
                         
                         <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom03">Appointment Purpose</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Appointment Purpose" name="appointments_purpose"required="">
+                                <label class="form-label" for="appointments_purpose">Appointment Purpose</label>
+                                <input type="text" class="form-control" id="appointments_purpose" name="appointments_purpose" placeholder="Appointment Purpose" required="">
                                 <div class="invalid-feedback">
                                     Please provide an Appointment Purpose.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom03">Status</label>
-                                <select type="text" class="form-select" id="validationCustom03" name="appointments_status" placeholder="Status" required="">
+                                <label class="form-label" for="appointments_status">Status</label>
+                                <select type="text" class="form-select" id="appointments_status" name="appointments_status" placeholder="Status" required="">
                                     <option></option>
                                     <option>Approved</option>
                                     <option>Disapproved</option>
@@ -61,8 +61,8 @@
                         </div>  
 
                         <div class="row g-2">
-                                <label class="form-label" for="validationCustom04">Success</label>
-                                <select class="form-select" id="validationCustom04" name="appointments_success" required="">
+                                <label class="form-label" for="appointments_success">Success</label>
+                                <select class="form-select" id="appointments_success" name="appointments_success" required="">
                                     <option></option>
                                     <option>Yes</option>
                                     <option>No</option>
@@ -73,8 +73,8 @@
                         </div>
 
                         <div class="row g-2">
-                            <label class="form-label" for="validationCustom03">Comment</label>
-                            <div id="snow-editor-add" style="height: 300px;" name="appointments_comment" required="" ></div>
+                            <label class="form-label" for="appointments_comment">Comment</label>
+                            <div id="snow-editor-add" style="height: 300px;"  name="appointments_comment" required="" ></div>
                             <div class="invalid-feedback">
                                     Please provide a Comment.  
                             </div>
