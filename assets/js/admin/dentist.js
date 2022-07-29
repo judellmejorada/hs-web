@@ -63,7 +63,7 @@ $(function () {
 				{
 					data: "dentists_status",
 					render: function (data, type, row, meta) {
-						return `<span class="badge badge-danger-lighten">${data}</span>`;
+						return `<span class="badge badge-success-lighten">${data}</span>`;
 					},
 				},
 				{
