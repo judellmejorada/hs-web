@@ -82,7 +82,7 @@
                                         <button class="btn btn-success"  id="addRows" type="button" >+ Add More</button>
                                         </div>
                                         </div>
-                                       
+                                        <br>
                                         <div class="row">
                                             <div class="col-sm-6 offset-sm-1">
 

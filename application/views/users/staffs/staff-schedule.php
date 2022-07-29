@@ -65,8 +65,8 @@
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop0"><i class="mdi mdi-plus-circle me-2"></i> Add Appointment</a>
-                                                <?php include('staff-add-appointment.php')?>
+                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop8"><i class="mdi mdi-plus-circle me-2"></i> Add Schedule</a>
+                                                <?php include('staff-add-schedule.php')?>
                                             </div><!-- end col-->
                                         </div>
                 
@@ -113,9 +113,9 @@
 
         </div>
         <!-- END wrapper -->
-        <?php include ('staff-view-appointment.php');?>
-        <?php include ('staff-modify-appointment.php');?>
-        <?php include ('staff-delete-appointment.php');?>
+        <?php include ('staff-view-schedule.php');?>
+        <?php include ('staff-modify-schedule.php');?>
+        <?php include ('staff-delete-schedule.php');?>
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
