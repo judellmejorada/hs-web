@@ -86,8 +86,8 @@
                                         <div class="row">
                                             <div class="col-sm-6 offset-sm-1">
 
-                                            <label class="form-label" for="appointments_comment">Description</label>
-                                            <div id="snow-editor-add" style="height: 300px;"  name="invoices_description" required="" ></div>
+                                            <label for="example-textarea" class="form-label">Description</label>
+                                            <textarea class="form-control" id="appointments_comment" rows="5"></textarea>
                                             <div class="invalid-feedback">
                                                     Please provide a Description.  
                                             </div>

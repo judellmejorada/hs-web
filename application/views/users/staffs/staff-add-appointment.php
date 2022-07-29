@@ -72,11 +72,12 @@
                                 </div>
                         </div>
 
+                        <br>
                         <div class="row g-2">
-                            <label class="form-label" for="appointments_comment">Comment</label>
+                            <label class="form-label" for="appointments_comment">Purpose</label>
                             <div id="snow-editor-add" style="height: 300px;"  name="appointments_comment" required="" ></div>
                             <div class="invalid-feedback">
-                                    Please provide a Comment.  
+                                    Please provide a Purpose.  
                             </div>
                         </div>
 
