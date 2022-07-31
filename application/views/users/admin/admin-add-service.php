@@ -28,9 +28,9 @@
                                 <label class="form-label" for="users_status">Status</label>
                                 <select type="text" class="form-select" id="users_status" name="services_status" placeholder="Status" required="">
                                     <option></option>
-                                    <option>Approved</option>
-                                    <option>Disapproved</option>
-                                    <option>Pending</option>
+                                    <option value="Approved">Approved</option>
+                                    <option value="Disapproved">Disapproved</option>
+                                    <option value="Pending">Pending</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.
@@ -42,7 +42,7 @@
                         
                         <div class="row g-2">
                             <label class="form-label" for="services_description">Description</label>
-                            <div id="snow-editor" name="services_description" style="height: 300px;" required="" ></div>
+                            <div id="snow-editor-add" name="services_description" style="height: 300px;" required="" ></div>
                             <div class="invalid-feedback">
                                     Please provide a brief Description.  
                             </div>

@@ -8,18 +8,19 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form id="add-user-form" class="needs-validation" novalidate="">
+            <form id="edit-user-form" class="needs-validation" novalidate="">
+                    <input type="hidden" id="edit_users_id" name="users_id"/>
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_fname">First Name</label>
-                            <input type="text" class="form-control" id="users_fname" name="users_fname" placeholder="First Name" required="">
+                            <input type="text" class="form-control" id="edit_users_fname" name="users_fname" placeholder="First Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a First Name.
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_mname">Middle Name</label>
-                            <input type="text" class="form-control" id="users_mname" name="users_mname" placeholder="Middle Name" required="">
+                            <input type="text" class="form-control" id="edit_users_mname" name="users_mname" placeholder="Middle Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a Middle Name.
                             </div>
@@ -29,14 +30,14 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_lname">Last name</label>
-                            <input type="text" class="form-control" id="users_lname" name="users_lname" placeholder="Last Name" required="">
+                            <input type="text" class="form-control" id="edit_users_lname" name="users_lname" placeholder="Last Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a Last Name.
                             </div>
                         </div> 
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_birthdate">Birth Date</label>
-                            <input class="form-control" type="date" id="users_birthdate" name="users_birthdate" required="">
+                            <input class="form-control" type="date" id="edit_users_birthdate" name="users_birthdate" required="">
                             <div class="invalid-feedback">
                                 Please provide a Birth Date.
                             </div>
@@ -46,12 +47,12 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_gender">Gender</label>
-                            <select class="form-select" id="users_gender" name="users_gender" required="">
+                            <select class="form-select" id="edit_users_gender" name="users_gender" required="">
                                 <option></option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Prefer not to say</option>
-                                <option>Others</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                                <option value="Others">Others</option>
                             </select>
                             <div class="invalid-feedback">
                                 Please provide a Gender.
@@ -59,12 +60,12 @@
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_civil_status">Civil Status</label>
-                            <select class="form-select" id="users_civil_status" name="users_civil_status" required="">
+                            <select class="form-select" id="edit_users_civil_status" name="users_civil_status" required="">
                                 <option></option>
-                                <option>Single</option>
-                                <option>Married</option>
-                                <option>Divorced</option>
-                                <option>Others</option>
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Divorced">Divorced</option>
+                                <option value="Others">Others</option>
                             </select>
                             <div class="invalid-feedback">
                                 Please provide a Civil Status.
@@ -75,14 +76,14 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_email">Email</label>
-                            <input type="text" class="form-control" id="users_email" name="users_email" placeholder="Email" required="">
+                            <input type="text" class="form-control" id="edit_users_email" name="users_email" placeholder="Email" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Email.  
                                 </div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_phone_number">Phone Number</label>
-                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
+                            <input type="text" class="form-control" id="edit_users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Phone Number. 
                                 </div>
@@ -92,19 +93,19 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_profile_pic">Image</label>
-                            <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic" required="">
+                            <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic">
                             <div class="invalid-feedback">
                                     Please provide an Image. 
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_type">User Type</label>
-                            <select class="form-select" id="users_type" name="users_type" required="">
+                            <select class="form-select" id="edit_users_type" name="users_type" required="">
                                 <option></option>
-                                <option>Admin</option>
-                                <option>Staff</option>
-                                <option>Dentist</option>
-                                <option>Patient</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Staff">Staff</option>
+                                <option value="Dentist">Dentist</option>
+                                <option value="Patient">Patient</option>
                             </select>
                             <div class="invalid-feedback">
                                 Please provide a User Type.
@@ -117,7 +118,7 @@
                             <div class="mb-3 col-md-6">
                                 <label for="users_password" class="form-label">Password</label>
                                 <div class="input-group input-group-merge">
-                                    <input type="password" class="form-control" placeholder="Password" id="users_password" name="users_password" required="">
+                                    <input type="password" class="form-control" placeholder="Password" id="users_password" name="edit_users_password">
                                     <div class="input-group-text" data-password="false">
                                         <span class="password-eye"></span>
                                     </div>
@@ -128,10 +129,10 @@
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="users_status">Status</label>
-                                <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" required="">
+                                <select type="text" class="form-select" id="edit_users_status" name="users_status" placeholder="Status" required="">
                                     <option></option>
-                                    <option>Active</option>
-                                    <option>Deactivated</option>
+                                    <option value="Active">Active</option>
+                                    <option value="Inactive">Deactivated</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.

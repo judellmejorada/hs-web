@@ -5,7 +5,15 @@ var excludeField = {
 var setValues = (userDetails, prefix) => {
 	Object.keys(userDetails).forEach((key) => {
 		if (!(excludeField[key] && excludeField.includes(key))) {
-			$(`#${prefix}_${key}`).val(userDetails[key]);
+			if (key == "appointments_comment") {
+				if (prefix == "edit") {
+					quillModify.setText(userDetails[key]);
+				} else {
+					quillView.setText(userDetails[key]);
+				}
+			} else {
+				$(`#${prefix}_${key}`).val(userDetails[key]);
+			}
 		}
 	});
 };
@@ -13,45 +21,33 @@ var setValues = (userDetails, prefix) => {
 var onDelete = (uuid) => {
 	$("#delete-confirm").data("id", uuid);
 };
-
 $(function () {
-	const dataTable = $("#products-datatable").DataTable(
+	const dataTable = $("#appointment-datatable").DataTable(
 		getDataTableConfig({
-			ajax: getAjaxConfig("/admin/user/retrieve-users", {
+			ajax: getAjaxConfig("/staff/appointment", {
 				type: "GET",
 			}),
 			columns: [
 				{
-					data: null,
-					render: function (data, type, row, meta) {
-						return `<img src="${baseURLUserProfile}/${data.users_profile_pic}" alt="table-user" class="me-2 rounded-circle"><a href="javascript:void(0);" class="text-body fw-semibold">${data.users_fname} ${data.users_mname} ${data.users_lname}</a>`;
-					},
-					className: "table-user",
+					data: "appointments_branch",
 				},
 				{
-					// birth day not available
-					data: null,
-					render: function (data, type, row, meta) {
-						return "N/A";
-					},
+					data: "appointments_sched",
 				},
 				{
-					data: "users_gender",
-					render: function (data, type, row, meta) {
-						return `<span class="fw-semibold">${data}</span>`;
-					},
+					data: "appointments_purpose",
 				},
 				{
-					data: "users_phone_number",
+					data: "appointments_comment",
 				},
 				{
-					data: "users_email",
+					data: "appointments_success",
 				},
 				{
-					data: "users_status",
+					data: "appointments_status",
 					render: function (data, type, row, meta) {
 						return `<span class="badge badge-success-lighten">${data}</span>`;
-					},
+					},	
 				},
 				{
 					orderable: !1,
@@ -61,10 +57,8 @@ $(function () {
 							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" onclick='setValues(${JSON.stringify(
 								data
 							)}, "view")'> <i class="mdi mdi-account-outline" ></i></a>` +
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" onclick='setValues(${JSON.stringify(
-								data
-							)}, "edit")'> <i class="mdi mdi-square-edit-outline"></i></a>` +
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" onclick='onDelete("${data.users_id}")'> <i class="mdi mdi-delete"></i></a>`
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>` +
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" onclick='onDelete("${data.appointments_id}")'> <i class="mdi mdi-delete"></i></a>`
 						);
 					},
 				},
@@ -72,11 +66,12 @@ $(function () {
 		})
 	);
 
-	$(document).on("submit", "#add-user-form", async function (event) {
+	$(document).on("submit", "#add-appointment-form", async function (event) {
 		event.preventDefault();
 		let formData = new FormData(this);
+		formData.append("appointments_comment", quill.getText());
 		await $.ajax(
-			getAjaxConfig("/admin/user/add-users", {
+			getAjaxConfig("/staff/appointment", {
 				type: "POST",
 				data: formData,
 				contentType: false,
@@ -88,11 +83,14 @@ $(function () {
 		return false;
 	});
 
-	$(document).on("submit", "#edit-user-form", async function (event) {
+	$(document).on("submit", "#edit-appointment-form", async function (event) {
 		event.preventDefault();
 		let formData = new FormData(this);
-		const userId = formData.get("users_id");
-		formData.delete("users_id");
+		if (quillModify.getLength() > 0) {
+			formData.append("appointments_comment", quillModify.getText());
+		}
+		const userId = formData.get("appointments_id");
+		formData.delete("appointments_id");
 		for (const [key, value] of formData.entries()) {
 			if (typeof value == "object") {
 				if (!value || value.size == 0) {
@@ -105,7 +103,7 @@ $(function () {
 			}
 		}
 		await $.ajax(
-			getAjaxConfig(`/admin/user/${userId}`, {
+			getAjaxConfig(`/staff/appointment/${userId}`, {
 				type: "PUT",
 				data: formData,
 				contentType: false,
@@ -120,7 +118,7 @@ $(function () {
 	$(document).on("click", "#delete-confirm", async function (event) {
 		const id = $(this).data("id");
 		await $.ajax(
-			getAjaxConfig(`/admin/user/${id}`, {
+			getAjaxConfig(`/staff/appointment/${id}`, {
 				type: "DELETE",
 			})
 		);

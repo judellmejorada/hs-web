@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="utf-8">
-        <title>Calendar | HappySmile Dental Clinic</title>
+        <title>Calendar | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Happy Smile" name="Author">
@@ -17,7 +17,7 @@
 
         <!-- App css -->
         <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
-        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="<?php echo base_url('assets')?>/css/app.min1.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
 
     </head>

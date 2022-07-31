@@ -9,11 +9,10 @@
             <div class="modal-body">
 
             <form class="needs-validation" novalidate="">
-                
                         <div class="row g-3">
                             <div class="col-sm-4">
                                 <label class="form-label" for="services_name">Service Name</label>
-                                <input type="text" class="form-control" id="services_name" name="services_name" readonly="" value="Service Name">
+                                <input type="text" class="form-control" id="view_services_name" name="services_name" readonly="" value="Service Name">
                                 <div class="invalid-feedback">
                                     Please provide a Service Name.
                                 </div>
@@ -27,7 +26,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <label class="form-label" for="users_status">Status</label>
-                                <select type="text" class="form-select" id="users_status" name="users_status" readonly="" disabled="true" value="Status">
+                                <select type="text" class="form-select" id="view_services_status" name="services_status" readonly="" disabled="true" value="Status">
                                     <option></option>
                                     <option>Approved</option>
                                     <option>Disapproved</option>
@@ -43,15 +42,17 @@
                         
                         <div class="row g-2">
                             <label class="form-label" for="services_description">Description</label>
-                            <div id="snow-editor" style="height: 300px;" name="services_description" readonly="" disabled="true"></div>
+                            <div id="snow-editor-view" style="height: 300px;" name="services_description" disabled="true">
+                        <span id="view_services_description"></span>
+                    </div>
                             <div class="invalid-feedback">
-                                    Please provide a brief Description.  
+                                  
                             </div>
                         </div>
                         <br>
                         
                         <div class="modal-footer">
-                    <button class="btn btn-primary" type="submit">Done</button>
+                    <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Done</button>
                 </form>
                         </div>
             </div>

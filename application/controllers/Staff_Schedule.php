@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Staff_SystemSetup extends CI_Controller {
+class Staff_Schedule extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,13 +18,10 @@ class Staff_SystemSetup extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function UI()
+	public function SchedulePage()
 	{
-		
-		$this->load->view('users/staffs/staff-dashboard');
-		//$this->load->view('partials/admin/header');
+		$this->load->view('users/staffs/staff-schedule');
 		$this->load->view('partials/staff/top_bar');
 		$this->load->view('partials/staff/left_sidebar');
-		$this->load->view('partials/staff/footer');
 	}
 }

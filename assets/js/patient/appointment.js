@@ -1,27 +1,27 @@
 $(function () {
-	const dataTable = $("#invoice-datatable").DataTable(
+	const dataTable = $("#appointment-datatable").DataTable(
 		getDataTableConfig({
-			ajax: getAjaxConfig("/staff/invoice", {
+			ajax: getAjaxConfig("/patient/appointment", {
 				type: "GET",
 			}),
 			columns: [
 				{
-					data: "invoices_number",
+					data: "appointments_branch",
 				},
 				{
-					data: "invoices_issued_to",
+					data: "appointments_sched",
 				},
 				{
-					data: "invoices_description",
+					data: "appointments_purpose",
 				},
 				{
-					data: "invoices_discount",
+					data: "appointments_comment",
 				},
 				{
-					data: "grand_total",
+					data: "appointments_success",
 				},
 				{
-					data: "invoices_status",
+					data: "appointments_status",
 					render: function (data, type, row, meta) {
 						return `<span class="badge badge-success-lighten">${data}</span>`;
 					},
@@ -41,11 +41,11 @@ $(function () {
 		})
 	);
 
-	$(document).on("submit", "#add-user-form", async function (event) {
+	$(document).on("submit", "#add-appointment-form", async function (event) {
 		event.preventDefault();
 		let formData = new FormData(this);
 		await $.ajax(
-			getAjaxConfig("/admin/user/add-users", {
+			getAjaxConfig("/patient/appointment", {
 				type: "POST",
 				data: formData,
 				contentType: false,

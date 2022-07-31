@@ -12,14 +12,14 @@
                     <div class="row g-3">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="branches_name">Branch</label>
-                            <input type="text" class="form-control" id="branches_name" name="branches_name" readonly="" value="Branch">
+                            <input type="text" class="form-control" id="view_branches_name" name="branches_name" readonly="" value="Branch">
                             <div class="invalid-feedback">
                                 Please provide a Branch.
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="branches_contact_person">Contact Person</label>
-                            <input type="text" class="form-control" id="branches_contact_person" name="branches_contact_person" readonly="" value="Contact Person">
+                            <input type="text" class="form-control" id="view_branches_contact_person" name="branches_contact_person" readonly="" value="Contact Person">
                             <div class="invalid-feedback">
                                 Please provide a Contact Person.
                             </div>
@@ -29,14 +29,14 @@
                     <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="branches_phone_number">Phone Number</label>
-                                <input type="text" class="form-control" id="branches_phone_number" name="branches_phone_number" readonly="" value="Phone Number">
+                                <input type="text" class="form-control" id="view_branches_phone_number" name="branches_phone_number" readonly="" value="Phone Number">
                                     <div class="invalid-feedback">
                                         Please provide a Phone Number.  
                                     </div>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="branches_google_map">Location</label>
-                                <input type="text" class="form-control" id="branches_google_map" name="branches_google_map" readonly="" value="Location">
+                                <input type="text" class="form-control" id="view_branches_google_map" name="branches_google_map" readonly="" value="Location">
                                     <div class="invalid-feedback">
                                         Please provide a link of your Location through Google Map. 
                                     </div>
@@ -45,7 +45,7 @@
 
                         <div class="row g-2">
                             <label class="form-label" for="branches_description">Description</label>
-                            <div id="snow-editor" name="branches_description" style="height: 300px;" readonly="" disabled="" value="Description"></div>
+                            <div id="snow-editor-view" name="branches_description" style="height: 300px;" readonly="" disabled="" value="Description"></div>
                             <div class="invalid-feedback">
                                     Please provide a brief Description.  
                             </div>
@@ -54,7 +54,7 @@
                         <br>
                         
                         <div class="modal-footer">
-                    <button class="btn btn-primary" type="submit">Done</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done</button>
                 </form>
                         </div>
             </div>

@@ -76,12 +76,12 @@ $route['admin/invoices'] = 'Admin_Invoices/InvoicePage';
 $route['admin/add-invoices'] = 'Admin_Add_Invoice/InvoicePage';
 
 //Staff Files
-$route['staff'] = 'Staff_SystemSetup/UI';
-$route['staff/dashboard'] = 'Staff/Dashboard';
+$route['staff'] = 'Staff_Calendar/CalendarPage';
 $route['staff/appointment'] = 'Staff_Appointment/AppointmentPage';
 $route['staff/add-appointment'] = 'Staff_Add_Appointment/AddAppointment';
 $route['staff/calendar'] = 'Staff_Calendar/CalendarPage';
 $route['staff/invoices'] = 'Staff_Invoices/InvoicePage';
+$route['staff/schedule'] = 'Staff_Schedule/SchedulePage';
 
 //Dentist Files
 $route['dentist'] = 'Dentist_Calendar/CalendarPage';

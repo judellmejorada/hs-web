@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Appointment | HappySmile Dental Clinic</title>
+        <title>Appointment | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Happy Smile" name="Author">
@@ -18,7 +18,7 @@
 
         <!-- App css -->
         <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
-        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="<?php echo base_url('assets')?>/css/app.min1.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.core.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.snow.css" rel="stylesheet" type="text/css" />
@@ -65,13 +65,13 @@
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop0"><i class="mdi mdi-plus-circle me-2"></i> Add Appointment</a>
+                                                <a href="javascript:void(0);" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop0"><i class="mdi mdi-plus-circle me-2"></i> Add Appointment</a>
                                                 <?php include('staff-add-appointment.php')?>
                                             </div><!-- end col-->
                                         </div>
                 
                                         <div class="table-responsive">
-                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="products-datatable">
+                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="appointment-datatable">
                                                 <thead class="table-light">
                                                     <tr>
                                                         <th style="width: 20px;">
@@ -90,78 +90,6 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck2">
-                                                                <label class="form-check-label" for="customCheck2">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('assets')?>/images/users/avatar-3.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Bryan J. Luellen</a>
-                                                        </td>
-                                                        <td>
-                                                            08/08/22
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">Male</span>
-                                                        </td>
-                                                        <td>
-                                                            08/08/22
-                                                        </td>
-                                                        <td>
-                                                            Bryan@yahoo.com
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-danger-lighten">Inactive</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <?php include ('staff-view-appointment.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <?php include ('staff-modify-appointment.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                            <?php include ('staff-delete-appointment.php');?>
-                                                        </td>
-                                                    
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck5">
-                                                                <label class="form-check-label" for="customCheck5">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="table-user">
-                                                            <img src="<?php echo base_url('assets')?>/images/users/avatar-1.jpg" alt="table-user" class="me-2 rounded-circle">
-                                                            <a href="javascript:void(0);" class="text-body fw-semibold">Timothy Kauper</a>
-                                                        </td>
-                                                        <td>
-                                                            08/20/01
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-semibold">Male</span>
-                                                        </td>
-                                                        <td>
-                                                            012938431
-                                                        </td>
-                                                        <td>
-                                                            Timothy@yahoo.com
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success-lighten">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>
-                                                            <?php include ('staff-view-user.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <?php include ('staff-modify-user.php');?>
-                                                            <a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>
-                                                            <?php include ('staff-delete-user.php');?>
-                                                        </td>
-                                                    </tr>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -185,8 +113,11 @@
 
         </div>
         <!-- END wrapper -->
-
+        <?php include ('staff-view-appointment.php');?>
+        <?php include ('staff-modify-appointment.php');?>
+        <?php include ('staff-delete-appointment.php');?>
         <!-- bundle -->
+        <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
 
@@ -200,6 +131,7 @@
 
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.appointment.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/staff/appointment.js"></script>
         <!-- end demo js-->
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>

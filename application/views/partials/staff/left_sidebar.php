@@ -23,15 +23,6 @@
                     <!--- Sidemenu -->
                     <ul class="side-nav">
 
-                        <li class="side-nav-title side-nav-item">Navigation</li>
-
-                        <li class="side-nav-item">
-                            <a href="<?php echo base_url('staff')?>" class="side-nav-link">
-                                <i class="uil-home-alt"></i>
-                                <span> Dashboard </span>
-                            </a>
-                        </li>
-
                         <li class="side-nav-title side-nav-item">STAFF</li>
 
 
@@ -50,6 +41,12 @@
                                 <i class="uil-bill"></i>
                                 <span> Invoices </span>
                             </a>
+
+                            <a data-bs-toggle="" href="<?php echo base_url('staff/schedule')?>"  class="side-nav-link">
+                                <i class=" uil-stopwatch"></i>
+                                <span> Schedule </span>
+                            </a>
+
 
                     <!-- End Sidebar -->
 

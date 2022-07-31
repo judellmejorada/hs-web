@@ -48,10 +48,10 @@
                             <label class="form-label" for="users_gender">Gender</label>
                             <select class="form-select" id="users_gender" name="users_gender" required="">
                                 <option></option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Prefer not to say</option>
-                                <option>Others</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                                <option value="Others">Others</option>
                             </select>
                             <div class="invalid-feedback">
                                 Please provide a Gender.
@@ -61,10 +61,10 @@
                             <label class="form-label" for="users_civil_status">Civil Status</label>
                             <select class="form-select" id="users_civil_status" name="users_civil_status" required="">
                                 <option></option>
-                                <option>Single</option>
-                                <option>Married</option>
-                                <option>Divorced</option>
-                                <option>Others</option>
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Divorced">Divorced</option>
+                                <option value="Others">Others</option>
                             </select>
                             <div class="invalid-feedback">
                                 Please provide a Civil Status.
@@ -101,10 +101,10 @@
                             <label class="form-label" for="users_type">User Type</label>
                             <select class="form-select" id="users_type" name="users_type" required="">
                                 <option></option>
-                                <option>Admin</option>
-                                <option>Staff</option>
-                                <option>Dentist</option>
-                                <option>Patient</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Staff">Staff</option>
+                                <option value="Dentist">Dentist</option>
+                                <option value="Patient">Patient</option>
                             </select>
                             <div class="invalid-feedback">
                                 Please provide a User Type.
@@ -130,8 +130,8 @@
                                 <label class="form-label" for="users_status">Status</label>
                                 <select type="text" class="form-select" id="users_status" name="users_status" placeholder="Status" required="">
                                     <option></option>
-                                    <option>Active</option>
-                                    <option>Deactivated</option>
+                                    <option value="Active">Active</option>
+                                    <option value="Inactive">Deactivated</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.

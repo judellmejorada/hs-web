@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Dentists | HappySmile Dental Clinic</title>
+        <title>Dentists | HappySmile </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Happy Smile" name="Author">
@@ -18,7 +18,7 @@
 
         <!-- App css -->
         <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
-        <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="<?php echo base_url('assets')?>/css/app.min1.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.core.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.snow.css" rel="stylesheet" type="text/css" />
@@ -65,7 +65,7 @@
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <a href="javascript:void(0);" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop8"><i class="mdi mdi-plus-circle me-2"></i> Add Dentist</a>
+                                                <a href="javascript:void(0);" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop8"><i class="mdi mdi-plus-circle me-2"></i> Add Dentist</a>
                                                 <?php include('admin-add-dentist.php')?>
                                             </div><!-- end col-->
                                         </div>
@@ -113,7 +113,9 @@
 
         </div>
         <!-- END wrapper -->
-        
+        <?php include ('admin-view-dentist.php');?>
+        <?php include ('admin-modify-dentist.php');?>
+        <?php include ('admin-delete-dentist.php');?>
 
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>

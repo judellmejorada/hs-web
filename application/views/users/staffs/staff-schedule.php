@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Invoices | HappySmile</title>
+        <title>Schedule | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Happy Smile" name="Author">
@@ -50,10 +50,10 @@
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">HappySmile</a></li>
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Staff</a></li>
-                                            <li class="breadcrumb-item active">Invoices</li>
+                                            <li class="breadcrumb-item active">Schedule</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">INVOICES</h4>
+                                    <h4 class="page-title">SCHEDULES</h4>
                                 </div>
                             </div>
                         </div>     
@@ -65,13 +65,13 @@
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <a href="javascript:void(0);" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"><i class="mdi mdi-plus-circle me-2"></i> Add Invoice</a>
-                                                <?php include('staff-add-invoices.php')?>
+                                                <a href="javascript:void(0);" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop8"><i class="mdi mdi-plus-circle me-2"></i> Add Schedule</a>
+                                                <?php include('staff-add-schedule.php')?>
                                             </div><!-- end col-->
                                         </div>
                 
                                         <div class="table-responsive">
-                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="invoice-datatable">
+                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="appointment-datatable">
                                                 <thead class="table-light">
                                                     <tr>
                                                         <th style="width: 20px;">
@@ -80,11 +80,11 @@
                                                                 <label class="form-check-label" for="customCheck1">&nbsp;</label>
                                                             </div>
                                                         </th>
-                                                        <th>Invoice Number</th>
-                                                        <th>Issued to</th>
-                                                        <th>Invoice Description</th>
-                                                        <th>Invoice Discount</th>
-                                                        <th>Grand Total</th>
+                                                        <th>Dentist Schedule</th>
+                                                        <th>Dentist Branch</th>
+                                                        <th>Schedule Date</th>
+                                                        <th>Start Time</th>
+                                                        <th>End Time</th>
                                                         <th>Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>
@@ -113,7 +113,9 @@
 
         </div>
         <!-- END wrapper -->
-
+        <?php include ('staff-view-schedule.php');?>
+        <?php include ('staff-modify-schedule.php');?>
+        <?php include ('staff-delete-schedule.php');?>
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
@@ -121,16 +123,16 @@
 
         <!-- third party js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/jquery.dataTables.min.js"></script>
-        <script src="<?php echo base_url('assets')?>/js/vendor/dataTablesInvoices.bootstrap5.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/vendor/dataTablesAppointment.bootstrap5.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor/dataTables.responsive.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor/responsive.bootstrap5.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor/dataTables.checkboxes.min.js"></script>
         <!-- third party js ends -->
 
         <!-- demo app -->
-        <script src="<?php echo base_url('assets')?>/js/staff/invoice.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.appointment.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/staff/appointment.js"></script>
         <!-- end demo js-->
-        
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>
         <!-- quill Init js-->
