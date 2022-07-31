@@ -4,12 +4,12 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Services | HappySmile Dental Clinic</title>
+        <title>Services | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Happy Smile" name="Author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/HappySmile.ico">
+        <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/HappySmile.ico">
 
         <!-- third party css -->
         <link href="<?php echo base_url('assets')?>/css/vendor/dataTables.bootstrap5.css" rel="stylesheet" type="text/css">

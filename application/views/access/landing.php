@@ -5,7 +5,7 @@
     <head>
 
         <meta charset="utf-8">
-        <title>HappySmile | Home Page</title>
+        <title>Home | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="HappySmile-DCMS" name="description">
         <meta content="Coderthemes" name="author">
