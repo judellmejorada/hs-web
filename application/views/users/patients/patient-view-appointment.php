@@ -15,6 +15,7 @@
                                 <img src="<?php echo base_url('assets')?>/images/users/avatar-2.jpg" style="height: 200px;" alt="" class="rounded-circle img-thumbnail">
                             </span>
                             <div class="">
+                                <!-- This is combo of Schedule and user table depende sa mapipiling dentist -->
                                 <h4 class="mt-1 mb-1">Paul J. Friend</h4>
                                 <p class="font-13"> pauljfrnd@jourrapide.com</p>
                         

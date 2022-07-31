@@ -39,7 +39,7 @@ $(function () {
 				},
 				error: function ({ responseJSON }) {
 					console.log(responseJSON);
-					notification("error", "", responseJSON.message.join());
+					notification("error", "Oops! An error occurs", responseJSON.message.join());
 				},
 			});
 		}

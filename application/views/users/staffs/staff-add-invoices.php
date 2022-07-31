@@ -8,7 +8,7 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form class="needs-validation" novalidate="">
+            <form id="add-invoices-form" class="needs-validation" novalidate="">
             <div class="clearfix">
                                             <div class="float-start mb-3">
                                                 <img src="<?php echo base_url('assets')?>/images/logos/HSBW.PNG" alt="" height="100">
@@ -108,7 +108,7 @@
                                                
                                                         <span class="form-inline">
                                                         <div class="form-group">
-                                                        <label for="Subtotal" class="form-label">Subtotal:  </label>
+                                                        <label for="Subtotal" class="form-label">Subtotal:</label>
                                                         <div class="input-group">
                                                         <input type="number" readonly="" class="form-control" id="grand_total" name="grand_total" value="">
                                                         
@@ -116,14 +116,14 @@
                                                         </div>
                                                         <br>
                                                         <div class="form-group">
-                                                        <label>Discount:  </label>
+                                                        <label>Discount:</label>
                                                         <div class="input-group">
                                                         <input value="" type="number" class="form-control" id="invoices_discount" name="invoices_discount" placeholder="Discount">
                                                         </div>
                                                         </div>
                                                         <br>
                                                         <div class="form-group">
-                                                        <label>Total:  </label>
+                                                        <label>Total: </label>
                                                         <div class="input-group">
                                                         <input type="number" readonly="" class="form-control" id="total_after_discount" name="total_after_discount" value="">
 
