@@ -82,6 +82,8 @@
                                                         </th>
                                                         <th>Service Name</th>
                                                         <th>Service Description</th>
+                                                        <th>Service 123</th>
+                                                        <th>Service 456</th>
                                                         <th>Created By</th>
                                                         <th>Status</th>
                                                         <th style="width: 75px;">Action</th>
