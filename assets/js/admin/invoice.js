@@ -1,3 +1,28 @@
+var services = [];
+
+const updateServicesArray = ({ id, key }, obj) => {
+	services = services.map((elem) => {
+		if (elem.id === id) {
+			elem[key] = $(obj).val();
+		}
+		return elem;
+	});
+
+	const grandTotal = services
+		.map((elem) => elem.inser_service_price)
+		.reduce(
+			(previousValue, currentValue) =>
+				Number(previousValue) + Number(currentValue),
+			0
+		);
+
+	const discount = $("#discount").val();
+
+	$("#subtotal").val(grandTotal - discount);
+
+	$("#grandtotal").val(grandTotal);
+};
+
 $(function () {
 	const dataTable = $("#invoice-datatable").DataTable(
 		getDataTableConfig({
@@ -41,19 +66,111 @@ $(function () {
 		})
 	);
 
-	$(document).on("submit", "#add-invoices-form", async function (event) {
-		event.preventDefault();
-		let formData = new FormData(this);
+	const serviceDataTable = $("#add-invoice-form").DataTable({
+		data: services,
+		searching: false,
+		ordering: false,
+		lengthChange: false,
+		paging: false,
+		info: false,
+		columns: [
+			{
+				data: null,
+				checkboxes: {
+					selectRow: true,
+					selectAll: false,
+					selectCallback: function (nodes, selected) {
+						const tr = $(nodes[0]).closest("tr");
+						if (selected) {
+							tr.addClass("selected");
+						} else {
+							tr.removeClass("selected");
+						}
+					},
+				},
+			},
+			{
+				data: null,
+				render: function (data, type, row, meta) {
+					const params = { id: data.id, key: "inser_service_name" };
+					return `<input type="text" onchange='updateServicesArray(${JSON.stringify(
+						params
+					)}, this)' class="form-control" value="${
+						data.inser_service_name
+					}" autocomplete="off"/>`;
+				},
+			},
+			{
+				data: null,
+				render: function (data, type, row, meta) {
+					const params = { id: data.id, key: "inser_service_price" };
+					return `<input type="number" onchange='updateServicesArray(${JSON.stringify(
+						params
+					)}, this)' class="form-control price" value="${
+						data.inser_service_price
+					}" autocomplete="off" />`;
+				},
+			},
+		],
+	});
+
+	$(document).on("click", "#addRows", function () {
+		services = services.concat({
+			id: services.length + 1,
+			inser_service_name: "",
+			inser_service_price: "",
+		});
+
+		serviceDataTable.clear().draw();
+		serviceDataTable.rows.add(services);
+		serviceDataTable.columns.adjust().draw();
+	});
+
+	$(document).on("click", "#removeRows", function () {
+		console.log(serviceDataTable.column().checkboxes.selected());
+		const ids = serviceDataTable
+			.rows(".selected")
+			.data()
+			.map((data) => data.id)
+			.toArray();
+
+		console.log(ids);
+
+		services = services.filter((service) => !ids.includes(service.id));
+		serviceDataTable.clear().draw();
+		serviceDataTable.rows.add(services);
+		serviceDataTable.columns.adjust().draw();
+	});
+
+	$(document).on("change", "#discount", function () {
+		const grandTotal = services
+			.map((elem) => elem.inser_service_price)
+			.reduce(
+				(previousValue, currentValue) =>
+					Number(previousValue) + Number(currentValue),
+				0
+			);
+		$("#subtotal").val(grandTotal - Number($(this).val()));
+		$("#grandtotal").val(grandTotal);
+	});
+
+	$(document).on("click", "#add-invoice-button", async function () {
+		const reqBody = {
+			invoices_issued_to: $("#issued-to").val(),
+			invoices_services: services,
+			total_after_discount: Number($("#subtotal").val()),
+			invoices_discount: Number($("#discount").val()),
+			grand_total: Number($("#grandtotal").val()),
+			invoices_status: "Paid",
+		};
+
 		await $.ajax(
 			getAjaxConfig("/admin/invoices/add-invoice", {
 				type: "POST",
-				data: formData,
-				contentType: false,
-				processData: false,
+				data: reqBody,
 			})
 		);
-		$("#staticBackdrop0").modal("toggle");
 		dataTable.ajax.reload();
-		return false;
+		$("#staticBackdrop0").modal("toggle");
 	});
 });
