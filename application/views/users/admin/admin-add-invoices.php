@@ -11,7 +11,7 @@
             <form id="add-invoices-form" class="needs-validation" novalidate="">
             <div class="clearfix">
                                             <div class="float-start mb-3">
-                                                <img src="<?php echo base_url('assets')?>/images/logos/HSBW.png" alt="" height="100">
+                                                <img src="<?php echo base_url('assets')?>/images/logos/HSBW.PNG" alt="" height="100">
                                             </div>
                                             <div class="float-end">
                                                 <h4 class="m-0 d-print-none">Invoices</h4>
