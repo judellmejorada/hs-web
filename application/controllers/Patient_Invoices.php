@@ -20,8 +20,8 @@ class Patient_Invoices extends CI_Controller {
 	 */
 	public function PatientInvoicePage()
 	{
-		$this->load->view('users/patients/patient-invoices');
-		$this->load->view('partials/patient/top_bar');
-		$this->load->view('partials/patient/left_sidebar');
+		// $this->load->view('users/patients/patient-invoices');
+		// $this->load->view('partials/patient/top_bar');
+		// $this->load->view('partials/patient/left_sidebar');
 	}
 }
