@@ -37,10 +37,6 @@
                                 <span> Calendar </span>
                             </a>
 
-                            <a data-bs-toggle="" href="<?php echo base_url('patient/invoices')?>"  class="side-nav-link">
-                                <i class="uil-bill"></i>
-                                <span> Invoices </span>
-                            </a>
 
                     <!-- End Sidebar -->
 
