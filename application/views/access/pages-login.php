@@ -8,7 +8,7 @@
         <title>Log In | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="HappySmile-DCMS" name="GROUP 4" />
-        <meta name="google-signin-client_id" content="396871420773-jlgcrmdeu5209jkuo5ln8bidrn0toh37.apps.googleusercontent.com">
+        <meta name="google-signin-client_id" content="571024945258-upg6e23flnqunsnci7qsv49uqprps8ud.apps.googleusercontent.com">
         <!-- App favicon -->
         <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/HappySmile.ico">
         

@@ -4,8 +4,7 @@
         <meta charset="utf-8" />
         <title>Recover Password | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"/>
-        <meta content="HappySmile" name="author"/>
+        <meta content="HappySmile-DCMS" name="GROUP 4" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/HappySmile.ico">
 
@@ -67,7 +66,8 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-            2022 © HappySmile.com
+            Copyright &copy; 2022-<script>document.write(new Date().getFullYear())
+            </script> HappySmile.com              
         </footer>
 
         <!-- bundle -->
