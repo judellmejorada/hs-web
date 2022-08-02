@@ -128,4 +128,3 @@ $(function () {
 		dataTable.ajax.reload();
 	});
 });
-
