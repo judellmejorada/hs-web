@@ -28,8 +28,8 @@
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop00">
                                         <i class="mdi mdi-account-circle me-1"></i>
-                                        <span>My Account</span>
-                                    </a> <?php include('account.php')?>
+                                        <span>My Account</span> <?php include('account.php')?>
+                                    </a> 
 
                                     <!-- item-->
                                     <a href="<?php echo base_url('login')?>" class="dropdown-item notify-item">
