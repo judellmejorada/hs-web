@@ -21,7 +21,11 @@ class Admin_Invoices extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		($this->session->userdata('TOKEN')) ? null : redirect(base_url('login'));
+		if ($this->session->userdata('TOKEN')){
+
+		}else{
+			redirect(base_url('login'));
+		}
 	}
 	
 	public function InvoicePage()

@@ -18,12 +18,6 @@ class About extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	function __construct()
-	{
-		parent::__construct();
-		($this->session->userdata('TOKEN')) ? null : redirect(base_url('login'));
-	}
-	
 	public function AboutPage()
 	{
 		$this->load->view('access/aboutus');
