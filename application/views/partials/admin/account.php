@@ -1,5 +1,5 @@
 ﻿<!-- Modal -->
-<div class="modal fade" id="staticBackdrop00" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal" id="staticBackdrop00" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -9,32 +9,32 @@
             <div class="modal-body">
 
             <form id="edit-user-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
-                    <input type="" id="edit_users_id" name="users_id"/>
-                    <div class="row g-2">
-                        <div class="mb-3 col-md-6">
+                    <input type="hidden" id="edit_users_id" name="users_id"/>
+                    <div class="row g-3">
+                        <div class="col-sm-4">
                             <label class="form-label" for="users_fname">First Name</label>
                             <input type="text" class="form-control" id="edit_users_fname" name="users_fname" placeholder="First Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a First Name.
                             </div>
                         </div>
-                        <div class="mb-3 col-md-6">
+                        <div class="col-sm-4">
                             <label class="form-label" for="users_mname">Middle Name</label>
                             <input type="text" class="form-control" id="edit_users_mname" name="users_mname" placeholder="Middle Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a Middle Name.
                             </div>
                         </div>
-                    </div>   
-                    
-                    <div class="row g-2">
-                        <div class="mb-3 col-md-6">
+                        <div class="col-sm-4">
                             <label class="form-label" for="users_lname">Last name</label>
                             <input type="text" class="form-control" id="edit_users_lname" name="users_lname" placeholder="Last Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a Last Name.
                             </div>
                         </div> 
+                    </div>   
+                    <br>
+                    <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_birthdate">Birth Date</label>
                             <input class="form-control" type="date" id="edit_users_birthdate" name="users_birthdate" required="">
@@ -42,9 +42,6 @@
                                 Please provide a Birth Date.
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_gender">Gender</label>
                             <select class="form-select" id="edit_users_gender" name="users_gender" required="">
@@ -58,6 +55,9 @@
                                 Please provide a Gender.
                             </div>
                         </div>
+                    </div>
+                    
+                    <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_civil_status">Civil Status</label>
                             <select class="form-select" id="edit_users_civil_status" name="users_civil_status" required="">
@@ -71,9 +71,6 @@
                                 Please provide a Civil Status.
                             </div>
                         </div>
-                    </div>
-                                                       
-                    <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_email">Email</label>
                             <input type="text" class="form-control" id="edit_users_email" name="users_email" placeholder="Email" readonly="" required="">
@@ -81,6 +78,9 @@
                                     Please provide a Email.  
                                 </div>
                         </div>
+                    </div>
+                                                       
+                    <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_phone_number">Phone Number</label>
                             <input type="text" class="form-control" id="edit_users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
@@ -88,9 +88,6 @@
                                     Please provide a Phone Number. 
                                 </div>
                         </div>
-                    </div>  
-
-                    <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_profile_pic">Image</label>
                             <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic">
@@ -98,35 +95,7 @@
                                     Please provide an Image. 
                             </div>
                         </div>
-                        <div class="mb-3 col-md-6">
-                            <label class="form-label" for="users_type">User Type</label>
-                            <select class="form-select" id="edit_users_type" name="users_type" readonly="" required="">
-                                <option></option>
-                                <option value="Admin">Admin</option>
-                                <option value="Staff">Staff</option>
-                                <option value="Dentist">Dentist</option>
-                                <option value="Patient">Patient</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Please provide a User Type.
-                            </div>
-                        </div>
-                    </div>
-                        
-                        <div class="row g-2">
-
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="users_status">Status</label>
-                                <select type="text" class="form-select" id="edit_users_status" name="users_status" placeholder="Status" readonly="" required="">
-                                    <option></option>
-                                    <option value="Active">Active</option>
-                                    <option value="Inactive">Deactivated</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please provide a Status.
-                                </div>
-                            </div>
-                        </div>
+                    </div>  
                         
                         <div class="mb-3">
                             <div class="form-check">
