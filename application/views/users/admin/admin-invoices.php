@@ -6,8 +6,7 @@
         <meta charset="utf-8">
         <title>Invoices | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
-        <meta content="Happy Smile" name="Author">
+        <meta content="HappySmile-DCMS" name="GROUP 4" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/HappySmile.ico">
 
@@ -20,6 +19,10 @@
         <link href="<?php echo base_url('assets')?>/css/icons.min.css" rel="stylesheet" type="text/css">
         <link href="<?php echo base_url('assets')?>/css/app.min1.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
+
+        <!-- Parsley & Toastr css -->
+        <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
 
     </head>
 
@@ -112,6 +115,9 @@
         </div>
         <!-- END wrapper -->
 
+        <?php include ('admin-view-invoices.php');?>
+        <?php include ('admin-modify-invoice.php');?>
+        <?php include ('admin-delete-invoice.php');?>
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
@@ -127,7 +133,11 @@
 
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/admin/invoice.js"></script>
-        <!-- end demo js-->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.invoices.js"></script>
+        
+        <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
 
     </body>
 </html>

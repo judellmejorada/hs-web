@@ -8,7 +8,7 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form id="add-dentist-form" class="needs-validation" novalidate="">
+            <form id="add-dentist-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
                     <div class="row g-3">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_fname">First Name</label>

@@ -18,7 +18,7 @@ class Staff extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function Dashboard()
+	public function CalendarPage()
 	{
 		$this->load->view('users/staffs/staff-dashboard');
 		$this->load->view('partials/staff/top_bar');

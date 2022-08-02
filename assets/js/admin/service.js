@@ -44,19 +44,13 @@ $(function () {
 					},
 				},
 				{
-					data: null,
-					render: function (data, type, row, meta) {
-						return "N/A";
-					},
-				},
-				{
-					data: null,
-					render: function (data, type, row, meta) {
-						return "N/A";
-					},
+					data: "services_created_by",
 				},
 				{
 					data: "services_created_at",
+				},
+				{
+					data: "services_updated_at",
 				},
 				{
 					data: "services_status",
