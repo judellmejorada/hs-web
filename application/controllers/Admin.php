@@ -18,16 +18,6 @@ class Admin extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	function __construct()
-	{
-		parent::__construct();
-		if ($this->session->userdata('TOKEN')){
-
-		}else{
-			redirect(base_url('login'));
-		}
-	}
-	
 	public function Dashboard()
 	{
 		$this->load->view('users/admin/admin-dashboard');
