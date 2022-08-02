@@ -37,7 +37,6 @@
                                         <span>Logout</span>
                                     </a>
                                 </div>
-                                <?php include('account.php')?>
                             </li>
 
                         </ul>
@@ -48,6 +47,6 @@
                     </div>
 
                     <!-- end Topbar -->
-
+        <?php include('account.php')?>
     </body>
 </html>
