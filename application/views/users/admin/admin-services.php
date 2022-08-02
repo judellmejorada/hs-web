@@ -71,7 +71,7 @@
                                         </div>
                 
                                         <div class="table-responsive">
-                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="service-datatable">
+                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap dtr-inline no-footer" id="service-datatable">
                                                 <thead class="table-light">
                                                     <tr>
                                                         <th style="width: 20px;">
@@ -82,8 +82,6 @@
                                                         </th>
                                                         <th>Service Name</th>
                                                         <th>Service Description</th>
-                                                        <th>Service 123</th>
-                                                        <th>Service 456</th>
                                                         <th>Created By</th>
                                                         <th>Status</th>
                                                         <th style="width: 75px;">Action</th>

@@ -133,5 +133,14 @@
         <script src="<?php echo base_url('assets')?>/js/admin/user.js"></script>
         <!-- end demo js-->
 
+        <!-- demo js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+
+        <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
+
+        <!-- custom common.js -->
+        <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
+
     </body>
 </html>
