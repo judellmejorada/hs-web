@@ -50,7 +50,7 @@ $(function () {
 					data: "services_created_at",
 				},
 				{
-					data: "services_updated_by",
+					data: "services_updated_at",
 				},
 				{
 					data: "services_status",

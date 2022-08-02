@@ -84,7 +84,7 @@
                                                         <th style="width: 175px;">Service Description</th>
                                                         <th>Created By</th>
                                                         <th>Created At</th>
-                                                        <th>Updated By</th>
+                                                        <th>Updated At</th>
                                                         <th>Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>
