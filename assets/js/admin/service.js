@@ -44,7 +44,13 @@ $(function () {
 					},
 				},
 				{
+					data: "services_created_by",
+				},
+				{
 					data: "services_created_at",
+				},
+				{
+					data: "services_updated_by",
 				},
 				{
 					data: "services_status",
