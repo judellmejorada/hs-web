@@ -82,8 +82,6 @@
                                                         </th>
                                                         <th>Service Name</th>
                                                         <th style="width: 175px;">Service Description</th>
-                                                        <th></th>
-                                                        <th style="width: 0px;"></th>
                                                         <th>Created By</th>
                                                         <th>Status</th>
                                                         <th style="width: 75px;">Action</th>
