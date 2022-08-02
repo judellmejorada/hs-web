@@ -58,7 +58,6 @@
                     </div>
                     
                     <div class="row g-2">
-                        
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_civil_status">Civil Status</label>
                             <select class="form-select" id="edit_users_civil_status" name="users_civil_status" required="">
@@ -72,9 +71,6 @@
                                 Please provide a Civil Status.
                             </div>
                         </div>
-                    </div>
-                                                       
-                    <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_email">Email</label>
                             <input type="text" class="form-control" id="edit_users_email" name="users_email" placeholder="Email" readonly="" required="">
@@ -82,6 +78,9 @@
                                     Please provide a Email.  
                                 </div>
                         </div>
+                    </div>
+                                                       
+                    <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_phone_number">Phone Number</label>
                             <input type="text" class="form-control" id="edit_users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
@@ -89,9 +88,6 @@
                                     Please provide a Phone Number. 
                                 </div>
                         </div>
-                    </div>  
-
-                    <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_profile_pic">Image</label>
                             <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic">
@@ -99,8 +95,7 @@
                                     Please provide an Image. 
                             </div>
                         </div>
-                    </div>
-                        
+                    </div>  
                         
                         <div class="mb-3">
                             <div class="form-check">
