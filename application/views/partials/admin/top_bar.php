@@ -27,7 +27,7 @@
 
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop00">
-                                        <i class="mdi mdi-account-circle me-1"></i> 
+                                        <i class="mdi mdi-account-circle me-1"></i>
                                         <span>My Account</span>
                                     </a> <?php include('account.php')?>
 
