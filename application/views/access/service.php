@@ -430,7 +430,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <img src="<?php echo base_url('assets')?>/images/logos/logo.png" alt="" class="logo-dark" height="18">
-                        <p class="text-muted mt-4">Hyper makes it easier to build better websites with
+                        <p class="text-muted mt-4">HappySmile makes it easier to build better websites with
                             <br> great speed. Save hundreds of hours of design
                             <br> and development by using it.</p>
 
@@ -455,9 +455,9 @@
                     <h5 class="text-light">Company</h5>
 
                         <ul class="list-unstyled ps-0 mb-0 mt-3">
-                            <li class="mt-2"><a href="aboutus.php" class="text-muted">About Us</a></li>
-                            <li class="mt-2"><a href="faaq.php" class="text-muted">FAQ</a></li>
-                            <li class="mt-2"><a href="aboutus.php" class="text-muted">Our Team</a></li>
+                            <li class="mt-2"><a href="about" class="text-muted">About Us</a></li>
+                            <li class="mt-2"><a href="faq" class="text-muted">FAQ</a></li>
+                            <li class="mt-2"><a href="about" class="text-muted">Our Team</a></li>
                         </ul>
 
                         </div>
@@ -467,7 +467,7 @@
 
                         <ul class="list-unstyled ps-0 mb-0 mt-3">
                             
-                            <li class="mt-2"><a href="service.php" class="text-muted">Our Services</a></li>
+                            <li class="mt-2"><a href="service" class="text-muted">Our Services</a></li>
                         </ul>
                         </div>
                     </div>
