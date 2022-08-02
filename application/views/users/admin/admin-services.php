@@ -23,6 +23,10 @@
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.core.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.snow.css" rel="stylesheet" type="text/css" />
 
+        <!-- Parsley & Toastr css -->
+        <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
+
     </head>
 
     <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -131,14 +135,17 @@
         <script src="<?php echo base_url('assets')?>/js/vendor/dataTables.checkboxes.min.js"></script>
         <!-- third party js ends -->
 
-        <script src="<?php echo base_url('assets')?>/js/admin/service.js"></script>
         <!-- demo app -->
+        <script src="<?php echo base_url('assets')?>/js/admin/service.js"></script>
         <script src="<?php echo base_url('assets')?>/js/pages/demo.services.js"></script>
-        <!-- end demo js-->
+
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>
-        <!-- quill Init js-->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.quilljs.js"></script>
+        
+        <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
 
     </body>
 </html>

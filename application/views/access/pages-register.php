@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-    <html lang="en">
+<html lang="en">
 
     <head>
 
@@ -16,10 +15,8 @@
         <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
-        <!-- Parsley css -->
+        <!-- Parsley & Toastr css -->
         <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Toastr css -->
         <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
 
     </head>
@@ -201,20 +198,17 @@
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
+
+         <!-- custom .js -->
+         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
+         <script src="<?php echo base_url('assets')?>/js/access/register.js"></script>
+
         <!-- parsley -->
         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
-         <!-- custom common.js -->
-         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
-         
-         <!-- custom register.js -->
-         <script src="<?php echo base_url('assets')?>/js/access/register.js"></script>
-
-         <!-- demo js -->
-        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
-
         <!-- toaster js -->
         <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
         
     </body>
 </html>

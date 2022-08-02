@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-    <html lang="en">
+<html lang="en">
 
     <head>
 
@@ -17,10 +16,8 @@
         <link href="<?php echo base_url('assets')?>/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
-        <!-- Parsley css -->
+        <!-- Parsley & Toastr css -->
         <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Toastr css -->
         <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
 
     </head>
@@ -123,33 +120,25 @@
                 </script> HappySmile.com
             </p>
         </footer>
-        
-        <!-- google cdn jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
 
+        <!-- custom .js -->
+         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
+         <script src="<?php echo base_url('assets')?>/js/access/login.js"></script>
+        
+        <!-- google library, js and cdn jquery -->
+         <script src="https://accounts.google.com/gsi/client" async defer></script>
+         <script src="<?php echo base_url('assets')?>/js/google.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+         
         <!-- parsley -->
         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
-        <!-- custom common.js -->
-         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
-         
-        <!-- custom login.js -->
-         <script src="<?php echo base_url('assets')?>/js/access/login.js"></script>
-        
-        <!-- google library -->
-         <script src="https://accounts.google.com/gsi/client" async defer></script>
-
-        <!-- google.js -->
-         <script src="<?php echo base_url('assets')?>/js/google.js"></script>
-
-        <!-- demo js -->
-        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
-
         <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
         <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
 
        
