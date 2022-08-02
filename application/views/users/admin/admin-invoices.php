@@ -129,6 +129,7 @@
 
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/admin/invoice.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.invoices.js"></script>
         <!-- end demo js-->
 
     </body>
