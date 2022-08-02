@@ -7,110 +7,54 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div> <!-- end modal header -->
             <div class="modal-body">
+                <div class="card text-center">
+                <div class="card-body">
+                    <img src="assets/images/users/avatar-1.jpg" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
 
-            <form id="edit-user-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
-                    <input type="hidden" id="edit_users_id" name="users_id"/>
-                    <div class="row g-3">
-                        <div class="col-sm-4">
-                            <label class="form-label" for="users_fname">First Name</label>
-                            <input type="text" class="form-control" id="edit_users_fname" name="users_fname" placeholder="First Name" required="">
-                            <div class="invalid-feedback">
-                                Please provide a First Name.
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <label class="form-label" for="users_mname">Middle Name</label>
-                            <input type="text" class="form-control" id="edit_users_mname" name="users_mname" placeholder="Middle Name" required="">
-                            <div class="invalid-feedback">
-                                Please provide a Middle Name.
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <label class="form-label" for="users_lname">Last name</label>
-                            <input type="text" class="form-control" id="edit_users_lname" name="users_lname" placeholder="Last Name" required="">
-                            <div class="invalid-feedback">
-                                Please provide a Last Name.
-                            </div>
-                        </div> 
-                    </div>   
-                    <br>
-                    <div class="row g-2">
-                        <div class="mb-3 col-md-6">
-                            <label class="form-label" for="users_birthdate">Birth Date</label>
-                            <input class="form-control" type="date" id="edit_users_birthdate" name="users_birthdate" required="">
-                            <div class="invalid-feedback">
-                                Please provide a Birth Date.
-                            </div>
-                        </div>
-                        <div class="mb-3 col-md-6">
-                            <label class="form-label" for="users_gender">Gender</label>
-                            <select class="form-select" id="edit_users_gender" name="users_gender" required="">
-                                <option></option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Prefer not to say">Prefer not to say</option>
-                                <option value="Others">Others</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Please provide a Gender.
-                            </div>
-                        </div>
+                    <h4 class="mb-0 mt-2">Soeng Souy</h4>
+                    <p class="text-muted font-14">Founder</p>
+
+                    <button type="button" class="btn btn-success btn-sm mb-2">Follow</button>
+                    <button type="button" class="btn btn-danger btn-sm mb-2">Message</button>
+
+                    <div class="text-start mt-3">
+                        <h4 class="font-13 text-uppercase">About Me :</h4>
+                        <p class="text-muted font-13 mb-3">
+                            Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type.
+                        </p>
+                        <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Full Name :</strong> <span class="ms-2">Geneva D. McKnight</span></p>
+
+                        <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Mobile :</strong><span class="ms-2">(123) 123 1234</span></p>
+
+                        <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Birth Date :</strong><span class="ms-2">May 10, 1987</span></p>
+
+                        <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Gender :</strong><span class="ms-2">Male</span></p>
+
+                        <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Civil Status :</strong><span class="ms-2">Single</span></p>
+
+                        <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Email :</strong> <span class="ms-2 ">user@email.domain</span></p>
+
+                        <p class="text-muted mb-1 font-13" id="users_fname" name="users_fname"><strong>Profile Picture :</strong> <span class="ms-2">USA</span></p>
                     </div>
-                    
-                    <div class="row g-2">
-                        <div class="mb-3 col-md-6">
-                            <label class="form-label" for="users_civil_status">Civil Status</label>
-                            <select class="form-select" id="edit_users_civil_status" name="users_civil_status" required="">
-                                <option></option>
-                                <option value="Single">Single</option>
-                                <option value="Married">Married</option>
-                                <option value="Divorced">Divorced</option>
-                                <option value="Others">Others</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Please provide a Civil Status.
-                            </div>
-                        </div>
-                        <div class="mb-3 col-md-6">
-                            <label class="form-label" for="users_email">Email</label>
-                            <input type="text" class="form-control" id="edit_users_email" name="users_email" placeholder="Email" readonly="" required="">
-                                <div class="invalid-feedback">
-                                    Please provide a Email.  
-                                </div>
-                        </div>
-                    </div>
-                                                       
-                    <div class="row g-2">
-                        <div class="mb-3 col-md-6">
-                            <label class="form-label" for="users_phone_number">Phone Number</label>
-                            <input type="text" class="form-control" id="edit_users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
-                                <div class="invalid-feedback">
-                                    Please provide a Phone Number. 
-                                </div>
-                        </div>
-                        <div class="mb-3 col-md-6">
-                            <label class="form-label" for="users_profile_pic">Image</label>
-                            <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic">
-                            <div class="invalid-feedback">
-                                    Please provide an Image. 
-                            </div>
-                        </div>
-                    </div>  
-                        
-                        <div class="mb-3">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="invalidCheck" required="">
-                                <label class="form-check-label form-label" for="invalidCheck">I confirm that the details that I have 
-                                provided in this Personal Information are correct, <br> and that I have not deliberately withheld any relevant information. </label>
-                                <div class="invalid-feedback">
-                                    You must agree before submitting.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                </form>
-                        </div>
+
+                    <ul class="social-list list-inline mt-3 mb-0">
+                        <li class="list-inline-item">
+                            <a href="javascript: void(0);" class="social-list-item border-primary text-primary"><i class="mdi mdi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="javascript: void(0);" class="social-list-item border-secondary text-secondary"><i class="mdi mdi-github"></i></a>
+                        </li>
+                    </ul>
+                </div> <!-- end card-body -->
+            </div> <!-- end card -->
+            </div>
             </div>
             </div> <!-- end modal footer -->
         </div> <!-- end modal content-->
