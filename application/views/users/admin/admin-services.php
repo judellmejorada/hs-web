@@ -71,7 +71,7 @@
                                         </div>
                 
                                         <div class="table-responsive">
-                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap dtr-inline no-footer" id="service-datatable">
+                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap dtr-inline" id="service-datatable">
                                                 <thead class="table-light">
                                                     <tr>
                                                         <th style="width: 20px;">
@@ -85,6 +85,8 @@
                                                         <th>Created By</th>
                                                         <th>Status</th>
                                                         <th style="width: 75px;">Action</th>
+                                                        <th></th>
+                                                        <th></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>

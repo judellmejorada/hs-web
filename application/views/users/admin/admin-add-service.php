@@ -8,7 +8,7 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form id="add-service-form" class="needs-validation" novalidate="">
+            <form id="add-service-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
                         <div class="row g-3">
                             <div class="col-sm-4">
                                 <label class="form-label" for="services_name">Service Name</label>
