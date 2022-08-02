@@ -9,7 +9,7 @@
             <div class="modal-body">
 
             <form id="edit-user-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
-                    <input type="hidden" id="edit_users_id" name="users_id"/>
+                    <input type="" id="edit_users_id" name="users_id"/>
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_fname">First Name</label>
