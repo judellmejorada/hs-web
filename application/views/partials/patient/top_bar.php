@@ -26,7 +26,7 @@
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
 
                                     <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop00">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop02">
                                         <i class="mdi mdi-account-circle me-1"></i>
                                         <span>My Account</span>
                                     </a> 
@@ -47,6 +47,6 @@
                     </div>
 
                     <!-- end Topbar -->
-
+                    <?php include('account.php')?>
     </body>
 </html>
