@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel00">Personal Account Information</h5>
+                <h5 class="modal-title" id="staticBackdropLabel00">My Account</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div> <!-- end modal header -->
             <div class="modal-body">
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                     </div>   
-                    
+                    <br>
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_birthdate">Birth Date</label>
@@ -80,7 +80,7 @@
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_email">Email</label>
-                            <input type="text" class="form-control" id="users_email" name="users_email" placeholder="Email" required="">
+                            <input type="text" class="form-control" id="users_email" name="users_email" placeholder="Email" readonly="" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Email.  
                                 </div>
