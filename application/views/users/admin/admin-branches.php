@@ -130,8 +130,9 @@
         <script src="<?php echo base_url('assets')?>/js/vendor/dataTables.checkboxes.min.js"></script>
         <!-- third party js ends -->
 
-        <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/admin/branch.js"></script>
+        <!-- demo app -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.branches.js"></script>
         <!-- end demo js-->
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>

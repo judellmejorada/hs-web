@@ -129,16 +129,14 @@
         <script src="<?php echo base_url('assets')?>/js/vendor/dataTables.checkboxes.min.js"></script>
         <!-- third party js ends -->
 
-        <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/admin/user.js"></script>
+        <!-- demo app -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.customer.js"></script>
         <!-- end demo js-->
-
         <!-- demo js -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
-
         <!-- toaster js -->
         <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
-
         <!-- custom common.js -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
 
