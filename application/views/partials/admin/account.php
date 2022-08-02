@@ -1,5 +1,5 @@
 ﻿<!-- Modal -->
-<div class="modal fade" id="staticBackdrop00" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal" id="staticBackdrop00" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -9,7 +9,7 @@
             <div class="modal-body">
 
             <form id="edit-user-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
-                    <input type="" id="edit_users_id" name="users_id"/>
+                    <input type="hidden" id="edit_users_id" name="users_id"/>
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_fname">First Name</label>
