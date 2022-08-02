@@ -9,7 +9,7 @@
             <div class="modal-body">
                 <div class="card text-center">
                 <div class="card-body">
-                    <img src="assets/images/users/avatar-1.jpg" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                    <img src="<?php echo base_url('assets')?>/images/users/avatar-10.jpg" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
 
                     <h4 class="mb-0 mt-2">Soeng Souy</h4>
                     <p class="text-muted font-14">Founder</p>
@@ -25,17 +25,17 @@
                         </p>
                         <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Full Name :</strong> <span class="ms-2">Geneva D. McKnight</span></p>
 
-                        <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Mobile :</strong><span class="ms-2">(123) 123 1234</span></p>
+                        <p class="text-muted mb-2 font-13" id="users_phone_number" name="users_phone_number"><strong>Phone Number :</strong><span class="ms-2">(123) 123 1234</span></p>
 
-                        <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Birth Date :</strong><span class="ms-2">May 10, 1987</span></p>
+                        <p class="text-muted mb-2 font-13" id="users_birthdate" name="users_birthdate"><strong>Birth Date :</strong><span class="ms-2">May 10, 1987</span></p>
 
-                        <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Gender :</strong><span class="ms-2">Male</span></p>
+                        <p class="text-muted mb-2 font-13" id="users_gender" name="users_gender"><strong>Gender :</strong><span class="ms-2">Male</span></p>
 
-                        <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Civil Status :</strong><span class="ms-2">Single</span></p>
+                        <p class="text-muted mb-2 font-13" id="users_civil_status" name="users_civil_status"><strong>Civil Status :</strong><span class="ms-2">Single</span></p>
 
-                        <p class="text-muted mb-2 font-13" id="users_fname" name="users_fname"><strong>Email :</strong> <span class="ms-2 ">user@email.domain</span></p>
+                        <p class="text-muted mb-2 font-13" id="users_email" name="users_email"><strong>Email :</strong> <span class="ms-2 ">user@email.domain</span></p>
 
-                        <p class="text-muted mb-1 font-13" id="users_fname" name="users_fname"><strong>Profile Picture :</strong> <span class="ms-2">USA</span></p>
+                        <p class="text-muted mb-1 font-13" id="users_profile_pic" name="users_profile_pic"><strong>Profile Picture :</strong> <span class="ms-2">USA</span></p>
                     </div>
 
                     <ul class="social-list list-inline mt-3 mb-0">

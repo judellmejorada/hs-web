@@ -22,11 +22,7 @@ class Admin_SystemSetup extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		if ($this->session->userdata('TOKEN')){
-
-		}else{
-			redirect(base_url('login'));
-		}
+		($this->session->userdata('TOKEN')) ? null : redirect(base_url('login'));
 	}
 	
 	 public function UI()
