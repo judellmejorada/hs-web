@@ -24,8 +24,6 @@
         <!-- Parsley & Toastr css -->
         <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
         <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
-        
-        <script src="<?php echo base_url('assets')?>/js/pages/demo.customers.js"></script>
 
     </head>
 
@@ -137,6 +135,7 @@
 
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/admin/user.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.customers.js"></script>
         
         <!-- toaster js -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
