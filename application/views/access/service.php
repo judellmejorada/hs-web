@@ -429,7 +429,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="<?php echo base_url('assets')?>/images/logos/logo.png" alt="" class="logo-dark" height="18">
+                        <img src="<?php echo base_url('assets')?>images/logos/logo-dark.png" alt="" class="logo-dark" height="18">
                         <p class="text-muted mt-4">HappySmile makes it easier to build better websites with
                             <br> great speed. Save hundreds of hours of design
                             <br> and development by using it.</p>
