@@ -106,9 +106,9 @@
                             <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
                             <ul class="card-pricing-features">
                                <tr>
-                                <td width="70%"></td>
-                                <p class="text-justify" id="services_description" name="services_description" width="70%">This is by far the most common reason people visit the dentist. Many dentists recommend a cleaning every six months, and some recommend once a year. 
-                                  Either way, it’s a very important part of oral health. Your own toothbrush will never be as efficient as the tools a dentist uses to clean your teeth.</p>
+                                <td class="text-justify" width="70%">This is by far the most common reason people visit the dentist. Many dentists recommend a cleaning every six months, and some recommend once a year. 
+                                  Either way, it’s a very important part of oral health. Your own toothbrush will never be as efficient as the tools a dentist uses to clean your teeth.</td>
+                                <p id="services_description" name="services_description"></p>
                               </tr>
                               <tr>
                                 <td width="70%" id="services_status" name="services_status">Service Status:</td>
