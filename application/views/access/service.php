@@ -103,13 +103,13 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Teeth Cleanings</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="300">
+                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%" id="services_description" name="services_description">This is by far the most common reason people visit the dentist. Many dentists recommend a cleaning every six months, and some recommend once a year. 
                                   Either way, it’s a very important part of oral health. Your own toothbrush will never be as efficient as the tools a dentist uses to clean your teeth.
                                   An annual or semi-annual visit for a cleaning will keep your teeth healthy, shiny, and strong. Plus, a cleaning causes very little discomfort, so no need to fret!</td>
-                                <p></p>
+                                <p align="justify">saddy asd213 asdasdasd asdasd</p>
                               </tr>
                               <tr>
                                 <td width="70%" id="services_status" name="services_status">Service Status:</td>
@@ -124,16 +124,16 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Teeth Whitening</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Whitening.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="300" width="300">
+                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Whitening.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
-                                <td width="" id="services_description" name="services_description">Like cleaning, whitening is a relatively discomfort-less process. Some people are sensitive to the whitening agents used, but otherwise it’s an easy procedure 
+                                <td width="70" id="services_description" name="services_description">Like cleaning, whitening is a relatively discomfort-less process. Some people are sensitive to the whitening agents used, but otherwise it’s an easy procedure 
                                   that most dental offices can do. At home teeth whitening kits involve a lot of extra time and effort. You need to buy kits and spend a lot of time. At a dentistry, bleaching is quicker and safer because it is performed by professionals. 
                                   Most often, dentists use a special hydrogen peroxide gel and a special light source to whiten faster.</td>
                                 <p></p>
                               </tr>
                               <tr>
-                                <td width="" id="services_status" name="services_status">Service Status:</td>
+                                <td width="70" id="services_status" name="services_status">Service Status:</td>
                                 <p></p>
                               </tr>
                             </ul>
@@ -146,7 +146,7 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Extractions</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Extractions.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <img src="<?php echo base_url('assets')?>/images/services/Extractions.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%" id="services_description" name="services_description">Extractions sound scary and painful. Admittedly, they are not the most pleasant of procedures. 
@@ -167,7 +167,7 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Veneers</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Veneers.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <img src="<?php echo base_url('assets')?>/images/services/Veneers.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%" id="services_description" name="services_description">If your teeth are crooked or discoloured, your dentist might recommend veneers. These are very popular solutions to common tooth problems. 
@@ -188,7 +188,7 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Fillings</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Fillings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <img src="<?php echo base_url('assets')?>/images/services/Fillings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%" id="services_description" name="services_description">Cavities are all too common and all too easy to get. For most cavities, a filling is the recommended answer. 
@@ -210,7 +210,7 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Crowns</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Crowns.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <img src="<?php echo base_url('assets')?>/images/services/Crowns.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%" id="services_description" name="services_description">If your cavity is a little too big for a filling, or the top part of your tooth has decayed, a crown is the solution. 
@@ -232,7 +232,7 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Root Canal</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Root Canal.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <img src="<?php echo base_url('assets')?>/images/services/Root Canal.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%" id="services_description" name="services_description">This is one that most people dread, and for fair reasons. Root canals are usually preceded by some pretty awful tooth pain. 
@@ -254,7 +254,7 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Braces/Invisalign</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/BracesOrInvisalign.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <img src="<?php echo base_url('assets')?>/images/services/BracesOrInvisalign.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%" id="services_description" name="services_description">Most practices are moving away from traditional braces and towards Invisalign, but they both serve the same purpose. 
@@ -275,7 +275,7 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Bonding</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Bonding.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <img src="<?php echo base_url('assets')?>/images/services/Bonding.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%" id="services_description" name="services_description" id="services_name" name="services_name">This is another way to repair damaged or chipped teeth. It involves a resin – a sort of plastic – that your dentists tints 
@@ -296,7 +296,7 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase">Dentures</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Dentures.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <img src="<?php echo base_url('assets')?>/images/services/Dentures.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%" id="services_description" name="services_description">Dentures are usually associated with ageing, but a lot of people may need dentures. 
