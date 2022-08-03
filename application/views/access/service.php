@@ -101,9 +101,9 @@
             <div class="row mt-sm-5 mt-3 mb-3">
                 <div class="col-md-4">
                     <div class="card card-pricing">
-                        <div class="card-body text-center">
+                        <div class="card-body">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Teeth Cleanings</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="200">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%"></td>
@@ -116,7 +116,7 @@
                                 <p></p>
                               </tr>
                             </ul>
-                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
+                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded" class="text-justify">Make Appointment</button></a>
                         </div>
                     </div> <!-- end Pricing_card -->
                 </div> <!-- end col -->
