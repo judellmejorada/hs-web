@@ -103,7 +103,7 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Teeth Cleanings</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="300">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%" id="services_description" name="services_description">This is by far the most common reason people visit the dentist. Many dentists recommend a cleaning every six months, and some recommend once a year. 
@@ -124,10 +124,10 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Teeth Whitening</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Whitening.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="200" width="100">
+                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Whitening.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="300" width="300">
                             <ul class="card-pricing-features">
                                <tr>
-                                <td width="100%" id="services_description" name="services_description">Like cleaning, whitening is a relatively discomfort-less process. Some people are sensitive to the whitening agents used, but otherwise it’s an easy procedure 
+                                <td width="" id="services_description" name="services_description">Like cleaning, whitening is a relatively discomfort-less process. Some people are sensitive to the whitening agents used, but otherwise it’s an easy procedure 
                                   that most dental offices can do. At home teeth whitening kits involve a lot of extra time and effort. You need to buy kits and spend a lot of time. At a dentistry, bleaching is quicker and safer because it is performed by professionals. 
                                   Most often, dentists use a special hydrogen peroxide gel and a special light source to whiten faster.</td>
                                 <p></p>
