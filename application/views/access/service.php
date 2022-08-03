@@ -103,7 +103,7 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Teeth Cleanings</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
+                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%"></td>
