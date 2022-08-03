@@ -106,10 +106,10 @@
                             <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
-                                <td width="70%" id="services_description" name="services_description">This is by far the most common reason people visit the dentist. Many dentists recommend a cleaning every six months, and some recommend once a year. 
+                                <td width="70%" id="services_description" name="services_description"></td>
+                                <p class="">This is by far the most common reason people visit the dentist. Many dentists recommend a cleaning every six months, and some recommend once a year. 
                                   Either way, it’s a very important part of oral health. Your own toothbrush will never be as efficient as the tools a dentist uses to clean your teeth.
-                                  An annual or semi-annual visit for a cleaning will keep your teeth healthy, shiny, and strong. Plus, a cleaning causes very little discomfort, so no need to fret!</td>
-                                <p align="justify">saddy asd213 asdasdasd asdasd</p>
+                                  An annual or semi-annual visit for a cleaning will keep your teeth healthy, shiny, and strong. Plus, a cleaning causes very little discomfort, so no need to fret!</p>
                               </tr>
                               <tr>
                                 <td width="70%" id="services_status" name="services_status">Service Status:</td>
