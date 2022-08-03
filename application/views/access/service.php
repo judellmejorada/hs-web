@@ -101,13 +101,13 @@
             <div class="row mt-sm-5 mt-3 mb-3">
                 <div class="col-md-4">
                     <div class="card card-pricing">
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Teeth Cleanings</p>
                             <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="200">
                             <ul class="card-pricing-features">
                                <tr>
                                 <td width="70%"></td>
-                                <p class="text-justify" id="services_description" name="services_description">This is by far the most common reason people visit the dentist. Many dentists recommend a cleaning every six months, and some recommend once a year. 
+                                <p class="text-justify" text-align="justify" id="services_description" name="services_description">This is by far the most common reason people visit the dentist. Many dentists recommend a cleaning every six months, and some recommend once a year. 
                                   Either way, it’s a very important part of oral health. Your own toothbrush will never be as efficient as the tools a dentist uses to clean your teeth.
                                   An annual or semi-annual visit for a cleaning will keep your teeth healthy, shiny, and strong. Plus, a cleaning causes very little discomfort, so no need to fret!</p>
                               </tr>
@@ -116,7 +116,7 @@
                                 <p></p>
                               </tr>
                             </ul>
-                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded" class="text-justify">Make Appointment</button></a>
+                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
                         </div>
                     </div> <!-- end Pricing_card -->
                 </div> <!-- end col -->
