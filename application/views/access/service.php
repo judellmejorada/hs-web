@@ -77,7 +77,7 @@
                     <div class="col-md-5">
                         <div class="mt-md-4">
                             <h7 class="text-white fw-bold mb-4 mt-3 hero-title">
-                                SERVICE <br><br>OFFERED
+                                SERVICES <br><br>OFFERED
                             </h7>
                             <p></p>
                             
@@ -123,35 +123,17 @@
                 <div class="col-md-4">
                     <div class="card card-pricing">
                         <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Cosmetic Dentistry</p>
-                            <i class="card-pricing-icon dripicons-store text-primary"></i>
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Teeth Whitening</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Whitening.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="200" width="100">
                             <ul class="card-pricing-features">
-                              <tr>
-                                <td width="70%">All Porcelain Crown (Emax) </td>
+                               <tr>
+                                <td width="100%" id="services_description" name="services_description">Like cleaning, whitening is a relatively discomfort-less process. Some people are sensitive to the whitening agents used, but otherwise it’s an easy procedure 
+                                  that most dental offices can do. At home teeth whitening kits involve a lot of extra time and effort. You need to buy kits and spend a lot of time. At a dentistry, bleaching is quicker and safer because it is performed by professionals. 
+                                  Most often, dentists use a special hydrogen peroxide gel and a special light source to whiten faster.</td>
                                 <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Porcelain Veneers (Emax) </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Direct Composite Veneers </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Prefabricated Veneers</td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Laser Bleaching/Whitening </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Zirconia Crown or Bridge </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Cosmetic Gum Surgery </td>
+                                <td width="" id="services_status" name="services_status">Service Status:</td>
                                 <p></p>
                               </tr>
                             </ul>
@@ -163,74 +145,17 @@
                 <div class="col-md-4">
                     <div class="card card-pricing">
                         <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Oral Surgery</p>
-                            <i class="card-pricing-icon dripicons-store text-primary"></i>
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Extractions</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Extractions.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
                             <ul class="card-pricing-features">
-                                <tr>
-                                    <td width="70%">Apicoectomy </td>
-                                    <p></p>
-                                  </tr>
-                                  <tr>
-                                    <td width="70%">Impacted 3rd Molar Removal </td>
-                                    <p></p>
-                                  </tr>
-                                  <tr>
-                                    <td width="70%">Simple Extraction </td>
-                                    <p></p>
-                                  </tr>
-                                  <tr>
-                                    <td width="70%">Ankylosed Tooth	</td>
-                                    <p></p>
-                                  </tr>
-                                  <tr>
-                                    <td width="70%">Bone Augmentation Procedure </td>
-                                    <p></p>
-                                  </tr>
-                                  <tr>
-                                    <td width="70%">Socket Preservation After Extraction </td>
-                                    <p></p>
-                                  </tr>
-                                  <tr>
-                                    <td width="70%">Gingivoplasty </td>
-                                    <p></p>
-                                  </tr>
-                            </ul>
-                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
-                        </div>
-                    </div> <!-- end Pricing_card -->
-                </div> <!-- end col -->
-                <div class="col-md-4">
-                    <div class="card card-pricing">
-                        <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Pediatric Dentistry</p>
-                            <i class="card-pricing-icon dripicons-store text-primary"></i>
-                            <ul class="card-pricing-features">
-                              <tr>
-                                <td width="70%">Consultation </td>
+                               <tr>
+                                <td width="70%" id="services_description" name="services_description">Extractions sound scary and painful. Admittedly, they are not the most pleasant of procedures. 
+                                  However, your dentist will do everything in their power to help you feel comfortable. You may need an extraction for any number of reasons. When having a tooth pulled, 
+                                  you’ll likely be either unconscious or thoroughly numbed. You won’t be able to feel a thing! You may be sore afterwards, but extractions are almost always to prevent further pain.</td>
                                 <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/ Fluoride application </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Fluoride Application </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Simple Extraction</td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Any kind of Surgery </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Space Maintainer </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Pulpotomy & Pulpectomy </td>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
                                 <p></p>
                               </tr>
                             </ul>
@@ -241,35 +166,17 @@
                 <div class="col-md-4">
                     <div class="card card-pricing">
                         <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Periodontics</p>
-                            <i class="card-pricing-icon dripicons-store text-primary"></i>
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Veneers</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Veneers.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
                             <ul class="card-pricing-features">
-                              <tr>
-                                <td width="70%">Consultation </td>
+                               <tr>
+                                <td width="70%" id="services_description" name="services_description">If your teeth are crooked or discoloured, your dentist might recommend veneers. These are very popular solutions to common tooth problems. 
+                                  It’s essentially a thin covering placed over the front section of a tooth or set of teeth. They’re mainly used for correctional purposes, but they can be used for whitening, too. 
+                                  The process is simple and painless for most people, and it’s easy for dentists to perform.</td>
                                 <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Periodontal Surgery </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Deep Scaling </td>
-                                </td><p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Root Planing and Scaling</td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Gum Grafting </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Gum Bleaching </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Crown Lengthening </td>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
                                 <p></p>
                               </tr>
                             </ul>
@@ -280,35 +187,125 @@
                 <div class="col-md-4">
                     <div class="card card-pricing">
                         <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Oral Examination</p>
-                            <i class="card-pricing-icon dripicons-store text-primary"></i>
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Fillings</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Fillings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
                             <ul class="card-pricing-features">
-                              <tr>
-                                <td width="70%">Consultation </td>
+                               <tr>
+                                <td width="70%" id="services_description" name="services_description">Cavities are all too common and all too easy to get. For most cavities, a filling is the recommended answer. 
+                                  Acids in food and inside your body can easily break down tooth enamel if overexposed. Luckily, filling most cavities is a quick procedure. You’ll likely be numbed, 
+                                  which can last for a few hours after the filling is over. It usually takes about an hour to finish up, and then it’s good as new! You might feel pressure while they’re working, 
+                                  but it shouldn’t be painful.</td>
                                 <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/ Tongue Scrapping </td>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
+                                <p></p>
+                              </tr>
+                            </ul>
+                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
+                        </div>
+                    </div> <!-- end Pricing_card -->
+                </div> <!-- end col -->
+                <div class="col-md-4">
+                    <div class="card card-pricing">
+                        <div class="card-body text-center">
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Crowns</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Crowns.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <ul class="card-pricing-features">
+                               <tr>
+                                <td width="70%" id="services_description" name="services_description">If your cavity is a little too big for a filling, or the top part of your tooth has decayed, a crown is the solution. 
+                                  These are usually two-visit procedures, but like the filling, shouldn’t be overtly painful. Your dentist will take a molding of your tooth so that a lab can craft a properly fitted crown 
+                                  to cover the decayed area. Some offices have “printers” in office. They use a special x-ray and computer combination to take photos and craft a crown right then and there! 
+                                  The second visit will involve fitting and securing the crown, which is usually quite fast and painless.</td>
                                 <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/o Tongue Scrapping (Light) </td>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
+                                <p></p>
+                              </tr>
+                            </ul>
+                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
+                        </div>
+                    </div> <!-- end Pricing_card -->
+                </div> <!-- end col -->
+                <div class="col-md-4">
+                    <div class="card card-pricing">
+                        <div class="card-body text-center">
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Root Canal</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Root Canal.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <ul class="card-pricing-features">
+                               <tr>
+                                <td width="70%" id="services_description" name="services_description">This is one that most people dread, and for fair reasons. Root canals are usually preceded by some pretty awful tooth pain. 
+                                  A root canal means the tissue inside or under your tooth is infected and inflamed. To get rid of the pain, the dentist needs to deaden the nerve and remove the tissue. Sometimes you may need to take an antibiotic before the procedure.
+                                  The good thing is that you’ll be numbed before it happens, so you won’t feel any pain, just pressure. Once the procedure is over – and it can take a few hours – you’ll be numb for a while, 
+                                  but hopefully pain free since the infection will be gone.</td>
                                 <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/o Tongue Scrapping (Medium) </td>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
+                                <p></p>
+                              </tr>
+                            </ul>
+                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
+                        </div>
+                    </div> <!-- end Pricing_card -->
+                </div> <!-- end col -->
+                <div class="col-md-4">
+                    <div class="card card-pricing">
+                        <div class="card-body text-center">
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Braces/Invisalign</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/BracesOrInvisalign.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <ul class="card-pricing-features">
+                               <tr>
+                                <td width="70%" id="services_description" name="services_description">Most practices are moving away from traditional braces and towards Invisalign, but they both serve the same purpose. 
+                                  The goal is to straighten and correct crooked teeth, as straighter teeth are often healthier and easier to take care of. Classic braces use metal and other materials to slowly tighten teeth back into place. 
+                                  Invisalign is less visible and slower acting, but still a very effective method to achieve the same goal. The procedure to have them put on can leave a little ache, but nothing too extreme.</td>
                                 <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/o Tongue Scrapping (Severe) </td>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
+                                <p></p>
+                              </tr>
+                            </ul>
+                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
+                        </div>
+                    </div> <!-- end Pricing_card -->
+                </div> <!-- end col -->
+                <div class="col-md-4">
+                    <div class="card card-pricing">
+                        <div class="card-body text-center">
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Bonding</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Bonding.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <ul class="card-pricing-features">
+                               <tr>
+                                <td width="70%" id="services_description" name="services_description" id="services_name" name="services_name">This is another way to repair damaged or chipped teeth. It involves a resin – a sort of plastic – that your dentists tints 
+                                  to match the natural shade of your teeth. It’s less invasive than some other methods, especially for smaller imperfections. Several layers are needed to really secure the resin, and a light is used to “dry” each layer. 
+                                  The spot is then polished and cleaned so it fits naturally into the tooth. It’s an easy procedure, but can take a little while.</td>
                                 <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Oral Prophylaxis w/ Air -Powder Polishing </td>
-                                ]<p></p>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
+                                <p></p>
+                              </tr>
+                            </ul>
+                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
+                        </div>
+                    </div> <!-- end Pricing_card -->
+                </div> <!-- end col -->
+                <div class="col-md-4">
+                    <div class="card card-pricing">
+                        <div class="card-body text-center">
+                            <p class="card-pricing-plan-name fw-bold text-uppercase">Dentures</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Dentures.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
+                            <ul class="card-pricing-features">
+                               <tr>
+                                <td width="70%" id="services_description" name="services_description">Dentures are usually associated with ageing, but a lot of people may need dentures. 
+                                  They are meant to replace teeth in a natural way, and they’re typically removable. Fitting for dentures is very common, and it takes a while. In the end, 
+                                  it’s worth it to have a full set of working teeth again.</td>
+                                <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Deep Scaling </td>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
                                 <p></p>
                               </tr>
                             </ul>
