@@ -112,8 +112,8 @@
                                   An annual or semi-annual visit for a cleaning will keep your teeth healthy, shiny, and strong. Plus, a cleaning causes very little discomfort, so no need to fret!</p>
                               </tr>
                               <tr>
-                                <td style="text-align:left" width="70%" id="services_status" name="services_status">Service Status:</td>
-                                <p></p>
+                                <td></td>
+                                <p style="text-align:left" width="70%" id="services_status" name="services_status">Service Status:</p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -127,13 +127,13 @@
                             <img src="<?php echo base_url('assets')?>/images/services/Teeth Whitening.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
-                                <td width="70"></td>
+                                <td width="70%"></td>
                                 <p style="text-align:justify" id="services_description" name="services_description">Like cleaning, whitening is a relatively discomfort-less process. Some people are sensitive to the whitening agents used, but otherwise it’s an easy procedure 
                                   that most dental offices can do. At home teeth whitening kits involve a lot of extra time and effort. You need to buy kits and spend a lot of time. At a dentistry, bleaching is quicker and safer because it is performed by professionals. 
                                   Most often, dentists use a special hydrogen peroxide gel and a special light source to whiten faster. </p>
                               </tr>
                               <tr>
-                                <td width="70">Service Status:</td>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
                                 <p></p>
                               </tr>
                             </ul>
