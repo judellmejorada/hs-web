@@ -133,8 +133,8 @@
                                   Most often, dentists use a special hydrogen peroxide gel and a special light source to whiten faster. </p>
                               </tr>
                               <tr>
-                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
-                                <p></p>
+                                <td></td>
+                                <p style="text-align:left" width="70%" id="services_status" name="services_status">Service Status:</p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -146,17 +146,17 @@
                     <div class="card card-pricing">
                         <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Extractions</p>
-                            <img src="<?php echo base_url('assets')?>/images/services/Extractions.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
+                            <img src="<?php echo base_url('assets')?>/images/services/Extractions.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="230">
                             <ul class="card-pricing-features">
                                <tr>
-                                <td width="70%" ></td>
+                                <td width="70%"></td>
                                 <p style="text-align:justify" id="services_description" name="services_description">Extractions sound scary and painful. Admittedly, they are not the most pleasant of procedures. 
                                   However, your dentist will do everything in their power to help you feel comfortable. You may need an extraction for any number of reasons. When having a tooth pulled, 
                                   you’ll likely be either unconscious or thoroughly numbed. You won’t be able to feel a thing! You may be sore afterwards, but extractions are almost always to prevent further pain.</p>
                               </tr>
                               <tr>
-                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
-                                <p></p>
+                                <td></td>
+                                <p style="text-align:left" width="70%" id="services_status" name="services_status">Service Status:</p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -176,8 +176,8 @@
                                   The process is simple and painless for most people, and it’s easy for dentists to perform.</p>
                               </tr>
                               <tr>
-                                <td width="70%">Service Status:</td>
-                                <p></p>
+                                <td></td>
+                                <p style="text-align:left" width="70%" id="services_status" name="services_status">Service Status:</p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -198,8 +198,8 @@
                                   but it shouldn’t be painful.</p>
                               </tr>
                               <tr>
-                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
-                                <p></p>
+                                <td></td>
+                                <p style="text-align:left" width="70%" id="services_status" name="services_status">Service Status:</p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -220,8 +220,8 @@
                                   The second visit will involve fitting and securing the crown, which is usually quite fast and painless.</p>
                               </tr>
                               <tr>
-                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
-                                <p></p>
+                                <td></td>
+                                <p style="text-align:left" width="70%" id="services_status" name="services_status">Service Status:</p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -242,8 +242,8 @@
                                   but hopefully pain free since the infection will be gone.</p>
                               </tr>
                               <tr>
-                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
-                                <p></p>
+                                <td></td>
+                                <p style="text-align:left" width="70%" id="services_status" name="services_status">Service Status:</p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -257,14 +257,14 @@
                             <img src="<?php echo base_url('assets')?>/images/services/BracesOrInvisalign.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
                             <ul class="card-pricing-features">
                                <tr>
-                                <td width="70%" ></td>
+                                <td width="70%"></td>
                                 <p style="text-align:justify" id="services_description" name="services_description">Most practices are moving away from traditional braces and towards Invisalign, but they both serve the same purpose. 
                                   The goal is to straighten and correct crooked teeth, as straighter teeth are often healthier and easier to take care of. Classic braces use metal and other materials to slowly tighten teeth back into place. 
                                   Invisalign is less visible and slower acting, but still a very effective method to achieve the same goal. The procedure to have them put on can leave a little ache, but nothing too extreme.</p>
                               </tr>
                               <tr>
-                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
-                                <p></p>
+                                <td></td>
+                                <p style="text-align:left" width="70%" id="services_status" name="services_status">Service Status:</p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -284,8 +284,8 @@
                                   The spot is then polished and cleaned so it fits naturally into the tooth. It’s an easy procedure, but can take a little while.</p>
                               </tr>
                               <tr>
-                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
-                                <p></p>
+                                <td></td>
+                                <p style="text-align:left" width="70%" id="services_status" name="services_status">Service Status:</p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
@@ -305,8 +305,8 @@
                                   it’s worth it to have a full set of working teeth again.</p>
                               </tr>
                               <tr>
-                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
-                                <p></p>
+                                <td></td>
+                                <p style="text-align:left" width="70%" id="services_status" name="services_status">Service Status:</p>
                               </tr>
                             </ul>
                             <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
