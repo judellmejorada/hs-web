@@ -101,14 +101,15 @@
             <div class="row mt-sm-5 mt-3 mb-3">
                 <div class="col-md-4">
                     <div class="card card-pricing">
-                        <div class="card-body text-center text-justify">
+                        <div class="card-body text-center">
                             <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Teeth Cleanings</p>
                             <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="200">
                             <ul class="card-pricing-features">
                                <tr>
-                                <td width="70%"></td>
+                                <td width="70%">123</td>   
                                 <p class="text-justify" id="services_description" name="services_description">This is by far the most common reason people visit the dentist. Many dentists recommend a cleaning every six months, and some recommend once a year. 
-                                  Either way, it’s a very important part of oral health. Your own toothbrush will never be as efficient as the tools a dentist uses to clean your teeth.</p>
+                                  Either way, it’s a very important part of oral health. Your own toothbrush will never be as efficient as the tools a dentist uses to clean your teeth.
+                                  An annual or semi-annual visit for a cleaning will keep your teeth healthy, shiny, and strong. Plus, a cleaning causes very little discomfort, so no need to fret!</p>
                               </tr>
                               <tr>
                                 <td width="70%" id="services_status" name="services_status">Service Status:</td>
@@ -227,7 +228,91 @@
                         </div>
                     </div> <!-- end Pricing_card -->
                 </div> <!-- end col -->
-                
+                <div class="col-md-4">
+                    <div class="card card-pricing">
+                        <div class="card-body text-center">
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Root Canal</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Root Canal.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
+                            <ul class="card-pricing-features">
+                               <tr>
+                                <td width="70%"></td>
+                                <p class="text-justify" id="services_description" name="services_description">This is one that most people dread, and for fair reasons. Root canals are usually preceded by some pretty awful tooth pain. 
+                                  A root canal means the tissue inside or under your tooth is infected and inflamed. To get rid of the pain, the dentist needs to deaden the nerve and remove the tissue. Sometimes you may need to take an antibiotic before the procedure.
+                                  The good thing is that you’ll be numbed before it happens, so you won’t feel any pain, just pressure. Once the procedure is over – and it can take a few hours – you’ll be numb for a while, 
+                                  but hopefully pain free since the infection will be gone.</p>
+                              </tr>
+                              <tr>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
+                                <p></p>
+                              </tr>
+                            </ul>
+                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
+                        </div>
+                    </div> <!-- end Pricing_card -->
+                </div> <!-- end col -->
+                <div class="col-md-4">
+                    <div class="card card-pricing">
+                        <div class="card-body text-center">
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Braces/Invisalign</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/BracesOrInvisalign.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
+                            <ul class="card-pricing-features">
+                               <tr>
+                                <td width="70%" ></td>
+                                <p class="text-justify" id="services_description" name="services_description">Most practices are moving away from traditional braces and towards Invisalign, but they both serve the same purpose. 
+                                  The goal is to straighten and correct crooked teeth, as straighter teeth are often healthier and easier to take care of. Classic braces use metal and other materials to slowly tighten teeth back into place. 
+                                  Invisalign is less visible and slower acting, but still a very effective method to achieve the same goal. The procedure to have them put on can leave a little ache, but nothing too extreme.</p>
+                              </tr>
+                              <tr>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
+                                <p></p>
+                              </tr>
+                            </ul>
+                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
+                        </div>
+                    </div> <!-- end Pricing_card -->
+                </div> <!-- end col -->
+                <div class="col-md-4">
+                    <div class="card card-pricing">
+                        <div class="card-body text-center">
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Bonding</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Bonding.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
+                            <ul class="card-pricing-features">
+                               <tr>
+                                <td width="70%"></td>
+                                <p class="text-justify" id="services_description" name="services_description">This is another way to repair damaged or chipped teeth. It involves a resin – a sort of plastic – that your dentists tints 
+                                  to match the natural shade of your teeth. It’s less invasive than some other methods, especially for smaller imperfections. Several layers are needed to really secure the resin, and a light is used to “dry” each layer. 
+                                  The spot is then polished and cleaned so it fits naturally into the tooth. It’s an easy procedure, but can take a little while.</p>
+                              </tr>
+                              <tr>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
+                                <p></p>
+                              </tr>
+                            </ul>
+                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
+                        </div>
+                    </div> <!-- end Pricing_card -->
+                </div> <!-- end col -->
+                <div class="col-md-4">
+                    <div class="card card-pricing">
+                        <div class="card-body text-center">
+                            <p class="card-pricing-plan-name fw-bold text-uppercase">Dentures</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Dentures.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="250">
+                            <ul class="card-pricing-features">
+                               <tr>
+                                <td width="70%" ></td>
+                                <p class="text-justify" id="services_description" name="services_description">Dentures are usually associated with ageing, but a lot of people may need dentures. 
+                                  They are meant to replace teeth in a natural way, and they’re typically removable. Fitting for dentures is very common, and it takes a while. In the end, 
+                                  it’s worth it to have a full set of working teeth again.</p>
+                              </tr>
+                              <tr>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
+                                <p></p>
+                              </tr>
+                            </ul>
+                            <a href="login"><button class="btn btn-primary mt-4 mb-2 btn-rounded">Make Appointment</button></a>
+                        </div>
+                    </div> <!-- end Pricing_card -->
+                </div> <!-- end col -->
 
             </div>
         </section>
