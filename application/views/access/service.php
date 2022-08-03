@@ -102,35 +102,17 @@
                 <div class="col-md-4">
                     <div class="card card-pricing">
                         <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Orthodontics</p>
-                            <i class="card-pricing-icon dripicons-user text-primary"></i>
+                            <p class="card-pricing-plan-name fw-bold text-uppercase" id="services_name" name="services_name">Teeth Cleanings</p>
+                            <img src="<?php echo base_url('assets')?>/images/services/Teeth Cleanings.jpg" alt="" id="services_image" name="services_image" class="logo-dark" height="150">
                             <ul class="card-pricing-features">
                                <tr>
-                                <td width="70%">Mild Case </td>
+                                <td width="70%" id="services_description" name="services_description">This is by far the most common reason people visit the dentist. Many dentists recommend a cleaning every six months, and some recommend once a year. 
+                                  Either way, it’s a very important part of oral health. Your own toothbrush will never be as efficient as the tools a dentist uses to clean your teeth.
+                                  An annual or semi-annual visit for a cleaning will keep your teeth healthy, shiny, and strong. Plus, a cleaning causes very little discomfort, so no need to fret!</td>
                                 <p></p>
                               </tr>
                               <tr>
-                                <td width="70%">Severe Case	</td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Sapphire Braces </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Retainer (Invisible) </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Complete Ortho Package </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Brackets Removal/Debonding </td>
-                                <p></p>
-                              </tr>
-                              <tr>
-                                <td width="70%">Replacement of rubber elastics </td>
+                                <td width="70%" id="services_status" name="services_status">Service Status:</td>
                                 <p></p>
                               </tr>
                             </ul>
