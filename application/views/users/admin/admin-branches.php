@@ -86,7 +86,7 @@
                                                         </th>
                                                         <th>Branch Name</th>
                                                         <th>Contact Person</th>
-                                                        <th>Phone</th>
+                                                        <th>Contact #</th>
                                                         <th>Address</th>
                                                         <th>Description</th>
                                                         <th>Status</th>
