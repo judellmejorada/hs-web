@@ -35,12 +35,12 @@
                                             </h4>
                                                 <div class="form-group">
                                                 <label for="Branch" class="form-label">Clinic Branch</label>
-                                                                <select class="form-select" id="Branch" name="Branch">
-                                                                    <option>Select Branch</option>
-                                                                    <option>Fairview Branch</option>
-                                                                    <option>SM North Branch</option>
-                                                                    <option>Makati Branch</option>
-                                                                </select>
+                                                    <select class="form-select" id="Branch" name="Branch">
+                                                        <option>Select Branch</option>
+                                                        <option>Fairview Branch</option>
+                                                        <option>SM North Branch</option>
+                                                        <option>Makati Branch</option>
+                                                    </select>
                                                 </div>
                                                 </div>
                                             </div><!-- end col -->

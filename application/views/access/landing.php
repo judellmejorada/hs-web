@@ -452,7 +452,7 @@
                     </div>
 
                     <div class="col-md-8">
-                        <form class="needs-validation" novalidate="">
+                        <form class="needs-validation" novalidate="" id="contactUs" name="contactUs">
                             <div class="row mt-4">
                                 <div class="col-lg-6">
                                     <div class="mb-2">
@@ -573,6 +573,11 @@
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
+
+        <!-- For email sending -->
+        <script src="<?php echo base_url('assets')?>/js/vendor/smtp.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/access/contactUs.js"></script>
+
 
     </body>
 
