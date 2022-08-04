@@ -45,8 +45,8 @@
                                 <label class="form-label" for="users_status">Status</label>
                                 <select type="text" class="form-select" id="dentists_status" name="dentists_status" placeholder="Status" required="">
                                     <option></option>
-                                    <option value="Approved">Approved</option>
-                                    <option value="Disapproved">Disapproved</option>
+                                    <option value="Approved">Active</option>
+                                    <option value="Disapproved">Inactive</option>
                                     <option value="Pending">Pending</option>
                                 </select>
                                 <div class="invalid-feedback">
