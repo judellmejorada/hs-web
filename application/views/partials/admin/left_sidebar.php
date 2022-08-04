@@ -9,7 +9,7 @@
             <div class="leftside-menu">
     
                 <!-- LOGO -->
-                <a href="<?php echo base_url('admin')?>" class="logo text-center logo-light">
+                <a href="<?php echo base_url('admin/dashboard')?>" class="logo text-center logo-light">
                     <span class="logo-lg">
                         <img src="<?php echo base_url('assets')?>/images/logos/123.png" alt="" height="60" width="160">
                     </span>
@@ -26,7 +26,7 @@
                         <li class="side-nav-title side-nav-item">Navigation</li>
 
                         <li class="side-nav-item">
-                            <a href="<?php echo base_url('admin')?>" class="side-nav-link">
+                            <a href="<?php echo base_url('admin/dashboard')?>" class="side-nav-link">
                                 <i class="uil-home-alt"></i>
                                 <span> Dashboard </span>
                             </a>

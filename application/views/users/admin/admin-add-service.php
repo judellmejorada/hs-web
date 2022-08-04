@@ -8,7 +8,7 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form id="add-service-form" class="needs-validation" novalidate="">
+            <form id="add-service-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
                         <div class="row g-3">
                             <div class="col-sm-4">
                                 <label class="form-label" for="services_name">Service Name</label>
@@ -28,9 +28,8 @@
                                 <label class="form-label" for="users_status">Status</label>
                                 <select type="text" class="form-select" id="users_status" name="services_status" placeholder="Status" required="">
                                     <option></option>
-                                    <option value="Approved">Approved</option>
-                                    <option value="Disapproved">Disapproved</option>
-                                    <option value="Pending">Pending</option>
+                                    <option value="Approved">Available</option>
+                                    <option value="Disapproved">Unavailable</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.
@@ -53,7 +52,7 @@
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="invalidCheck" required="">
                                 <label class="form-check-label form-label" for="invalidCheck">I confirm that the details that I have 
-                                provided in this Personal Information are correct, <br> and that I have not deliberately withheld any relevant information. </label>
+                                provided in this Service Information are correct, <br> and that I have not deliberately withheld any relevant information. </label>
                                 <div class="invalid-feedback">
                                     You must agree before submitting.
                                 </div>

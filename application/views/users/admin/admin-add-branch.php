@@ -8,7 +8,7 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form id="add-branch-form" class="needs-validation" novalidate="">
+            <form id="add-branch-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
                     <div class="row g-3">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="branches_name">Branch</label>
@@ -26,23 +26,35 @@
                         </div>
                     </div>            
                         
-                    <div class="row g-2">
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="branches_phone_number">Phone Number</label>
-                                <input type="text" class="form-control" id="branches_phone_number" name="branches_phone_number" placeholder="Phone Number" required="">
-                                    <div class="invalid-feedback">
-                                        Please provide a Phone Number.  
-                                    </div>
-                            </div>
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="branches_google_map">Location</label>
-                                <input type="text" class="form-control" id="branches_google_map" name="branches_google_map" placeholder="Location" required="">
-                                    <div class="invalid-feedback">
-                                        Please provide a link of your Location through Google Map. 
-                                    </div>
-                            </div>
-                        </div>  
-
+                    <div class="row g-3">
+                        <div class="col-sm-4">
+                            <label class="form-label" for="branches_phone_number">Contact #</label>
+                            <input type="text" class="form-control" id="branches_phone_number" name="branches_phone_number" placeholder="Phone Number" required="">
+                                <div class="invalid-feedback">
+                                    Please provide a Contact Number.  
+                                </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="form-label" for="branches_google_map">Location</label>
+                            <input type="text" class="form-control" id="branches_google_map" name="branches_google_map" placeholder="Location" required="">
+                                <div class="invalid-feedback">
+                                    Please provide a link of your Location through Google Map. 
+                                </div>
+                        </div>
+                        <div class="col-sm-4">
+                                <label class="form-label" for="branches_status">Status</label>
+                                <select type="text" class="form-select" id="branches_status" name="branches_status" placeholder="Status" required="">
+                                    <option></option>
+                                    <option value="Approved">Open</option>
+                                    <option value="Disapproved">Closed</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a Status.
+                                </div>
+                        </div>
+                    </div>
+                    
+                        <br>
                         <div class="row g-2">
                             <label class="form-label" for="branches_description">Description</label>
                             <div id="snow-editor-add" name="branches_description" style="height: 300px;" required="" ></div>
@@ -57,7 +69,7 @@
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="invalidCheck" required="">
                                 <label class="form-check-label form-label" for="invalidCheck">I confirm that the details that I have 
-                                provided in this Personal Information are correct, <br> and that I have not deliberately withheld any relevant information. </label>
+                                provided in this Branch Information are correct, <br> and that I have not deliberately withheld any relevant information. </label>
                                 <div class="invalid-feedback">
                                     You must agree before submitting.
                                 </div>

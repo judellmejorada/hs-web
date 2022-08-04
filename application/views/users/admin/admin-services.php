@@ -22,6 +22,10 @@
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.core.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.snow.css" rel="stylesheet" type="text/css" />
 
+        <!-- Parsley & Toastr css -->
+        <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
+
     </head>
 
     <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -70,7 +74,7 @@
                                         </div>
                 
                                         <div class="table-responsive">
-                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="service-datatable">
+                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap dtr-inline" id="service-datatable">
                                                 <thead class="table-light">
                                                     <tr>
                                                         <th style="width: 20px;">
@@ -79,12 +83,12 @@
                                                                 <label class="form-check-label" for="customCheck1">&nbsp;</label>
                                                             </div>
                                                         </th>
-                                                        <th>Service Name</th>
+                                                        <th style="width: 300px;">Service Name</th>
                                                         <th>Service Description</th>
-                                                        <th>Service 123</th>
-                                                        <th>Service 456</th>
-                                                        <th>Created By</th>
-                                                        <th>Status</th>
+                                                        <th style="width: 0px;"> </th>
+                                                        <th style="width: 0px;"> </th>
+                                                        <th style="width: 0px;"> </th>
+                                                        <th style="width: 75px;">Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>
                                                 </thead>
@@ -132,11 +136,15 @@
 
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/admin/service.js"></script>
-        <!-- end demo js-->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.services.js"></script>
+
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>
-        <!-- quill Init js-->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.quilljs.js"></script>
+        
+        <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
 
     </body>
 </html>

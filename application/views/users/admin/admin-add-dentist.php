@@ -8,16 +8,23 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form id="add-dentist-form" class="needs-validation" novalidate="">
+            <form id="add-dentist-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
                     <div class="row g-3">
-                        <div class="mb-3 col-md-6">
+                        <div class="col-sm-4">
                             <label class="form-label" for="users_fname">First Name</label>
                             <input type="text" class="form-control" id="users_fname" name="dentists_fname" placeholder="First Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a First Name.
                             </div>
                         </div>
-                        <div class="mb-3 col-md-6">
+                        <div class="col-sm-4">
+                            <label class="form-label" for="users_mname">Middle Name</label>
+                            <input type="text" class="form-control" id="users_mname" name="users_mname" placeholder="Last Name" required="">
+                            <div class="invalid-feedback">
+                                Please provide a Middle Name.
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
                             <label class="form-label" for="users_lname">Last Name</label>
                             <input type="text" class="form-control" id="users_lname" name="dentists_lname" placeholder="Last Name" required="">
                             <div class="invalid-feedback">
@@ -25,13 +32,13 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <br>
                     <div class="row g-3">
                         <div class="col-sm-4">
-                                <label class="form-label" for="users_profile_pic">Image</label>
+                                <label class="form-label" for="users_profile_pic">Dentist Image</label>
                                 <input type="file" class="form-control" id="users_profile_pic" name="dentists_image" required="">
                                 <div class="invalid-feedback">
-                                        Please provide an Image. 
+                                        Please provide a Dentist Image. 
                                 </div>
                             </div>
                         <div class="col-sm-4">
@@ -45,9 +52,8 @@
                                 <label class="form-label" for="users_status">Status</label>
                                 <select type="text" class="form-select" id="dentists_status" name="dentists_status" placeholder="Status" required="">
                                     <option></option>
-                                    <option value="Approved">Approved</option>
-                                    <option value="Disapproved">Disapproved</option>
-                                    <option value="Pending">Pending</option>
+                                    <option value="Approved">Active</option>
+                                    <option value="Disapproved">Inactive</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.

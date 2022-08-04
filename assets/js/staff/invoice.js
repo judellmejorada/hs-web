@@ -1,3 +1,28 @@
+var services = [];
+
+const updateServicesArray = ({ id, key }, obj) => {
+	services = services.map((elem) => {
+		if (elem.id === id) {
+			elem[key] = $(obj).val();
+		}
+		return elem;
+	});
+
+	const grandTotal = services
+		.map((elem) => elem.inser_service_price)
+		.reduce(
+			(previousValue, currentValue) =>
+				Number(previousValue) + Number(currentValue),
+			0
+		);
+
+	const discount = $("#invoices_discount").val();
+
+	$("#total_after_discount").val(grandTotal - discount);
+
+	$("#grand_total").val(grandTotal);
+};
+
 $(function () {
 	const dataTable = $("#invoice-datatable").DataTable(
 		getDataTableConfig({
@@ -41,19 +66,113 @@ $(function () {
 		})
 	);
 
-	$(document).on("submit", "#add-user-form", async function (event) {
-		event.preventDefault();
-		let formData = new FormData(this);
+	const serviceDataTable = $("#add-invoice-form").DataTable({
+		data: services,
+		searching: false,
+		ordering: false,
+		lengthChange: false,
+		paging: false,
+		info: false,
+		columns: [
+			{
+				data: null,
+				checkboxes: {
+					selectRow: true,
+					selectAll: false,
+					selectCallback: function (nodes, selected) {
+						const tr = $(nodes[0]).closest("tr");
+						if (selected) {
+							tr.addClass("selected");
+						} else {
+							tr.removeClass("selected");
+						}
+					},
+				},
+			},
+			{
+				data: null,
+				render: function (data, type, row, meta) {
+					const params = { id: data.id, key: "inser_service_name" };
+					return `<input type="text" onchange='updateServicesArray(${JSON.stringify(
+						params
+					)}, this)' class="form-control" value="${
+						data.inser_service_name
+					}" autocomplete="off"/>`;
+				},
+			},
+			{
+				data: null,
+				render: function (data, type, row, meta) {
+					const params = { id: data.id, key: "inser_service_price" };
+					return `<input type="number" onchange='updateServicesArray(${JSON.stringify(
+						params
+					)}, this)' class="form-control price" value="${
+						data.inser_service_price
+					}" autocomplete="off" />`;
+				},
+			},
+		],
+	});
+
+	$(document).on("click", "#addRows", function () {
+		services = services.concat({
+			id: services.length + 1,
+			inser_service_name: "",
+			inser_service_price: "",
+		});
+
+		serviceDataTable.clear().draw();
+		serviceDataTable.rows.add(services);
+		serviceDataTable.columns.adjust().draw();
+	});
+
+	$(document).on("click", "#removeRows", function () {
+		console.log(serviceDataTable.column().checkboxes.selected());
+		const ids = serviceDataTable
+			.rows(".selected")
+			.data()
+			.map((data) => data.id)
+			.toArray();
+
+		console.log(ids);
+
+		services = services.filter((service) => !ids.includes(service.id));
+		serviceDataTable.clear().draw();
+		serviceDataTable.rows.add(services);
+		serviceDataTable.columns.adjust().draw();
+	});
+
+	$(document).on("change", "#invoices_discount", function () {
+		const grandTotal = services
+			.map((elem) => elem.inser_service_price)
+			.reduce(
+				(previousValue, currentValue) =>
+					Number(previousValue) + Number(currentValue),
+				0
+			);
+		$("#total_after_discount").val(grandTotal - Number($(this).val()));
+		$("#grand_total").val(grandTotal);
+	});
+
+	$(document).on("click", "#add-invoice-button", async function () {
+		const reqBody = {
+			invoices_branches: "e7a8b0f9-951d-44b0-b33e-f63209207de6",
+			invoices_issued_to: $("#invoices_issued_to").val(),
+			invoices_description: $("#appointments_comment").val(),
+			invoices_services: services.map(({ id, ...obj }) => obj),
+			total_after_discount: Number($("#grand_total").val()),
+			invoices_discount: Number($("#invoices_discount").val()),
+			grand_total: Number($("#total_after_discount").val()),
+			invoices_status: "Paid",
+		};
+
 		await $.ajax(
-			getAjaxConfig("/admin/user/add-users", {
+			getAjaxConfig("/staff/invoice/", {
 				type: "POST",
-				data: formData,
-				contentType: false,
-				processData: false,
+				data: reqBody,
 			})
 		);
-		$("#staticBackdrop0").modal("toggle");
+		$("#staticBackdrop4").modal("toggle");
 		dataTable.ajax.reload();
-		return false;
 	});
 });

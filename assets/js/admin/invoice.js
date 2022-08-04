@@ -16,11 +16,11 @@ const updateServicesArray = ({ id, key }, obj) => {
 			0
 		);
 
-	const discount = $("#discount").val();
+	const discount = $("#invoices_discount").val();
 
-	$("#subtotal").val(grandTotal - discount);
+	$("#total_after_discount").val(grandTotal - discount);
 
-	$("#grandtotal").val(grandTotal);
+	$("#grand_total").val(grandTotal);
 };
 
 $(function () {
@@ -142,7 +142,7 @@ $(function () {
 		serviceDataTable.columns.adjust().draw();
 	});
 
-	$(document).on("change", "#discount", function () {
+	$(document).on("change", "#invoices_discount", function () {
 		const grandTotal = services
 			.map((elem) => elem.inser_service_price)
 			.reduce(
@@ -150,17 +150,19 @@ $(function () {
 					Number(previousValue) + Number(currentValue),
 				0
 			);
-		$("#subtotal").val(grandTotal - Number($(this).val()));
-		$("#grandtotal").val(grandTotal);
+		$("#total_after_discount").val(grandTotal - Number($(this).val()));
+		$("#grand_total").val(grandTotal);
 	});
 
 	$(document).on("click", "#add-invoice-button", async function () {
 		const reqBody = {
-			invoices_issued_to: $("#issued-to").val(),
-			invoices_services: services,
-			total_after_discount: Number($("#subtotal").val()),
-			invoices_discount: Number($("#discount").val()),
-			grand_total: Number($("#grandtotal").val()),
+			invoices_branches: "e7a8b0f9-951d-44b0-b33e-f63209207de6",
+			invoices_issued_to: $("#invoices_issued_to").val(),
+			invoices_description: $("#appointments_comment").val(),
+			invoices_services: services.map(({ id, ...obj }) => obj),
+			total_after_discount: Number($("#grand_total").val()),
+			invoices_discount: Number($("#invoices_discount").val()),
+			grand_total: Number($("#total_after_discount").val()),
 			invoices_status: "Paid",
 		};
 

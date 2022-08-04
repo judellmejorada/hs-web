@@ -26,13 +26,13 @@
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
 
                                     <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop02">
                                         <i class="mdi mdi-account-circle me-1"></i>
                                         <span>My Account</span>
-                                    </a>
+                                    </a> 
 
                                     <!-- item-->
-                                    <a href="<?php echo base_url('login')?>"  class="dropdown-item notify-item">
+                                    <a href="<?php echo base_url('login')?>" class="dropdown-item notify-item">
                                         <i class="mdi mdi-logout me-1"></i>
                                         <span>Logout</span>
                                     </a>
@@ -47,6 +47,6 @@
                     </div>
 
                     <!-- end Topbar -->
-
+                    <?php include('account.php')?>
     </body>
 </html>

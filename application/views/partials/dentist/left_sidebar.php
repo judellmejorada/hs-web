@@ -43,7 +43,7 @@
                         <li class="side-nav-item">
                             <a data-bs-toggle="" href="<?php echo base_url('dentist/schedule')?>" class="side-nav-link">
                                 <i class="uil-briefcase-alt"></i>
-                                <span> Appointments </span>
+                                <span> Schedule </span>
                             </a>
              
                     <!-- End Sidebar -->

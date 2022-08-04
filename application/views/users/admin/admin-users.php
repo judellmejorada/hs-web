@@ -20,6 +20,10 @@
         <link href="<?php echo base_url('assets')?>/css/app.min1.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
 
+        <!-- Parsley & Toastr css -->
+        <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
+
     </head>
 
     <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -80,9 +84,9 @@
                                                         <th>Name</th>
                                                         <th>Date of Birth</th>
                                                         <th>Gender</th>
-                                                        <th>Phone</th>
+                                                        <th>Contact #</th>
                                                         <th>Email</th>
-                                                        <th>Status</th>
+                                                        <th style="width: 75px;">Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>
                                                 </thead>
@@ -130,7 +134,13 @@
 
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/admin/user.js"></script>
-        <!-- end demo js-->
+        
+        <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
+        
+        <!-- parsley -->
+        <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
     </body>
 </html>

@@ -56,7 +56,10 @@ $(function () {
 					},
 				},
 				{
-					data: "services_created_at",
+					data: null,
+					render: function (data, type, row, meta) {
+						return "N/A";
+					},
 				},
 				{
 					data: "services_status",

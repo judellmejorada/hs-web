@@ -69,7 +69,7 @@
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="invalidCheck" required="">
                                 <label class="form-check-label form-label" for="invalidCheck">I confirm that the details that I have 
-                                provided in this Personal Information are correct, <br> and that I have not deliberately withheld any relevant information. </label>
+                                provided in this Schedule Information are correct, <br> and that I have not deliberately withheld any relevant information. </label>
                                 <div class="invalid-feedback">
                                     You must agree before submitting.
                                 </div>
