@@ -27,43 +27,33 @@
                     </div>            
                         
                     <div class="row g-3">
-                        <div class="mb-3 col-md-6">
+                        <div class="col-sm-4">
                             <label class="form-label" for="branches_phone_number">Contact #</label>
                             <input type="text" class="form-control" id="branches_phone_number" name="branches_phone_number" placeholder="Phone Number" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Contact Number.  
                                 </div>
                         </div>
-                        <div class="mb-3 col-md-6">
+                        <div class="col-sm-4">
                             <label class="form-label" for="branches_google_map">Location</label>
                             <input type="text" class="form-control" id="branches_google_map" name="branches_google_map" placeholder="Location" required="">
                                 <div class="invalid-feedback">
                                     Please provide a link of your Location through Google Map. 
                                 </div>
                         </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="mb-3 col-md-6">
-                                <label class="form-label" for="branches_image">Branch Image</label>
-                                <input type="file" class="form-control" id="branches_image" name="branches_image"  required="">
-                                <div class="invalid-feedback">
-                                    Please provide an Service Image. 
-                                </div>
-                        </div>
-                        <div class="mb-3 col-md-6">
+                        <div class="col-sm-4">
                                 <label class="form-label" for="branches_status">Status</label>
                                 <select type="text" class="form-select" id="branches_status" name="branches_status" placeholder="Status" required="">
                                     <option></option>
                                     <option value="Approved">Open</option>
                                     <option value="Disapproved">Closed</option>
-                                    <option value="Pending">Pending</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.
                                 </div>
                         </div>
                     </div>
-                      
+                    
                         <br>
                         <div class="row g-2">
                             <label class="form-label" for="branches_description">Description</label>
