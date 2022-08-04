@@ -91,10 +91,10 @@
 
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
-                            <label class="form-label" for="users_profile_pic">Image</label>
+                            <label class="form-label" for="users_profile_pic">User Image</label>
                             <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic" required="">
                             <div class="invalid-feedback">
-                                    Please provide an Image. 
+                                    Please provide a User Image. 
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">

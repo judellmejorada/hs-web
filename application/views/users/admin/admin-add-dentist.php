@@ -28,10 +28,10 @@
                     
                     <div class="row g-3">
                         <div class="col-sm-4">
-                                <label class="form-label" for="users_profile_pic">Image</label>
+                                <label class="form-label" for="users_profile_pic">Dentist Image</label>
                                 <input type="file" class="form-control" id="users_profile_pic" name="dentists_image" required="">
                                 <div class="invalid-feedback">
-                                        Please provide an Image. 
+                                        Please provide a Dentist Image. 
                                 </div>
                             </div>
                         <div class="col-sm-4">
