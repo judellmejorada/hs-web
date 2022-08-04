@@ -85,10 +85,10 @@
                                                             </div>
                                                         </th>
                                                         <th>First Name</th>
+                                                        <th>Middle Name</th>
                                                         <th>Last Name</th>
                                                         <th>Description</th>
                                                         <th>Dentistry Specialization</th>
-                                                        <th>Email</th>
                                                         <th>Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>

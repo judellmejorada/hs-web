@@ -10,14 +10,21 @@
 
             <form id="add-dentist-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
                     <div class="row g-3">
-                        <div class="mb-3 col-md-6">
+                        <div class="col-sm-4">
                             <label class="form-label" for="users_fname">First Name</label>
                             <input type="text" class="form-control" id="users_fname" name="dentists_fname" placeholder="First Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a First Name.
                             </div>
                         </div>
-                        <div class="mb-3 col-md-6">
+                        <div class="col-sm-4">
+                            <label class="form-label" for="users_mname">Middle Name</label>
+                            <input type="text" class="form-control" id="users_mname" name="users_mname" placeholder="Last Name" required="">
+                            <div class="invalid-feedback">
+                                Please provide a Middle Name.
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
                             <label class="form-label" for="users_lname">Last Name</label>
                             <input type="text" class="form-control" id="users_lname" name="dentists_lname" placeholder="Last Name" required="">
                             <div class="invalid-feedback">
