@@ -30,7 +30,6 @@
                                     <option></option>
                                     <option value="Approved">Available</option>
                                     <option value="Disapproved">Unavailable</option>
-                                    <option value="Pending">Pending</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.
