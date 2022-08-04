@@ -87,7 +87,7 @@
                                                         <th>Gender</th>
                                                         <th>Contact #</th>
                                                         <th>Email</th>
-                                                        <th>Status</th>
+                                                        <th style="width: 75px;">Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>
                                                 </thead>

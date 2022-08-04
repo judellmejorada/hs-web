@@ -89,7 +89,7 @@
                                                         <th>Last Name</th>
                                                         <th>Description</th>
                                                         <th>Dentistry Specialization</th>
-                                                        <th>Status</th>
+                                                        <th style="width: 75px;">Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>
                                                 </thead>
@@ -135,8 +135,8 @@
         <!-- third party js ends -->
 
         <!-- demo app -->
-        <script src="<?php echo base_url('assets')?>/js/admin/dentist.js"></script>
         <script src="<?php echo base_url('assets')?>/js/pages/demo.dentists.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/dentist.js"></script>
 
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>
