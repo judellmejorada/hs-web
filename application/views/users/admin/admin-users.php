@@ -85,7 +85,7 @@
                                                         <th>Name</th>
                                                         <th>Date of Birth</th>
                                                         <th>Gender</th>
-                                                        <th>Phone</th>
+                                                        <th>Contact #</th>
                                                         <th>Email</th>
                                                         <th>Status</th>
                                                         <th style="width: 75px;">Action</th>

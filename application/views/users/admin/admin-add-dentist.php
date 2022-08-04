@@ -32,7 +32,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <br>
                     <div class="row g-3">
                         <div class="col-sm-4">
                                 <label class="form-label" for="users_profile_pic">Dentist Image</label>
