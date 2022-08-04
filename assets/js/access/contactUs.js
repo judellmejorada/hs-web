@@ -7,7 +7,7 @@ $(function () {
         Email.send({
             Host : "smtp.gmail.com",
             Username : "happysmile14324@gmail.com",
-            Password : "happysmile14324!!!",
+            Password : "ylnegmwcptuizmrw",
             To : 'happysmile14324@gmail.com',
             From :  $("#fullname").val(),
             Subject : $("#subject").val(),
