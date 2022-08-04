@@ -577,6 +577,9 @@
         <script src="<?php echo base_url('assets')?>/js/vendor/smtp.js"></script>
         <script src="<?php echo base_url('assets')?>/js/access/contactUs.js"></script>
 
+        <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
 
     </body>
 
