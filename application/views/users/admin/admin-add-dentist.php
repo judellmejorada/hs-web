@@ -54,7 +54,6 @@
                                     <option></option>
                                     <option value="Approved">Active</option>
                                     <option value="Disapproved">Inactive</option>
-                                    <option value="Pending">Pending</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a Status.
