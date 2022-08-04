@@ -38,18 +38,17 @@ $(function () {
 				},
 				{
 					// birth day not available
-					data: "dentists_lname",
+					data: "dentists_mname",
 					// render: function (data, type, row, meta) {
 					// 	return "N/A";
 					// },
 				},
 				{
-					data: "dentists_description",
-					render: function (data, type, row, meta) {
-						return `<span class="text-break">${
-							data.substring(0, 50) + "..."
-						}</span>`;
-					},
+					// birth day not available
+					data: "dentists_lname",
+					// render: function (data, type, row, meta) {
+					// 	return "N/A";
+					// },
 				},
 				{
 					data: "dentists_specialty",
@@ -58,6 +57,14 @@ $(function () {
 					data: null,
 					render: function (data, type, row, meta) {
 						return "N/A";
+					},
+				},
+				{
+					data: "dentists_description",
+					render: function (data, type, row, meta) {
+						return `<span class="text-break">${
+							data.substring(0, 50) + "..."
+						}</span>`;
 					},
 				},
 				{

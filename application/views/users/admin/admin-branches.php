@@ -89,7 +89,7 @@
                                                         <th>Contact #</th>
                                                         <th>Address</th>
                                                         <th>Description</th>
-                                                        <th>Status</th>
+                                                        <th style="width: 75px;">Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>
                                                 </thead>
