@@ -85,11 +85,11 @@
                                                             </div>
                                                         </th>
                                                         <th>Service Name</th>
-                                                        <th style="width: 175px;">Service Description</th>
-                                                        <th></th>
-                                                        <th></th>
-                                                        <th></th>
-                                                        <th>Status</th>
+                                                        <th>Service Description</th>
+                                                        <th style="width: 0px;"> </th>
+                                                        <th style="width: 0px;"> </th>
+                                                        <th style="width: 0px;"> </th>
+                                                        <th style="width: 60px;">Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>
                                                 </thead>
