@@ -55,10 +55,6 @@ $(function () {
 				},
 				{
 					orderable: !1,
-					dom: 'Bfrtip',
-					buttons: [
-					'copy', 'csv', 'excel', 'pdf', 'print'
-					],
 					data: null,
 					render: function (data, type, row, meta) {
 						return (
