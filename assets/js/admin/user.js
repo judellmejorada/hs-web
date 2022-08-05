@@ -73,7 +73,7 @@ $(function () {
 	);
 
 	$(document).ready(function() {
-		$('##products-datatable').DataTable( {
+		$('#products-datatable').DataTable( {
 			dom: 'Bfrtip',
 			buttons: [
 				'copy', 'csv', 'excel', 'pdf', 'print'
