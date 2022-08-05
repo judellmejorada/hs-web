@@ -316,7 +316,7 @@
 
             </div>
         </section>
- <!-- END prices -->
+        <!-- END prices -->
         
         <!-- START inquiry -->
         <section class="py-5 bg-light-lighten border-top border-bottom border-light">
