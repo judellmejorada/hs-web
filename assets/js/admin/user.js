@@ -18,7 +18,7 @@ $(function () {
 	const dataTable = $("#products-datatable").DataTable(
 		getDataTableConfig({
 			ajax: getAjaxConfig("/admin/user/retrieve-users", {
-				type: "GET",
+				type: "POST",
 				dom: 'lBfrtip',
 				buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
 				"lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ]
