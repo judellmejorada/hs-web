@@ -18,17 +18,17 @@ $(function () {
 	$("#products-datatable").DataTable({
 		"processing" : true,
 		"serverSide" : true,
-		ajax : {
+		"ajax" : {
 		 type:"POST"
 		},
 		dom: 'lBfrtip',
 		buttons: [
-		 'excel', 'csv', 'pdf', 'copy'
+			'copy', 'csv', 'excel', 'pdf', 'print'
 		],
 		"lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ]
 	   });
 	   
-	  });
+	});
 	
 $(function () {
 	const dataTable = $("#products-datatable").DataTable(
