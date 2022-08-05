@@ -17,6 +17,8 @@ var onDelete = (uuid) => {
 $(function () {
 	const dataTable = $("#products-datatable").DataTable(
 		getDataTableConfig({
+			buttons: ['excel', 'csv', 'pdf', 'copy'],
+			"lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ],
 			ajax: getAjaxConfig("/admin/user/retrieve-users", {
 				type: "GET",
 			}),
