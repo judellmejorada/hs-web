@@ -12,7 +12,7 @@
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="schedule_dentist">Dentist</label>
-                                <select class="form-select" id="schedule_dentist" name="schedule_dentist" placeholder="Branch" required="">
+                                <select class="form-select dentist-dropdown" id="schedule_dentist" name="schedule_dentist" placeholder="Branch" required="">
                                     <option></option>
                                     <option>Dr. Stark</option>
                                     <option>Dr. McStuffins</option>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="mb-3 col-md-6">
                             <label class="form-label" for="schedule_branch">Branch</label>
-                            <select class="form-select" id="schedule_branch" name="schedule_branch" required="">
+                            <select class="form-select branch-dropdown" id="schedule_branch" name="schedule_branch" required="">
                                 <option></option>
                                 <option>Commonwealth</option>
                                 <option>Novaliches</option>
