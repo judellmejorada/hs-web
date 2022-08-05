@@ -15,10 +15,20 @@ var onDelete = (uuid) => {
 };
 
 $(function () {
-	const dataTable = $("#products-datatable").DataTable(
+	const dataTable = $("#products-datatable").DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    },
 		getDataTableConfig({
 			ajax: getAjaxConfig("/admin/user/retrieve-users", {
-				type: "GET",
+				"processing" : true,
+				"serverSide" : true,
+				type: "POST",
+				dom: 'lBfrtip',
+        		buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+				"lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ]
 			}),
 			columns: [
 				{
@@ -71,15 +81,6 @@ $(function () {
 			],
 		})
 	);
-
-	$(function() {
-		$('#products-datatable').DataTable( {
-			dom: 'Bfrtip',
-			buttons: [
-				'copy', 'csv', 'excel', 'pdf', 'print'
-			]
-		} );
-	} );
 
 	$(document).on("submit", "#add-user-form", async function (event) {
 		event.preventDefault();
