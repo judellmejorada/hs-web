@@ -72,7 +72,7 @@ $(function () {
 		})
 	);
 
-	$(document).ready(function() {
+	$(function() {
 		$('#products-datatable').DataTable( {
 			dom: 'Bfrtip',
 			buttons: [
