@@ -16,11 +16,6 @@ var onDelete = (uuid) => {
 
 $(function () {
 	$("#products-datatable").DataTable({
-		"processing" : true,
-		"serverSide" : true,
-		"ajax" : {
-		 type:"POST"
-		},
 		dom: 'lBfrtip',
 		buttons: [
 			'copy', 'csv', 'excel', 'pdf', 'print'
