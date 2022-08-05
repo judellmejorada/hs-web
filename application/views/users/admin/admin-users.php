@@ -153,21 +153,15 @@
         <script type="text/javascript" src="https://cdn.datatables.net/r/dt/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,af-2.0.0,b-1.0.3,b-colvis-1.0.3,b-html5-1.0.3,b-print-1.0.3,se-1.0.1/datatables.min.js"></script>
         <script type="text/javascript" language="javascript" >
         $(function () {
-	    const dataTable = $("#products-datatable").DataTable({
-        "processing" : true,
-        "serverSide" : true,
-        "ajax" : {
-            type:"POST"
-        },
-        dom: 'lBfrtip',
+	    $("#products-datatable").DataTable({
+        dom: 'Bfrtip',
         buttons: [
-            'excel', 'csv', 'pdf', 'copy'
-        ],
-        "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ]
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
         });
         
         });
-        
+
         </script>
 
     </body>
