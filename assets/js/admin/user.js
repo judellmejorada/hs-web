@@ -16,6 +16,11 @@ var onDelete = (uuid) => {
 
 $(function () {
 	const dataTable = $("#products-datatable").DataTable(
+		{
+			type: "GET",
+			dom: 'Bfrtip',
+			buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+		},
 		getDataTableConfig({
 			ajax: getAjaxConfig("/admin/user/retrieve-users", {
 				type: "GET",
