@@ -149,7 +149,7 @@
         <!-- parsley -->
         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
-        <!-- Exportable Report css -->
+        <!-- Exportable Report js -->
         <script src="//code.jquery.com/jquery-3.5.1.js"></script>
         <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
         <script src="//cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
