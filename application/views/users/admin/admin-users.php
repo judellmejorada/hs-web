@@ -25,7 +25,8 @@
         <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
 
         <!-- Exportable Report css -->
-        <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/r/dt/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,af-2.0.0,b-1.0.3,b-colvis-1.0.3,b-html5-1.0.3,b-print-1.0.3,se-1.0.1/datatables.min.css"/>
+        <link href="<?php echo base_url('assets')?>/css/databutton.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo base_url('assets')?>/css/databutton.css" rel="stylesheet" type="text/css"/>
 
     </head>
 
@@ -149,7 +150,21 @@
         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
         <!-- Exportable Report js -->
-        <script type="text/javascript" src="//cdn.datatables.net/r/dt/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,af-2.0.0,b-1.0.3,b-colvis-1.0.3,b-html5-1.0.3,b-print-1.0.3,se-1.0.1/datatables.min.js"></script>
-
+        <script src="<?php echo base_url('assets')?>/js//admin/ajaxjszip.js"></script>
+        <script src="<?php echo base_url('assets')?>/js//admin/ajaxpdf.js"></script>
+        <script src="<?php echo base_url('assets')?>/js//admin/ajaxvfs.js"></script>
+        <script src="<?php echo base_url('assets')?>/js//admin/datatablebutton.js"></script>
+        <script src="<?php echo base_url('assets')?>/js//admin/jquerycode.js"></script>
+        <script src="<?php echo base_url('assets')?>/js//admin/jquerydatatable.js"></script>
+        <script src="<?php echo base_url('assets')?>/js//admin/jsbutton.js"></script>
+        <script src="<?php echo base_url('assets')?>/js//admin/jsprint.js"></script>
+        <script type="text/javascript" language="javascript">
+        $(function () {
+            $('#products-datatable').DataTable( {
+                dom: 'Bfrtip',
+                buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+            } );
+        } );
+        </script>
     </body>
 </html>
