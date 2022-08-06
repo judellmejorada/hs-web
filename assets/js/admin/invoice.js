@@ -24,6 +24,7 @@ const updateServicesArray = ({ id, key }, obj) => {
 };
 
 $(function () {
+	loadBranchDropdown();
 	const dataTable = $("#invoice-datatable").DataTable(
 		getDataTableConfig({
 			ajax: getAjaxConfig("/admin/invoices/get-invoice", {
@@ -156,7 +157,7 @@ $(function () {
 
 	$(document).on("click", "#add-invoice-button", async function () {
 		const reqBody = {
-			invoices_branches: "e7a8b0f9-951d-44b0-b33e-f63209207de6",
+			invoices_branches: $("#add-branch-dropdown").val(),
 			invoices_issued_to: $("#invoices_issued_to").val(),
 			invoices_description: $("#appointments_comment").val(),
 			invoices_services: services.map(({ id, ...obj }) => obj),
