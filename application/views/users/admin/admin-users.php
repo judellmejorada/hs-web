@@ -141,7 +141,6 @@
 
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/admin/user.js"></script>
-        <script src="<?php echo base_url('assets')?>/js/pages/demo.customers.js"></script>
         
         <!-- toaster js -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>

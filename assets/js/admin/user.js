@@ -20,7 +20,6 @@ $(function () {
 			ajax: getAjaxConfig("/admin/user/retrieve-users", {
 				type: "GET",
 			}),
-			info:"Showing users _START_ to _END_ of _TOTAL_",
 			columns: [
 				{
 					data: null,
