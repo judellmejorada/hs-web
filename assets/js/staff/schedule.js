@@ -27,8 +27,8 @@ $(function () {
 			$(this).html(
 				data
 					.map(
-						({ user_id, user_fname, user_lname }) =>
-							`<option value="${user_id}">Dr. ${user_fname} ${user_lname}</option>`
+						({ users_id, users_fname, users_lname }) =>
+							`<option value="${users_id}">Dr. ${users_fname} ${users_lname}</option>`
 					)
 					.join("")
 			);
