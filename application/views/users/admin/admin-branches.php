@@ -21,6 +21,7 @@
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.core.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.snow.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets')?>/css/databutton.css" rel="stylesheet"  />
 
         <!-- Parsley & Toastr css -->
         <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
@@ -132,10 +133,16 @@
         <script src="<?php echo base_url('assets')?>/js/vendor/responsive.bootstrap5.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor/dataTables.checkboxes.min.js"></script>
         <!-- third party js ends -->
-
-        <!-- demo app -->
-        <script src="<?php echo base_url('assets')?>/js/admin/branch.js"></script>
-        <script src="<?php echo base_url('assets')?>/js/pages/demo.branches.js"></script>
+        
+        <!--table export-->
+        <script src="<?php echo base_url('assets')?>/js/admin/ajaxjszip.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/ajaxpdf.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/ajaxvfs.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/datatablebutton.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jquerycode.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jquerydatatable.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jsbutton.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jsprint.js"></script>
 
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>
