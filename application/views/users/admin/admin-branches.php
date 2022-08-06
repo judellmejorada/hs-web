@@ -21,6 +21,7 @@
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.core.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.snow.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets')?>/css/databutton.css" rel="stylesheet"  />
 
         <!-- Parsley & Toastr css -->
         <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
@@ -134,18 +135,14 @@
         <!-- third party js ends -->
         
         <!--table export-->
-        <script src="//code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-        <script src="//cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-        <script src="//cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
-        <script src="//cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
-        
-        <!-- demo app -->
-        <script src="<?php echo base_url('assets')?>/js/admin/branch.js"></script>
-        <script src="<?php echo base_url('assets')?>/js/pages/demo.branches.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/ajaxjszip.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/ajaxpdf.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/ajaxvfs.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/datatablebutton.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jquerycode.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jquerydatatable.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jsbutton.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jsprint.js"></script>
 
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>
