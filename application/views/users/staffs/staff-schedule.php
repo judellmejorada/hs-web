@@ -71,7 +71,7 @@
                                         </div>
                 
                                         <div class="table-responsive">
-                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="appointment-datatable">
+                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="schedule-datatable">
                                                 <thead class="table-light">
                                                     <tr>
                                                         <th style="width: 20px;">
@@ -131,7 +131,7 @@
 
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.appointment.js"></script>
-        <script src="<?php echo base_url('assets')?>/js/staff/appointment.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/staff/schedule.js"></script>
         <!-- end demo js-->
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>

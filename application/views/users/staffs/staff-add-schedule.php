@@ -8,16 +8,13 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form id="add-appointment-form" class="needs-validation" novalidate="">
+            <form id="add-schedule-form" class="needs-validation" novalidate="">
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="schedule_dentist">Dentist</label>
-                                <select class="form-select" id="schedule_dentist" name="schedule_dentist" placeholder="Branch" required="">
+                                <select class="form-select dentist-dropdown" id="schedule_dentist" name="schedule_dentist" placeholder="Branch" required="">
                                     <option></option>
-                                    <option>Dr. Stark</option>
-                                    <option>Dr. McStuffins</option>
-                                    <option>Dr. Quack</option>
-                                    <option>Dr. Dora</option>
+                                    <option></option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please choose a Dentist.
@@ -25,12 +22,9 @@
                             </div>
                             <div class="mb-3 col-md-6">
                             <label class="form-label" for="schedule_branch">Branch</label>
-                            <select class="form-select" id="schedule_branch" name="schedule_branch" required="">
+                            <select class="form-select branch-dropdown" id="schedule_branch" name="schedule_branch" required="">
                                 <option></option>
-                                <option>Commonwealth</option>
-                                <option>Novaliches</option>
-                                <option>Quezon City</option>
-                                <option>Zabarte</option>
+                                
                             </select>
                             <!-- <input class="form-control" id="validationCustom01" type="date" name="appointments_sched" required=""> -->
                             <div class="invalid-feedback">

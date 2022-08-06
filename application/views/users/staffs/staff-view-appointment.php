@@ -12,7 +12,7 @@
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="branches_name">Branch</label>
-                                <select class="form-select" id="view_appointments_branch" name="appointments_branch" placeholder="Branch" readonly="" disabled="">
+                                <select class="form-select branch-dropdown" id="view_appointments_branch" name="appointments_branch" placeholder="Branch" readonly="" disabled="">
                                     <option></option>
                                     <option>Commonwealth</option>
                                     <option>Quezon City</option>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="mb-3 col-md-6">
                             <label class="form-label" for="validationCustom01">Appointment Schedule</label>
-                            <input class="form-control" type="date" id="view_appointments_sched" name="appointments_sched" readonly="">
+                            <input class="form-control" type="text" id="view_appointments_sched" name="appointments_sched" readonly="">
                             <div class="invalid-feedback">
                                 Please provide a Appointment Date.
                             </div>

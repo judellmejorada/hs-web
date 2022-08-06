@@ -22,8 +22,9 @@
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.core.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets')?>/css/vendor/quill.snow.css" rel="stylesheet" type="text/css" />
-
-        <!-- Parsley & Toastr css -->
+        
+        
+        <!--Parsley & Toastr css-->
         <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
         <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
 
@@ -113,9 +114,17 @@
             <!-- ============================================================== -->
             <!-- End Page content -->
             <!-- ============================================================== -->
-
-
         </div>
+        <script>
+            $(document).ready(function() {
+             $('#dentist-datatable').DataTable( {
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+                   } );
+                     } );
+</script>
         <!-- END wrapper -->
         <?php include ('admin-view-dentist.php');?>
         <?php include ('admin-modify-dentist.php');?>
@@ -133,7 +142,8 @@
         <script src="<?php echo base_url('assets')?>/js/vendor/responsive.bootstrap5.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor/dataTables.checkboxes.min.js"></script>
         <!-- third party js ends -->
-
+        
+       
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.dentists.js"></script>
         <script src="<?php echo base_url('assets')?>/js/admin/dentist.js"></script>

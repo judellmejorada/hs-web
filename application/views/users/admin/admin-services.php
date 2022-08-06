@@ -85,9 +85,7 @@
                                                         </th>
                                                         <th style="width: 300px;">Service Name</th>
                                                         <th>Service Description</th>
-                                                        <th style="width: 0px;"> </th>
-                                                        <th style="width: 0px;"> </th>
-                                                        <th style="width: 0px;"> </th>
+                                                        
                                                         <th style="width: 75px;">Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>

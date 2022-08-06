@@ -35,7 +35,7 @@
                                             </h4>
                                                 <div class="form-group">
                                                 <label for="Branch" class="form-label">Clinic Branch</label>
-                                                    <select class="form-select" id="Branch" name="Branch">
+                                                    <select class="form-select branch-dropdown" id="add-branch-dropdown" name="Branch">
                                                         <option>Select Branch</option>
                                                         <option>Fairview Branch</option>
                                                         <option>SM North Branch</option>

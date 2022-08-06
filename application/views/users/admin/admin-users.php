@@ -24,6 +24,10 @@
         <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
         <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
 
+        <!-- Exportable Report css -->
+        <link href="<?php echo base_url('assets')?>/css/databutton.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo base_url('assets')?>/css/databutton.css" rel="stylesheet" type="text/css"/>
+
     </head>
 
     <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -92,6 +96,9 @@
                                                 </thead>
                                                 <tbody>
                                                 </tbody>
+                                                <tfoot>
+
+                                                </tfoot>
                                             </table>
                                         </div>
                                     </div> <!-- end card-body-->
@@ -141,6 +148,5 @@
         
         <!-- parsley -->
         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
-
     </body>
 </html>
