@@ -14,7 +14,7 @@ $(function () {
 
             // If registration is successful
             success: function () {
-                window.location.replace("/login");
+                window.location.replace("https://happysmile-web.herokuapp.com/login");
                 notification("success", "Successful Registration", "Your Account has been registered. You can login now!");
             },
             error: function ({ responseJSON }) {

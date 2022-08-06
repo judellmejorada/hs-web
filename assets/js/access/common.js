@@ -2,8 +2,8 @@ const baseURL = "https://happysmile-dcms.herokuapp.com/v1";
 const baseURLUserProfile =
 	"https://happysmile-dcms.herokuapp.com/users-profile-pic";
 const baseUrlServicePic = "https://happysmile-dcms.herokuapp.com/services";
-const baseUrlDentistPic =
-	"https://happysmile-dcms.herokuapp.com/featured_dentist";
+const baseUrlDentistPic = "https://happysmile-dcms.herokuapp.com/featured_dentist";
+const webURL = "https://happysmile-web.herokuapp.com/";
 
 // type = error, warning, success, info
 // title = string
@@ -56,7 +56,7 @@ const getDataTableConfig = ({ ajax, columns }) => ({
 			previous: "<i class='mdi mdi-chevron-left'>",
 			next: "<i class='mdi mdi-chevron-right'>",
 		},
-		info: "Showing services _START_ to _END_ of _TOTAL_",
+		info: "Showing entries _START_ to _END_ of _TOTAL_",
 		lengthMenu:
 			'Display <select class=\'form-select form-select-sm ms-1 me-1\'><option value="10">10</option><option value="20">20</option><option value="-1">All</option></select> services',
 	},

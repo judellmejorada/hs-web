@@ -451,12 +451,12 @@
                     </div>
 
                     <div class="col-md-8">
-                        <form class="needs-validation" novalidate="" id="contactUs" name="contactUs">
+                        <form action="#" class="needs-validation" novalidate="" id="contactUs" name="contactUs">
                             <div class="row mt-4">
                                 <div class="col-lg-6">
                                     <div class="mb-2">
-                                        <label for="fullname" class="form-label">Your Name</label>
-                                        <input class="form-control form-control-light" type="text" required="" id="fullname" placeholder="Name">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input class="form-control form-control-light" type="text" required="" id="name" placeholder="Name">
                                         <div class="invalid-feedback">
                                             Please Enter your Name
                                         </div>
@@ -464,8 +464,8 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="mb-2">
-                                        <label for="emailaddress" class="form-label">Your Email</label>
-                                        <input class="form-control form-control-light" type="email" required="" id="emailaddress" placeholder="Enter you email">
+                                        <label for="email" class="form-label">Your Email</label>
+                                        <input class="form-control form-control-light" type="email" required="" id="email" placeholder="Enter you email">
                                         <div class="invalid-feedback">
                                             Please Enter valid Email
                                         </div>
@@ -489,8 +489,8 @@
                             <div class="row mt-1">
                                 <div class="col-lg-12">
                                     <div class="mb-2">
-                                        <label for="comments" class="form-label">Message</label>
-                                        <textarea id="comments" rows="4" class="form-control form-control-light" required="" placeholder="Type your message here"></textarea>
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea id="message" rows="4" class="form-control form-control-light" required="" placeholder="Type your message here"></textarea>
                                         <div class="invalid-feedback">
                                             Please Enter your Message
                                         </div>
@@ -577,9 +577,13 @@
         <script src="<?php echo base_url('assets')?>/js/vendor/smtp.js"></script>
         <script src="<?php echo base_url('assets')?>/js/access/contactUs.js"></script>
 
+         <!-- parsley -->
+         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
+
         <!-- toaster js -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
         <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
+
 
     </body>
 
