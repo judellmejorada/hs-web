@@ -150,14 +150,14 @@
         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
         <!-- Exportable Report js -->
-        <script src="<?php echo base_url('assets')?>/js//admin/ajaxjszip.js"></script>
-        <script src="<?php echo base_url('assets')?>/js//admin/ajaxpdf.js"></script>
-        <script src="<?php echo base_url('assets')?>/js//admin/ajaxvfs.js"></script>
-        <script src="<?php echo base_url('assets')?>/js//admin/datatablebutton.js"></script>
-        <script src="<?php echo base_url('assets')?>/js//admin/jquerycode.js"></script>
-        <script src="<?php echo base_url('assets')?>/js//admin/jquerydatatable.js"></script>
-        <script src="<?php echo base_url('assets')?>/js//admin/jsbutton.js"></script>
-        <script src="<?php echo base_url('assets')?>/js//admin/jsprint.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/ajaxjszip.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/ajaxpdf.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/ajaxvfs.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/datatablebutton.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jquerycode.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jquerydatatable.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jsbutton.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/admin/jsprint.js"></script>
         <script type="text/javascript" language="javascript">
         $(function () {
             $('#products-datatable').DataTable( {

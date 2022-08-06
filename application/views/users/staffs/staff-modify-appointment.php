@@ -9,11 +9,11 @@
             <div class="modal-body">
 
             <form id="edit-appointment-form" class="needs-validation" novalidate="">
-                <input type="hidden" id="appointments_id" name="appointments_id">
+                <input type="hidden" id="edit_appointments_id" name="appointments_id">
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="branches_name">Branch</label>
-                                <select class="form-select" id="edit_appointments_branch" name="appointments_branch" placeholder="Branch" required="">
+                                <select class="form-select branch-dropdown" id="edit_appointments_branch" name="appointments_branch" placeholder="Branch" required="">
                                     <option></option>
                                     <option value="Commonwealth">Commonwealth</option>
                                     <option value="Quezon City">Quezon City</option>
@@ -26,7 +26,7 @@
                             </div>
                             <div class="mb-3 col-md-6">
                             <label class="form-label" for="validationCustom01">Appointment Schedule</label>
-                            <select class="form-select" id="validationCustom00" required="">
+                            <select class="form-select schedule-dropdown" id="validationCustom00" required="">
                                 <option></option>
                                 <option>Anne Hathaway - July 28, 2022 8AM</option>
                                 <option>Anne Hathaway - July 28, 2022 9AM</option>

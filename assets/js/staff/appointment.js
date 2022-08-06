@@ -5,6 +5,7 @@ var excludeField = {
 var setValues = (userDetails, prefix) => {
 	Object.keys(userDetails).forEach((key) => {
 		if (!(excludeField[key] && excludeField.includes(key))) {
+			console.log(userDetails[key]);
 			if (key == "appointments_comment") {
 				if (prefix == "edit") {
 					quillModify.setText(userDetails[key]);
@@ -12,7 +13,7 @@ var setValues = (userDetails, prefix) => {
 					quillView.setText(userDetails[key]);
 				}
 			} else {
-				$(`#${prefix}_${key}`).val(userDetails[key]);
+				$(`#${prefix}_${key}`).val(userDetails[key]).trigger("change");
 			}
 		}
 	});
@@ -21,8 +22,17 @@ var setValues = (userDetails, prefix) => {
 var onDelete = (uuid) => {
 	$("#delete-confirm").data("id", uuid);
 };
-$(function () {
+
+var schedules = [];
+$(async function () {
 	loadBranchDropdown();
+	const { data } = await $.ajax(
+		getAjaxConfig("/staff/schedule", {
+			type: "GET",
+		})
+	);
+	schedules = data;
+
 	const dataTable = $("#appointment-datatable").DataTable(
 		getDataTableConfig({
 			ajax: getAjaxConfig("/staff/appointment", {
@@ -58,7 +68,9 @@ $(function () {
 							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" onclick='setValues(${JSON.stringify(
 								data
 							)}, "view")'> <i class="mdi mdi-account-outline" ></i></a>` +
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>` +
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" onclick='setValues(${JSON.stringify(
+								data
+							)}, "edit")'> <i class="mdi mdi-square-edit-outline"></i></a>` +
 							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" onclick='onDelete("${data.appointments_id}")'> <i class="mdi mdi-delete"></i></a>`
 						);
 					},
@@ -71,12 +83,12 @@ $(function () {
 		event.preventDefault();
 		let formData = new FormData(this);
 		formData.append("appointments_comment", quill.getText());
+		let formDataObject = Object.fromEntries(formData.entries());
 		await $.ajax(
 			getAjaxConfig("/staff/appointment", {
 				type: "POST",
-				data: formData,
-				contentType: false,
-				processData: false,
+				data: JSON.stringify(formDataObject),
+				contentType: "application/json",
 			})
 		);
 		$("#staticBackdrop0").modal("toggle");
@@ -103,12 +115,12 @@ $(function () {
 				}
 			}
 		}
+		let formDataObject = Object.fromEntries(formData.entries());
 		await $.ajax(
 			getAjaxConfig(`/staff/appointment/${userId}`, {
 				type: "PUT",
-				data: formData,
-				contentType: false,
-				processData: false,
+				data: JSON.stringify(formDataObject),
+				contentType: "application/json",
 			})
 		);
 		$("#staticBackdrop2").modal("toggle");
@@ -128,14 +140,24 @@ $(function () {
 	});
 
 	$(document).on("change", ".branch-dropdown", async function () {
+		const selected = $(this).val();
 		const scheduleDropdowns = $(".schedule-dropdown");
 		scheduleDropdowns.each(function () {
 			$(this).html("<option></option>");
 		});
-		const { data } = $.ajax(
-			getAjaxConfig("/staff/schedule", {
-				type: "GET",
-			})
-		);
+
+		scheduleDropdowns.each(function () {
+			$(this).html(
+				[
+					"<option></option>",
+					...schedules
+						.filter((element) => element.schedule_branch === selected)
+						.map(
+							(element) =>
+								`<option value='${element.schedule_id}'>Dr. ${element.sched.users_fname} ${element.sched.users_lname} - ${element.schedule_date} ${element.schedule_start_time} ${element.schedule_end_time}</option>`
+						),
+				].join("")
+			);
+		});
 	});
 });
