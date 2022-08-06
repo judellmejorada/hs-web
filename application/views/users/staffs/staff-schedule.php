@@ -71,7 +71,7 @@
                                         </div>
                 
                                         <div class="table-responsive">
-                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="appointment-datatable">
+                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="schedule-datatable">
                                                 <thead class="table-light">
                                                     <tr>
                                                         <th style="width: 20px;">

@@ -3,21 +3,18 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel9">Add Appointment Information</h5>
+                <h5 class="modal-title" id="staticBackdropLabel9">View Appointment Information</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form id="add-appointment-form" class="needs-validation" novalidate="">
+            <form  class="needs-validation" novalidate="">
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="schedule_dentist">Dentist</label>
-                                <select class="form-select" id="schedule_dentist" name="schedule_dentist" placeholder="Branch" required="">
+                                <select class="form-select" id="view_schedule_dentist" name="schedule_dentist" placeholder="Branch" disabled>
                                     <option></option>
-                                    <option>Dr. Stark</option>
-                                    <option>Dr. McStuffins</option>
-                                    <option>Dr. Quack</option>
-                                    <option>Dr. Dora</option>
+                                  
                                 </select>
                                 <div class="invalid-feedback">
                                     Please choose a Dentist.
@@ -25,7 +22,7 @@
                             </div>
                             <div class="mb-3 col-md-6">
                             <label class="form-label" for="schedule_branch">Branch</label>
-                            <select class="form-select" id="schedule_branch" name="schedule_branch" required="">
+                            <select class="form-select" id="view_schedule_branch" name="schedule_branch"  disabled>
                                 <option></option>
                                 <option>Commonwealth</option>
                                 <option>Novaliches</option>
@@ -42,21 +39,21 @@
                         <div class="row g-2">
                             <div class="col-sm-4">
                                 <label class="form-label" for="schedule_date">Schedule Date</label>
-                                <input type="date" class="form-control" id="schedule_date" name="schedule_date" placeholder="Schedule Date" required="">
+                                <input type="date" class="form-control" id="view_schedule_date" name="schedule_date" placeholder="Schedule Date"disabled>
                                 <div class="invalid-feedback">
                                     Please provide a Schedule Date.
                                 </div>
                             </div>
                             <div class="col-sm-4">
                             <label for="example-time" class="form-label">Start Time</label>
-                                <input class="form-control" id="schedule_start_time" type="time" name="schedule_start_time" placeholder="Start Time" required="">
+                                <input class="form-control" id="view_schedule_start_time" type="time" name="schedule_start_time" placeholder="Start Time" disabled>
                                 <div class="invalid-feedback">
                                     Please provide a Start Time.
                                 </div>
                             </div>
                             <div class="col-sm-4">
                             <label for="example-time" class="form-label">End Time</label>
-                                <input class="form-control" id="schedule_end_time" type="time" name="schedule_end_time" placeholder="End Time" required="">
+                                <input class="form-control" id="view_schedule_end_time" type="time" name="schedule_end_time" placeholder="End Time" disabled>
                                 <div class="invalid-feedback">
                                     Please provide a End Time.
                                 </div>
@@ -65,7 +62,7 @@
 
                         <br>
 
-                        <div class="mb-3">
+                        <!-- <div class="mb-3">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="invalidCheck" required="">
                                 <label class="form-check-label form-label" for="invalidCheck">I confirm that the details that I have 
@@ -74,9 +71,9 @@
                                     You must agree before submitting.
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="modal-footer">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Done</button>
                 </form>
                         </div>
             </div>

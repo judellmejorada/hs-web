@@ -77,12 +77,12 @@ $(function () {
 		event.preventDefault();
 		let formData = new FormData(this);
 		formData.append("branches_description", quill.getText());
+		let formDataObject = Object.fromEntries(formData.entries());
 		await $.ajax(
 			getAjaxConfig("/admin/branch/add-branch", {
 				type: "POST",
-				data: formData,
-				contentType: false,
-				processData: false,
+				data: JSON.stringify(formDataObject),
+				contentType: "application/json",
 			})
 		);
 		$("#staticBackdrop12").modal("toggle");
@@ -109,12 +109,12 @@ $(function () {
 				}
 			}
 		}
+		let formDataObject = Object.fromEntries(formData.entries());
 		await $.ajax(
 			getAjaxConfig(`/admin/branch/${userId}`, {
 				type: "PUT",
-				data: formData,
-				contentType: false,
-				processData: false,
+				data: JSON.stringify(formDataObject),
+				contentType: "application/json",
 			})
 		);
 		$("#staticBackdrop14").modal("toggle");
