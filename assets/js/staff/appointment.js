@@ -22,6 +22,7 @@ var onDelete = (uuid) => {
 	$("#delete-confirm").data("id", uuid);
 };
 $(function () {
+	loadBranchDropdown();
 	const dataTable = $("#appointment-datatable").DataTable(
 		getDataTableConfig({
 			ajax: getAjaxConfig("/staff/appointment", {
@@ -47,7 +48,7 @@ $(function () {
 					data: "appointments_status",
 					render: function (data, type, row, meta) {
 						return `<span class="badge badge-success-lighten">${data}</span>`;
-					},	
+					},
 				},
 				{
 					orderable: !1,
@@ -124,5 +125,17 @@ $(function () {
 		);
 		$("#staticBackdrop3").modal("toggle");
 		dataTable.ajax.reload();
+	});
+
+	$(document).on("change", ".branch-dropdown", async function () {
+		const scheduleDropdowns = $(".schedule-dropdown");
+		scheduleDropdowns.each(function () {
+			$(this).html("<option></option>");
+		});
+		const { data } = $.ajax(
+			getAjaxConfig("/staff/schedule", {
+				type: "GET",
+			})
+		);
 	});
 });
