@@ -61,3 +61,24 @@ const getDataTableConfig = ({ ajax, columns }) => ({
 			'Display <select class=\'form-select form-select-sm ms-1 me-1\'><option value="10">10</option><option value="20">20</option><option value="-1">All</option></select> services',
 	},
 });
+
+const loadBranchDropdown = async () => {
+	const dropdowns = $(".branch-dropdown");
+	const { data } = await $.ajax(
+		getAjaxConfig("/general/branches", {
+			type: "GET",
+		})
+	);
+
+	dropdowns.each(function () {
+		$(this).html(
+			[
+				"<option></option>",
+				...data.map(
+					({ branches_id, branches_name }) =>
+						`<option value="${branches_id}">${branches_name}</option>`
+				),
+			].join("")
+		);
+	});
+};

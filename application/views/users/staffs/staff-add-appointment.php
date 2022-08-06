@@ -12,7 +12,7 @@
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="appointments_branch">Branch</label>
-                                <select class="form-select" id="appointments_branch" name="appointments_branch" placeholder="Branch" required="">
+                                <select class="form-select branch-dropdown" id="appointments_branch" name="appointments_branch" placeholder="Branch" required="">
                                     <option></option>
                                     <option>Commonwealth</option>
                                     <option>Quezon City</option>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="mb-3 col-md-6">
                             <label class="form-label" for="appointments_sched">Appointment Schedule</label>
-                            <select class="form-select" id="appointments_sched" name="appointments_sched" required="">
+                            <select class="form-select schedule-dropdown" id="appointments_sched" name="appointments_sched" required="">
                                 <option></option>
                                 <option>Anne Hathaway - July 28, 2022 8AM</option>
                                 <option>Anne Hathaway - July 28, 2022 9AM</option>
