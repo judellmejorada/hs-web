@@ -25,7 +25,7 @@
         <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
 
         <!-- Exportable Report css -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,af-2.0.0,b-1.0.3,b-colvis-1.0.3,b-html5-1.0.3,b-print-1.0.3,se-1.0.1/datatables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/r/dt/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,af-2.0.0,b-1.0.3,b-colvis-1.0.3,b-html5-1.0.3,b-print-1.0.3,se-1.0.1/datatables.min.css"/>
 
     </head>
 
@@ -149,27 +149,7 @@
         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
         <!-- Exportable Report js -->
-        <script type="text/javascript" src="https://cdn.datatables.net/r/dt/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,af-2.0.0,b-1.0.3,b-colvis-1.0.3,b-html5-1.0.3,b-print-1.0.3,se-1.0.1/datatables.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <script type="text/javascript" language="javascript" >
-        $(document).ready(function(){
-
-        $('#products-datatable').DataTable({
-        "processing" : true,
-        "serverSide" : true,
-        "ajax" : {
-            type:"POST"
-        },
-        dom: 'lBfrtip',
-        buttons: [
-            'excel', 'csv', 'pdf', 'copy'
-        ],
-        "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ]
-        });
-        
-        });
-        
-        </script>
+        <script type="text/javascript" src="//cdn.datatables.net/r/dt/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,af-2.0.0,b-1.0.3,b-colvis-1.0.3,b-html5-1.0.3,b-print-1.0.3,se-1.0.1/datatables.min.js"></script>
 
     </body>
 </html>

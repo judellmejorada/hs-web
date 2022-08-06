@@ -19,6 +19,10 @@ $(function () {
 		getDataTableConfig({
 			ajax: getAjaxConfig("/admin/user/retrieve-users", {
 				type: "GET",
+			},
+			{
+			dom: 'lBfrtip',
+			buttons: ['excel', 'csv', 'pdf', 'copy']
 			}),
 			columns: [
 				{
