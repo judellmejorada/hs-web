@@ -73,13 +73,7 @@
                         </div>
 
                         <br>
-                        <div class="row g-2">
-                            <label class="form-label" for="appointments_comment">Description</label>
-                            <div id="snow-editor-add" style="height: 300px;"  name="appointments_comment" required="" ></div>
-                            <div class="invalid-feedback">
-                                    Please provide a Description.  
-                            </div>
-                        </div>
+                        
 
                         <br>
 
