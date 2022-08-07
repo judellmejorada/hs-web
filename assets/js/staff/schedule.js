@@ -44,10 +44,21 @@ $(function () {
 			}),
 			columns: [
 				{
-					data: "schedule_dentist",
+					data: null,
+					render: function (data, type, row, meta) {
+						const firstname = data.sched ? data.sched.users_fname : "";
+						const lastname = data.sched ? data.sched.users_lname : "";
+						return `Dr. ${firstname} ${lastname}`;
+					},
 				},
 				{
-					data: "schedule_branch",
+					data: null,
+					render: function (data) {
+						const branchName = data.sched_branch
+							? data.sched_branch.branches_name
+							: "";
+						return branchName;
+					},
 				},
 				{
 					data: "schedule_date",
