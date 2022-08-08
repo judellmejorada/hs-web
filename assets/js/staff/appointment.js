@@ -40,7 +40,7 @@ $(async function () {
 			}),
 			columns: [
 				{
-					data: "app_sched",
+					data: "appointments_sched",
 					render: function (data) {
 						return data
 							? data.sched
@@ -50,7 +50,7 @@ $(async function () {
 					},
 				},
 				{
-					data: "branch",
+					data: "appointments_branch",
 					render: function (data) {
 						return data ? data.branches_name : "";
 					},
