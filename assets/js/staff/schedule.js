@@ -85,12 +85,12 @@ $(function () {
 	$(document).on("submit", "#add-schedule-form", async function (event) {
 		event.preventDefault();
 		let formData = new FormData(this);
+		let formDataObject = Object.fromEntries(formData.entries());
 		await $.ajax(
 			getAjaxConfig("/staff/schedule", {
 				type: "POST",
-				data: formData,
-				contentType: false,
-				processData: false,
+				data: JSON.stringify(formDataObject),
+				contentType: "application/json",
 			})
 		);
 		$("#staticBackdrop8").modal("toggle");
@@ -113,12 +113,12 @@ $(function () {
 				}
 			}
 		}
+		let formDataObject = Object.fromEntries(formData.entries());
 		await $.ajax(
 			getAjaxConfig(`/staff/schedule/${userId}`, {
 				type: "PUT",
-				data: formData,
-				contentType: false,
-				processData: false,
+				data: JSON.stringify(formDataObject),
+				contentType: "application/json",
 			})
 		);
 		$("#staticBackdrop10").modal("toggle");
@@ -132,7 +132,7 @@ $(function () {
 				type: "DELETE",
 			})
 		);
-		$("#staticBackdrop11").modsal("toggle");
+		$("#staticBackdrop11").modal("toggle");
 		dataTable.ajax.reload();
 	});
 });
