@@ -51,7 +51,10 @@ $(function () {
 				{
 					data: "branches_status",
 					render: function (data, type, row, meta) {
-						return `<span class="badge badge-success-lighten">${data}</span>`;
+						console.log(data);
+						return data == "Open" || data == "Approved"
+							? `<span class="badge badge-success-lighten">${data}</span>`
+							: `<span class="badge badge-danger-lighten">${data}</span>`;
 					},
 				},
 				{

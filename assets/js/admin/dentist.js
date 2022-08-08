@@ -60,7 +60,14 @@ $(function () {
 				{
 					data: "dentists_status",
 					render: function (data, type, row, meta) {
-						return `<span class="badge badge-success-lighten">${data}</span>`;
+						console.log(data);
+						if (data == "Approved") {
+							return `<span class="badge badge-success-lighten">${data}</span>`;
+						} else if (data == "Pending") {
+							return `<span class="badge badge-warning-lighten">${data}</span>`;
+						} else {
+							return `<span class="badge badge-danger-lighten">${data}</span>`;
+						}
 					},
 				},
 				{

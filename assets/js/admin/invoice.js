@@ -42,14 +42,23 @@ $(function () {
 				},
 				{
 					data: "invoices_discount",
+					render: function (data) {
+						return `<span> ${data} &#37;</span>`;
+					},
 				},
 				{
 					data: "grand_total",
+					render: function (data) {
+						return `<span><b>&#x20B1;</b> ${data}</span>`;
+					},
 				},
 				{
 					data: "invoices_status",
 					render: function (data, type, row, meta) {
-						return `<span class="badge badge-success-lighten">${data}</span>`;
+						console.log(data);
+						return data === "Paid"
+							? `<span class="badge badge-success-lighten">${data}</span>`
+							: `<span class="badge badge-danger-lighten">${data}</span>`;
 					},
 				},
 				{

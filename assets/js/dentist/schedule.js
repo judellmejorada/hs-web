@@ -39,7 +39,10 @@ $(function () {
 				{
 					data: null,
 					render: function (data, type, row, meta) {
-						return `<span>${data.created.users_status}</span>`;
+						console.log(data.created.users_status);
+						return data.created.users_status == "Active"
+							? `<span class="badge badge-success-lighten">${data.created.users_status}</span>`
+							: `<span class="badge badge-danger-lighten">${data.created.users_status}</span>`;
 					},
 				},
 			],
