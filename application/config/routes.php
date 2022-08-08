@@ -85,8 +85,6 @@ $route['staff/schedule'] = 'Staff_Schedule/SchedulePage';
 
 //Dentist Files
 $route['dentist'] = 'Dentist_Calendar/CalendarPage';
-$route['dentist/appointment'] = 'Dentist_Appointment/AppointmentPage';
-$route['dentist/add-appointment'] = 'Dentist_Add_Appointment/AddAppointment';
 $route['dentist/calendar'] = 'Dentist_Calendar/CalendarPage';
 $route['dentist/schedule'] = 'Dentist_Schedule/SchedulePage';
 
