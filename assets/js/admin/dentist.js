@@ -38,10 +38,16 @@ $(function () {
 				},
 				{
 					// birth day not available
-					data: "dentists_lname",
+					data: "dentists_mname",
 					// render: function (data, type, row, meta) {
 					// 	return "N/A";
 					// },
+				},
+				{
+					data: "dentists_lname",
+				},
+				{
+					data: "dentists_specialty",
 				},
 				{
 					data: "dentists_description",
@@ -49,15 +55,6 @@ $(function () {
 						return `<span class="text-break">${
 							data.substring(0, 50) + "..."
 						}</span>`;
-					},
-				},
-				{
-					data: "dentists_specialty",
-				},
-				{
-					data: null,
-					render: function (data, type, row, meta) {
-						return "N/A";
 					},
 				},
 				{
@@ -89,14 +86,21 @@ $(function () {
 		event.preventDefault();
 		let formData = new FormData(this);
 		formData.append("dentists_description", quill.getText());
-		await $.ajax(
-			getAjaxConfig("/admin/dentist/add-featured-dentist", {
-				type: "POST",
-				data: formData,
-				contentType: false,
-				processData: false,
-			})
-		);
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig("/admin/dentist/add-featured-dentist", {
+					type: "POST",
+					data: formData,
+					contentType: false,
+					processData: false,
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
 		$("#staticBackdrop8").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
@@ -121,14 +125,21 @@ $(function () {
 				}
 			}
 		}
-		await $.ajax(
-			getAjaxConfig(`/admin/dentist/${userId}`, {
-				type: "PUT",
-				data: formData,
-				contentType: false,
-				processData: false,
-			})
-		);
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/admin/dentist/${userId}`, {
+					type: "PUT",
+					data: formData,
+					contentType: false,
+					processData: false,
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
 		$("#staticBackdrop10").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
@@ -136,11 +147,19 @@ $(function () {
 
 	$(document).on("click", "#delete-confirm", async function (event) {
 		const id = $(this).data("id");
-		await $.ajax(
-			getAjaxConfig(`/admin/dentist/${id}`, {
-				type: "DELETE",
-			})
-		);
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/admin/dentist/${id}`, {
+					type: "DELETE",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+
 		$("#staticBackdrop11").modal("toggle");
 		dataTable.ajax.reload();
 	});

@@ -92,15 +92,27 @@ $(async function () {
 	$(document).on("submit", "#add-appointment-form", async function (event) {
 		event.preventDefault();
 		let formData = new FormData(this);
-		formData.append("appointments_comment", quill.getText());
+		// formData.append("appointments_comment", quill.getText());
 		let formDataObject = Object.fromEntries(formData.entries());
-		await $.ajax(
-			getAjaxConfig("/staff/appointment", {
-				type: "POST",
-				data: JSON.stringify(formDataObject),
-				contentType: "application/json",
-			})
-		);
+
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig("/staff/appointment", {
+					type: "POST",
+					data: JSON.stringify(formDataObject),
+					contentType: "application/json",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			const { responseJSON } = error;
+			notification(
+				"error",
+				"Oops! An error occurs",
+				responseJSON.errors[0].message
+			);
+		}
 		$("#staticBackdrop0").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
@@ -126,13 +138,22 @@ $(async function () {
 			}
 		}
 		let formDataObject = Object.fromEntries(formData.entries());
-		await $.ajax(
-			getAjaxConfig(`/staff/appointment/${userId}`, {
-				type: "PUT",
-				data: JSON.stringify(formDataObject),
-				contentType: "application/json",
-			})
-		);
+
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/staff/appointment/${userId}`, {
+					type: "PUT",
+					data: JSON.stringify(formDataObject),
+					contentType: "application/json",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+
 		$("#staticBackdrop2").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
@@ -140,11 +161,19 @@ $(async function () {
 
 	$(document).on("click", "#delete-confirm", async function (event) {
 		const id = $(this).data("id");
-		await $.ajax(
-			getAjaxConfig(`/staff/appointment/${id}`, {
-				type: "DELETE",
-			})
-		);
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/staff/appointment/${id}`, {
+					type: "DELETE",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+
 		$("#staticBackdrop3").modal("toggle");
 		dataTable.ajax.reload();
 	});

@@ -19,7 +19,7 @@
                         </div>
                         <div class="col-sm-4">
                             <label class="form-label" for="users_mname">Middle Name</label>
-                            <input type="text" class="form-control" id="users_mname" name="users_mname" placeholder="Last Name" required="">
+                            <input type="text" class="form-control" id="dentists_mname" name="dentists_mname" placeholder="Last Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a Middle Name.
                             </div>

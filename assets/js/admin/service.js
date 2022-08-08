@@ -71,14 +71,27 @@ $(function () {
 		event.preventDefault();
 		let formData = new FormData(this);
 		formData.append("services_description", quill.getText());
-		await $.ajax(
-			getAjaxConfig("/admin/service/add-service", {
-				type: "POST",
-				data: formData,
-				contentType: false,
-				processData: false,
-			})
-		);
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig("/admin/service/add-service", {
+					type: "POST",
+					data: formData,
+					contentType: false,
+					processData: false,
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			console.error(error);
+			const { responseJSON } = error;
+			notification(
+				"error",
+				"Oops! An error occurs",
+				responseJSON.errors[0].message
+			);
+		}
+
 		$("#staticBackdrop4").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
@@ -103,14 +116,23 @@ $(function () {
 				}
 			}
 		}
-		await $.ajax(
-			getAjaxConfig(`/admin/service/${userId}`, {
-				type: "PUT",
-				data: formData,
-				contentType: false,
-				processData: false,
-			})
-		);
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/admin/service/${userId}`, {
+					type: "PUT",
+					data: formData,
+					contentType: false,
+					processData: false,
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			console.error(error);
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+
 		$("#staticBackdrop6").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
@@ -118,11 +140,20 @@ $(function () {
 
 	$(document).on("click", "#delete-confirm", async function (event) {
 		const id = $(this).data("id");
-		await $.ajax(
-			getAjaxConfig(`/admin/service/${id}`, {
-				type: "DELETE",
-			})
-		);
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/admin/service/${id}`, {
+					type: "DELETE",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			console.error(error);
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+
 		$("#staticBackdrop7").modal("toggle");
 		dataTable.ajax.reload();
 	});

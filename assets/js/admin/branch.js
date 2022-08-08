@@ -78,13 +78,22 @@ $(function () {
 		let formData = new FormData(this);
 		formData.append("branches_description", quill.getText());
 		let formDataObject = Object.fromEntries(formData.entries());
-		await $.ajax(
-			getAjaxConfig("/admin/branch/add-branch", {
-				type: "POST",
-				data: JSON.stringify(formDataObject),
-				contentType: "application/json",
-			})
-		);
+
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig("/admin/branch/add-branch", {
+					type: "POST",
+					data: JSON.stringify(formDataObject),
+					contentType: "application/json",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			console.error(error);
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
 		$("#staticBackdrop12").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
@@ -110,13 +119,21 @@ $(function () {
 			}
 		}
 		let formDataObject = Object.fromEntries(formData.entries());
-		await $.ajax(
-			getAjaxConfig(`/admin/branch/${userId}`, {
-				type: "PUT",
-				data: JSON.stringify(formDataObject),
-				contentType: "application/json",
-			})
-		);
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/admin/branch/${userId}`, {
+					type: "PUT",
+					data: JSON.stringify(formDataObject),
+					contentType: "application/json",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+
 		$("#staticBackdrop14").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
@@ -124,11 +141,20 @@ $(function () {
 
 	$(document).on("click", "#delete-confirm", async function (event) {
 		const id = $(this).data("id");
-		await $.ajax(
-			getAjaxConfig(`/admin/branch/${id}`, {
-				type: "DELETE",
-			})
-		);
+
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/admin/branch/${id}`, {
+					type: "DELETE",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+
 		$("#staticBackdrop15").modal("toggle");
 		dataTable.ajax.reload();
 	});

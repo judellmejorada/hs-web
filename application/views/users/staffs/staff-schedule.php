@@ -133,6 +133,11 @@
         <script src="<?php echo base_url('assets')?>/js/pages/demo.appointment.js"></script>
         <script src="<?php echo base_url('assets')?>/js/staff/schedule.js"></script>
         <!-- end demo js-->
+
+         <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
+
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>
         <!-- quill Init js-->
