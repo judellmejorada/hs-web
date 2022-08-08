@@ -117,7 +117,9 @@
 
         </div>
         <!-- END wrapper -->
-
+        <?php include ('staff-view-invoice.php');?>
+        <?php include ('staff-modify-invoice.php');?>
+        <?php include ('staff-delete-invoice.php');?>
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
