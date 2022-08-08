@@ -134,7 +134,7 @@
                                             <div class="col-sm-4 offset-7">
                                             <div class="text-end">
                                                 <a href="javascript:window.print()" class="btn btn-primary"><i class="mdi mdi-printer"></i> Print</a>
-                                                <a href="javascript: void(0);" class="btn btn-info">Submit</a>
+                                                <a href="javascript: void(0);" id="edit-invoice-button" class="btn btn-info">Submit</a>
                                                 <p></p>
                                             </div>
                                             </div>

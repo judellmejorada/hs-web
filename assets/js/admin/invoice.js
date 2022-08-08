@@ -192,4 +192,62 @@ $(function () {
 		$("#staticBackdrop16").modal("toggle");
 		dataTable.ajax.reload();
 	});
+
+	$(document).on("click", "#edit-invoice-button", async function () {
+		const reqBody = {
+			invoices_branches: $("#add-branch-dropdown").val(),
+			invoices_issued_to: $("#invoices_issued_to").val(),
+			invoices_description: $("#appointments_comment").val(),
+			invoices_services: services.map(({ id, ...obj }) => obj),
+			total_after_discount: Number($("#grand_total").val()),
+			invoices_discount: Number($("#invoices_discount").val()),
+			grand_total: Number($("#total_after_discount").val()),
+			invoices_status: "Paid",
+		};
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig("/admin/invoices/add-invoice", {
+					type: "PUT",
+					data: reqBody,
+				})
+			);
+			notification("success", "Success", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+
+		$("#staticBackdrop18").modal("toggle");
+		dataTable.ajax.reload();
+	});
+
+	$(document).on("click", "#delete-confirm", async function () {
+		const reqBody = {
+			invoices_branches: $("#add-branch-dropdown").val(),
+			invoices_issued_to: $("#invoices_issued_to").val(),
+			invoices_description: $("#appointments_comment").val(),
+			invoices_services: services.map(({ id, ...obj }) => obj),
+			total_after_discount: Number($("#grand_total").val()),
+			invoices_discount: Number($("#invoices_discount").val()),
+			grand_total: Number($("#total_after_discount").val()),
+			invoices_status: "Paid",
+		};
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig("/admin/invoices/add-invoice", {
+					type: "DELETE",
+					data: reqBody,
+				})
+			);
+			notification("success", "Success", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+
+		$("#staticBackdrop19").modal("toggle");
+		dataTable.ajax.reload();
+	});
 });
