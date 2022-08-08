@@ -182,14 +182,14 @@ $(function () {
 					data: reqBody,
 				})
 			);
-			notification("success", "Sucess", message);
+			notification("success", "Success", message);
 			dataTable.ajax.reload();
 		} catch (error) {
 			const { responseJSON } = error;
 			notification("error", "Oops! An error occurs", responseJSON.message);
 		}
 
-		dataTable.ajax.reload();
 		$("#staticBackdrop19").modal("toggle");
+		dataTable.ajax.reload();
 	});
 });
