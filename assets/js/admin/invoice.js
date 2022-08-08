@@ -189,7 +189,7 @@ $(function () {
 			notification("error", "Oops! An error occurs", responseJSON.message);
 		}
 
-		$("#staticBackdrop19").modal("toggle");
+		$("#staticBackdrop16").modal("toggle");
 		dataTable.ajax.reload();
 	});
 });
