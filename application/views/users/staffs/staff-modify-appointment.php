@@ -15,40 +15,39 @@
                                 <label class="form-label" for="branches_name">Branch</label>
                                 <select class="form-select branch-dropdown" id="edit_appointments_branch" name="appointments_branch" placeholder="Branch" required="">
                                     <option></option>
-                                    <option value="Commonwealth">Commonwealth</option>
-                                    <option value="Quezon City">Quezon City</option>
-                                    <option value="Barbie">Barbie</option>
-                                    <option value="Kylie">Kylie</option>
+                                    <option>Commonwealth</option>
+                                    <option>Quezon City</option>
+                                    <option>Novaliches</option>
+                                    <option>Zabarte</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please choose a Branch.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom01">Appointment Schedule</label>
-                            <select class="form-select schedule-dropdown" id="validationCustom00" required="">
+                            <label class="form-label" for="appointments_sched">Appointment Schedule</label>
+                            <select class="form-select schedule-dropdown" id="view_appointments_sched" name="appointments_sched" required="">
                                 <option></option>
                                 <option>Anne Hathaway - July 28, 2022 8AM</option>
                                 <option>Anne Hathaway - July 28, 2022 9AM</option>
                                 <option>Lora Joy - July 28, 2022 11AM</option>
                             </select>
-                            <!-- <input class="form-control" id="edit_appointments_sched" type="date" name="appointments_sched" required=""> -->
-                            <div class="invalid-feedback">
-                                Please provide a Appointment Date.
+                                <div class="invalid-feedback">
+                                    Please provide a Appointment Date.
+                                </div>
                             </div>
-                        </div>
                         </div>            
                         
                         <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom03">Appointment Purpose</label>
-                                <input type="text" class="form-control" id="edit_appointments_purpose" placeholder="appointments_purpose" required="">
+                                <label class="form-label" for="appointments_purpose">Appointment Purpose</label>
+                                <input type="text" class="form-control" id="edit_appointments_purpose" name="appointments_purpose" placeholder="appointments_purpose" required="">
                                 <div class="invalid-feedback">
                                     Please provide an Appointment Purpose.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom03">Status</label>
+                                <label class="form-label" for="appointments_status">Status</label>
                                 <select type="text" class="form-select" id="edit_appointments_status"  name="appointments_status" placeholder="Status" required="">
                                     <option></option>
                                     <option value="Approved">Approved</option>
@@ -62,7 +61,7 @@
                         </div>  
 
                         <div class="row g-2">
-                                <label class="form-label" for="validationCustom04">Success</label>
+                                <label class="form-label" for="appointments_success">Success</label>
                                 <select class="form-select" id="edit_appointments_success" name="appointments_success"required="">
                                     <option></option>
                                     <option value="Success">Yes</option>
@@ -74,7 +73,7 @@
                         </div>
 
                         <div class="row g-2">
-                            <label class="form-label" for="validationCustom03">Comment</label>
+                            <label class="form-label" for="appointments_comment">Comment</label>
                             <div id="snow-editor-modify" style="height: 300px;" name="appointments_comment" required="" ></div>
                             <div class="invalid-feedback">
                                     Please provide a Comment.  
