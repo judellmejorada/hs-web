@@ -66,7 +66,7 @@
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <a href="javascript:void(0);" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop0"><i class="mdi mdi-plus-circle me-2"></i> Add Invoice</a>
+                                                <a href="javascript:void(0);" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop16"><i class="mdi mdi-plus-circle me-2"></i> Add Invoice</a>
                                                 <?php include('admin-add-invoices.php')?>
                                             </div><!-- end col-->
                                         </div>
