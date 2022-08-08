@@ -42,14 +42,14 @@
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                            <label for="example-time" class="form-label">Start Time</label>
+                            <label for="schedule_start_time" class="form-label">Start Time</label>
                                 <input class="form-control" id="schedule_start_time" type="time" name="schedule_start_time" placeholder="Start Time" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Start Time.
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                            <label for="example-time" class="form-label">End Time</label>
+                            <label for="schedule_end_time" class="form-label">End Time</label>
                                 <input class="form-control" id="schedule_end_time" type="time" name="schedule_end_time" placeholder="End Time" required="">
                                 <div class="invalid-feedback">
                                     Please provide a End Time.

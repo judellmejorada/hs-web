@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel9">Edit Appointment Information</h5>
+                <h5 class="modal-title" id="staticBackdropLabel10">Edit Appointment Information</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div> <!-- end modal header -->
             <div class="modal-body">
@@ -41,14 +41,14 @@
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                            <label for="example-time" class="form-label">Start Time</label>
+                            <label for="schedule_start_time" class="form-label">Start Time</label>
                                 <input class="form-control" id="edit_schedule_start_time" type="time" name="schedule_start_time" placeholder="Start Time" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Start Time.
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                            <label for="example-time" class="form-label">End Time</label>
+                            <label for="schedule_end_time" class="form-label">End Time</label>
                                 <input class="form-control" id="edit_schedule_end_time" type="time" name="schedule_end_time" placeholder="End Time" required="">
                                 <div class="invalid-feedback">
                                     Please provide a End Time.

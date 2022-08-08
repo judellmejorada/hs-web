@@ -8,7 +8,7 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form class="needs-validation" novalidate="">
+            <form id="view-invoices-form" class="needs-validation" novalidate="">
             <div class="clearfix">
                                             <div class="float-start mb-3">
                                                 <img src="<?php echo base_url('assets')?>/images/logos/HSBW.PNG" alt="" height="100">

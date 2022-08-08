@@ -38,15 +38,15 @@
                         </div>
                         </div>            
                         
-                        <div class="row g-2">
-                            <div class="mb-3 col-md-6">
+                        <div class="row g-3">
+                            <div class="col-sm-4">
                                 <label class="form-label" for="appointments_purpose">Appointment Purpose</label>
                                 <input type="text" class="form-control" id="appointments_purpose" name="appointments_purpose" placeholder="Appointment Purpose" required="">
                                 <div class="invalid-feedback">
                                     Please provide an Appointment Purpose.
                                 </div>
                             </div>
-                            <div class="mb-3 col-md-6">
+                            <div class="col-sm-4">
                                 <label class="form-label" for="appointments_status">Status</label>
                                 <select type="text" class="form-select" id="appointments_status" name="appointments_status" placeholder="Status" required="">
                                     <option></option>
@@ -58,9 +58,7 @@
                                     Please provide a Status.
                                 </div>
                             </div>
-                        </div>  
-
-                        <div class="row g-2">
+                            <div class="col-sm-4">
                                 <label class="form-label" for="appointments_success">Success</label>
                                 <select class="form-select" id="appointments_success" name="appointments_success" required="">
                                     <option></option>
@@ -70,10 +68,18 @@
                                 <div class="invalid-feedback">
                                     Please choose an option.
                                 </div>
-                        </div>
+                            </div>
+                        </div>  
 
                         <br>
-                        
+
+                        <div class="row g-2">
+                            <label class="form-label" for="appointments_comment">Comment</label>
+                            <div id="snow-editor-add" name="appointments_comment" style="height: 300px;" required="" ></div>
+                            <div class="invalid-feedback">
+                                    Please provide a Comment.  
+                            </div>
+                        </div>
 
                         <br>
 

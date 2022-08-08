@@ -66,7 +66,7 @@
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <a href="javascript:void(0);" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop0"><i class="mdi mdi-plus-circle me-2"></i> Add Invoice</a>
+                                                <a href="javascript:void(0);" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop16"><i class="mdi mdi-plus-circle me-2"></i> Add Invoice</a>
                                                 <?php include('admin-add-invoices.php')?>
                                             </div><!-- end col-->
                                         </div>
@@ -114,24 +114,14 @@
 
         </div>
         <!-- END wrapper -->
-
         <?php include ('admin-view-invoices.php');?>
         <?php include ('admin-modify-invoice.php');?>
         <?php include ('admin-delete-invoice.php');?>
+        
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
-
-         <!--table export-->
-         <script src="//code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-        <script src="//cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-        <script src="//cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
-        <script src="//cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
         
         <!-- third party js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/jquery.dataTables.min.js"></script>

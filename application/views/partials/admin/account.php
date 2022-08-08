@@ -127,7 +127,7 @@ $(function () {
             type: "GET"
         }));
 
-        $("#profile_users_profile_pic").attr("src",`${baseURLUserProfile}/data.users_profile_pic`);
+        $("#profile_users_profile_pic").attr("src",`${baseURLUserProfile}/${data.users_profile_pic}`);
         $("#users_fullname").text(`${data.users_fname} ${data.users_mname} ${data.users_lname}`);
         $("#profile_role").text(data.users_type)
 

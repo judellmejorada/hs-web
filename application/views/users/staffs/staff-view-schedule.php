@@ -29,7 +29,6 @@
                                 <option>Quezon City</option>
                                 <option>Zabarte</option>
                             </select>
-                            <!-- <input class="form-control" id="validationCustom01" type="date" name="appointments_sched" required=""> -->
                             <div class="invalid-feedback">
                                 Please provide a Branch.
                             </div>
@@ -61,17 +60,7 @@
                         </div>  
 
                         <br>
-
-                        <!-- <div class="mb-3">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="invalidCheck" required="">
-                                <label class="form-check-label form-label" for="invalidCheck">I confirm that the details that I have 
-                                provided in this Personal Information are correct, <br> and that I have not deliberately withheld any relevant information. </label>
-                                <div class="invalid-feedback">
-                                    You must agree before submitting.
-                                </div>
-                            </div>
-                        </div> -->
+                        
                         <div class="modal-footer">
                     <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Done</button>
                 </form>
