@@ -46,9 +46,10 @@
                                 <div class ="badge badge-success-lighten"> <?php echo $_SESSION ['success'];?></div>
                                 <?php echo validation_errors('<div class="badge badge-danger-lighten">', '</div>');?>
                                 <form action="" method="POST" class="needs-validation" id="form_register" novalidate="" enctype="multipart/form-data">
+                                    <input type="hidden" name="users_google_id" value="<?=$_GET["users_google_id"]?>">
                                     <div class="mb-3">
                                         <label for="users_fname" class="form-label">First Name</label>
-                                        <input class="form-control" type="text" id="users_fname" name="users_fname" placeholder="Enter your First name" required="">
+                                        <input class="form-control" type="text" id="users_fname" name="users_fname" placeholder="Enter your First name" required="" value="<?=$_GET["users_fname"]?>">
                                         <div class="invalid-feedback">
                                             Please provide a First Name.
                                         </div>
@@ -63,7 +64,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="users_lname" class="form-label">Last Name</label>
-                                        <input class="form-control" type="text" id="users_lname" name="users_lname" placeholder="Enter your Last name" required="">
+                                        <input class="form-control" type="text" id="users_lname" name="users_lname" placeholder="Enter your Last name" required="" value="<?=$_GET["users_lname"]?>">
                                         <div class="invalid-feedback">  
                                             Please provide a Last Name.
                                         </div>
@@ -126,7 +127,7 @@
                                         </div>     
                                     <div class="mb-3">
                                         <label for="users_email" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="users_email" name="users_email" placeholder="Enter your email" required="">
+                                        <input class="form-control" type="email" id="users_email" name="users_email" placeholder="Enter your email" required="" value="<?=$_GET["users_email"]?>">
                                         <div class="invalid-feedback">
                                                 Please provide an Email Address.
                                         </div>

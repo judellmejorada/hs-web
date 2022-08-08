@@ -7,7 +7,6 @@
         <title>Log In | HappySmile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="HappySmile-DCMS" name="GROUP 4" />
-        <meta name="google-signin-client_id" content="571024945258-upg6e23flnqunsnci7qsv49uqprps8ud.apps.googleusercontent.com">
         <!-- App favicon -->
         <link rel="shortcut icon" href="<?php echo base_url('assets')?>/images/logos/HappySmile.ico">
         
@@ -74,12 +73,9 @@
                                         <ul class="social-list list-inline mt-3">
 
                                             <li class="list-inline-item">
-                                                <div id="g_id_onload"
-                                                    data-client_id="396871420773-jlgcrmdeu5209jkuo5ln8bidrn0toh37.apps.googleusercontent.com"
-                                                    data-ux_mode="redirect"
-                                                    data-login_uri="https://happysmile-web.herokuapp.com/patient">
-                                                </div>
-                                                <i class="g_id_signin" data-type="standard" data-width="210" data-height="30" data-longtitle="false"></i>
+                                            <div id="g_id_onload" data-client_id="921736142923-g9ireci46aghfl88mc6moqkmr6ufmkfp.apps.googleusercontent.com" data-callback="onSignIn">
+                                            </div>
+                                                <div class="g_id_signin" data-type="standard"></div>
                                             </li>
 
                                         <p class="text-muted font-12" text-align:left;>By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>
@@ -130,8 +126,7 @@
          <script src="<?php echo base_url('assets')?>/js/access/login.js"></script>
         
         <!-- google library, js and cdn jquery -->
-         <script src="https://accounts.google.com/gsi/client" async defer></script>
-         <script src="<?php echo base_url('assets')?>/js/google.js"></script>
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
          
         <!-- parsley -->
@@ -140,7 +135,43 @@
         <!-- toaster js -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
         <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
+        <script>
+            function onSignIn({ credential }) {
+                const { given_name, family_name, email, sub } = parseJwt(credential);
+			
+                $.ajax({
+                    url: baseURL + "/login",
+                    type: "POST",
+                    data: {
+                        users_email: email,
+                        users_google_id: sub
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        console.log("success");
+                        console.log(data);
+                        setLocalData(data);
+                        let session_data = "";
 
+                        session_data += "token=" + data.token;
+                        session_data += "&users_type=" + data.data.users_type;
+                        session_data += "&users_fname=" + data.data.users_fname;
+                        session_data += "&users_mname=" + data.data.users_mname;
+                        session_data += "&users_lname=" + data.data.users_lname;
+                        session_data += "&users_full_name=" + data.data.users_full_name;
+                        session_data += "&users_profile_pic=" + data.data.users_profile_pic;
+                        session_data += "&users_email=" + data.data.users_email;
+
+                        window.location.replace("/Access/oAuth?" + session_data);
+                    },
+                    error: function ({ responseJSON: { error } }) {
+                        if(error) {
+                            window.location.replace(`/register?users_email=${email}&users_fname=${given_name}&users_lname=${family_name}&users_google_id=${sub}`);
+                        }
+                    },
+                });
+        }
+        </script>
        
         
     </body>
