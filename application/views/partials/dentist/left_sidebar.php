@@ -28,8 +28,6 @@
                         <li class="side-nav-title side-nav-item">DENTIST</li>
 
 
-                        
-
                             <a data-bs-toggle="" href="<?php echo base_url('dentist/calendar')?>" class="side-nav-link">
                                 <i class="uil-calendar-alt"></i>
                                 <span> Calendar </span>
