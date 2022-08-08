@@ -30,10 +30,7 @@ $(function () {
 				},
 				{
 					// birth day not available
-					data: null,
-					render: function (data, type, row, meta) {
-						return "N/A";
-					},
+					data: "users_birthdate",
 				},
 				{
 					data: "users_gender",
