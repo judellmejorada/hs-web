@@ -8,7 +8,7 @@
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form class="needs-validation" novalidate="">
+            <form id="view-appointment-form" class="needs-validation" novalidate="">
             <div class="row g-2">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="branches_name">Branch</label>
@@ -16,15 +16,15 @@
                                     <option></option>
                                     <option>Commonwealth</option>
                                     <option>Quezon City</option>
-                                    <option>Barbie</option>
-                                    <option>Kylie</option>
+                                    <option>Novaliches</option>
+                                    <option>Cubao</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please choose a Branch.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom01">Appointment Schedule</label>
+                            <label class="form-label" for="view_appointments_sched">Appointment Schedule</label>
                             <input class="form-control" type="text" id="view_appointments_sched" name="appointments_sched" readonly="">
                             <div class="invalid-feedback">
                                 Please provide a Appointment Date.
@@ -34,14 +34,14 @@
                         
                         <div class="row g-2">
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom03">Appointment Purpose</label>
+                                <label class="form-label" for="view_appointments_purpose">Appointment Purpose</label>
                                 <input type="text" class="form-control" id="view_appointments_purpose" name="appointments_purpose" placeholder="Appointment Purpose" readonly="">
                                 <div class="invalid-feedback">
                                     Please provide an Appointment Purpose.
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom03">Status</label>
+                                <label class="form-label" for="view_appointments_status">Status</label>
                                 <select type="text" class="form-select" id="view_appointments_status" name="appointments_status" placeholder="Status" readonly="" disabled="">
                                     <option></option>
                                     <option>Approved</option>
@@ -55,7 +55,7 @@
                         </div>  
 
                         <div class="row g-2">
-                                <label class="form-label" for="validationCustom04">Success</label>
+                                <label class="form-label" for="view_appointments_success">Success</label>
                                 <select class="form-select" id="view_appointments_success" name="appointments_success" readonly="">
                                     <option></option>
                                     <option>Yes</option>
@@ -67,7 +67,7 @@
                         </div>
 
                         <div class="row g-2">
-                            <label class="form-label" for="validationCustom03">Comment</label>
+                            <label class="form-label" for="appointments_comment">Comment</label>
                             <div id="snow-editor-view" style="height: 300px;" readonly="" name="appointments_comment" ></div>
                             <div class="invalid-feedback">
                                     Please provide a Comment.  

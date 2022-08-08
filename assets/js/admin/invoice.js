@@ -190,6 +190,6 @@ $(function () {
 		}
 
 		dataTable.ajax.reload();
-		$("#staticBackdrop19").modal("toggle");
+		$("#staticBackdrop0").modal("toggle");
 	});
 });
