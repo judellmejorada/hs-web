@@ -56,11 +56,11 @@
                                     <div class="card-body">
                                         <div class="row align-items-center">
                                             <div class="col-6">
-                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Campaign Sent">Patients Today</h5>
-                                                <h3 class="my-2 py-1">9,184</h3>
-                                                <p class="mb-0 text-muted">
+                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Campaign Sent">Patients</h5>
+                                                <h3 id="patient" class="my-2 py-1">9,184</h3>
+                                                <!-- <p class="mb-0 text-muted">
                                                     <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 3.27%</span>
-                                                </p>
+                                                </p> -->
                                             </div>
                                             <div class="col-6">
                                                 <div class="text-end">
@@ -77,11 +77,11 @@
                                     <div class="card-body">
                                         <div class="row align-items-center">
                                             <div class="col-6">
-                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="New Leads">Patients this Week</h5>
-                                                <h3 class="my-2 py-1">3,254</h3>
-                                                <p class="mb-0 text-muted">
+                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="New Leads">Staffs</h5>
+                                                <h3 id="staff" class="my-2 py-1">3,254</h3>
+                                                <!-- <p class="mb-0 text-muted">
                                                     <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i> 5.38%</span>
-                                                </p>
+                                                </p> -->
                                             </div>
                                             <div class="col-6">
                                                 <div class="text-end">
@@ -98,11 +98,11 @@
                                     <div class="card-body">
                                         <div class="row align-items-center">
                                             <div class="col-6">
-                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Deals">Patients this Month</h5>
-                                                <h3 class="my-2 py-1">861</h3>
-                                                <p class="mb-0 text-muted">
+                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Deals">Dentist</h5>
+                                                <h3 id="dentist" class="my-2 py-1"></h3>
+                                                <!-- <p class="mb-0 text-muted">
                                                     <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 4.87%</span>
-                                                </p>
+                                                </p> -->
                                             </div>
                                             <div class="col-6">
                                                 <div class="text-end">
@@ -119,11 +119,11 @@
                                     <div class="card-body">
                                         <div class="row align-items-center">
                                             <div class="col-6">
-                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Booked Revenue">Patients this Year</h5>
-                                                <h3 class="my-2 py-1">253k</h3>
-                                                <p class="mb-0 text-muted">
+                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Booked Revenue">Admin</h5>
+                                                <h3 id="admin" class="my-2 py-1"></h3>
+                                                <!-- <p class="mb-0 text-muted">
                                                     <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 11.7%</span>
-                                                </p>
+                                                </p> -->
                                             </div>
                                             <div class="col-6">
                                                 <div class="text-end">
@@ -369,6 +369,7 @@
         <!-- END wrapper -->
         
         <!-- bundle -->
+        <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
         <script src="<?php echo base_url('assets')?>/js/app.min.js"></script>
 
@@ -384,6 +385,8 @@
         <!-- demo js -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
         <!-- end demo js-->
+
+        <script src="<?php echo base_url('assets')?>/js/admin/dashboard.js"></script>
     </body>
     
 </html>
