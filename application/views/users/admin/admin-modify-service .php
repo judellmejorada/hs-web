@@ -29,7 +29,7 @@
                                 <label class="form-label" for="services_status">Status</label>
                                 <select type="text" class="form-select" id="edit_services_status" name="services_status" placeholder="Status" required="">
                                     <option value=""></option>
-                                    <option value="Active">Approved</option>
+                                    <option value="Approved">Approved</option>
                                     <option value="Disapproved">Disapproved</option>
                                     <option value="Pending">Pending</option>
                                 </select>

@@ -97,13 +97,21 @@ $(function () {
 		event.preventDefault();
 		let formData = new FormData(this);
 		let formDataObject = Object.fromEntries(formData.entries());
-		await $.ajax(
-			getAjaxConfig("/staff/schedule", {
-				type: "POST",
-				data: JSON.stringify(formDataObject),
-				contentType: "application/json",
-			})
-		);
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig("/staff/schedule", {
+					type: "POST",
+					data: JSON.stringify(formDataObject),
+					contentType: "application/json",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			console.error(error);
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
 		$("#staticBackdrop8").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
@@ -125,24 +133,41 @@ $(function () {
 			}
 		}
 		let formDataObject = Object.fromEntries(formData.entries());
-		await $.ajax(
-			getAjaxConfig(`/staff/schedule/${userId}`, {
-				type: "PUT",
-				data: JSON.stringify(formDataObject),
-				contentType: "application/json",
-			})
-		);
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/staff/schedule/${userId}`, {
+					type: "PUT",
+					data: JSON.stringify(formDataObject),
+					contentType: "application/json",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			console.error(error);
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
 		$("#staticBackdrop10").modal("toggle");
 		dataTable.ajax.reload();
 		return false;
 	});
 	$(document).on("click", "#delete-confirm", async function (event) {
 		const id = $(this).data("id");
-		await $.ajax(
-			getAjaxConfig(`/staff/schedule/${id}`, {
-				type: "DELETE",
-			})
-		);
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/staff/schedule/${id}`, {
+					type: "DELETE",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			console.error(error);
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+
 		$("#staticBackdrop11").modal("toggle");
 		dataTable.ajax.reload();
 	});

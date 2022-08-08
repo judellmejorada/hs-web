@@ -166,13 +166,20 @@ $(function () {
 			grand_total: Number($("#total_after_discount").val()),
 			invoices_status: "Paid",
 		};
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig("/admin/invoices/add-invoice", {
+					type: "POST",
+					data: reqBody,
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
 
-		await $.ajax(
-			getAjaxConfig("/admin/invoices/add-invoice", {
-				type: "POST",
-				data: reqBody,
-			})
-		);
 		dataTable.ajax.reload();
 		$("#staticBackdrop0").modal("toggle");
 	});

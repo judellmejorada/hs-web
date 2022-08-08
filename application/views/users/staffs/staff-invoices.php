@@ -135,6 +135,10 @@
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>
         <!-- quill Init js-->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.quilljs.js"></script>
+        
+        <!-- toaster js -->
+        <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
 
     </body>
 </html>
