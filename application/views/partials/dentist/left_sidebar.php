@@ -28,11 +28,7 @@
                         <li class="side-nav-title side-nav-item">DENTIST</li>
 
 
-                        <li class="side-nav-item">
-                            <a data-bs-toggle="" href="<?php echo base_url('dentist/appointment')?>" class="side-nav-link">
-                                <i class="uil-briefcase-alt"></i>
-                                <span> Appointments </span>
-                            </a>
+                        
 
                             <a data-bs-toggle="" href="<?php echo base_url('dentist/calendar')?>" class="side-nav-link">
                                 <i class="uil-calendar-alt"></i>
