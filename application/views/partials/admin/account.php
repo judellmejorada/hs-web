@@ -9,32 +9,32 @@
             <div class="modal-body">
                 <div class="card text-center">
                 <div class="card-body">
-                    <img src="<?php echo base_url('assets')?>/images/users/avatar-10.jpg" class="rounded-circle avatar-lg img-thumbnail" id="users_profile_pic" name="users_profile_pic" alt="profile-image">
+                    <img class="rounded-circle avatar-lg img-thumbnail" id="profile_users_profile_pic" name="users_profile_pic" alt="profile-image">
 
                     <h4 class="mb-0 mt-2" id="users_fullname" name="users_fullname">Soeng Souy</h4>
-                    <p class="text-muted font-14" id="users_type" name="users_type">Founder</p>
+                    <p class="text-muted font-14" id="profile_role" name="users_type">Founder</p>
 
                     <div class="text-start mt-3">
 
-                    <form id="add-user-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
+                    <form id="profile-update-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
                     <div class="row g-3">
                             <div class="col-sm-4">
                             <label class="form-label" for="users_fname">First Name</label>
-                            <input type="text" class="form-control" id="users_fname" name="users_fname" placeholder="First Name" required="">
+                            <input type="text" class="form-control" id="profile_users_fname" name="users_fname" placeholder="First Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a First Name.
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <label class="form-label" for="users_mname">Middle Name</label>
-                            <input type="text" class="form-control" id="users_mname" name="users_mname" placeholder="Middle Name" required="">
+                            <input type="text" class="form-control" id="profile_users_mname" name="users_mname" placeholder="Middle Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a Middle Name.
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <label class="form-label" for="users_lname">Last name</label>
-                            <input type="text" class="form-control" id="users_lname" name="users_lname" placeholder="Last Name" required="">
+                            <input type="text" class="form-control" id="profile_users_lname" name="users_lname" placeholder="Last Name" required="">
                             <div class="invalid-feedback">
                                 Please provide a Last Name.
                             </div>
@@ -44,14 +44,14 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_birthdate">Birth Date</label>
-                            <input class="form-control" type="date" id="users_birthdate" name="users_birthdate" required="">
+                            <input class="form-control" type="date" id="profile_users_birthdate" name="users_birthdate" required="">
                             <div class="invalid-feedback">
                                 Please provide a Birth Date.
                             </div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_gender">Gender</label>
-                            <select class="form-select" id="users_gender" name="users_gender" required="">
+                            <select class="form-select" id="profile_users_gender" name="users_gender" required="">
                                 <option></option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
@@ -67,7 +67,7 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_civil_status">Civil Status</label>
-                            <select class="form-select" id="users_civil_status" name="users_civil_status" required="">
+                            <select class="form-select" id="profile_users_civil_status" name="users_civil_status" required="">
                                 <option></option>
                                 <option value="Single">Single</option>
                                 <option value="Married">Married</option>
@@ -80,7 +80,7 @@
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_email">Email</label>
-                            <input type="text" class="form-control" id="users_email" name="users_email" placeholder="Email" readonly="" required="">
+                            <input type="text" class="form-control" id="profile_users_email" name="users_email" placeholder="Email" readonly="" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Email.  
                                 </div>
@@ -90,14 +90,14 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_phone_number">Phone Number</label>
-                            <input type="text" class="form-control" id="users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
+                            <input type="text" class="form-control" id="profile_users_phone_number" name="users_phone_number" placeholder="Phone Number" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Phone Number. 
                                 </div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="users_profile_pic">Image</label>
-                            <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic" required="">
+                            <input type="file" class="form-control" id="users_profile_pic" name="users_profile_pic">
                             <div class="invalid-feedback">
                                     Please provide an Image. 
                             </div>
@@ -118,3 +118,60 @@
         </div> <!-- end modal content-->
     </div> <!-- end modal dialog-->
 </div> <!-- end modal-->
+
+<script>
+const excludeProfileIds = ["users_profile_pic"];
+$(function () {
+	const loadProfileInfo = async () => {
+        const { data } = await $.ajax(getAjaxConfig("/admin/profile/get-info", {
+            type: "GET"
+        }));
+
+        $("#profile_users_profile_pic").attr("src",`${baseURLUserProfile}/data.users_profile_pic`);
+        $("#users_fullname").text(`${data.users_fname} ${data.users_mname} ${data.users_lname}`);
+        $("#profile_role").text(data.users_type)
+
+        for (let [key, value] of Object.entries(data)) {
+            if(!excludeProfileIds.includes(key)) {
+                $(`#profile_${key}`).val(value)
+            }
+        }
+    };
+
+    loadProfileInfo();
+
+    $(document).on("submit", "#profile-update-form", async function(event) {
+        event.preventDefault();
+        let formData = new FormData(this);
+		for (const [key, value] of formData.entries()) {
+			if (typeof value == "object") {
+				if (!value || value.size == 0) {
+					formData.delete(key);
+				}
+			} else {
+				if (!value) {
+					formData.delete(key);
+				}
+			}
+		}
+
+        try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/admin/profile/${getLocalData().data.users_id}`, {
+					type: "PUT",
+					data: formData,
+					contentType: false,
+					processData: false,
+				})
+			);
+			notification("success", "Sucess", message);
+		} catch (error) {
+			console.error(error);
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+        $("#staticBackdrop00").modal("toggle");
+        return false;
+    })
+});
+</script>
