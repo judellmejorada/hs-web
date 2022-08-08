@@ -40,10 +40,20 @@ $(async function () {
 			}),
 			columns: [
 				{
-					data: "appointments_branch",
+					data: "app_sched",
+					render: function (data) {
+						return data
+							? data.sched
+								? `Dr. ${data.sched.users_fname} ${data.sched.users_lname}`
+								: ""
+							: "";
+					},
 				},
 				{
-					data: "appointments_sched",
+					data: "branch",
+					render: function (data) {
+						return data ? data.branches_name : "";
+					},
 				},
 				{
 					data: "appointments_purpose",
