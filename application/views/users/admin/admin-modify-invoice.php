@@ -1,100 +1,144 @@
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel2">Modify Appointment Information</h5>
+                <h5 class="modal-title" id="staticBackdropLabel6">Modify Invoice Information</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div> <!-- end modal header -->
             <div class="modal-body">
 
-            <form id="edit-appointment-form" class="needs-validation" novalidate="">
-                <input type="hidden" id="edit_appointments_id" name="appointments_id">
-            <div class="row g-2">
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="branches_name">Branch</label>
-                                <select class="form-select branch-dropdown" id="edit_appointments_branch" name="appointments_branch" placeholder="Branch" required="">
-                                    <option></option>
-                                    <option value="Commonwealth">Commonwealth</option>
-                                    <option value="Quezon City">Quezon City</option>
-                                    <option value="Barbie">Barbie</option>
-                                    <option value="Kylie">Kylie</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please choose a Branch.
-                                </div>
-                            </div>
-                            <div class="mb-3 col-md-6">
-                            <label class="form-label" for="validationCustom01">Appointment Schedule</label>
-                            <select class="form-select schedule-dropdown" id="validationCustom00" required="">
-                                <option></option>
-                                <option>Anne Hathaway - July 28, 2022 8AM</option>
-                                <option>Anne Hathaway - July 28, 2022 9AM</option>
-                                <option>Lora Joy - July 28, 2022 11AM</option>
-                            </select>
-                            <!-- <input class="form-control" id="edit_appointments_sched" type="date" name="appointments_sched" required=""> -->
-                            <div class="invalid-feedback">
-                                Please provide a Appointment Date.
-                            </div>
-                        </div>
-                        </div>            
-                        
-                        <div class="row g-2">
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom03">Appointment Purpose</label>
-                                <input type="text" class="form-control" id="edit_appointments_purpose" placeholder="appointments_purpose" required="">
-                                <div class="invalid-feedback">
-                                    Please provide an Appointment Purpose.
-                                </div>
-                            </div>
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label" for="validationCustom03">Status</label>
-                                <select type="text" class="form-select" id="edit_appointments_status"  name="appointments_status" placeholder="Status" required="">
-                                    <option></option>
-                                    <option value="Approved">Approved</option>
-                                    <option value="Disapproved">Disapproved</option>
-                                    <option value="Pending">Pending</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please provide a Status.
-                                </div>
-                            </div>
-                        </div>  
+            <form class="needs-validation" novalidate="">
+            <div class="clearfix">
+                                            <div class="float-start mb-3">
+                                                <img src="<?php echo base_url('assets')?>/images/logos/HSBW.PNG" alt="" height="100">
+                                            </div>
+                                            <div class="float-end">
+                                                <h4 class="m-0 d-print-none">Invoices</h4>
+                                            </div>
+                                        </div>
 
-                        <div class="row g-2">
-                                <label class="form-label" for="validationCustom04">Success</label>
-                                <select class="form-select" id="edit_appointments_success" name="appointments_success"required="">
-                                    <option></option>
-                                    <option value="Success">Yes</option>
-                                    <option value="Failed">No</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please choose an option.
-                                </div>
-                        </div>
+                                        <!-- Invoice Detail-->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="float-end mt-3">
+                                                    <p><b>Good Day, Happy Smile Customer!</b></p>
+                                                    <p class="text-muted font-13">Please find below a cost-breakdown for the recent work completed. Please make payment at your earliest convenience, and do not hesitate to contact us with any questions.</p>
+                                                   
+                                                </div>
+            
+                                            </div><!-- end col -->
+                                            <div class="col-sm-4 offset-sm-2">
+                                            <h4>
 
-                        <div class="row g-2">
-                            <label class="form-label" for="validationCustom03">Comment</label>
-                            <div id="snow-editor-modify" style="height: 300px;" name="appointments_comment" required="" ></div>
-                            <div class="invalid-feedback">
-                                    Please provide a Comment.  
-                            </div>
-                        </div>
+                                            
+                                            </h4>
+                                                <div class="form-group">
+                                                <label for="Branch" class="form-label">Clinic Branch</label>
+                                                                <select class="form-select" id="Branch">
+                                                                    <option>Select Branch</option>
+                                                                    <option>Fairview Branch</option>
+                                                                    <option>SM North Branch</option>
+                                                                    <option>Makati Branch</option>
+                                                                </select>
+                                                </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div>
+                                        <!-- end row -->
+            
+                                        <div class="row mt-4">
+                                            <div class="col-sm-5 offset-sm-1">
+                                            <h6>Billing Address</h6>
+                                                <div class="form-group  ">
+                                                <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Name" autocomplete="off">
+                                                </div>      
+                                            </div> <!-- end col-->
 
-                        <br>
+                                            
+                                        <div>
+                                        </div>    
+                                        <!-- end row -->    
+                                         <form action="#">   
+                                        <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <table class="table table-bordered table-hover" style="margin-left:1rem"id="invoiceItem">
+                                        <tr>
+                                        <th width="2%"><input id="checkAll" class="formcontrol" type="checkbox"></th>`
+                                        <th width="78%">Service</th>
+                                        <th width="20%">Price</th>
+                                        </tr>
+                                        <tr>
+                                        <td><input class="itemRow" type="checkbox"></td>
+                                        <td><input type="text" name="productName[]" id="productName_1" class="form-control" autocomplete="off"></td>
+                                        <td><input type="number" name="price[]" id="price_1" class="form-control price" autocomplete="off"></td>
+                                        </tr>
+                                        </table>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                        <div class="col-sm-6 offset-sm-1">
+                                        <button class="btn btn-danger delete" id="removeRows" type="button">- Delete</button>
+                                        <button class="btn btn-success"  id="addRows" type="button" >+ Add More</button>
+                                        </div>
+                                        </div>
+                                        
+                                       
+                                        <div class="row">
+                                            <div class="col-sm-6 offset-sm-1">
+                                                <div class="clearfix pt-3">
+                                                    <h6 class="text-muted">Notes:</h6>
+                                                    <p>
+                                                        All accounts are to be paid within 7 days from receipt of
+                                                        invoice. To be paid by cheque or credit card or direct payment
+                                                        online. If account is not paid within 7 days the credits details
+                                                        supplied as confirmation of work undertaken will be charged the
+                                                        agreed quoted fee noted above.
+                                                    </p>
+                                                </div>
+                                            </div> <!-- end col -->
+                                            <div class="col-sm-4">
+                                                <div class="float-end mt-3 mt-sm-0">
+                                               
+                                                        <span class="form-inline">
+                                                        <div class="form-group">
+                                                        <label for="Subtotal" class="form-label">Subtotal:  </label>
+                                                        <div class="input-group">
+                                                        <input type="number" readonly="" class="form-control" id="Subtotal" value="">
+                                                        
+                                                        </div>
+                                                        </div>
+                                                        <br>
+                                                        <div class="form-group">
+                                                        <label>Discount:  </label>
+                                                        <div class="input-group">
+                                                        <input value="" type="number" class="form-control" name="discount" id="discount" placeholder="Discount">
+                                                        </div>
+                                                        </div>
+                                                        <br>
+                                                        <div class="form-group">
+                                                        <label>Total:  </label>
+                                                        <div class="input-group">
+                                                        <input type="number" readonly="" class="form-control" id="GrandTotal" value="">
 
-                        <div class="mb-3">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="invalidCheck" required="">
-                                <label class="form-check-label form-label" for="invalidCheck">I confirm that the details that I have 
-                                provided in this Appointment Information are correct, <br> and that I have not deliberately withheld any relevant information. </label>
-                                <div class="invalid-feedback">
-                                    You must agree before submitting.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                                                        </div>
+                                                        </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div> <!-- end col -->
+                                        </div>
+                                    </form>
+                                        <!-- end row-->
+    
+                                        <div class="d-print-none mt-4">
+                                            <div class="col-sm-4 offset-7">
+                                            <div class="text-end">
+                                                <a href="javascript:window.print()" class="btn btn-primary"><i class="mdi mdi-printer"></i> Print</a>
+                                                <a href="javascript: void(0);" class="btn btn-info">Submit</a>
+                                                <p></p>
+                                            </div>
+                                            </div>
+                                        </div>
                 </form>
                         </div>
             </div>
@@ -102,3 +146,5 @@
         </div> <!-- end modal content-->
     </div> <!-- end modal dialog-->
 </div> <!-- end modal-->
+
+
