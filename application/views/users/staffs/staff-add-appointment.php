@@ -70,7 +70,17 @@
                                 </div>
                             </div>
                         </div>  
-                        
+
+                        <br>
+
+                        <div class="row g-2">
+                            <label class="form-label" for="appointments_comment">Comment</label>
+                            <div id="snow-editor-add" name="appointments_comment" style="height: 300px;" required="" ></div>
+                            <div class="invalid-feedback">
+                                    Please provide a Comment.  
+                            </div>
+                        </div>
+
                         <br>
 
                         <div class="mb-3">
