@@ -92,6 +92,8 @@
                                                 </thead>
                                                 <tbody>
                                                 </tbody>
+                                                <tfoot>
+                                                </tfoot>
                                             </table>
                                         </div>
                                     </div> <!-- end card-body-->
@@ -134,7 +136,6 @@
 
         <!-- demo app -->
         <script src="<?php echo base_url('assets')?>/js/admin/service.js"></script>
-        <script src="<?php echo base_url('assets')?>/js/pages/demo.services.js"></script>
 
         <!-- quill js -->
         <script src="<?php echo base_url('assets')?>/js/vendor/quill.min.js"></script>
@@ -143,6 +144,9 @@
         <!-- toaster js -->
         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
         <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
+
+         <!-- parsley -->
+         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
 
     </body>
 </html>

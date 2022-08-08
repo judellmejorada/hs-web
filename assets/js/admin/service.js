@@ -37,28 +37,9 @@ $(function () {
 					className: "table-user",
 				},
 				{
-					// birth day not available
 					data: "services_description",
 					render: function (data, type, row, meta) {
 						return `<span>${data.substring(0, 50) + "..."}</span>`;
-					},
-				},
-				{
-					data: null,
-					render: function (data, type, row, meta) {
-						return "N/A";
-					},
-				},
-				{
-					data: null,
-					render: function (data, type, row, meta) {
-						return "N/A";
-					},
-				},
-				{
-					data: null,
-					render: function (data, type, row, meta) {
-						return "N/A";
 					},
 				},
 				{

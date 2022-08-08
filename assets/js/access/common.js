@@ -2,7 +2,8 @@ const baseURL = "https://happysmile-dcms.herokuapp.com/v1";
 const baseURLUserProfile =
 	"https://happysmile-dcms.herokuapp.com/users-profile-pic";
 const baseUrlServicePic = "https://happysmile-dcms.herokuapp.com/services";
-const baseUrlDentistPic = "https://happysmile-dcms.herokuapp.com/featured_dentist";
+const baseUrlDentistPic =
+	"https://happysmile-dcms.herokuapp.com/featured_dentist";
 const webURL = "https://happysmile-web.herokuapp.com/";
 
 // type = error, warning, success, info
@@ -46,7 +47,6 @@ const getDataTableConfig = ({ ajax, columns }) => ({
 		...columns,
 	],
 	select: { style: "multi" },
-	order: [[5, "asc"]],
 	drawCallback: function () {
 		$(".dataTables_paginate > .pagination").addClass("pagination-rounded"),
 			$("#products-datatable_length label").addClass("form-label");
