@@ -3,12 +3,14 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel6">Modify Invoice Information</h5>
+                <h5 class="modal-title" id="staticBackdropLabel18">Modify Invoice Information</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div> <!-- end modal header -->
             <div class="modal-body">
 
             <form class="needs-validation" novalidate="">
+                <input type="hidden" value="" id="edit-invoice-id">
+                <input type="hidden" value="" id="edit-appointments_comment">
             <div class="clearfix">
                                             <div class="float-start mb-3">
                                                 <img src="<?php echo base_url('assets')?>/images/logos/HSBW.PNG" alt="" height="100">
@@ -35,7 +37,7 @@
                                             </h4>
                                                 <div class="form-group">
                                                 <label for="Branch" class="form-label">Clinic Branch</label>
-                                                                <select class="form-select" id="Branch">
+                                                                <select class="form-select branch-dropdown" id="edit-branch-dropdown">
                                                                     <option>Select Branch</option>
                                                                     <option>Fairview Branch</option>
                                                                     <option>SM North Branch</option>
@@ -51,7 +53,7 @@
                                             <div class="col-sm-5 offset-sm-1">
                                             <h6>Billing Address</h6>
                                                 <div class="form-group  ">
-                                                <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Name" autocomplete="off">
+                                                <input type="text" class="form-control" name="companyName" id="edit-issued-to" placeholder="Name" autocomplete="off">
                                                 </div>      
                                             </div> <!-- end col-->
 
@@ -61,25 +63,24 @@
                                         <!-- end row -->    
                                          <form action="#">   
                                         <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <table class="table table-bordered table-hover" style="margin-left:1rem"id="invoiceItem">
-                                        <tr>
-                                        <th width="2%"><input id="checkAll" class="formcontrol" type="checkbox"></th>`
-                                        <th width="78%">Service</th>
-                                        <th width="20%">Price</th>
-                                        </tr>
-                                        <tr>
-                                        <td><input class="itemRow" type="checkbox"></td>
-                                        <td><input type="text" name="productName[]" id="productName_1" class="form-control" autocomplete="off"></td>
-                                        <td><input type="number" name="price[]" id="price_1" class="form-control price" autocomplete="off"></td>
-                                        </tr>
-                                        </table>
+                                        <div class="table-responsive" style="padding: 2rem">
+                                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" style="margin-left: 0" id="edit-invoice-form">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th></th>
+                                                        <th width="78%">Service</th>
+                                                        <th width="20%">Price</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
                                         </div>
                                         </div>
                                         <div class="row">
                                         <div class="col-sm-6 offset-sm-1">
-                                        <button class="btn btn-danger delete" id="removeRows" type="button">- Delete</button>
-                                        <button class="btn btn-success"  id="addRows" type="button" >+ Add More</button>
+                                        <button class="btn btn-danger delete" id="edit-removeRows" type="button">- Delete</button>
+                                        <button class="btn btn-success"  id="edit-addRows" type="button" >+ Add More</button>
                                         </div>
                                         </div>
                                         
@@ -104,7 +105,7 @@
                                                         <div class="form-group">
                                                         <label for="Subtotal" class="form-label">Subtotal:  </label>
                                                         <div class="input-group">
-                                                        <input type="number" readonly="" class="form-control" id="Subtotal" value="">
+                                                        <input type="number" readonly="" class="form-control" id="edit-subtotal" value="">
                                                         
                                                         </div>
                                                         </div>
@@ -112,14 +113,14 @@
                                                         <div class="form-group">
                                                         <label>Discount:  </label>
                                                         <div class="input-group">
-                                                        <input value="" type="number" class="form-control" name="discount" id="discount" placeholder="Discount">
+                                                        <input value="" type="number" class="form-control" name="discount" id="edit-discount" placeholder="Discount">
                                                         </div>
                                                         </div>
                                                         <br>
                                                         <div class="form-group">
                                                         <label>Total:  </label>
                                                         <div class="input-group">
-                                                        <input type="number" readonly="" class="form-control" id="GrandTotal" value="">
+                                                        <input type="number" readonly="" class="form-control" id="edit-grand-total" value="">
 
                                                         </div>
                                                         </div>
@@ -134,7 +135,7 @@
                                             <div class="col-sm-4 offset-7">
                                             <div class="text-end">
                                                 <a href="javascript:window.print()" class="btn btn-primary"><i class="mdi mdi-printer"></i> Print</a>
-                                                <a href="javascript: void(0);" class="btn btn-info">Submit</a>
+                                                <a href="javascript: void(0);" id="edit-invoice-button" class="btn btn-info">Submit</a>
                                                 <p></p>
                                             </div>
                                             </div>

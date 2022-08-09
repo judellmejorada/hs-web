@@ -1,4 +1,5 @@
 var services = [];
+var editServices = [];
 
 const updateServicesArray = ({ id, key }, obj) => {
 	services = services.map((elem) => {
@@ -18,9 +19,36 @@ const updateServicesArray = ({ id, key }, obj) => {
 
 	const discount = $("#invoices_discount").val();
 
-	$("#total_after_discount").val(grandTotal - discount);
+	$("#total_after_discount").val(grandTotal - Number(discount));
 
 	$("#grand_total").val(grandTotal);
+};
+
+var onDelete = (uuid) => {
+	$("#delete-confirm").data("id", uuid);
+};
+
+const updateServicesArrayForEdit = ({ id, key }, obj) => {
+	editServices = editServices.map((elem) => {
+		if (elem.id === id) {
+			elem[key] = $(obj).val();
+		}
+		return elem;
+	});
+
+	const grandTotal = editServices
+		.map((elem) => elem.inser_service_price)
+		.reduce(
+			(previousValue, currentValue) =>
+				Number(previousValue) + Number(currentValue),
+			0
+		);
+
+	const discount = $("#edit-discount").val();
+
+	$("#edit-grand-total").val(grandTotal - Number(discount));
+
+	$("#edit-subtotal").val(grandTotal);
 };
 
 $(function () {
@@ -63,11 +91,15 @@ $(function () {
 				{
 					orderable: !1,
 					data: null,
-					render: function () {
+					render: function (data) {
 						return (
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>` +
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>` +
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>`
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop5" onclick='populateViewForm(${JSON.stringify(
+								data
+							)})'> <i class="mdi mdi-account-outline" ></i></a>` +
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop6" onclick='populateEditForm(${JSON.stringify(
+								data
+							)})'> <i class="mdi mdi-square-edit-outline"></i></a>` +
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop7" onclick='onDelete("${data.id}")'> <i class="mdi mdi-delete"></i></a>`
 						);
 					},
 				},
@@ -163,15 +195,27 @@ $(function () {
 		$("#grand_total").val(grandTotal);
 	});
 
+	$(document).on("change", "#invoices_discount", function () {
+		const grandTotal = services
+			.map((elem) => elem.inser_service_price)
+			.reduce(
+				(previousValue, currentValue) =>
+					Number(previousValue) + Number(currentValue),
+				0
+			);
+		$("#total_after_discount").val(grandTotal - Number($(this).val()));
+		$("#grand_total").val(grandTotal);
+	});
+
 	$(document).on("click", "#add-invoice-button", async function () {
 		const reqBody = {
 			invoices_branches: $("#add-branch-dropdown").val(),
 			invoices_issued_to: $("#invoices_issued_to").val(),
 			invoices_description: $("#appointments_comment").val(),
 			invoices_services: services.map(({ id, ...obj }) => obj),
-			total_after_discount: Number($("#grand_total").val()),
+			grand_total: Number($("#grand_total").val()),
 			invoices_discount: Number($("#invoices_discount").val()),
-			grand_total: Number($("#total_after_discount").val()),
+			total_after_discount: Number($("#total_after_discount").val()),
 			invoices_status: "Paid",
 		};
 		try {
@@ -193,5 +237,194 @@ $(function () {
 		}
 		$("#staticBackdrop4").modal("toggle");
 		dataTable.ajax.reload();
+	});
+
+	const editServiceDataTable = $("#edit-invoice-form").DataTable({
+		data: services,
+		searching: false,
+		ordering: false,
+		lengthChange: false,
+		paging: false,
+		info: false,
+		columns: [
+			{
+				data: null,
+				checkboxes: {
+					selectRow: true,
+					selectAll: false,
+					selectCallback: function (nodes, selected) {
+						const tr = $(nodes[0]).closest("tr");
+						if (selected) {
+							tr.addClass("selected");
+						} else {
+							tr.removeClass("selected");
+						}
+					},
+				},
+			},
+			{
+				data: null,
+				render: function (data, type, row, meta) {
+					const params = { id: data.id, key: "inser_service_name" };
+					return `<input type="text" onchange='updateServicesArrayForEdit(${JSON.stringify(
+						params
+					)}, this)' class="form-control" value="${
+						data.inser_service_name
+					}" autocomplete="off"/>`;
+				},
+			},
+			{
+				data: null,
+				render: function (data, type, row, meta) {
+					const params = { id: data.id, key: "inser_service_price" };
+					return `<input type="number" onchange='updateServicesArrayForEdit(${JSON.stringify(
+						params
+					)}, this)' class="form-control price" value="${
+						data.inser_service_price
+					}" autocomplete="off" />`;
+				},
+			},
+		],
+	});
+
+	window.populateEditForm = (data) => {
+		$("#edit-appointments_comment").val(data.invoices_description);
+		$("#edit-branch-dropdown").val(data.invoices_branches);
+		$("#edit-issued-to").val(data.invoices_issued_to);
+		$("#edit-grand-total").val(data.total_after_discount);
+		$("#edit-discount").val(data.invoices_discount);
+		$("#edit-subtotal").val(data.grand_total);
+		$("#edit-invoice-id").val(data.id);
+		editServiceDataTable.clear().draw();
+		editServices = data.dump_invoice;
+		editServiceDataTable.rows.add(editServices);
+		editServiceDataTable.columns.adjust().draw();
+	};
+
+	$(document).on("click", "#edit-addRows", function () {
+		editServices = editServices.concat({
+			id: editServices.length + 1,
+			inser_service_name: "",
+			inser_service_price: "",
+		});
+
+		editServiceDataTable.clear().draw();
+		editServiceDataTable.rows.add(editServices);
+		editServiceDataTable.columns.adjust().draw();
+	});
+
+	$(document).on("click", "#edit-removeRows", function () {
+		const ids = editServiceDataTable
+			.rows(".selected")
+			.data()
+			.map((data) => data.id)
+			.toArray();
+
+		console.log(ids);
+
+		editServices = editServices.filter((service) => !ids.includes(service.id));
+		editServiceDataTable.clear().draw();
+		editServiceDataTable.rows.add(editServices);
+		editServiceDataTable.columns.adjust().draw();
+	});
+
+	$(document).on("click", "#edit-invoice-button", async function () {
+		const reqBody = {
+			invoices_branches: $("#edit-branch-dropdown").val(),
+			invoices_issued_to: $("#edit-issued-to").val(),
+			invoices_description: $("#edit-appointments_comment").val(),
+			invoices_services: editServices.map((obj) => {
+				if (!isNaN(obj.id)) {
+					const { id, ...newObj } = obj;
+					return newObj;
+				}
+				return obj;
+			}),
+			total_after_discount: Number($("#edit-grand-total").val()),
+			invoices_discount: Number($("#edit-discount").val()),
+			grand_total: Number($("#edit-subtotal").val()),
+			invoices_status: "Paid",
+		};
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/staff/invoice/${$("#edit-invoice-id").val()}`, {
+					type: "PUT",
+					data: JSON.stringify(reqBody),
+					contentType: "application/json",
+				})
+			);
+			notification("success", "Success", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			console.log(error);
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+
+		$("#staticBackdrop6").modal("toggle");
+		dataTable.ajax.reload();
+	});
+
+	const viewServiceDataTable = $("#view-invoice-form").DataTable({
+		data: services,
+		searching: false,
+		ordering: false,
+		lengthChange: false,
+		paging: false,
+		info: false,
+		columns: [
+			{
+				data: null,
+				checkboxes: {
+					selectRow: true,
+					selectAll: false,
+					selectCallback: function (nodes, selected) {
+						const tr = $(nodes[0]).closest("tr");
+						if (selected) {
+							tr.addClass("selected");
+						} else {
+							tr.removeClass("selected");
+						}
+					},
+				},
+			},
+			{
+				data: "inser_service_name",
+			},
+			{
+				data: "inser_service_price",
+			},
+		],
+	});
+
+	window.populateViewForm = (data) => {
+		$("#view-appointments_comment").val(data.invoices_description);
+		$("#view-branch-dropdown").val(data.invoices_branches);
+		$("#view-issued-to").val(data.invoices_issued_to);
+		$("#view-grand-total").val(data.total_after_discount);
+		$("#view-discount").val(data.invoices_discount);
+		$("#view-subtotal").val(data.grand_total);
+		$("#view-invoice-id").val(data.id);
+		viewServiceDataTable.clear().draw();
+		viewServiceDataTable.rows.add(data.dump_invoice);
+		viewServiceDataTable.columns.adjust().draw();
+	};
+
+	$(document).on("click", "#delete-confirm", async function (event) {
+		const id = $(this).data("id");
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/staff/invoices/${id}`, {
+					type: "DELETE",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			console.error(error);
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+		$("#staticBackdrop7").modal("toggle");
 	});
 });
