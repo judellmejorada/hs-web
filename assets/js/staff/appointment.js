@@ -50,9 +50,11 @@ $(async function () {
 					},
 				},
 				{
-					data: "branch",
+					data: "app_sched",
 					render: function (data) {
-						return data ? data.branches_name : "";
+						return data
+							? `${data.schedule_date} ${data.schedule_start_time} - ${data.schedule_end_time}`
+							: "";
 					},
 				},
 				{
