@@ -14,6 +14,17 @@ const notification = (type, title, message) => {
 	return toastr[type](message, title);
 };
 
+var buttonCommon = {
+	exportOptions: {
+		format: {
+			body: function (data, row, column, node) {
+				// Strip $ from salary column to make it numeric
+				return column === 5 ? data.replace(/[$,]/g, "") : data;
+			},
+		},
+	},
+};
+
 const getLocalData = () => JSON.parse(localStorage.getItem("userData"));
 const setLocalData = (userData) =>
 	localStorage.setItem("userData", JSON.stringify(userData));
@@ -60,6 +71,12 @@ const getDataTableConfig = ({ ajax, columns }) => ({
 		lengthMenu:
 			'Display <select class=\'form-select form-select-sm ms-1 me-1\'><option value="10">10</option><option value="20">20</option><option value="-1">All</option></select> services',
 	},
+	dom: "Bfrtip",
+	buttons: ["copy", "csv", "excel", "pdf", "print"],
+	lengthMenu: [
+		[10, 25, 50, -1],
+		[10, 25, 50, "All"],
+	],
 });
 
 const loadBranchDropdown = async () => {
