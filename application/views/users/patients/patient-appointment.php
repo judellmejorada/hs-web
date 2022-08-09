@@ -20,6 +20,10 @@
         <link href="<?php echo base_url('assets')?>/css/app.min1.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="<?php echo base_url('assets')?>/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
 
+        <!-- Parsley & Toastr css -->
+        <link href="<?php echo base_url('assets')?>/css/parsley.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo base_url('assets')?>/css/toastr.css" rel="stylesheet" type="text/css"/>
+
     </head>
 
     <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -80,8 +84,6 @@
                                                         <th>Dentist</th>
                                                         <th>Appointment Date</th>
                                                         <th>Appointment Purpose</th>
-                                                        <th>Comment</th>
-                                                        <th>Success</th>
                                                         <th>Status</th>
                                                         <th style="width: 75px;">Action</th>
                                                     </tr>
@@ -111,6 +113,8 @@
         </div>
         <!-- END wrapper -->
 
+        <?php include ('patient-view-appointment.php');?>
+
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
@@ -131,5 +135,12 @@
         <script src="<?php echo base_url('assets')?>/js/google.js"></script>
 
         <script src="<?php echo base_url('assets')?>/js/patient/appointment.js"></script>
+
+         <!-- toaster js -->
+         <script src="<?php echo base_url('assets')?>/js/pages/demo.toastr.js"></script>
+        <script src="<?php echo base_url('assets')?>/js/toastr.js"></script>
+
+         <!-- parsley -->
+         <script src="<?php echo base_url('assets')?>/js/parsley.js"></script>
     </body>
 </html>

@@ -3,20 +3,13 @@ var excludeField = {
 };
 
 var setValues = (userDetails, prefix) => {
-	Object.keys(userDetails).forEach((key) => {
-		if (!(excludeField[key] && excludeField.includes(key))) {
-			console.log(userDetails[key]);
-			if (key == "appointments_comment") {
-				if (prefix == "edit") {
-					quillModify.setText(userDetails[key]);
-				} else {
-					quillView.setText(userDetails[key]);
-				}
-			} else {
-				$(`#${prefix}_${key}`).val(userDetails[key]).trigger("change");
-			}
-		}
-	});
+	$(`#${prefix}_appointments_branch`).val(userDetails["appointments_branch"]);
+	$(`#${prefix}_appointments_purpose`).val(userDetails["appointments_purpose"]);
+	$(`#${prefix}_appointments_sched`).val(
+		userDetails.sched
+			? `Dr. ${userDetails.sched.users_fname} ${userDetails.sched.users_lname}`
+			: ""
+	);
 };
 
 var onDelete = (uuid) => {
@@ -32,6 +25,7 @@ $(async function () {
 			type: "GET",
 		})
 	);
+	schedules = data;
 	const dataTable = $("#appointment-datatable").DataTable(
 		getDataTableConfig({
 			ajax: getAjaxConfig("/patient/appointment", {
@@ -49,19 +43,15 @@ $(async function () {
 					},
 				},
 				{
-					data: "branch",
+					data: "app_sched",
 					render: function (data) {
-						return data ? data.branches_name : "";
+						return data
+							? `${data.schedule_date} ${data.schedule_start_time} ${data.schedule_end_time}`
+							: "";
 					},
 				},
 				{
 					data: "appointments_purpose",
-				},
-				{
-					data: "appointments_comment",
-				},
-				{
-					data: "appointments_success",
 				},
 				{
 					data: "appointments_status",
@@ -78,12 +68,10 @@ $(async function () {
 				{
 					orderable: !1,
 					data: null,
-					render: function () {
-						return (
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>` +
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>` +
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>`
-						);
+					render: function (data) {
+						return `<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" onclick='setValues(${JSON.stringify(
+							data
+						)}, "view")'></i></a>`;
 					},
 				},
 			],
@@ -93,28 +81,10 @@ $(async function () {
 	$(document).on("submit", "#add-appointment-form", async function (event) {
 		event.preventDefault();
 		let formData = new FormData(this);
-		await $.ajax(
-			getAjaxConfig("/patient/appointment", {
-				type: "POST",
-				data: formData,
-				contentType: false,
-				processData: false,
-			})
-		);
-		$("#staticBackdrop0").modal("toggle");
-		dataTable.ajax.reload();
-		return false;
-	});
-
-	$(document).on("submit", "#add-appointment-form", async function (event) {
-		event.preventDefault();
-		let formData = new FormData(this);
-		// formData.append("appointments_comment", quill.getText());
 		let formDataObject = Object.fromEntries(formData.entries());
-
 		try {
 			const { message } = await $.ajax(
-				getAjaxConfig("/staff/appointment", {
+				getAjaxConfig("/patient/appointment", {
 					type: "POST",
 					data: JSON.stringify(formDataObject),
 					contentType: "application/json",
@@ -123,6 +93,7 @@ $(async function () {
 			notification("success", "Sucess", message);
 			dataTable.ajax.reload();
 		} catch (error) {
+			console.log(error);
 			const { responseJSON } = error;
 			notification(
 				"error",
@@ -158,7 +129,7 @@ $(async function () {
 
 		try {
 			const { message } = await $.ajax(
-				getAjaxConfig(`/staff/appointment/${userId}`, {
+				getAjaxConfig(`/patient/appointment/${userId}`, {
 					type: "PUT",
 					data: JSON.stringify(formDataObject),
 					contentType: "application/json",
@@ -180,7 +151,7 @@ $(async function () {
 		const id = $(this).data("id");
 		try {
 			const { message } = await $.ajax(
-				getAjaxConfig(`/staff/appointment/${id}`, {
+				getAjaxConfig(`/patient/appointment/${id}`, {
 					type: "DELETE",
 				})
 			);
@@ -201,7 +172,6 @@ $(async function () {
 		scheduleDropdowns.each(function () {
 			$(this).html("<option></option>");
 		});
-
 		scheduleDropdowns.each(function () {
 			$(this).html(
 				[

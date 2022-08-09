@@ -12,7 +12,7 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-6">
                             <label class="form-label" for="validationCustom00">Branch</label>
-                            <select class="form-select" id="validationCustom00" required="">
+                            <select class="form-select branch-dropdown" id="validationCustom00" name="appointments_branch" required="">
                                 <option></option>
                                 <option>Kendall</option>
                                 <option>Nadine</option>
@@ -26,7 +26,7 @@
                         <div class="mb-3 col-md-6">
                             <!-- This is from schedule available -->
                             <label class="form-label" for="validationCustom00">Available Schedule</label>
-                            <select class="form-select" id="validationCustom00" required="">
+                            <select class="form-select schedule-dropdown" name="appointments_sched" id="validationCustom00" required="">
                                 <option></option>
                                 <option>Anne Hathaway - July 28, 2022 8AM</option>
                                 <option>Anne Hathaway - July 28, 2022 9AM</option>
@@ -42,7 +42,7 @@
                     <div class="row g-2">
                         <div class="mb-3 col-md-12">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Description" id="floatingTextarea" required="" style="height: 100px;"></textarea>
+                                <textarea class="form-control" placeholder="Description" id="floatingTextarea" name="appointments_purpose" required="" style="height: 100px;"></textarea>
                                 <label for="floatingTextarea">Purpose</label>
                                 <div class="invalid-feedback">
                                     Please provide a purpose.  
