@@ -90,11 +90,13 @@ $(function () {
 					data: null,
 					render: function (data) {
 						return (
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>` +
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop17" onclick='populateViewForm(${JSON.stringify(
+								data
+							)})'> <i class="mdi mdi-account-outline" ></i></a>` +
 							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop18" onclick='populateEditForm(${JSON.stringify(
 								data
 							)})'> <i class="mdi mdi-square-edit-outline"></i></a>` +
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>`
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop19"> <i class="mdi mdi-delete"></i></a>`
 						);
 					},
 				},
@@ -357,4 +359,49 @@ $(function () {
 		$("#staticBackdrop18").modal("toggle");
 		dataTable.ajax.reload();
 	});
+
+	const viewServiceDataTable = $("#view-invoice-form").DataTable({
+		data: services,
+		searching: false,
+		ordering: false,
+		lengthChange: false,
+		paging: false,
+		info: false,
+		columns: [
+			{
+				data: null,
+				checkboxes: {
+					selectRow: true,
+					selectAll: false,
+					selectCallback: function (nodes, selected) {
+						const tr = $(nodes[0]).closest("tr");
+						if (selected) {
+							tr.addClass("selected");
+						} else {
+							tr.removeClass("selected");
+						}
+					},
+				},
+			},
+			{
+				data: "inser_service_name",
+			},
+			{
+				data: "inser_service_price",
+			},
+		],
+	});
+
+	window.populateViewForm = (data) => {
+		$("#view-appointments_comment").val(data.invoices_description);
+		$("#view-branch-dropdown").val(data.invoices_branches);
+		$("#view-issued-to").val(data.invoices_issued_to);
+		$("#view-grand-total").val(data.total_after_discount);
+		$("#view-discount").val(data.invoices_discount);
+		$("#view-subtotal").val(data.grand_total);
+		$("#view-invoice-id").val(data.id);
+		viewServiceDataTable.clear().draw();
+		viewServiceDataTable.rows.add(data.dump_invoice);
+		viewServiceDataTable.columns.adjust().draw();
+	};
 });
