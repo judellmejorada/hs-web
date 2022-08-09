@@ -111,7 +111,7 @@ $(async function () {
 					contentType: "application/json",
 				})
 			);
-			notification("success", "Sucess", message);
+			notification("success", "Success", message);
 			dataTable.ajax.reload();
 		} catch (error) {
 			const { responseJSON } = error;
@@ -175,7 +175,7 @@ $(async function () {
 					type: "DELETE",
 				})
 			);
-			notification("success", "Sucess", message);
+			notification("success", "Success", message);
 			dataTable.ajax.reload();
 		} catch (error) {
 			const { responseJSON } = error;
