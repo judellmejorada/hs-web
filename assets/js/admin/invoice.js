@@ -24,6 +24,10 @@ const updateServicesArray = ({ id, key }, obj) => {
 	$("#grand_total").val(grandTotal);
 };
 
+var onDelete = (uuid) => {
+	$("#delete-confirm").data("id", uuid);
+};
+
 const updateServicesArrayForEdit = ({ id, key }, obj) => {
 	editServices = editServices.map((elem) => {
 		if (elem.id === id) {
@@ -96,7 +100,7 @@ $(function () {
 							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop18" onclick='populateEditForm(${JSON.stringify(
 								data
 							)})'> <i class="mdi mdi-square-edit-outline"></i></a>` +
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop19"> <i class="mdi mdi-delete"></i></a>`
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop19" onclick='onDelete("${data.id}")'> <i class="mdi mdi-delete"></i></a>`
 						);
 					},
 				},
@@ -404,4 +408,22 @@ $(function () {
 		viewServiceDataTable.rows.add(data.dump_invoice);
 		viewServiceDataTable.columns.adjust().draw();
 	};
+
+	$(document).on("click", "#delete-confirm", async function (event) {
+		const id = $(this).data("id");
+		try {
+			const { message } = await $.ajax(
+				getAjaxConfig(`/admin/invoices/${id}`, {
+					type: "DELETE",
+				})
+			);
+			notification("success", "Sucess", message);
+			dataTable.ajax.reload();
+		} catch (error) {
+			console.error(error);
+			const { responseJSON } = error;
+			notification("error", "Oops! An error occurs", responseJSON.message);
+		}
+		$("#staticBackdrop19").modal("toggle");
+	});
 });
