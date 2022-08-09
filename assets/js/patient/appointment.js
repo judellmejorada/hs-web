@@ -6,8 +6,8 @@ var setValues = (userDetails, prefix) => {
 	$(`#${prefix}_appointments_branch`).val(userDetails["appointments_branch"]);
 	$(`#${prefix}_appointments_purpose`).val(userDetails["appointments_purpose"]);
 	$(`#${prefix}_appointments_sched`).val(
-		userDetails.sched
-			? `Dr. ${userDetails.sched.users_fname} ${userDetails.sched.users_lname}`
+		userDetails.app_sched
+			? `Dr. ${userDetails.app_sched.sched.users_fname} ${userDetails.app_sched.sched.users_lname} ${userDetails.app_sched.schedule_date} ${userDetails.app_sched.schedule_start_time} - ${userDetails.app_sched.schedule_end_time}`
 			: ""
 	);
 };
@@ -46,7 +46,7 @@ $(async function () {
 					data: "app_sched",
 					render: function (data) {
 						return data
-							? `${data.schedule_date} ${data.schedule_start_time} ${data.schedule_end_time}`
+							? `${data.schedule_date} ${data.schedule_start_time} - ${data.schedule_end_time}`
 							: "";
 					},
 				},
