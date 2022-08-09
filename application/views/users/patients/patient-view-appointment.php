@@ -14,10 +14,10 @@
                             <label class="form-label" for="validationCustom00">Branch</label>
                             <select class="form-select branch-dropdown" id="view_appointments_branch" name="appointments_branch" readonly="">
                                 <option></option>
-                                <option>Kendall</option>
-                                <option>Nadine</option>
-                                <option>Barbie</option>
-                                <option>Kylie</option>
+                                <option>Commonwealth</option>
+                                <option>Quezon City</option>
+                                <option>Novaliches</option>
+                                <option>Zabarte</option>
                             </select>
                             <div class="invalid-feedback">
                                 Please choose a Dentist.

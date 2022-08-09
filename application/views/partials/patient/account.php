@@ -163,11 +163,11 @@ $(function () {
 					processData: false,
 				})
 			);
-			notification("success", "Sucess", message);
+			notification("success", "Success", message);
 		} catch (error) {
 			console.error(error);
 			const { responseJSON } = error;
-			notification("error", "Oops! An error occurs", responseJSON.message);
+			notification("error", "Oops! An error occurs.", responseJSON.message);
 		}
         $("#staticBackdrop02").modal("toggle");
         return false;
