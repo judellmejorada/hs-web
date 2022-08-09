@@ -71,7 +71,7 @@ $(function () {
 				{
 					data: "invoices_discount",
 					render: function (data) {
-						return `<span> ${data};</span>`;
+						return `<span> ${data}</span>`;
 					},
 				},
 				{
