@@ -114,10 +114,10 @@
 
         </div>
         <!-- END wrapper -->
-
         <?php include ('admin-view-invoices.php');?>
         <?php include ('admin-modify-invoice.php');?>
         <?php include ('admin-delete-invoice.php');?>
+        
         <!-- bundle -->
         <script src="<?php echo base_url('assets')?>/js/access/common.js"></script>
         <script src="<?php echo base_url('assets')?>/js/vendor.min.js"></script>
