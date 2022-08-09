@@ -31,8 +31,7 @@ $(function () {
 				url: baseURL + "/home/send",
 				type: "POST", // post, put, delete, get
 				data: formData,
-				contentType: false,
-				processData: false,
+				contentType: "application/json",
 
         success: function () {
           window.location.replace("https://happysmile-web.herokuapp.com");

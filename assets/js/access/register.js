@@ -19,7 +19,7 @@ $(function () {
             },
             error: function ({ responseJSON }) {
                 console.log(responseJSON);
-                notification("error", "Please provide Appropriate Information.", responseJSON.message);
+                notification("error", "Please check!", responseJSON.message);
             },
         })
     );
