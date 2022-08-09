@@ -66,9 +66,7 @@ $(function () {
 					data: null,
 					render: function () {
 						return (
-							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"onclick='setValues(${JSON.stringify(
-								data
-								)}, "view")'> <i class="mdi mdi-account-outline" ></i></a>` +
+							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> <i class="mdi mdi-account-outline" ></i></a>` +
 							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <i class="mdi mdi-square-edit-outline"></i></a>` +
 							`<a href="javascript:void(0);" class="action-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> <i class="mdi mdi-delete"></i></a>`
 						);
@@ -192,6 +190,6 @@ $(function () {
 		}
 
 		dataTable.ajax.reload();
-		$("#staticBackdrop0").modal("toggle");
+		$("#staticBackdrop19").modal("toggle");
 	});
 });
