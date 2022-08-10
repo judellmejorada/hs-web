@@ -16,7 +16,7 @@
                             <li class="dropdown notification-list">
                                 <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                                     <span class="account-user-avatar"> 
-                                        <img src="<?php echo  $_SESSION['users_profile_pic'];?>" alt="user-image" class="rounded-circle">
+                                        <img src="<?php echo base_url('assets')?>/images/logos/Happy Smile (2).png" alt="user-image" class="rounded-circle">
                                     </span>
                                     <span>
                                         <span class="account-user-name"><?php echo  $_SESSION['users_fname'];?></span>
