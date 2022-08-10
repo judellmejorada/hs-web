@@ -78,7 +78,7 @@
                     <div class="col-md-5">
                         <div class="mt-md-4">
                             <h7 class="text-white fw-bold mb-4 mt-3 hero-title">
-                                ABOUT US
+                                ABOUT <br>US
                             </h7>
                             <p></p>
                             
